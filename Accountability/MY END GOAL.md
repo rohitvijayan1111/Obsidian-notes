@@ -80,3 +80,19 @@ Every minute you waste now is a minute stolen from the man you dream of becoming
 > I do not give up.  
 > I do not settle.  
 > I level up — every damn day.
+
+
+
+To do:
+i)Certification - 2 count
+ii)DSA
+iii)Dev practice -> full stack
+iV) LLD 
+V) HLD
+vi)System design
+vii)Behavioural round
+VIII) ETHICAL HACKING4
+iX)Project walkthrough
+X)Project env ready to execute anytime
+
+
