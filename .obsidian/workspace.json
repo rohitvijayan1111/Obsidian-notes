@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "d6cb8cb6641d92be",
+    "type": "split",
+    "children": [
+      {
+        "id": "371689fb1eb097bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f14bd757356c7d0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3569accb4ba7abdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f61b9c671fe8af9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e84bb4d66ae6df0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "db4b0d98634a877a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "872fcf4405e07bbe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "87a988b65f70f0f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "01f98d738a3d316a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fa37e19c84269c0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AWS/AWS-1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for AWS-1"
+            }
+          },
+          {
+            "id": "9c4aa642b30ed91f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AWS/AWS-1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AWS-1"
+            }
+          },
+          {
+            "id": "a1a2c9aa816a798e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a3474ee3bfe2032b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AWS/AWS-1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of AWS-1"
+            }
+          },
+          {
+            "id": "cc89f94e77906f40",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "9b5decd60a555d2b",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "obsidian-importer:Open Importer": false,
+      "github-sync:Sync with Remote": false
+    }
+  },
+  "active": "8e84bb4d66ae6df0",
+  "lastOpenFiles": [
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Leetcode/Array/Random Problems.md",
+    "Leetcode/Array/Concepts.md",
+    "AWS/AWS-1.md",
+    "Accountability/MY END GOAL.md",
+    "Accountability/MAY 2025.md",
+    "2025-05-02.md",
+    "AWS/Welcome.md",
+    "Accountability",
+    "Leetcode/Linkedlist/Random Problems.md",
+    "AWS/Pasted image 20250409211938.png",
+    "My template to approach an problem.md",
+    "Sort a linked list of 0s, 1s and 2s.md",
+    "[].md",
+    "Leetcode/Linkedlist",
+    "Topics to cover.md",
+    "Leetcode/Union Find/Random problems.md",
+    "Leetcode/Union Find",
+    "2025-04-27.md",
+    "Untitled.canvas",
+    "Random.md",
+    "OneNote",
+    "Leetcode/Stack/Implementation problems.md",
+    "Leetcode/Tree/Lec 1-Traversals.md",
+    "Leetcode/Tree/Random Problems.md",
+    "Linkedin search.md",
+    "Leetcode/Greedy/Random Problems.md",
+    "Leetcode/Greedy",
+    "create a link.md",
+    "Leetcode/Stack/Stack problems.md",
+    "Leetcode/Array",
+    "Leetcode/Stack/Monotonic Stack.md",
+    "KL;.md",
+    "{{PROBLEM.md",
+    "Leetcode/Tree",
+    "Leetcode/Stack",
+    "Leetcode",
+    "AWS"
+  ]
+}
