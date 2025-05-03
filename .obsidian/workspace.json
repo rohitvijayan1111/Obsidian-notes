@@ -6,7 +6,7 @@
       {
         "id": "fa565c1261adc842",
         "type": "tabs",
-        "dimension": 80.11744966442953,
+        "dimension": 66.8299510146956,
         "children": [
           {
             "id": "2469b39544627f56",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
+                "file": "Leetcode/Array/Counting Problems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Binary Search - upper bound,lower bound"
+              "title": "Counting Problems"
             }
           },
           {
@@ -41,7 +41,7 @@
       {
         "id": "bfb2908251ec5f9c",
         "type": "tabs",
-        "dimension": 19.88255033557047,
+        "dimension": 33.17004898530441,
         "children": [
           {
             "id": "71a5b40b01394169",
@@ -89,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#countingsubarray",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -230,24 +231,26 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2469b39544627f56",
+  "active": "db4b0d98634a877a",
   "lastOpenFiles": [
-    "Leetcode/time complexity.md",
-    "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
-    "Accountability/MAY 2025.md",
+    "Untitled.md",
+    "Leetcode/Array/Counting Problems.md",
     "AWS/Welcome.md",
+    "Leetcode/Array/BFS.md",
+    "Leetcode/Array/Concepts.md",
+    "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
+    "Leetcode/time complexity.md",
+    "Leetcode/Array/Article on counting.md",
+    "Accountability/MAY 2025.md",
     "Pasted image 20250503091351.png",
     "AWS/Pasted image 20250409211938.png",
     "AWS/AWS-1.md",
     "Accountability/MY END GOAL.md",
-    "Leetcode/Array/BFS.md",
     "[].md",
     "Pasted image 20250503090644.png",
     "Leetcode/Array/Two pointer.md",
-    "Leetcode/Array/Concepts.md",
     "Leetcode/Binary Search",
     "l.md",
-    "Leetcode/Array/Counting Problems.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "2025-05-02.md",
@@ -267,9 +270,7 @@
     "Leetcode/Tree/Lec 1-Traversals.md",
     "Leetcode/Tree/Random Problems.md",
     "Linkedin search.md",
-    "Leetcode/Greedy/Random Problems.md",
     "Leetcode/Greedy",
-    "create a link.md",
     "Leetcode/Array",
     "Leetcode/Tree",
     "Leetcode/Stack",

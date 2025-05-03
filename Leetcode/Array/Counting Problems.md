@@ -7,9 +7,9 @@
         - Boyer-Moore keeps a candidate and adjusts a counter; if counter drops to zero, candidate is updated.
         - After finding candidate, verify if it actually appears more than n/2 times.
     - [ ] Related Topics
-        - Array
-        - Greedy
-        - Voting Algorithm
+        - #Array
+        - #greedy
+        - #votingalgorithm
         -
 -  **2145. Count the Hidden Sequences** [🔗](https://leetcode.com/problems/count-the-hidden-sequences/)
     
@@ -64,12 +64,11 @@
             
     -  Related Concepts and Topics
         
-        - Prefix Sums
+        - #prefixsums 
             
-        - Array Traversal
+        - #array
             
-        - Math (Range Calculations)
-
+        
 - **781. Rabbits in Forest** [🔗](https://leetcode.com/problems/rabbits-in-forest/)
     
     - Problem Summary (What is given and what is needed?) 
@@ -126,12 +125,11 @@
             
     - Related Concepts and Topics
         
-        - Hash Map
+        - #hashmap
             
-        - Greedy Strategy
+        - #greedy
             
-        - Math (Ceiling Division)
-
+        
 - **2799. Count Complete Subarrays in an Array** [🔗](https://leetcode.com/problems/count-complete-subarrays-in-an-array/)
     
     - **Problem Summary**  
@@ -181,51 +179,14 @@
             
     - **Related Concepts and Topics**
         
-        - Sliding Window
+        - #slidingwindow
             
-        - Stack
+        - #stack
             
-        - Hashing/Hashmap
+        - #hashmap
             
-        - Two Pointers
-            
-        - Distinct Elements Count
-            
-- **[560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
-    
-    - Problem Summary (What is given and what is needed?) 
-    - #flashcards/leetcode/Arrays 
-	    - Given an array of integers `nums` and an integer `k`, return _the total number of subarrays whose sum equals to_ `k`. :: [Answer](obsidian://open?vault=Obsidian%20Vault&file=Leetcode/[Category]/[Problem Title])
-            
-    - Key Takeaways
-	    - We maintain:
-		    - A running total called `prefix_sum` (the sum of elements from the start up to the current index).
-		        
-		    - A **hash map** (`prefix_counts`) where:
-		        
-		        - **Key** = a prefix sum value.
-		            
-		        - **Value** = how many times that prefix sum has occurred so far.
-	            
-	- At each index `i`:
-	    1. We add `nums[i]` to `prefix_sum`.
-	        
-	    2. We want to know: **Has there been a prefix sum earlier such that removing it would give us exactly k?**
-	        
-	        - i.e., Is `(prefix_sum - k)` already in our `prefix_counts`?
-	            
-	    3. If yes, **the count of that earlier prefix_sum** tells us how many subarrays (ending at the current `i`) have a sum of exactly `k`.
-	        
-	        - We add that number to our final `count`.
-	            
-	    4. Then, we update the `prefix_counts` by incrementing `prefix_sum`'s frequency.       
-	 - Time Complexity Analysis
-	        
-	        - (Describe the time complexity, e.g., O(n), and explain briefly why.)
-		    O(n)​        
-    - Space Complexity Analysis
+        - #twopointers
         
-        - O(n)​
 
 - **[2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/)**  
     
@@ -318,7 +279,97 @@
     ---
 
     ### 📚 Related Concepts and Topics
-    - Sliding Window
-    - Two Pointers
-    - Arrays
-    - Frequency Counting
+    - #countingsubarray
+	- #slidingwindow
+    - #twopointers
+    - #arrays
+    
+
+- **[560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)**  
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given an array of integers `nums` and an integer `k`, return _the total number of subarrays whose sum equals to_ `k`.
+
+		A subarray is a contiguous **non-empty** sequence of elements within an array.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - This is kinda an algo to remember
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      NA
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - Maintain the sum of the array till the node you have visited
+    - check if the curr_sum-target in present in the dictionary (as this mean than there exist a subarray sum that is equal to the target) 
+    - usually we store the :
+	    - index- if we need kind of largest subarray (dont update if already exist)
+	    - count- if we want the count(need to increment each time we get that sum)
+	 - make sure to add the current sum to the dictionary
+	 - AN EDGE CASE: add 0 in the dictionary
+		 - if count needed - set to 0
+		 - if length needed- set to -1
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - Maintain the sum of the array till the node you have visited
+    - check if the curr_sum-target in present in the dictionary (as this mean than there exist a subarray sum that is equal to the target) 
+    - usually we store the :
+	    - index- if we need kind of largest subarray (dont update if already exist)
+	    - count- if we want the count(need to increment each time we get that sum)
+	 - make sure to add the current sum to the dictionary
+	 - AN EDGE CASE: add 0 in the dictionary
+		 - if count needed - set to 0
+		 - if length needed- set to -1
+
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+	    d={0:1}
+
+        res=0
+
+        s=0
+
+        for i in range(len(nums)):
+
+            s=s+nums[i]
+
+            diff=s-k
+
+            res+=d.get(diff,0)
+
+            d[s]=d.get(s,0)+1
+
+        print(d)
+
+        return res
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+
+    ### 🗃 Space Complexity
+    - **O(n)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+		#countingsubarray
