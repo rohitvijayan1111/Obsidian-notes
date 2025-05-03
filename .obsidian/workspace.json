@@ -89,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#countingsubarray",
+                "query": "tag:#prefixsums",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,7 +231,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2469b39544627f56",
+  "active": "db4b0d98634a877a",
   "lastOpenFiles": [
     "AWS/Welcome.md",
     "Leetcode/Array/Counting Problems.md",
