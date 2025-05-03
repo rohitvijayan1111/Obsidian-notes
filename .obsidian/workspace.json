@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Array/Counting Problems.md",
+                "file": "Accountability/MY END GOAL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Counting Problems"
+              "title": "MY END GOAL"
             }
           },
           {
@@ -89,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#prefixsums",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,8 +110,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -231,10 +230,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "db4b0d98634a877a",
+  "active": "2469b39544627f56",
   "lastOpenFiles": [
-    "AWS/Welcome.md",
     "Leetcode/Array/Counting Problems.md",
+    "AWS/Welcome.md",
     "Untitled.md",
     "Leetcode/Array/BFS.md",
     "Leetcode/Array/Concepts.md",
