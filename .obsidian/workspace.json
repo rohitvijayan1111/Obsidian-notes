@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/MY END GOAL.md",
+                "file": "Behavioral Questions/Explain an point in time.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MY END GOAL"
+              "title": "Explain an point in time"
             }
           },
           {
@@ -232,8 +232,11 @@
   },
   "active": "2469b39544627f56",
   "lastOpenFiles": [
-    "Leetcode/Array/Counting Problems.md",
     "AWS/Welcome.md",
+    "Behavioral Questions/Explain an point in time.md",
+    "Accountability/MY END GOAL.md",
+    "Behavioral Questions",
+    "Leetcode/Array/Counting Problems.md",
     "Untitled.md",
     "Leetcode/Array/BFS.md",
     "Leetcode/Array/Concepts.md",
@@ -244,7 +247,6 @@
     "Pasted image 20250503091351.png",
     "AWS/Pasted image 20250409211938.png",
     "AWS/AWS-1.md",
-    "Accountability/MY END GOAL.md",
     "[].md",
     "Pasted image 20250503090644.png",
     "Leetcode/Array/Two pointer.md",
@@ -268,11 +270,9 @@
     "Leetcode/Stack/Implementation problems.md",
     "Leetcode/Tree/Lec 1-Traversals.md",
     "Leetcode/Tree/Random Problems.md",
-    "Linkedin search.md",
     "Leetcode/Greedy",
     "Leetcode/Array",
     "Leetcode/Tree",
-    "Leetcode/Stack",
-    "Leetcode"
+    "Leetcode/Stack"
   ]
 }

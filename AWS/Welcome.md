@@ -95,3 +95,16 @@ Write 1-3 moments that were important today — good or bad:
 
 
 ![[Pasted image 20250503091351.png]]
+
+
+
+### Give me an example of a time you had a conflict with a team member. How did you handle it?
+
+#### My Response:
+>[Write your response here.]
+
+#### Structured Response:
+>- **Situation:** [Brief context]
+>- **Task:** [What was required]
+>- **Action:** [What you did]
+>- **Result:** [Outcome of your actions]
