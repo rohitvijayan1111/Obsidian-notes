@@ -19,3 +19,35 @@
 
 
 
+
+### **Question: Tell me about a time you had to switch technical approaches mid-project.**
+>
+	**Situation:**  
+	I was working on a project to rank students based on multiple metrics—level, age, and a few academic factors—and display this data in a tabular format with filters and mark entry functionality.
+>	
+	**Task:**  
+	I initially chose Firebase because I wanted to explore it in a real project. I thought it would be a good opportunity to learn, especially because of its real-time data sync capabilities.
+>	
+	**Action:**  
+	However, as we got closer to the deadline, I realized that implementing complex filtering and multi-column ranking logic in Firebase's NoSQL structure was turning out to be inefficient and time-consuming. Since I had limited experience with Firebase and the project required reliable sorting and filtering across multiple fields, my teammate and I made a joint decision to switch to SQL, a stack we were already comfortable with. That allowed us to complete the project efficiently and meet the deadline.
+>	
+	**Result:**  
+	The final product worked smoothly with proper filters and bulk mark entry. More importantly, the experience taught me that technology decisions should be based not just on learning goals, but also feasibility and deadlines. I applied this lesson in a later project, MedCo, where we first outlined the core user needs and then selected a tech stack optimized for mobile users. That helped us avoid missteps and stay efficient from the start.
+	
+
+
+### 3. Describe an occasion when you had to manage your time to complete a task. How did you do it?
+
+#### My response
+
+>Situation :
+>In the month of January we had been part of a hackathon conducted by KYN - a startup , and it was on the eve of new year and I and my teamates were travelling to our hometown and we gave our best but not the fullest (It was the first round that happened during that time) . But to our surprise we were shortlist for the next round be hadn't built the website entire and we had only 1.5 days left. 
+
+>Task:
+>We first walked through the features that we gathered earlier to be implemented. And went through each one of the made priorities for each one of them.
+
+>Action:
+>We efficiently managed those implementation of those task , I took the lead and assigned tasks to my teamates that they are comfortable with to complete more tasks in the given span of time. I took care of the backend.
+
+>Result:
+>We were transformed the application to whole new level that they panel member who had gone through the Github screenshot of the older version said that "Both the versions are in two different poles." . The outcome was that with proper time and team management anything is possible
