@@ -130,9 +130,15 @@ class Solution:
 
     ### ⏱ Time Complexity
     - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+    - 1 + 1/2 + 1/3 + 1/4 + 1/5 + ... ≈ log n
+    - ∑ (1/p) for primes p ≤ m ≈ log(log m) (By harmonic- based on some derivation -compex )
+    - binary search would n * log(max_val)
 
     ### 🗃 Space Complexity
-    - **O(1)** — constant space; only counters used.
+    - **O(max_val)+o(n)** — o(maxvalue) to store the prime number computation and o(n) to store the prime no(much lesser tho) :) 
+    - > The number of primes less than or equal to `n` (denoted as `π(n)`) is approximately:
+    - ```
+		
 
     ---
 
