@@ -100,7 +100,7 @@ class Solution:
             if abs(primes[left] - target) < abs(primes[right] - target):
                 return primes[left]
             else:
-                return primes[right]
+                x primes[right]
 
         # Step 1: Find max value in list to determine limit for prime sieve
         temp = head
