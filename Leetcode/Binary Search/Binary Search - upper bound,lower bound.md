@@ -74,7 +74,11 @@ class Solution:
         def compute_primes(limit):
             primes = [True] * limit
             primes[0] = primes[1] = False
-            for i in range(2, int(limit**0.5) + 1):
+            '''
+            - Because any non-prime number ≤ `m` must have a **factor ≤ √m**.
+		    - After that, all remaining `True` numbers are automatically prime.
+            '''
+            for i in range(2, int(limit**0.5) + 1): 
                 if primes[i]:
                     for j in range(i * i, limit, i):
                         primes[j] = False
