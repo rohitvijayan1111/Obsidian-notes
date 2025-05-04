@@ -458,4 +458,105 @@
         - #prefixsums 
             
         - #array
-            
+
+- [1128. Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a list of `dominoes`, `dominoes[i] = [a, b]` is **equivalent to** `dominoes[j] = [c, d]` if and only if either (`a == c` and `b == d`), or (`a == d` and `b == c`) - that is, one domino can be rotated to be equal to another domino.
+
+	Return _the number of pairs_ `(i, j)` _for which_ `0 <= i < j < dominoes.length`_, and_ `dominoes[i]` _is **equivalent to**_ `dominoes[j]`.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    -  As soon as i saw i though of [a,b] make a less than b , always a and then sort it and do combinations to count it.
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - [a,b] make a less than b , always a and then sort it and do combinations to count it.
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+
+    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
+
+        for i in dominoes:
+
+            l=i[0]
+
+            r=i[1]
+
+            if(l>r):
+
+                i[0],i[1]=i[1],i[0]
+
+        dominoes.sort()
+
+        c=1
+
+        res=0
+
+        for i in range(1,len(dominoes)):
+
+            if(dominoes[i]==dominoes[i-1]):
+
+                c+=1
+
+            else:
+
+                res+=((c*(c-1))//2)
+
+                c=1
+
+        if(c>1):
+
+            res+=((c*(c-1))//2)
+
+        return res
+     
+    ```
+
+	**Efficient Method:**
+
+	```python
+class Solution:
+    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
+        num = [0]*100
+        res = 0
+        for x, y in dominoes:
+            val = x*10 + y if x >= y else y*10 + x
+            res += num[val]
+            num[val] += 1
+        return res
+```
+    
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)**  
+    ### 🗃 Space Complexity
+    - **O(100)**
+
+    ---
+
+    ### 📚 Related Concepts and Topics
