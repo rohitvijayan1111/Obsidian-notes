@@ -49,9 +49,23 @@
               "icon": "lucide-file",
               "title": "Welcome"
             }
+          },
+          {
+            "id": "1113abbaf728ad4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "bfb2908251ec5f9c",
@@ -245,10 +259,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "1113abbaf728ad4a",
   "lastOpenFiles": [
-    "AWS/Welcome.md",
     "Leetcode/Array/Counting Problems.md",
+    "Untitled 1.md",
+    "AWS/Welcome.md",
     "Leetcode/Array/Untitled.md",
     "Leetcode/Array/Article on counting.md",
     "Leetcode/Array/Two pointer.md",
@@ -285,7 +300,6 @@
     "Untitled.canvas",
     "Random.md",
     "OneNote",
-    "Leetcode/Stack/Implementation problems.md",
     "Leetcode/Greedy",
     "Leetcode/Array",
     "Leetcode/Tree"
