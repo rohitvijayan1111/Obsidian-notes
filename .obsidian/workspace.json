@@ -38,12 +38,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Resources/Patterns links.md",
+                "file": "Security/Resources/Web application security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Patterns links"
+              "title": "Web application security"
             }
           }
         ],
@@ -243,6 +243,11 @@
   },
   "active": "f7dadc87ac512a89",
   "lastOpenFiles": [
+    "Security/Resources/CTF.md",
+    "Security/Resources/Web application security.md",
+    "Leetcode/Resources/DSA PLAN.md",
+    "Security/Resources",
+    "Security",
     "SYSTEM DESIGN/Resources.md",
     "Leetcode/Resources/Patterns links.md",
     "Leetcode/Array/Article on counting.md",
@@ -274,16 +279,11 @@
     "Leetcode/Tree/Popular problems.md",
     "Leetcode/Graphs",
     "Leetcode/Array/Untitled.md",
-    "Leetcode/Array/Two pointer.md",
-    "Leetcode/Array/Concepts.md",
-    "Leetcode/Array/BFS.md",
     "Leetcode/Recursion",
     "Behavioral Questions",
     "Pasted image 20250503090644.png",
     "Leetcode/Binary Search",
     "Accountability",
-    "Leetcode/Linkedlist",
-    "Leetcode/Union Find",
     "Untitled.canvas"
   ]
 }
