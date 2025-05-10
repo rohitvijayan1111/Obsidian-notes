@@ -18,6 +18,8 @@ Here’s the **ultimate list** you should focus on:
     - Sorting and Searching
         
     - Kadane’s Algorithm (Max Subarray Sum)
+    - 
+SEGMENT TREE
         
 2. **Strings**
     
@@ -84,7 +86,7 @@ Here’s the **ultimate list** you should focus on:
     - N-Queens Problem
         
     - Sudoku Solver
-        
+    - meet in the middle algo
 9. **Dynamic Programming (DP)**
     
     - 1D DP: Fibonacci, Climbing Stairs
@@ -151,7 +153,9 @@ Here’s the **ultimate list** you should focus on:
 - Systematic Debugging
     
 - Clear explanation skills (mock interviews help)
-    
+
+
+
 
 ---
 
