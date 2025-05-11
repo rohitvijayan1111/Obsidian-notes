@@ -1,1 +1,11 @@
-{}
+{
+	"nodes":[
+		{"id":"5ea6d26a22fccaac","x":-140,"y":-400,"width":250,"height":60,"type":"text","text":"Counting problem"},
+		{"id":"c18dc71407dc1463","x":-420,"y":-240,"width":250,"height":60,"type":"text","text":"Prefix Sum with hash "},
+		{"id":"0bd1c4005b162da0","x":-442,"y":-100,"width":272,"height":103,"type":"text","text":"Check if it can be transformed to  simplify the problem\n"}
+	],
+	"edges":[
+		{"id":"5beccdb576023ec7","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"c18dc71407dc1463","toSide":"top"},
+		{"id":"52c3ab0ae9ff3ac1","fromNode":"c18dc71407dc1463","fromSide":"bottom","toNode":"0bd1c4005b162da0","toSide":"top"}
+	]
+}
