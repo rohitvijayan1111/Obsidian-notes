@@ -388,6 +388,61 @@
 
     ### 📚 Related Concepts and Topics
 		#hashmap #Array #prefixsums 
+
+- ### [Longest Subarray with Majority Greater than K ](https://www.geeksforgeeks.org/problems/longest-subarray-with-majority-greater-than-k/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given an array **arr[]** and an integer **k**, the task is to find the length of **longest** subarray in which the **count of elements greater than k** is **more** than the **count of elements less than or equal to k**.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    -  knew it was hashmap + prefxi
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+
+    ### 🗃 Space Complexity
+    - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+
+
+
 ## Others method 
 - [ ] **Majority Element** [🔗](https://www.geeksforgeeks.org/problems/majority-element-1587115620/1)
     - [ ] What did I learn?

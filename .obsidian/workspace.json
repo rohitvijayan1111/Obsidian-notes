@@ -36,17 +36,14 @@
             "id": "71a5b40b01394169",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Leetcode/Array/Couting problem flow chart.canvas",
-                "viewState": {
-                  "x": -769.7654382947616,
-                  "y": -245.8433450599677,
-                  "zoom": -0.9153925155994209
-                }
+                "file": "Leetcode/Array/Counting Problems.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Couting problem flow chart"
+              "icon": "lucide-file",
+              "title": "Counting Problems"
             }
           },
           {
@@ -258,15 +255,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "8e84bb4d66ae6df0",
+  "active": "71a5b40b01394169",
   "lastOpenFiles": [
-    "Leetcode/Resources/Patterns links.md",
-    "Leetcode/Array/Couting problem flow chart.canvas",
-    "Untitled 1.md",
+    "AWS/Welcome.md",
     "Leetcode/Array/Counting Problems.md",
+    "Leetcode/Array/Couting problem flow chart.canvas",
+    "Leetcode/Resources/Patterns links.md",
+    "Untitled 1.md",
     "Leetcode/Array/Article on counting.md",
     "Accountability/MAY 2025.md",
-    "AWS/Welcome.md",
     "Accountability/MY END GOAL.md",
     "Untitled.md",
     "Topics to cover.md",
