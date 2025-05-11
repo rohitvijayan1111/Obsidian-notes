@@ -52,12 +52,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The winner mindest.md",
+                "file": "SYSTEM DESIGN/Resources.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The winner mindest"
+              "title": "Resources"
             }
           },
           {
@@ -269,13 +269,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "7215c88593f785c6",
+  "active": "cc89f94e77906f40",
   "lastOpenFiles": [
+    "SYSTEM DESIGN/System Design was HARD until I Learned these 30 Concepts.md",
+    "The winner mindest.md",
     "Pasted image 20250511185858.png",
     "Pasted image 20250511185801.png",
     "Pasted image 20250511185456.png",
     "Security/Resources/How to begin.md",
-    "The winner mindest.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Array/Counting Problems.md",
     "AWS/Welcome.md",
@@ -306,7 +307,6 @@
     "2025-04-27.md",
     "[].md",
     "AWS/Pasted image 20250409211938.png",
-    "SYSTEM DESIGN/System Design was HARD until I Learned these 30 Concepts.md",
     "SYSTEM DESIGN",
     "Leetcode/DP",
     "Leetcode/Graphs",
