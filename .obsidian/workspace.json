@@ -38,15 +38,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Leetcode/Array/Couting problem flow chart.canvas",
                 "viewState": {
                   "x": -769.7654382947616,
-                  "y": 208.45726251796907,
-                  "zoom": -0.42945843821857504
+                  "y": -245.8433450599677,
+                  "zoom": -0.9153925155994209
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "Couting problem flow chart"
             }
           },
           {
@@ -258,11 +258,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "71a5b40b01394169",
+  "active": "8e84bb4d66ae6df0",
   "lastOpenFiles": [
     "Leetcode/Resources/Patterns links.md",
+    "Leetcode/Array/Couting problem flow chart.canvas",
     "Untitled 1.md",
-    "Untitled.canvas",
     "Leetcode/Array/Counting Problems.md",
     "Leetcode/Array/Article on counting.md",
     "Accountability/MAY 2025.md",
