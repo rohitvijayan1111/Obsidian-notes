@@ -1,11 +1,29 @@
 {
 	"nodes":[
 		{"id":"5ea6d26a22fccaac","x":-140,"y":-400,"width":250,"height":60,"type":"text","text":"Counting problem"},
-		{"id":"c18dc71407dc1463","x":-420,"y":-240,"width":250,"height":60,"type":"text","text":"Prefix Sum with hash "},
-		{"id":"0bd1c4005b162da0","x":-442,"y":-100,"width":272,"height":103,"type":"text","text":"Check if it can be transformed to  simplify the problem\n"}
+		{"id":"9bba2d51aed8de5d","x":-738,"y":167,"width":250,"height":60,"type":"text","text":"Sliding Window"},
+		{"id":"74b50a63142d9e8b","x":-420,"y":167,"width":250,"height":60,"type":"text","text":"Two pointer"},
+		{"id":"4c840fad0f7506b9","x":-140,"y":167,"width":250,"height":60,"type":"text","text":"Kadane Algo"},
+		{"id":"40bb1e90686ff372","x":173,"y":171,"width":250,"height":60,"type":"text","text":"Divide and Conquer"},
+		{"id":"a31fc6dd2439e877","x":492,"y":163,"width":250,"height":60,"type":"text","text":"Montonic Stack"},
+		{"id":"8ca56dd7961a5807","x":800,"y":163,"width":250,"height":60,"type":"text","text":"Monotonic Queue"},
+		{"id":"ab45823b4e8e40f6","x":1151,"y":160,"width":250,"height":60,"type":"text","text":"Segment Trees / Fenwick Trees"},
+		{"id":"c8b707b8cfc37e30","x":-1520,"y":451,"width":250,"height":60,"type":"text","text":"Check if the sum already exists and find the length/ count"},
+		{"id":"0bd1c4005b162da0","x":-1351,"y":260,"width":272,"height":103,"type":"text","text":"Check if it can be transformed to  simplify the problem\n"},
+		{"id":"c18dc71407dc1463","x":-1340,"y":160,"width":250,"height":60,"type":"text","text":"Prefix Sum with hash "},
+		{"id":"5944c53203c60c27","x":-1040,"y":167,"width":250,"height":60,"type":"text","text":"Prefix Sum"}
 	],
 	"edges":[
 		{"id":"5beccdb576023ec7","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"c18dc71407dc1463","toSide":"top"},
-		{"id":"52c3ab0ae9ff3ac1","fromNode":"c18dc71407dc1463","fromSide":"bottom","toNode":"0bd1c4005b162da0","toSide":"top"}
+		{"id":"52c3ab0ae9ff3ac1","fromNode":"c18dc71407dc1463","fromSide":"bottom","toNode":"0bd1c4005b162da0","toSide":"top"},
+		{"id":"aed810feefe51312","fromNode":"0bd1c4005b162da0","fromSide":"bottom","toNode":"c8b707b8cfc37e30","toSide":"top"},
+		{"id":"313842683cd5f169","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"5944c53203c60c27","toSide":"top"},
+		{"id":"aea45d15e7e9258c","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"9bba2d51aed8de5d","toSide":"top"},
+		{"id":"752455aa82e9bfb4","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"74b50a63142d9e8b","toSide":"top"},
+		{"id":"88a6859c77b004ee","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"4c840fad0f7506b9","toSide":"top"},
+		{"id":"94b51c9806664bae","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"40bb1e90686ff372","toSide":"top"},
+		{"id":"0221db4062015663","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"a31fc6dd2439e877","toSide":"top"},
+		{"id":"ad06cd699a0d1f57","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"8ca56dd7961a5807","toSide":"top"},
+		{"id":"6ee47a4cd4f51ae3","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"ab45823b4e8e40f6","toSide":"top"}
 	]
 }

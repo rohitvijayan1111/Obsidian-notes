@@ -15,7 +15,7 @@
               "type": "planner-weekly",
               "state": {},
               "icon": "table-2",
-              "title": "May, 10–May, 12"
+              "title": "May, 11–May, 13"
             }
           },
           {
@@ -40,9 +40,9 @@
               "state": {
                 "file": "Untitled.canvas",
                 "viewState": {
-                  "x": -31.3338478695934,
-                  "y": -35.763671393845364,
-                  "zoom": -0.4197642281055451
+                  "x": -769.7654382947616,
+                  "y": 208.45726251796907,
+                  "zoom": -0.42945843821857504
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "213bfbcf7add54fa",
@@ -258,16 +258,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "c7d329339648380c",
+  "active": "71a5b40b01394169",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "Leetcode/Resources/Patterns links.md",
     "Untitled 1.md",
+    "Untitled.canvas",
     "Leetcode/Array/Counting Problems.md",
     "Leetcode/Array/Article on counting.md",
     "Accountability/MAY 2025.md",
     "AWS/Welcome.md",
     "Accountability/MY END GOAL.md",
-    "Leetcode/Resources/Patterns links.md",
     "Untitled.md",
     "Topics to cover.md",
     "My template to approach an problem.md",
