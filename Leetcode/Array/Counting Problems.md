@@ -399,49 +399,184 @@
     ---
 
     ### 💭 My Initial Thoughts
-    -  knew it was hashmap + prefxi
+    -  knew it was hashmap + prefix sum 
+    - nut couldnt debug it any further
 
     ---
 
     ### ❌ Mistakes Made
-    - 
-    - Here's the problematic sketch:
-      ```python
-      l = 0
-           ```
-
+    - NA
+      
     ---
 
     ### ✅ Key Takeaways
-    - 
-
+    -  IN SUBARRAY SUM, THINK WHETHER TRANSFORMATION COULD BE DONE TO SIMPLIFY THE PROBLEM
+    - Think of approaches you know and how you can modify that approach to implement questions
     ---
 
     ### 🧭 Step-by-Step Approach
-    - 
+    -  Transform the arr[i] such that if the element is greater than the k make it 1, else make it  -1
+    - then do the normal prefix sum + hashmap method
+    - THE MAIN IDEA HERE IS TO CHECK IF THE CURRENT SUM HAS BE ACHIEVED BY INCREASING THE PREFIX SUM, which indicates that an positive subarrray exist(I,e more element >k)
+    - only hash the value if the prefix sum hasn't be seen before 
+      
     ---
 
     ### ✅ Final Code
 
     ```python
-    class Solution:
+	class Solution:
+    def longestSubarray(self, arr, k):
+        # Code Here
+        n=len(arr)
+        prefixsum=0
+        first_occurence={}
+        max_len=0
+        for i in range(n):
+            prefixsum+=1 if arr[i]>k else -1
+            #since it has nullified all the negative(IF ANY) and now has more >k
+            if(prefixsum>0):
+                max_len=i+1
+            #Checking if the value increased that is 
+            #if the prefixsum came from prefix-1 (I.E INCREASED)
+            #since there would be always an linear increase
+            if(prefixsum-1 in first_occurence):
+                max_len=max(max_len,i-first_occurence[prefixsum-1])
+            
+            if(prefixsum not in first_occurence):
+                first_occurence[prefixsum]=i
+        return max_len
+	 
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)**
+    ### 🗃 Space Complexity
+    - **O(1)** 
+    
+    ---
+
+    ### 📚 Related Concepts and Topics
+		#countingsubarray #hashmap #prefixsums 
+		
+
+
+
+## Prefix Sum
+
+- [K-th Largest Sum Contiguous Subarray](https://www.geeksforgeeks.org/problems/k-th-largest-sum-contiguous-subarray/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given an array **arr[]** of size n, find the sum of the **K-th largest** sum among all **contiguous** subarrays. In other words, identify the K-th largest sum from all **possible subarrays** and return it.
+    
+    ---
+
+    ### 💭 My Initial Thoughts
+    -  Thought of various approaches that are commonly used for subarray
+    - figured out prefix sum
+    - and solved the problem
+
+    ---
+
+    ### ❌ Mistakes Made
+    -  Didnt dry run
+    - used max heap instead of min heap,but figured out
+      
+    ---
+
+    ### ✅ Key Takeaways
+    -  
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    -  Find the prefix sum of the array
+    - fix the start element of the subarray
+    - and for each find the windowsum= from the start to n-1
+    - and decrement till reaching 1
+    - for each add the element to heap( k element heap approach)
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    from typing import List
+
+import heapq
+class Solution:
+    def kthLargest(self, arr, k) -> int:
+        # code here
+        n=len(arr)
+        prefix=[]
+        heap=[]
+        def addtoheap(no):
+            if(len(heap)==k):
+                if(no>heap[0]):
+                    heapq.heappop(heap)
+                    heapq.heappush(heap,no)
+            else:
+                heapq.heappush(heap,no)
+        
+        sums=0
+        for i in range(n):
+            prefix.append(sums)
+            sums+=arr[i]
+        for i in range(n):
+            windowsum=arr[n-1]+prefix[n-1]-prefix[i]
+            addtoheap(windowsum)
+            for j in range(n-1,i,-1):
+                windowsum-=arr[j]
+                addtoheap(windowsum)
+        return heapq.heappop(heap)
+                    
      
     ```
 
     ---
 
     ### ⏱ Time Complexity
-    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
-
+    - **O(n)** (for prefix sum) + o(n^2 logk) (for the window sums) + logk (for the final pop)
+ 
     ### 🗃 Space Complexity
-    - **O(1)** — constant space; only counters used.
+    - **O(n)+O(k) - heap and prefix**
+### 🗣️ **What the Interviewer Might Say:**
 
+> “Looks like `j` is going from `n-1` to `i`, so total iterations look like `n` — not `n²`. Why are you saying it's O(n²)?”
+
+---
+
+### ✅ **What You Should Say:**
+
+> “Good question. Even though the inner loop doesn't run from 0 to n every time, across **all values of `i`**, the total number of subarrays we process is still roughly **n(n+1)/2**, which is **O(n²)**.
+> 
+> That’s because:
+> 
+> - For `i = 0`, `j` goes from `n-1 → 1` → ~n iterations
+>     
+> - For `i = 1`, `j = n-1 → 2` → ~n-1 iterations
+>     
+> - ...
+>     
+> - For `i = n-1`, `j` doesn’t run → 0 iterations
+>     
+> 
+> So when you sum all those iterations over `i`, the total is:
+> 
+> mathematica
+> 
+> CopyEdit
+> 
+> `(n-1) + (n-2) + ... + 1 = O(n²)`
+> 
+> That’s why the overall complexity for the nested loops is **O(n²)** — even if each individual run is less than `n`.”
     ---
 
-    ### 📚 Related Concepts and Topics
-
-
-
+### 📚 Related Concepts and Topics
+	#subarray #prefixsums
 
 ## Others method 
 - [ ] **Majority Element** [🔗](https://www.geeksforgeeks.org/problems/majority-element-1587115620/1)
@@ -546,72 +681,73 @@
 
     ### 🧭 Step-by-Step Approach
     - 
-    ---
-
-    ### ✅ Final Code
-
-    ```python
-    class Solution:
-
-    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
-
-        for i in dominoes:
-
-            l=i[0]
-
-            r=i[1]
-
-            if(l>r):
-
-                i[0],i[1]=i[1],i[0]
-
-        dominoes.sort()
-
-        c=1
-
-        res=0
-
-        for i in range(1,len(dominoes)):
-
-            if(dominoes[i]==dominoes[i-1]):
-
-                c+=1
-
-            else:
-
-                res+=((c*(c-1))//2)
-
-                c=1
-
-        if(c>1):
-
-            res+=((c*(c-1))//2)
-
-        return res
-     
-    ```
-
-	**Efficient Method:**
-
-	```python
-class Solution:
-    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
-        num = [0]*100
-        res = 0
-        for x, y in dominoes:
-            val = x*10 + y if x >= y else y*10 + x
-            res += num[val]
-            num[val] += 1
-        return res
-```
-    
-    ---
-
-    ### ⏱ Time Complexity
-    - **O(n)**  
-    ### 🗃 Space Complexity
-    - **O(100)**
-
-    ---
-
-    ### 📚 Related Concepts and Topics
+	    ---
+	
+	
+	    ### ✅ Final Code
+	
+	    ```python
+	    class Solution:
+	
+	    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
+	
+	        for i in dominoes:
+	
+	            l=i[0]
+	
+	            r=i[1]
+	
+	            if(l>r):
+	
+	                i[0],i[1]=i[1],i[0]
+	
+	        dominoes.sort()
+	
+	        c=1
+	
+	        res=0
+	
+	        for i in range(1,len(dominoes)):
+	
+	            if(dominoes[i]==dominoes[i-1]):
+	
+	                c+=1
+	
+	            else:
+	
+	                res+=((c*(c-1))//2)
+	
+	                c=1
+	
+	        if(c>1):
+	
+	            res+=((c*(c-1))//2)
+	
+	        return res
+	     
+	    ```
+	
+		**Efficient Method:**
+	
+		```python
+	class Solution:
+	    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
+	        num = [0]*100
+	        res = 0
+	        for x, y in dominoes:
+	            val = x*10 + y if x >= y else y*10 + x
+	            res += num[val]
+	            num[val] += 1
+	        return res
+	```
+	    
+	    ---
+	
+	    ### ⏱ Time Complexity
+	    - **O(n)**  
+	    ### 🗃 Space Complexity
+	    - **O(100)**
+	
+	    ---
+	
+	    ### 📚 Related Concepts and Topics
