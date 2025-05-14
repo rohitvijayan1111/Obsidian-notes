@@ -611,3 +611,4 @@ maybe set of friends who call you out on your medum this number nine are you too
 
 rul 9:
 
+	All in ... No plan B
