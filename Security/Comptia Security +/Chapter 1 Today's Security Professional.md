@@ -24,6 +24,12 @@ This is an compensation control where if we can't meet the security objective du
 PCI DSS- is an rule made for managing details of customer credits for companies to adhere to these regulations
 
 ---
+### DAD TRIAD
+
+the risks could be intentional or intentional 
+
+![[Pasted image 20250515132618.png]]
+
 ###  CIA TRIAD
 
 ![[Pasted image 20250515100959.png]]
