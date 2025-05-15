@@ -56,3 +56,16 @@ PCI DSS- is an rule made for managing details of customer credits for companies 
 ![[Pasted image 20250515110059.png]]
 ![[Pasted image 20250515110247.png]]
 ![[Pasted image 20250515110313.png]]
+![[Pasted image 20250515110444.png]]
+
+---
+![[Pasted image 20250515110622.png]]
+![[Pasted image 20250515110739.png]]
+![[Pasted image 20250515110911.png]]
+![[Pasted image 20250515111039.png]]
+
+![[Pasted image 20250515111702.png]]
+
+![[Pasted image 20250515111708.png]]
+![[Pasted image 20250515111729.png]]
+![[Pasted image 20250515111737.png]]
