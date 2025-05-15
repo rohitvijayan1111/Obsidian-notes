@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM DESIGN/The start.md",
+                "file": "SYSTEM DESIGN/2)Load Balancing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The start"
+              "title": "2)Load Balancing"
             }
           },
           {
@@ -226,8 +226,13 @@
   },
   "active": "7215c88593f785c6",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20250515163344.png",
+    "SYSTEM DESIGN/1) Horizontal Vs Vertical Scaling.md",
+    "SYSTEM DESIGN/2)Load Balancing.md",
+    "assets/images/Pasted image 20250515161739.png",
+    "assets/images/Pasted image 20250515161621.png",
+    "assets/images/Pasted image 20250515161542.png",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
-    "SYSTEM DESIGN/The start.md",
     "assets/images/Pasted image 20250515153624.png",
     "Leetcode/Strings/Practice Questions.md",
     "Leetcode/Strings",
@@ -237,9 +242,6 @@
     "assets/images/Pasted image 20250515111708.png",
     "assets/images/Pasted image 20250515111702.png",
     "assets/images/Pasted image 20250515111341.png",
-    "assets/images/Pasted image 20250515111325.png",
-    "assets/images/Pasted image 20250515111039.png",
-    "assets/images/Pasted image 20250515110911.png",
     "Security/Comptia Security +/Resources that help.md",
     "Leetcode/Mathematical/questions to pratice.md",
     "Leetcode/Mathematical",
@@ -266,8 +268,6 @@
     "The winner mindest.md",
     "Leetcode/DP/PATTERNS.md",
     "Security/Resources/How to begin.md",
-    "Leetcode/Graphs/Popular Questions.md",
-    "SYSTEM DESIGN/Resources.md",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Security/Resources",
