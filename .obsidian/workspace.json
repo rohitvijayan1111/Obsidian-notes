@@ -6,58 +6,19 @@
       {
         "id": "fa565c1261adc842",
         "type": "tabs",
-        "dimension": 80.03355704697987,
         "children": [
-          {
-            "id": "d287973704e7e964",
-            "type": "leaf",
-            "state": {
-              "type": "planner-weekly",
-              "state": {},
-              "icon": "table-2",
-              "title": "May, 11–May, 13"
-            }
-          },
-          {
-            "id": "f7dadc87ac512a89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode/Resources/Patterns links.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Patterns links"
-            }
-          },
-          {
-            "id": "71a5b40b01394169",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Accountability/MAY 2025.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MAY 2025"
-            }
-          },
           {
             "id": "7215c88593f785c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/MY END GOAL.md",
+                "file": "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MY END GOAL"
+              "title": "Chapter 1 Today's Security Professional"
             }
           },
           {
@@ -89,24 +50,6 @@
               },
               "icon": "lucide-file",
               "title": "Untitled 1"
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "213bfbcf7add54fa",
-        "type": "tabs",
-        "dimension": 19.966442953020135,
-        "children": [
-          {
-            "id": "960132fe187131ba",
-            "type": "leaf",
-            "state": {
-              "type": "planner-weekly",
-              "state": {},
-              "icon": "table-2",
-              "title": "May, 14–May, 16"
             }
           }
         ]
@@ -264,8 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -282,53 +224,56 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ba07014027a0ea31",
+  "active": "7215c88593f785c6",
   "lastOpenFiles": [
-    "Leetcode/Array/Concepts.md",
-    "Leetcode/Array/Article on counting.md",
-    "Leetcode/Array/Counting Problems.md",
-    "Leetcode/Array/Couting problem flow chart.canvas",
-    "2025-05-13.md",
-    "Accountability/MY END GOAL.md",
-    "Security/Vulnerability.md",
+    "assets/images/Pasted image 20250515093910.png",
+    "assets/images/Pasted image 20250515092826.png",
+    "assets/images/Pasted image 20250515092804.png",
+    "assets/images/Pasted image 20250515092739.png",
+    "assets/images/Pasted image 20250515092647.png",
+    "assets/images/Pasted image 20250515092429.png",
+    "assets/images/Pasted image 20250515092225.png",
+    "assets/images/Pasted image 20250515091944.png",
+    "assets/images/Pasted image 20250515091713.png",
+    "assets/images/Pasted image 20250515091626.png",
+    "Security/Comptia Security +/Resources that help.md",
+    "Leetcode/Mathematical/questions to pratice.md",
+    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
+    "Leetcode/Mathematical",
     "SYSTEM DESIGN/System Design was HARD until I Learned these 30 Concepts.md",
+    "Security/Resources/Vulnerability.md",
+    "Security/Resources/Web application security.md",
+    "Accountability/MY END GOAL.md",
+    "assets/images/Pasted image 20250514120815.png",
+    "assets/images",
+    "assets",
+    "Security/Comptia Security +",
+    "Leetcode/Array/Counting Problems.md",
+    "Leetcode/Array/Two pointer.md",
+    "Leetcode/Array/Untitled.md",
+    "Leetcode/Array/Concepts.md",
+    "Leetcode/Array/BFS.md",
+    "Leetcode/Array/Article on counting.md",
+    "Accountability/MAY 2025.md",
+    "2025-05-14.md",
+    "2025-05-13.md",
+    "Leetcode/Resources/Patterns links.md",
+    "Leetcode/Array/Couting problem flow chart.canvas",
     "Linkedin search.md",
     "Untitled 1.md",
-    "Accountability/MAY 2025.md",
-    "Pasted image 20250512150835.png",
     "The winner mindest.md",
     "Leetcode/DP/PATTERNS.md",
-    "Leetcode/Resources/Patterns links.md",
     "Security/Resources/How to begin.md",
     "Leetcode/Graphs/Popular Questions.md",
     "SYSTEM DESIGN/Resources.md",
-    "Pasted image 20250511185858.png",
-    "Pasted image 20250511185801.png",
-    "Pasted image 20250511185456.png",
     "AWS/Welcome.md",
-    "Untitled.md",
-    "Topics to cover.md",
-    "My template to approach an problem.md",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
-    "Leetcode/Array/BFS.md",
-    "Security/Resources/Web application security.md",
-    "Security/Resources/CTF.md",
-    "Leetcode/Resources/DSA PLAN.md",
     "Security/Resources",
     "Security",
     "Leetcode/Resources",
-    "Pasted image 20250503091351.png",
-    "Minimum path, time etc.md",
-    "AWS/AWS-1.md",
-    "AWS/Pasted image 20250409211938.png",
     "SYSTEM DESIGN",
     "Leetcode/DP",
-    "Leetcode/Graphs",
-    "Leetcode/Recursion",
-    "Behavioral Questions",
-    "Pasted image 20250503090644.png",
-    "Leetcode/Binary Search",
-    "Accountability"
+    "Leetcode/Graphs"
   ]
 }
