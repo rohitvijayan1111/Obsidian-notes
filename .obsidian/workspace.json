@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topics to cover.md",
+                "file": "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Topics to cover"
+              "title": "Chapter 2 Cybersecurity Threat Landscape"
             }
           },
           {
@@ -209,6 +209,8 @@
   },
   "active": "ba07014027a0ea31",
   "lastOpenFiles": [
+    "Leetcode/Resources/Resources.md",
+    "Topics to cover.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Leetcode/Strings/Practice Questions.md",
@@ -249,8 +251,6 @@
     "Linkedin search.md",
     "Untitled 1.md",
     "The winner mindest.md",
-    "Leetcode/DP/PATTERNS.md",
-    "Security/Resources/How to begin.md",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Security/Resources",
