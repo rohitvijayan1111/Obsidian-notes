@@ -1,3 +1,13 @@
+- **Security objectives** (also called **security goals**) are the _desired outcomes_—what you want to achieve in terms of protecting information and systems. These typically include:
+    
+    - **Confidentiality** – preventing unauthorized access to information
+        
+    - **Integrity** – ensuring information is accurate and unaltered
+        
+    - **Availability** – ensuring information and systems are accessible when needed
+        
+- **Security controls** (also called **safeguards** or **countermeasures**) are the **methods, tools, or processes** you use to **implement and enforce** those security objectives.
+
 
 ### Security Controls - Categories & Types
 
@@ -75,3 +85,11 @@ the risks could be intentional or intentional
 ![[Pasted image 20250515111708.png]]
 ![[Pasted image 20250515111729.png]]
 ![[Pasted image 20250515111737.png]]
+
+
+## Acronyms:
+
+- PII- Personal Identifiable Information
+- HIPAA- Health insurance Portability and accountability act
+- PHI- protected health information
+- 

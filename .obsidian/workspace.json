@@ -11,17 +11,14 @@
             "id": "ba07014027a0ea31",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Leetcode/Array/Couting problem flow chart.canvas",
-                "viewState": {
-                  "x": -677.519621609671,
-                  "y": 183.19447688398915,
-                  "zoom": -1.1798569990597985
-                }
+                "file": "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Couting problem flow chart"
+              "icon": "lucide-file",
+              "title": "Chapter 2 Cybersecurity Threat Landscape"
             }
           },
           {
@@ -212,15 +209,17 @@
   },
   "active": "ba07014027a0ea31",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
+    "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
+    "Leetcode/Strings/Practice Questions.md",
+    "Leetcode/Array/Couting problem flow chart.canvas",
     "SYSTEM DESIGN/2)Load Balancing.md",
     "assets/images/Pasted image 20250515163344.png",
     "SYSTEM DESIGN/1) Horizontal Vs Vertical Scaling.md",
     "assets/images/Pasted image 20250515161739.png",
     "assets/images/Pasted image 20250515161621.png",
     "assets/images/Pasted image 20250515161542.png",
-    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "assets/images/Pasted image 20250515153624.png",
-    "Leetcode/Strings/Practice Questions.md",
     "Leetcode/Strings",
     "assets/images/Pasted image 20250515132618.png",
     "assets/images/Pasted image 20250515111737.png",
@@ -247,7 +246,6 @@
     "2025-05-14.md",
     "2025-05-13.md",
     "Leetcode/Resources/Patterns links.md",
-    "Leetcode/Array/Couting problem flow chart.canvas",
     "Linkedin search.md",
     "Untitled 1.md",
     "The winner mindest.md",
