@@ -1,3 +1,58 @@
+
+
+  
+𝟭. 𝗗𝗮𝘁𝗮 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲𝘀 𝗮𝗻𝗱 𝗔𝗹𝗴𝗼𝗿𝗶𝘁𝗵𝗺𝘀 (𝗗𝗦𝗔)  
+  
+• Arrays, Strings, Linked Lists  
+• Stacks, Queues, Deques  
+• HashMaps, HashSets  
+• Trees (Binary Trees, BST, Trie)  
+• Graphs (BFS, DFS, shortest path, cycle detection)  
+• Heaps / Priority Queues  
+• Sliding Window, Two Pointers, Backtracking  
+• Dynamic Programming (Tabulation, Memoization)  
+• Sorting & Searching (Binary Search variants)  
+  
+𝟮. 𝗖𝗼𝗿𝗲 𝗝𝗮𝘃𝗮 (𝗝𝗮𝘃𝗮 𝟴+)  
+  
+• OOP principles  
+• Collections framework (List, Map, Set, Queue)  
+• Concurrency and Multithreading  
+• Java Streams and Lambda expressions  
+• Functional Interfaces  
+• Exception handling  
+• Memory Management, Garbage Collection  
+• Design Patterns (Singleton, Factory, Strategy, etc.)  
+  
+𝟯. 𝗦𝗽𝗿𝗶𝗻𝗴 & 𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁  
+  
+• Spring Core  
+• Spring Boot (auto-configuration, starters, profiles)  
+• Spring MVC (REST APIs, controllers, exception handling)  
+• Validation, Logging, Caching  
+• Unit Testing (JUnit5, Mockito)  
+• Spring AOP  
+• Swagger/OpenAPI  
+• REST vs SOAP, Idempotency, API versioning  
+  
+𝟰. 𝗟𝗼𝘄-𝗟𝗲𝘃𝗲𝗹 𝗗𝗲𝘀𝗶𝗴𝗻 (𝗟𝗟𝗗)  
+  
+• Object-oriented design principles (SOLID, DRY, YAGNI)  
+• Design Patterns  
+• Class Diagrams, Sequence Diagrams  
+• Design real-world systems: Parking Lot, Elevator, Splitwise, BookMyShow, etc.  
+  
+𝟱. 𝗛𝗶𝗴𝗵-𝗟𝗲𝘃𝗲𝗹 𝗗𝗲𝘀𝗶𝗴𝗻 (𝗛𝗟𝗗)  
+  
+• Basics of distributed systems  
+• Load Balancing, Caching, Database Sharding  
+• Microservices architecture (communication, service discovery, circuit breakers)  
+• Messaging Queues (Kafka, RabbitMQ)  
+• Scalability, Availability, CAP Theorem  
+• Design problems: URL shortener, Rate limiter, WhatsApp, etc.
+
+
+
 Got you! 🚀  
 If you’re prepping for **coding interviews** — whether it's for internships, full-time roles, FAANG companies, startups, or even service-based companies — there’s a **core set of topics** you **must** master.
 
