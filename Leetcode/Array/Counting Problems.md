@@ -461,8 +461,226 @@
     ### 📚 Related Concepts and Topics
 		#countingsubarray #hashmap #prefixsums 
 		
+- [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given an integer array `nums` and an integer `k`, return _the number of non-empty **subarrays** that have a sum divisible by_ `k`.
+
+		A **subarray** is a **contiguous** part of an array.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - As soon as i saw the problem found this pattern similar to subarray sum equals k
+    - THE CORE IDEALOGY HERE IS, IF A REMAINDER GETS REPEATED IN AN INTERVAL, IT MEANS THAT AN SUBARRAY HAS EXISTED SUCH THAT THE SUM OF THE SUBARRAY IS EXACTLY DIVISIBLE BY K
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+		NA
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - always check if transformation can be done.
+    - But for this question can't be done
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - MAKE SURE TO INITIALIZE THE DICTIONARY WITH 0:1(IE SUM 0 WITH COUNT 1 EXISTS).
+    - then iterate over the array, and check if remainder of the current sum existed before.
+    - if so then check the dictionary , and the count of that remainder will be the number of subarrays that could be formed that is div by k so far while including the current index.
+    - increment the count of the current mod
+    
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+
+    def subarraysDivByK(self, nums: List[int], k: int) -> int:
+
+        d={0:1}
+
+        count=0
+
+        sums=0
+
+        for i,j in enumerate(nums):
+
+            sums+=j
+
+            mod=sums%k
+
+            if(mod in d):
+
+                count+=d[mod]
+
+            d[mod]=d.get(mod,0)+1
+
+        return count
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)**
+
+    ### 🗃 Space Complexity
+    -You're also right to think the **space complexity can approach O(n)** in a worst-case scenario.
+	
+	Let’s dig deeper:
+	
+	- The dictionary `d` holds keys that are remainders of the **cumulative sum modulo `k`**, i.e., `sums % k`.
+	    
+	- So, theoretically, the number of **distinct keys** in `d` can be **at most `k`**, since any number mod `k` can only have `k` distinct values: `0, 1, ..., k-1`.
+	    
+	- Therefore, in **most practical and typical cases**, the **space complexity is O(k)** — not O(n).
+	
+	    ---
+
+    ### 📚 Related Concepts and Topics
 
 
+- [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a binary array `nums` and an integer `goal`, return _the number of non-empty **subarrays** with a sum_ `goal`.
+
+		A **subarray** is a contiguous part of the array.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - SIMILAR TO SUBARRAY SUM EQUALS K
+      
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+
+    ### 🗃 Space Complexity
+    - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+
+- [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a binary array `nums`, return _the maximum length of a contiguous subarray with an equal number of_ `0` _and_ `1`.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    -  Knew that this could be solved using prefifx sum and hashmap
+    - BUT COULDN'T FIGURE OUT THAT THE ARRAY NEEDS TO BE TRANSFORMED
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+  
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    -  Transform the 0 to  negative 1 and when ever we get an subarray 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+
+    def findMaxLength(self, nums: List[int]) -> int:
+
+        d={0:-1}
+
+        transform=[-1 if i==0 else 1 for i in nums]
+
+        sums=0
+
+        mx=0
+
+        for j,i in enumerate(transform):
+
+            sums+=i
+
+            if(sums in d):
+
+                mx=max(mx,j-d[sums])
+
+            else:
+
+                d[sums]=j
+
+        return mx
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+
+    ### 🗃 Space Complexity
+    - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
 
 ## Prefix Sum
 
@@ -751,3 +969,8 @@ class Solution:
 	    ---
 	
 	    ### 📚 Related Concepts and Topics
+
+
+
+## Monotonic Queue
+

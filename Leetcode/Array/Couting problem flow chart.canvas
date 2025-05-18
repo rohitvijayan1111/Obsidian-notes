@@ -8,10 +8,10 @@
 		{"id":"a31fc6dd2439e877","type":"text","text":"Montonic Stack","x":492,"y":163,"width":250,"height":60},
 		{"id":"8ca56dd7961a5807","type":"text","text":"Monotonic Queue(sliding window maximum)","x":800,"y":163,"width":250,"height":60},
 		{"id":"ab45823b4e8e40f6","type":"text","text":"Segment Trees / Fenwick Trees","x":1151,"y":160,"width":250,"height":60},
-		{"id":"c8b707b8cfc37e30","type":"text","text":"Check if the sum already exists and find the length/ count","x":-1520,"y":451,"width":250,"height":60},
-		{"id":"0bd1c4005b162da0","type":"text","text":"Check if it can be transformed to  simplify the problem\n","x":-1351,"y":260,"width":272,"height":103},
 		{"id":"c18dc71407dc1463","type":"text","text":"Prefix Sum with hash ","x":-1340,"y":160,"width":250,"height":60},
-		{"id":"5944c53203c60c27","type":"text","text":"Prefix Sum","x":-1040,"y":167,"width":250,"height":60}
+		{"id":"5944c53203c60c27","type":"text","text":"Prefix Sum","x":-1040,"y":167,"width":250,"height":60},
+		{"id":"0bd1c4005b162da0","type":"text","text":"Check if it can be transformed to  simplify the problem\n","x":-1520,"y":300,"width":272,"height":103},
+		{"id":"c8b707b8cfc37e30","type":"text","text":"Check if the sum already exists and find the length/ count","x":-1340,"y":520,"width":250,"height":80}
 	],
 	"edges":[
 		{"id":"5beccdb576023ec7","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"c18dc71407dc1463","toSide":"top"},
@@ -24,6 +24,7 @@
 		{"id":"94b51c9806664bae","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"40bb1e90686ff372","toSide":"top"},
 		{"id":"0221db4062015663","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"a31fc6dd2439e877","toSide":"top"},
 		{"id":"ad06cd699a0d1f57","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"8ca56dd7961a5807","toSide":"top"},
-		{"id":"6ee47a4cd4f51ae3","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"ab45823b4e8e40f6","toSide":"top"}
+		{"id":"6ee47a4cd4f51ae3","fromNode":"5ea6d26a22fccaac","fromSide":"bottom","toNode":"ab45823b4e8e40f6","toSide":"top"},
+		{"id":"02adb6a57ad829cd","fromNode":"c18dc71407dc1463","fromSide":"bottom","toNode":"c8b707b8cfc37e30","toSide":"top"}
 	]
 }
