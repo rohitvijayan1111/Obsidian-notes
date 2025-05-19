@@ -287,3 +287,155 @@ def inorderTraversal(root):
     - Process (`print`) it.
         
     - Move to its **right** subtree and repeat the process.
+
+
+# Postorder - ⭐⭐⭐ 
+
+## Without recursion
+
+``` 
+def postorderTraversal(root):
+    if root is None:
+        return
+
+    stack1 = [root]
+    stack2 = []
+
+    while stack1:
+        node = stack1.pop()
+        stack2.append(node)
+
+        if node.left:
+            stack1.append(node.left)
+        if node.right:
+            stack1.append(node.right)
+
+    # Reverse of Root → Right → Left is Left → Right → Root (postorder)
+    while stack2:
+        print(stack2.pop().data)
+
+```
+
+
+
+# Level order traversal
+
+- Use an deque
+- for each level process it and add it's children
+ ```
+ class Solution:
+
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+
+        if(not root):
+
+            return
+
+        res=[]
+
+        queue=deque([root])
+
+        while queue:
+
+            level=[]
+
+            n=len(queue)
+
+            for i in range(n):
+
+                z=queue.popleft()
+
+                if(z.left):queue.append(z.left)
+
+                if(z.right):queue.append(z.right)
+
+                level.append(z.val)
+
+            res.append(level)
+
+        return res
+
+
+```
+
+
+- [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given the `root` of a binary tree, return _its maximum depth_.
+
+	A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - Basic recursion, exploring the left and the right subtree and returning the max path
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    # Definition for a binary tree node.
+
+# class TreeNode:
+
+#     def __init__(self, val=0, left=None, right=None):
+
+#         self.val = val
+
+#         self.left = left
+
+#         self.right = right
+
+class Solution:
+
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+
+        def helper(root):
+
+            if(not root):
+
+                return 0
+
+            left=helper(root.left)
+
+            right=helper(root.right)
+
+            return 1+max(left,right)
+
+        return helper(root)
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** —alll nodes are explored once
+
+    ### 🗃 Space Complexity
+    - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
