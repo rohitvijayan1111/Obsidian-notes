@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2c553b8bfb15af18",
+        "id": "d6a437bbc990f440",
         "type": "tabs",
         "children": [
           {
-            "id": "eb20071a57c04ffc",
+            "id": "f581b16bdece9150",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
+                "file": "Leetcode/Binary search tree/Everything you need to know.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1)Introduction to LLD . How to Approach LLD Problems in an Interview"
+              "title": "Everything you need to know"
             }
           }
         ]
@@ -108,6 +108,20 @@
             }
           },
           {
+            "id": "eb20071a57c04ffc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          },
+          {
             "id": "9c4aa642b30ed91f",
             "type": "leaf",
             "state": {
@@ -186,11 +200,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 234.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,8 +221,17 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "eb20071a57c04ffc",
+  "active": "f581b16bdece9150",
   "lastOpenFiles": [
+    "Leetcode/Binary search tree/Random Problems.md",
+    "Leetcode/Binary search tree/Everything you need to know.md",
+    "AWS/Welcome.md",
+    "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
+    "Leetcode/Binary search tree",
+    "Leetcode/Tree/Random Problems.md",
+    "Leetcode/Tree/Lec 1-Traversals.md",
+    "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
+    "Leetcode/Untitled",
     "assets/images/Pasted image 20250519163155.png",
     "assets/images/Pasted image 20250519163121.png",
     "assets/images/Pasted image 20250519163017.png",
@@ -219,13 +242,10 @@
     "assets/images/Pasted image 20250519162204.png",
     "assets/images/Pasted image 20250519162045.png",
     "assets/images/Pasted image 20250519162012.png",
-    "assets/images/Pasted image 20250519161839.png",
-    "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
     "SYSTEM DESIGN/LLD",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
     "Leetcode/Array/Counting Problems.md",
-    "AWS/Welcome.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Array/Concepts.md",
     "Accountability/MAY 2025.md",
@@ -243,11 +263,7 @@
     "Untitled 1.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Leetcode/Resources/Resources.md",
-    "Leetcode/Strings/Practice Questions.md",
-    "SYSTEM DESIGN/2)Load Balancing.md",
-    "SYSTEM DESIGN/1) Horizontal Vs Vertical Scaling.md",
     "Leetcode/Strings",
-    "Security/Comptia Security +/Resources that help.md",
     "Leetcode/Mathematical",
     "assets/images",
     "assets",
@@ -255,8 +271,6 @@
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Security/Resources",
-    "Security",
-    "Leetcode/Resources",
-    "SYSTEM DESIGN"
+    "Security"
   ]
 }
