@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fb199a3adcd87644",
+        "id": "2c553b8bfb15af18",
         "type": "tabs",
         "children": [
           {
-            "id": "4aea11ae4c33c055",
+            "id": "eb20071a57c04ffc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Chapter 2 Cybersecurity Threat Landscape"
+              "title": "New tab"
             }
           }
         ]
@@ -207,8 +203,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "4aea11ae4c33c055",
+  "active": "eb20071a57c04ffc",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
     "assets/images/Pasted image 20250519073409.png",
     "assets/images/Pasted image 20250519073351.png",
@@ -238,7 +235,6 @@
     "Untitled.md",
     "Untitled 1.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
-    "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Leetcode/Resources/Resources.md",
     "Leetcode/Strings/Practice Questions.md",
     "SYSTEM DESIGN/2)Load Balancing.md",
