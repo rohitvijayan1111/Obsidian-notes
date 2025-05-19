@@ -313,5 +313,334 @@ Shadow IT is usually **not malicious** in nature. Employees turn to unapproved t
 
 ##  Threat Vectors and Attack Surfaces
 
+- **Attack Surface**: The total sum of all points in an organization’s system that are exposed and could be exploited by an attacker. These include hardware, software, and network configurations that have vulnerabilities.
+    
+- **Threat Vector**: The path or method used by attackers to gain unauthorized access to a system or network.
 
+### 1. 📧 **Message-Based Threat Vectors**
+
+- **Email** is the most common entry point.
+    
+    - **Phishing**: Trick users into giving credentials.
+        
+    - **Spam/Malware Attachments**: Carry malicious code.
+        
+- **SMS & IM**: Can be used for **smishing** (SMS phishing) and attacks via messaging apps.
+    
+- **Vishing**: Phone calls attempting to trick victims.
+    
+- **Social Media**: Used to gather personal info for targeted attacks (e.g., spear-phishing).
+    
+
+---
+
+### 2. 🔌 **Wired Networks**
+
+- **Physical Access**:
+    
+    - Attackers might plug into exposed Ethernet jacks in public areas (e.g., lobbies).
+        
+    - May use **unattended terminals** or **network equipment**.
+        
+- **Physical Security** is critical, as physical access often leads to full system compromise.
+    
+
+---
+
+### 3. 📶 **Wireless Networks**
+
+- Attackers can sit in parking lots to access unsecured Wi-Fi.
+    
+- **Risks**:
+    
+    - Open or weakly secured Wi-Fi.
+        
+    - **Bluetooth devices** with poor security.
+        
+- Wireless networks expand the attack surface beyond the building.
+    
+
+---
+
+### 4. 🖥️ **Systems**
+
+- Each endpoint (e.g., PC, server) is a potential threat vector.
+    
+- **Risks**:
+    
+    - Unpatched software.
+        
+    - Default credentials.
+        
+    - Open ports/services not required for business.
+        
+    - Legacy systems no longer supported by vendors.
+        
+
+---
+
+### 5. 🗂️ **Files and Images**
+
+- Files (e.g., PDFs, images, Office docs) may have **embedded malware**.
+    
+- Users can be tricked into opening malicious files via email, USBs, or downloads.
+    
+
+---
+
+### 6. 💾 **Removable Devices**
+
+- USB drives are often used to **deliver malware**.
+    
+- **Example Attack**: Leaving USBs in public places hoping someone will plug them in.
+    
+- Once inserted, malware can be executed automatically and compromise the system.
+    
+
+---
+
+### 7. ☁️ **Cloud Services**
+
+- Attackers look for:
+    
+    - Misconfigured permissions.
+        
+    - Exposed APIs or credentials.
+        
+    - Unsecured storage (e.g., open AWS S3 buckets).
+        
+- **Cloud platforms** need dedicated security controls distinct from traditional IT systems.
+    
+
+---
+
+### 8. 🔗 **Supply Chain**
+
+- Attackers target third-party vendors (hardware, software, or services).
+    
+- **Attack Methods**:
+    
+    - Inserting backdoors during manufacturing.
+        
+    - Compromising software updates.
+        
+    - Exploiting relationships between MSPs and their clients.
+        
+- **Example**: The SolarWinds attack, where attackers used software updates to infiltrate clients.
+    
+    A **Managed Service Provider (MSP)** is a **third-party company** that **manages and maintains your IT systems or services for you**, usually for a monthly fee.
+---
 ## Threat Data and Intelligence
+
+**Threat intelligence** refers to the **gathering, analysis, and sharing of information** about current and emerging cyber threats. The purpose is to help organizations:
+
+- Understand potential threats.
+    
+- Predict and prevent attacks.
+    
+- Detect ongoing threats.
+    
+- Strengthen their overall security posture.
+
+
+### 1. **Sources of Threat Intelligence**
+
+There are several categories:
+
+- **Open Source Intelligence (OSINT)**:  
+    Publicly available data from blogs, news, forums, GitHub, social media, and security community reports.
+    
+    - Pros: Free and accessible.
+        
+    - Cons: May be unverified or outdated.
+        
+- **Commercial/Proprietary Intelligence Services**:  
+    Paid services offering curated and often exclusive threat data.
+    
+    - Pros: Reliable, regularly updated, often enriched with analysis.
+        
+    - Examples: Recorded Future, FireEye, CrowdStrike, Palo Alto Networks, etc.
+        
+- **Threat Feeds**:  
+    Machine-readable data streams providing real-time or near-real-time indicators of threats.
+    
+
+---
+
+### 2. **Content of Threat Intelligence**
+
+Threat intelligence often includes **technical and contextual information**, such as:
+
+#### 🔧 Technical Indicators (Indicators of Compromise – IoCs)
+
+- **IP addresses** (e.g., from malicious servers).
+    
+- **Hostnames / domains** used in phishing or malware.
+    
+- **Email addresses** of attackers.
+    
+- **URLs** hosting malware or scam pages.
+    
+- **File hashes** (MD5, SHA256) of known malicious files.
+    
+- **File paths** associated with malware.
+    
+- **CVEs (Common Vulnerabilities and Exposures)**: Unique identifiers for known vulnerabilities.
+    
+
+#### 📚 Contextual Details
+
+- **Who** is behind the threat? (e.g., APT group, hacktivists, criminal gangs)
+    
+- **What** are they targeting?
+    
+- **Why** are they attacking? (e.g., financial gain, espionage, ideological reasons)
+    
+- **How** are they carrying out the attacks? (TTPs - Tactics, Techniques, Procedures)
+    
+
+---
+
+### 3. **Use Cases for Threat Intelligence**
+
+- **Preventive Defense**: Anticipate and block known bad IPs or domains.
+    
+- **Incident Detection**: Use IoCs in intrusion detection systems (IDS), SIEMs, or EDR tools to spot compromise.
+    
+- **Threat Hunting**: Proactively search for signs of threats in your systems based on intelligence.
+    
+- **Risk Assessment**: Understand which threats are most relevant to your organization or industry.
+    
+- **Patch Prioritization**: Use CVE info to patch high-risk vulnerabilities first.
+
+
+
+TERMS TO KNOW:;
+Indicators of Compromise – IoCs- an indication that is set up to check whether any compromise has happened. it checks if the vulnerability conditions are met-file signatures, log patterns, file and code repositories
+
+Open source Threat intelligence 
+- CVE -Common Vulnerabilities and Exposures
+- Open Source Intelligence (OSINT)
+- OSINT (Open Source Intelligence)
+- CISA (cybersecurity and infrastructure security agency 
+- AIS (Automated Indicator Sharing) 
+- Microsoft’s threat intelligence 
+- Cisco Security Advisories
+- 
+
+### 🔍 Role of Threat Intelligence on the Dark Web
+
+**Security and threat intelligence teams** should actively monitor the dark web for:
+
+- **Leaked credentials** (emails, passwords) belonging to employees or customers.
+    
+- Mentions of the **organization’s name, domain, or IP ranges**.
+    
+- **Discussions about potential attacks** targeting their industry or company.
+    
+- **Breach evidence**, such as internal documents or source code appearing on forums.
+
+
+## Proprietary  and Closed- Source Intelligence
+
+### 🔒 What Is Proprietary or Closed-Source Threat Intelligence?
+
+Proprietary (or **closed-source**) threat intelligence is data collected, analyzed, and curated **privately** by:
+
+- **Commercial security vendors**
+    
+- **Government agencies**
+    
+- **Specialized cybersecurity firms**
+    
+
+This type of intelligence is **not publicly available**, and organizations often treat it as a **trade secret** or **paid service**.
+
+### Key Characteristics:
+
+- Uses **internal tools and methods** (often undisclosed).
+    
+- May include **custom threat detection**, **unique malware signatures**, or **early alerts**.
+    
+- Often **licensed or sold** as part of premium cybersecurity solutions.
+    
+
+---
+
+### 🤐 Why Keep It Closed?
+
+Organizations might choose to keep this intelligence closed for several reasons:
+
+1. **Confidentiality**: To keep threat actors from adapting or avoiding detection.
+    
+2. **Competitive Advantage**: It's their **unique product** in the marketplace.
+    
+3. **Revenue Generation**: They **sell** this data or offer it as part of **subscription services**.
+    
+4. **Source Protection**: Revealing how the data is gathered could compromise sensitive collection methods.
+    
+
+---
+
+### 💼 Why Use Proprietary Intelligence?
+
+While **open-source threat feeds** (public and free) are widely available, they can be:
+
+- **Overwhelming in volume**
+    
+- **Difficult to validate**
+    
+- **Time-consuming** to sort, analyze, and apply correctly
+    
+
+Closed-source feeds are often **pre-filtered**, **prioritized**, and **verified**, offering:
+
+- **Faster detection**
+    
+- **Actionable intelligence**
+    
+- **Tailored insights**
+    
+
+---
+
+### 🚨 What Happens When a Threat Feed Fails?
+
+The passage provides a **real-world example** where a proprietary feed failed:
+
+- A vendor **promised timely updates** but was **slow** in reacting to a **critical Microsoft vulnerability**.
+    
+- Exploits for the vulnerability appeared **within 48 hours**, but the vendor **didn't release detection rules for two weeks**.
+    
+- Their system was also **difficult to update manually**, leaving the customer **vulnerable** to attacks.
+    
+
+🔑 **Lesson**: Always use **reliable**, **timely**, and **flexible** threat feeds. If possible, **subscribe to multiple feeds** to cross-check and ensure coverage.
+
+---
+
+### 🗺️ What Are Threat Maps?
+
+**Threat maps** are visual tools provided by many security vendors to show **real-time attack data** across the world.
+
+For example:
+
+- 🌐 [Check Point Threat Map](https://threatmap.checkpoint.com)
+    
+
+### Uses:
+
+- Helps understand **attack trends and volume**
+    
+- Offers **geographic insight** into where threats originate
+    
+- Can inform **defensive priorities** (e.g., blocking IP ranges)
+    
+
+⚠️ **Caution**: Geographic threat data can be **misleading**, because attackers often:
+
+- Route attacks through **compromised servers**
+    
+- Use **cloud services or proxies**
+    
+- Mask their **true locations**
