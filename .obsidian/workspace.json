@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Array/Counting Problems.md",
+                "file": "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Counting Problems"
+              "title": "1.2 Summarize fundamental security concepts"
             }
           }
         ]
@@ -186,7 +186,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -209,8 +209,20 @@
   },
   "active": "4aea11ae4c33c055",
   "lastOpenFiles": [
-    "AWS/Welcome.md",
+    "assets/images/Pasted image 20250519071701.png",
+    "assets/images/Pasted image 20250519071617.png",
+    "assets/images/Pasted image 20250519071455.png",
+    "assets/images/Pasted image 20250519071428.png",
+    "assets/images/Pasted image 20250519065030.png",
+    "assets/images/Pasted image 20250519064835.png",
+    "assets/images/Pasted image 20250519064824.png",
+    "assets/images/Pasted image 20250519064752.png",
+    "assets/images/Pasted image 20250519064135.png",
+    "assets/images/Pasted image 20250519064111.png",
+    "assets/images/Pasted image 20250519064033.png",
     "Leetcode/Array/Counting Problems.md",
+    "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
+    "AWS/Welcome.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Array/Concepts.md",
     "Accountability/MAY 2025.md",
@@ -231,23 +243,11 @@
     "Leetcode/Resources/Resources.md",
     "Leetcode/Strings/Practice Questions.md",
     "SYSTEM DESIGN/2)Load Balancing.md",
-    "assets/images/Pasted image 20250515163344.png",
     "SYSTEM DESIGN/1) Horizontal Vs Vertical Scaling.md",
-    "assets/images/Pasted image 20250515161739.png",
-    "assets/images/Pasted image 20250515161621.png",
-    "assets/images/Pasted image 20250515161542.png",
-    "assets/images/Pasted image 20250515153624.png",
     "Leetcode/Strings",
-    "assets/images/Pasted image 20250515132618.png",
-    "assets/images/Pasted image 20250515111737.png",
-    "assets/images/Pasted image 20250515111729.png",
-    "assets/images/Pasted image 20250515111708.png",
-    "assets/images/Pasted image 20250515111702.png",
     "Security/Comptia Security +/Resources that help.md",
     "Leetcode/Mathematical/questions to pratice.md",
     "Leetcode/Mathematical",
-    "Security/Resources/Vulnerability.md",
-    "Security/Resources/Web application security.md",
     "assets/images",
     "assets",
     "Security/Comptia Security +",

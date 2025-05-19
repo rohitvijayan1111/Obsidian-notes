@@ -1,4 +1,7 @@
+### ARTICLES REFERED:
 
+- https://leetcode.com/discuss/post/5284478/subarray-sum-patterns-by-nobleknight-h4ly/
+- https://leetcode.com/discuss/post/1353000/link-to-subarray-problems-for-practice-b-tnp1/
 ## Montonic Stack        
 - **2799. Count Complete Subarrays in an Array** [🔗](https://leetcode.com/problems/count-complete-subarrays-in-an-array/)
     
@@ -622,7 +625,8 @@
     ---
 
     ### ❌ Mistakes Made
-    - 
+    - I THOUGHT ONLY SUMS=0 MUST BE CONSIDERED
+    - BUT WE MUST CONSIDER SUBARRAY WHERE THE PREFIX SUM VALUE REAPPEARS
     - Here's the problematic sketch:
       ```python
   
@@ -631,7 +635,8 @@
     ---
 
     ### ✅ Key Takeaways
-    - 
+    - In transforming technique ensure to transform , the current elements or part of elements
+    - in this questions we transform the 0 to -1, and check wherever the same sum occurs
 
     ---
 
@@ -673,10 +678,9 @@
     ---
 
     ### ⏱ Time Complexity
-    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
-
+    - **O(n)** — 
     ### 🗃 Space Complexity
-    - **O(1)** — constant space; only counters used.
+    - **O(N)** —
 
     ---
 
