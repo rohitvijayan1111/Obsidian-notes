@@ -390,51 +390,120 @@ def postorderTraversal(root):
     ---
 
     ### 🧭 Step-by-Step Approach
-    - 
+
     ---
 
     ### ✅ Final Code
 
-    ```python
-    # Definition for a binary tree node.
-
-# class TreeNode:
-
-#     def __init__(self, val=0, left=None, right=None):
-
-#         self.val = val
-
-#         self.left = left
-
-#         self.right = right
-
-class Solution:
-
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
-
-        def helper(root):
-
-            if(not root):
-
-                return 0
-
-            left=helper(root.left)
-
-            right=helper(root.right)
-
-            return 1+max(left,right)
-
-        return helper(root)
-     
-    ```
-
-    ---
+	    ```python
+	    # Definition for a binary tree node.
+	
+	# class TreeNode:
+	
+	#     def __init__(self, val=0, left=None, right=None):
+	
+	#         self.val = val
+	
+	#         self.left = left
+	
+	#         self.right = right
+	
+	class Solution:
+	
+	    def maxDepth(self, root: Optional[TreeNode]) -> int:
+	
+	        def helper(root):
+	
+	            if(not root):
+	
+	                return 0
+	
+	            left=helper(root.left)
+	
+	            right=helper(root.right)
+	
+	            return 1+max(left,right)
+	
+	        return helper(root)
+	     
+	    ```
+	
+	    ---
 
     ### ⏱ Time Complexity
     - **O(n)** —alll nodes are explored once
 
     ### 🗃 Space Complexity
     - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+
+
+- [### Mirror Tree](https://www.geeksforgeeks.org/problems/mirror-tree/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a binary tree, convert the binary tree to its Mirror tree.
+
+	Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - i could see that we need to just swap the left and the right
+    - do recursively and swap it.
+    - first swap the bottom level nodes , then swap the higher nodes
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+    #Function to convert a binary tree into its mirror tree.
+    def mirror(self, root):
+        # Code here
+        if(not root):
+            return
+        left=self.mirror(root.left)
+        right=self.mirror(root.right)
+        root.left=right
+        root.right=left
+        return root
+
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - O(n)	Each node is visited once
+
+    ### 🗃 Space Complexity
+    - Space Complexity	O(h)	Due to recursion stack
+    - Auxiliary Space	O(h)	Same as space (no extra DS
 
     ---
 
