@@ -270,7 +270,7 @@ The Threat of Shadow IT
 
 It’s called _“shadow”_ because it operates **outside the visibility and control** of the sanctioned IT infrastructure—**in the shadows**.
 
-## 🧑‍💻 Why Does Shadow IT Happen?
+### 🧑‍💻 Why Does Shadow IT Happen?
 
 Shadow IT is usually **not malicious** in nature. Employees turn to unapproved tools because:
 
@@ -288,7 +288,7 @@ Shadow IT is usually **not malicious** in nature. Employees turn to unapproved t
 - A marketing team signs up for **Canva Pro** or **Google Analytics** without going through IT.
 
 
-Here’s a **list of attacker motivations**:
+##   **List of attacker motivations**:
 
 1. **Data Exfiltration** – Stealing sensitive or proprietary information
     
@@ -310,3 +310,8 @@ Here’s a **list of attacker motivations**:
     
 10. **War (Cyber Warfare)** – Gaining military or strategic advantage during conflicts
 
+
+##  Threat Vectors and Attack Surfaces
+
+
+## Threat Data and Intelligence
