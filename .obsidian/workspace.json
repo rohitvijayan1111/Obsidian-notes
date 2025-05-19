@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
+                "file": "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.2 Summarize fundamental security concepts"
+              "title": "Chapter 2 Cybersecurity Threat Landscape"
             }
           }
         ]
@@ -209,19 +209,18 @@
   },
   "active": "4aea11ae4c33c055",
   "lastOpenFiles": [
-    "assets/images/Pasted image 20250519071701.png",
-    "assets/images/Pasted image 20250519071617.png",
-    "assets/images/Pasted image 20250519071455.png",
-    "assets/images/Pasted image 20250519071428.png",
-    "assets/images/Pasted image 20250519065030.png",
-    "assets/images/Pasted image 20250519064835.png",
-    "assets/images/Pasted image 20250519064824.png",
-    "assets/images/Pasted image 20250519064752.png",
-    "assets/images/Pasted image 20250519064135.png",
-    "assets/images/Pasted image 20250519064111.png",
-    "assets/images/Pasted image 20250519064033.png",
-    "Leetcode/Array/Counting Problems.md",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
+    "assets/images/Pasted image 20250519073409.png",
+    "assets/images/Pasted image 20250519073351.png",
+    "assets/images/Pasted image 20250519073338.png",
+    "assets/images/Pasted image 20250519073318.png",
+    "assets/images/Pasted image 20250519073101.png",
+    "assets/images/Pasted image 20250519072929.png",
+    "assets/images/Pasted image 20250519072837.png",
+    "assets/images/Pasted image 20250519072658.png",
+    "assets/images/Pasted image 20250519071859.png",
+    "assets/images/Pasted image 20250519071701.png",
+    "Leetcode/Array/Counting Problems.md",
     "AWS/Welcome.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Array/Concepts.md",
