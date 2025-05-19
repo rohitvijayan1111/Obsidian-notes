@@ -286,3 +286,27 @@ Shadow IT is usually **not malicious** in nature. Employees turn to unapproved t
 - An employee uses their **personal Dropbox account** to sync work documents between devices.
     
 - A marketing team signs up for **Canva Pro** or **Google Analytics** without going through IT.
+
+
+Here’s a **list of attacker motivations**:
+
+1. **Data Exfiltration** – Stealing sensitive or proprietary information
+    
+2. **Espionage** – Spying on organizations or governments
+    
+3. **Service Disruption** – Interrupting or taking down critical systems
+    
+4. **Blackmail/Extortion** – Forcing victims to pay or comply through threats
+    
+5. **Financial Gain** – Theft or fraud for profit
+    
+6. **Philosophical/Political Beliefs** – Promoting a cause or ideology (e.g., hacktivism)
+    
+7. **Ethical Hacking** – Identifying vulnerabilities to improve security (white-hat)
+    
+8. **Revenge** – Retaliation by disgruntled insiders or individuals
+    
+9. **Disruption/Chaos** – Causing instability or confusion for fun or notoriety
+    
+10. **War (Cyber Warfare)** – Gaining military or strategic advantage during conflicts
+
