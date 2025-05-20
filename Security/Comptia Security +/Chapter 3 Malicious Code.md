@@ -1122,14 +1122,17 @@ Let me know and I’ll create it!
 
 # Comparison 
 
-| Malware    | what it does                                                                                                                                             | Types                                                                                                                                                                                     | How it speads                                                                                                                                                                                                                                                                               | Detection/IoC                                                                                                                                     | Response/Mitigations                                                                                                                                        | HUMAN INTERACTION                                             |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Ransomware | that **locks or encrypts** a victim’s files or entire system and then **demands a ransom**,spreads to other computer                                     | i)encryption of file<br>ii)legal action for pornography/ piracy<br>iii) threat to leak sensitive content                                                                                  | i)email<br>ii)RDP<br>iii)exploiting vulnerabilities<br>Iv)Drive by download                                                                                                                                                                                                                 | i)Lateral movement<br>ii) COmmand and control traffic<br>iii)abnormal usage of legitimate resources<br>iv)file encyption<br>v)Large data transfer | i)Backup in an environment that is not connect to the current one(so that it doesnt spread)                                                                 |                                                               |
-| Trojan     | acts as an legitimate resource but does some malicious activity ,<br>requires human interactions                                                         | i)RAT- Remote access trojan - that is capable of accessing system remotely<br><br>Normal RA system might be detected false positively but don't disable it, if disabled can't be detected | i)                                                                                                                                                                                                                                                                                          | i)command and control<br>ii)unusual files<br>iii)Specific file or malware **signatures**<br>iv) suspicious network traffic                        | i)EDR- endpoint detection and response- detects if an suspicious activity in endpoint -servers, laptops etc<br><br>ii)antivirus <br><br>iii) user awareness | require human interaction                                     |
-| Worms      | A **worm** is a type of malware that can **self-replicate and spread** without any user actio                                                            |                                                                                                                                                                                           | - **Email attachments**<br>    <br>- **Network file shares**<br>    <br>- **Infected USB drives**<br>    <br>- **Exploiting vulnerable devices** (e.g., unpatched computers, IoT devices, smartphones)<br>    <br>- **Misused built-in tools** (e.g., PowerShell, `cmd.exe`, `msiexec.exe`) | i)known malicious files<br>ii)unexpected download<br>iii)C&C<br>Iv)Sign of attackers                                                              | i)IPS<br>ii)network segmentation<br>Iii)firewall<br>iv)patching<br>v)EDR<br>                                                                                | doesn;t need human interaction,<br><br>Often **self-install** |
-| Spyware    | **gather information** about a person, organization, or system **without their knowledge or consent**.,<br><br>DOesnt cause disruption but collects data | i)Adware<br>Ii)Keylogger<br>iii)System monitors<br>iv)Stalkerware<br>v)                                                                                                                   |                                                                                                                                                                                                                                                                                             | - connection to remote servers<br><br>-known malicious hash/ signature<br><br>-browser injection behaviour                                        | - EDR,anitvirus, user awarness,<br><br>application whitelisting<br>                                                                                         |                                                               |
-|            |                                                                                                                                                          |                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                             |                                                                                                                                                   |                                                                                                                                                             |                                                               |
-|            |                                                                                                                                                          |                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                             |                                                                                                                                                   |                                                                                                                                                             |                                                               |
+| Malware     | what it does                                                                                                                                                                                                                                                                                                                                    | Types                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | How it speads                                                                                                                                                                                                                                                                               | Detection/IoC                                                                                                                                                                                                                                            | Response/Mitigations                                                                                                                                        | HUMAN INTERACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ransomware  | that **locks or encrypts** a victim’s files or entire system and then **demands a ransom**,spreads to other computer                                                                                                                                                                                                                            | i)encryption of file<br>ii)legal action for pornography/ piracy<br>iii) threat to leak sensitive content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | i)email<br>ii)RDP<br>iii)exploiting vulnerabilities<br>Iv)Drive by download                                                                                                                                                                                                                 | i)Lateral movement<br>ii) COmmand and control traffic<br>iii)abnormal usage of legitimate resources<br>iv)file encyption<br>v)Large data transfer                                                                                                        | i)Backup in an environment that is not connect to the current one(so that it doesnt spread)                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Trojan      | acts as an legitimate resource but does some malicious activity ,<br>requires human interactions                                                                                                                                                                                                                                                | i)RAT- Remote access trojan - that is capable of accessing system remotely<br><br>Normal RA system might be detected false positively but don't disable it, if disabled can't be detected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | i)                                                                                                                                                                                                                                                                                          | i)command and control<br>ii)unusual files<br>iii)Specific file or malware **signatures**<br>iv) suspicious network traffic                                                                                                                               | i)EDR- endpoint detection and response- detects if an suspicious activity in endpoint -servers, laptops etc<br><br>ii)antivirus <br><br>iii) user awareness | require human interaction                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Worms       | A **worm** is a type of malware that can **self-replicate and spread** without any user actio                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | - **Email attachments**<br>    <br>- **Network file shares**<br>    <br>- **Infected USB drives**<br>    <br>- **Exploiting vulnerable devices** (e.g., unpatched computers, IoT devices, smartphones)<br>    <br>- **Misused built-in tools** (e.g., PowerShell, `cmd.exe`, `msiexec.exe`) | i)known malicious files<br>ii)unexpected download<br>iii)C&C<br>Iv)Sign of attackers                                                                                                                                                                     | i)IPS<br>ii)network segmentation<br>Iii)firewall<br>iv)patching<br>v)EDR<br>                                                                                | doesn;t need human interaction,<br><br>Often **self-install**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Spyware     | **gather information** about a person, organization, or system **without their knowledge or consent**.,<br><br>DOesnt cause disruption but collects data                                                                                                                                                                                        | i)Adware<br>Ii)Keylogger<br>iii)System monitors<br>iv)Stalkerware<br>v)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                             | - connection to remote servers<br><br>-known malicious hash/ signature<br><br>-browser injection behaviour                                                                                                                                               | - EDR,anitvirus, user awarness,<br><br>application whitelisting<br>                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Bloatware   | t comes **pre-installed by manufacturers** or **bundled with other applications**. It’s not inherently malicious, but it is often **unnecessary, resource-consuming, or intrusive**.                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                          | User Awareness,<br>Clean OS Installations<br>,application whitelisitng                                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Virus       | is a type of **malware** that **self-replicates** and **spreads** by attaching itself to files or programs. It requires **user interaction** (like opening a file or running a program) to activate and spread.                                                                                                                                 | i)Memory-Resident Virus,<br>ii)Non-Memory-Resident<br>iii)Boot Sector Virus<br>iv)Macro<br>v)Email<br>vi)Filess                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                             | Known malicious file **hashes** or **signatures**<br><br>- added to registry to autorun later<br>                                                                                                                                                        |                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Keyloggers  | A **keylogger** is a type of malware (or monitoring software) designed to **capture keystrokes and other user inputs**                                                                                                                                                                                                                          | \|   \|   \|<br>\|---\|---\|<br>\|**Kernel-based**\|Operates at the OS kernel level for deep input capture (hard to detect)\|<br>\|**API-based**\|Hooks into input APIs like `GetAsyncKeyState()` on Windows\|<br>\|**Form-grabbing**\|Captures data entered into web forms before it is encrypted\|<br>\|**Memory injection**\|Injects into processes to capture input in real-time from memory\|<br>\|**Hardware-based**\|Physical devices placed between the keyboard and computer (e.g., USB dongle)\|                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                          |                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Logic Bombs | A **logic bomb** is **malicious code hidden inside a legitimate program** or script. It **lies dormant** until certain **predefined conditions or triggers** are met—then it **activates and executes** its payload, which can be destructive or disruptive.                                                                                    | IT RESIDES ALONG SIDE OF LEGITIMATE CODES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                          |                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Rootkits    | A **rootkit** is a type of **stealthy malware** designed to provide **unauthorized root (admin-level) access** to a system while **concealing its presence** from users and security tools. Rootkits are not inherently destructive on their own; their power comes from enabling **persistent, hidden access** for other malicious activities. | \|**Type**\|**Where It Operates**\|**Example Capabilities**\|<br>\|---\|---\|---\|<br>\|**User-mode Rootkits**\|Operates at application level\|Alters APIs, hides processes or files from users\|<br>\|**Kernel-mode Rootkits**\|Operates at OS kernel level (deep control)\|Alters system calls, changes kernel code\|<br>\|**Bootkits**\|Infect the **Master Boot Record (MBR)**\|Run **before OS loads**, defeat full disk encryption\|<br>\|**Firmware Rootkits**\|Lives in firmware (e.g., BIOS, NIC, GPU)\|Very hard to detect; persists after OS reinstallation\|<br>\|**Hypervisor Rootkits**\|Manipulate or fake entire OS environments\|Create fake environments while hiding the real infection\| |                                                                                                                                                                                                                                                                                             | ## 🔍 **Detection Techniques**<br><br>Rootkits are notoriously **difficult to detect** because they:<br><br>- Alter system behavior to hide<br>    <br>- Can intercept or forge system responses<br>    <br>- Often gain kernel-level or firmware access |                                                                                                                                                             | \|   \|   \|<br>\|---\|---\|<br>\|**atch and Update Systems**\|Prevent exploits that allow rootkit installation\|<br><br>\|   \|   \|<br>\|---\|---\|<br>\|**Use Secure Boot**\|Verifies boot-time software is legitimate\|<br><br>\|   \|   \|<br>\|---\|---\|<br>\|**Privileged Access Control**\|Least privilege prevents unauthorized admin-level changes\|<br><br>\|   \|   \|<br>\|---\|---\|<br>\|**Monitor Critical Files**\|Detect unauthorized changes to system binaries or configuration\|<br><br>\|   \|<br>\|---\|<br>\|**Antimalware/Anti-rootki**\| |
 
 
 
@@ -1275,3 +1278,353 @@ Use **all four** tools **together** as part of a **multi-layered defense strateg
 ---
 
 Let me know if you’d like a diagram or table in PDF or slide format to use for training or presentation!
+
+
+
+# Questions
+
+
+Here are the correct answers with explanations:
+
+---
+
+### **1. Ryan wants to prevent logic bombs created by insider threats from impacting his organization. What technique will most effectively limit the likelihood of logic bombs being put in place?**
+
+✅ **Correct Answer: B. Using a code review process**
+
+**Explanation:**  
+Logic bombs are typically embedded within legitimate software code and triggered under specific conditions. Since they're hidden in code, the most **effective prevention** is to use **formal code reviews**, especially in environments where insiders (like developers) could insert malicious code.
+
+- **A. Antivirus software** – May detect some known threats but **not logic bombs embedded in code**.
+    
+- **C. EDR software** – Helpful for detection **after execution**, but less effective at prevention.
+    
+- **D. Disabling autorun** – Useful for stopping USB-based threats, **not relevant for logic bombs** in internal software.
+    
+
+---
+
+### **2. Yasmine believes that her organization may be dealing with an advanced rootkit and wants to write IoC definitions for it. Which of the following is not likely to be a useful IoC for a rootkit?**
+
+✅ **Correct Answer: C. Pop-ups demanding a ransom**
+
+**Explanation:**  
+**Pop-ups demanding ransom** are typically associated with **ransomware**, not rootkits. Rootkits focus on **stealth and persistence**, not user interaction or overt demands.
+
+- **A. File hashes** – Useful to detect known malicious components.
+    
+- **B. Command and control domains** – Rootkits may use C2 to communicate secretly.
+    
+- **D. Behavior-based identifiers** – Effective for detecting unusual actions consistent with rootkit activity.
+    
+
+---
+
+Would you like a quiz format for more practice questions like these?
+
+Here are the correct answers with explanations for questions 3 and 4:
+
+---
+
+### **3. Nathan works at a school and notices that one of his staff appears to have logged in and changed grades for a single student to higher grades, even in classes that staff member is not responsible for. When asked, the staff member says that they did not perform the action. Which of the following is the most likely way that a student could have gotten access to the staff member's password?**
+
+✅ **Correct Answer: A. A keylogger**
+
+**Explanation:**  
+A **keylogger** captures keystrokes and is a common way attackers steal **credentials like usernames and passwords**. If a student installed a keylogger on a system the staff member used, they could have harvested login information and used it to change grades.
+
+- **B. Rootkit** – Provides stealth access but is less likely to be used by a student and more complex to deploy.
+    
+- **C. Spyware** – May also capture data, but **keyloggers are a specific and direct way** to capture login credentials.
+    
+- **D. Logic bomb** – Triggered by specific conditions, but not relevant here.
+    
+
+---
+
+### **4. Amanda notices traffic between her systems and a known malicious host on TCP port 6667. What type of traffic is she most likely detecting?**
+
+✅ **Correct Answer: A. Command and control**
+
+**Explanation:**  
+**TCP port 6667** is commonly associated with **IRC (Internet Relay Chat)**, which is often used for **Command and Control (C2)** communication by malware and botnets. This type of traffic often indicates that infected systems are communicating with an attacker-controlled server.
+
+- **B. Spyware** – Would use different methods and ports, often HTTP/HTTPS.
+    
+- **C. A worm** – Typically spreads via vulnerabilities, not necessarily over IRC.
+    
+- **D. A hijacked web browser** – Would generally involve HTTP/HTTPS ports (80/443), not 6667.
+    
+
+---
+
+Let me know if you want a summary chart or more practice questions!
+Here are the correct answers and explanations for questions 5 and 6:
+
+---
+
+### **5. Mike discovers that attackers have left software that allows them to have remote access to systems on a computer in his company's network. How should he describe or classify this malware?**
+
+✅ **Correct Answer: D. A backdoor**
+
+**Explanation:**  
+A **backdoor** is software or code that provides **unauthorized remote access** to a system, often bypassing normal authentication methods. It's a common method used by attackers to maintain access to compromised systems.
+
+- **A. A worm** – Spreads automatically but doesn't necessarily provide remote access.
+    
+- **B. Crypto malware** – Encrypts data for ransom; not focused on remote access.
+    
+- **C. A trojan** – Could be the delivery method for a backdoor, but the key feature described is remote access, which fits **backdoor** best.
+    
+
+---
+
+### **6. What is the primary impact of bloatware?**
+
+✅ **Correct Answer: A. Consuming resources**
+
+**Explanation:**  
+**Bloatware** refers to **unwanted pre-installed software** that **slows down the system** by consuming disk space, memory, and CPU resources.
+
+- **B. Logging keystrokes** – Describes **keyloggers**, not bloatware.
+    
+- **C. Providing information about users and devices to third parties** – This can happen, but is more characteristic of **spyware**.
+    
+- **D. Allowing unauthorized remote access** – That’s a **backdoor**, not bloatware.
+    
+
+---
+
+Let me know if you want these questions in quiz format or need more!
+Here are the correct answers and explanations for questions 7 and 8:
+
+---
+
+### **7. What type of malware is used to gather information about a user's browsing habits and system?**
+
+✅ **Correct Answer: C. Spyware**
+
+**Explanation:**  
+**Spyware** is designed specifically to **monitor user behavior**, such as browsing habits, software use, and system configuration. It collects and sends this data—often without user consent—to a remote attacker or entity.
+
+- **A. A Trojan** – Delivers other payloads but isn’t specifically for data gathering.
+    
+- **B. Bloatware** – Unwanted software that consumes resources, not designed for spying.
+    
+- **D. A rootkit** – Conceals malicious activities but isn’t primarily focused on monitoring user behavior.
+    
+
+---
+
+### **8. Matt uploads a malware sample to a third-party malware scanning site that uses multiple antimalware and antivirus engines to scan the sample. He receives multiple different answers for what the malware package is. What has occurred?**
+
+✅ **Correct Answer: D. Different vendors use different names for malware packages.**
+
+**Explanation:**  
+**Antimalware vendors** often use their **own naming conventions** and heuristics for identifying malware. The same sample may be classified differently across engines, especially if it has multiple behaviors or matches different internal rules.
+
+- **A. The package contains more than one piece of malware** – Possible, but the question doesn't say that.
+    
+- **B. The service is misconfigured** – Unlikely and not the cause of differing names.
+    
+- **C. The malware is polymorphic and changed while being tested** – Would result in detection issues, but not inconsistent naming **within the same sample**.
+    
+
+---
+
+Let me know if you’d like a summary sheet or quiz of all 8 questions!
+
+	Here are the correct answers and explanations for questions 9 and 10:
+
+---
+
+### **9. Nancy is concerned that there is a software keylogger on the system she's investigating. What best describes data that may have been stolen?**
+
+✅ **Correct Answer: D. Keyboard and other input from the user**
+
+**Explanation:**  
+**Software keyloggers** typically capture more than just keyboard strokes—they can also capture mouse movements, clipboard activity, touchscreen taps, or credit card swipes depending on how sophisticated they are. So, **keyboard and other input** is the most accurate description of what may have been stolen.
+
+- **A. All files on the system** – Not typical of a keylogger.
+    
+- **B. All keyboard input** – Partially correct, but not complete.
+    
+- **C. All files the user accessed while the keylogger was active** – Not directly related to what a keylogger captures.
+    
+
+---
+
+### **10. A system in Elaine's company has suddenly displayed a message demanding payment in Bitcoin and claiming that the data from the system has been encrypted. What type of malware has Elaine likely encountered?**
+
+✅ **Correct Answer: C. Ransomware**
+
+**Explanation:**  
+This scenario—**payment demand**, usually in **Bitcoin**, with **encrypted data**—is a textbook case of **ransomware**. This type of malware locks or encrypts user data and demands payment to unlock or decrypt it.
+
+- **A. Worms** – Spread quickly but do not typically demand ransom.
+    
+- **B. A virus** – May damage or replicate but doesn't normally encrypt and demand ransom.
+    
+- **D. Rootkit** – Hides malicious activity, not focused on extortion.
+    
+
+---
+
+Let me know if you'd like a summary of all 10 questions and answers in a table or study guide format!
+
+
+Here are the correct answers and explanations for questions **11** and **12**:
+
+---
+
+### **11. Rick believes that a system he is responsible for has been compromised with malware that uses a rootkit to obtain and retain access to the system. When he runs an antimalware tool's scanner, the system doesn't show any malware. If he has other data that indicates the system is infected, what should his next step be if he wants to determine what malware may be on the system?**
+
+✅ **Correct Answer: B. Mount the drive on another system and scan it that way.**
+
+**Explanation:**  
+**Rootkits** are specifically designed to hide themselves from detection tools running on the infected system. By **mounting the drive on a clean, trusted system**, Rick avoids any manipulation or hiding done by the rootkit, allowing for a more reliable scan.
+
+- **A. Rerun the antimalware scan** – Unlikely to produce different results if the rootkit is hiding.
+    
+- **C. Disable the system’s antivirus** – Risky and won't help reveal hidden rootkit files.
+    
+- **D. The system is not infected and he should move on** – Ignoring evidence is not advisable in incident response.
+    
+
+---
+
+### **12. A recently terminated developer from Jaya's organization has contacted the organization claiming that they left code in an application that they wrote that will delete files and bring the application down if they are not employed by the company. What type of malware is this?**
+
+✅ **Correct Answer: C. A logic bomb**
+
+**Explanation:**  
+A **logic bomb** is malicious code inserted into a system or program that triggers when certain conditions are met (e.g., a specific date, user action, or in this case, the developer being terminated). This is a classic insider threat tactic.
+
+- **A. Ransomware** – Encrypts files and demands payment.
+    
+- **B. Extortionware** – Similar to ransomware, but relies more on blackmail than encryption.
+    
+- **D. A Trojan** – Malicious software disguised as legitimate software, but doesn’t usually involve this type of conditional triggering.
+    
+
+---
+
+Let me know if you'd like a quiz sheet, flashcards, or summary for all the questions so far!
+
+
+Here are the correct answers and explanations for questions **13** and **14**:
+
+---
+
+### **13. Selah wants to ensure that malware is completely removed from a system. What should she do to ensure this?**
+
+✅ **Correct Answer: B. Wipe the drive and reinstall from known good media.**
+
+**Explanation:**  
+This is the most **reliable and thorough method** to ensure **all malware is removed**, especially for complex infections like **rootkits, logic bombs, or fileless malware**. It eliminates any hidden or persistent threats.
+
+- **A. Run multiple antimalware tools...** – Helpful, but may not catch everything.
+    
+- **C. Use the delete setting...** – Might miss malware hidden or not detected at all.
+    
+- **D. Destroying the system** – Unnecessary and extreme for most situations.
+    
+
+---
+
+### **14. What is the key difference between a worm and a virus?**
+
+✅ **Correct Answer: B. How they spread**
+
+**Explanation:**
+
+- A **virus** needs **human interaction** to spread (e.g., opening a file).
+    
+- A **worm** spreads **automatically** across systems by exploiting vulnerabilities, without user action.
+    
+- **A. Operating system** – Both can affect various OSes.
+    
+- **C. Potential impact** – Both can cause serious harm.
+    
+- **D. Number of infections** – Worms often infect more systems faster, but that's a result, not a definition.
+    
+
+---
+
+Let me know if you'd like a complete answer key for all 14 questions!
+
+
+	Here are the correct answers with explanations for questions **15** and **16**:
+
+---
+
+### **15. Ben wants to analyze Python code that he believes may be malicious code written by an employee of his organization. What can he do to determine if the code is malicious?**
+
+✅ **Correct Answer: B. Open the file using a text editor to review the code**
+
+**Explanation:**  
+Python is a scripting language and its source code is typically stored in plain text `.py` files. Ben can simply **open the file in a text editor** to **manually inspect the code** for malicious behavior (e.g., data exfiltration, file deletion, keylogging, etc.).
+
+- **A. Run a decompiler...** – Not necessary for Python source files unless they’re compiled `.pyc` files.
+    
+- **C. Test with antivirus...** – May not detect custom or insider-written scripts.
+    
+- **D. Submit to a malware testing website** – Possible, but may raise privacy/confidentiality concerns with internal code.
+    
+
+---
+
+### **16. Which of the following defenses is most likely to prevent Trojan installation?**
+
+✅ **Correct Answer: A. Installing patches for known vulnerabilities**
+
+**Explanation:**  
+**Trojans often exploit unpatched vulnerabilities** or rely on social engineering. Keeping software up to date is **a critical defense**. While Trojans usually require user interaction, patching reduces the likelihood that an exploit will succeed **even if the Trojan is executed**.
+
+- **B. Preventing downloads from application stores** – App stores are generally safer than third-party sources.
+    
+- **C. Preventing the use of USB drives** – Helps against removable-media threats, but not specific to Trojans.
+    
+- **D. Disabling autorun...** – Helps with worms or auto-executing malware but not primary Trojan defense.
+    
+
+---
+
+Let me know if you'd like a summary of all questions or a printable answer key!
+Here are the correct answers and explanations for questions **17** and **18**:
+
+---
+
+### **17. Jason's security team reports that a recent WordPress vulnerability seems to have been exploited by malware and that their organization's entire WordPress service cluster has been infected. What type of malware is most likely involved if a vulnerability in the software was exploited over the network?**
+
+✅ **Correct Answer: C. A worm**
+
+**Explanation:**  
+Worms are **self-replicating malware** that **spread across systems by exploiting vulnerabilities**, especially over networks—**exactly the behavior described in the scenario**. If a WordPress vulnerability was exploited and the infection spread throughout the cluster, it's most characteristic of a **worm**.
+
+- **A. Logic bomb** – Requires a trigger, often placed in code manually, not spread via vulnerabilities.
+    
+- **B. Trojan** – Requires user interaction and doesn't self-replicate.
+    
+- **D. Rootkit** – Focuses on stealth and persistence, not rapid network spread.
+    
+
+---
+
+### **18. Hui's organization recently purchased new Windows computers from an office supply store. The systems have a number of unwanted programs on them that load at startup that were installed by the manufacturer. What type of software is this?**
+
+✅ **Correct Answer: D. Bloatware**
+
+**Explanation:**  
+**Bloatware** refers to **preinstalled, unnecessary, or unwanted software** on new systems, typically from the manufacturer. It **consumes system resources** and can reduce performance but is **not typically malicious**.
+
+- **A. Viruses** – Malicious, self-replicating; not typically installed by manufacturers.
+    
+- **B. Trojans** – Malicious, deceptive software requiring user interaction.
+    
+- **C. Spyware** – May be close if it tracks user behavior, but **intent** and **origin** make this case clear-cut bloatware.
+    
+
+---
+
+Let me know if you'd like the full list of answers so far!
