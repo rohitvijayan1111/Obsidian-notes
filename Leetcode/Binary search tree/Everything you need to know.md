@@ -318,7 +318,7 @@ def postorderTraversal(root):
 
 
 
-# Level order traversal
+###  Level order traversal
 
 - Use an deque
 - for each level process it and add it's children
@@ -504,6 +504,108 @@ def postorderTraversal(root):
     ### 🗃 Space Complexity
     - Space Complexity	O(h)	Due to recursion stack
     - Auxiliary Space	O(h)	Same as space (no extra DS
+
+			|Tree Type|Space Complexity|
+	|---|---|
+	|Balanced Tree|`O(log n)`|
+	|Skewed Tree|`O(n)`|
+		
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+
+
+- [# Left View of a Binary Tree](https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - You are given the **root** of a binary tree. Your task is to return the **_left view_** of the binary tree. The **_left view_** of a binary tree is the set of nodes visible when the tree is **viewed** from the **left side**.
+
+	If the tree is empty, return an **empty list**.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    -  my idealogy has always maintain it in the left most nodes in a dict, like level wise,only add to the dictionary if the level's node is updated.
+    - BUT THIS APPROACH IS ONLY FOR RECURSION
+
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - THERE ARE THREE DIFFERENT APPROACHES:
+	    - USING RECURSION + DICTIONARY->
+	    - LEVEL ORDER TRAVERSAL ONLY ADD WHEN I=0 In each level traversal
+	    - DFS, USE THIS CONDITION if(len(res)== level)
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Node:
+    def __init__(self, x):
+        self.data = x
+        self.left = None
+        self.right = None
+
+def recLeftView(root, level, result):
+    if root is None:
+        return
+    
+    if level == len(result):
+        result.append(root.data)
+    
+    recLeftView(root.left, level + 1, result)
+    recLeftView(root.right, level + 1, result)
+
+def leftView(root):
+    result = []
+    recLeftView(root, 0, result)
+    return result
+
+# Main function
+if __name__ == "__main__":
+    root = Node(1)
+    root.left = Node(2)
+    root.right = Node(3)
+    root.left.left = Node(4)
+    root.left.right = Node(5)
+
+    result = leftView(root)
+    print(' '.join(map(str, result)))  # Output: 1 2 4
+    ```
+
+    ---
+
+			|Metric|Value|Notes|
+	|---|---|---|
+	|Time Complexity|`O(n)`|Visit each node once|
+	|Space Complexity|`O(h)`|Recursion stack + result list|
+	|Auxiliary Space|`O(h)`|Call stack for DFS traversal|
+
+	## 🧠 So, Why is Space Complexity `O(h)`?
+
+	Because at any moment, your recursive traversal is **only visiting a path from the root down to a leaf** — not the entire tree at once.
+	
+	### At its worst:
+	
+	- The maximum number of recursive function calls **on the stack at the same time** is equal to the **height `h` of the tree**.
 
     ---
 

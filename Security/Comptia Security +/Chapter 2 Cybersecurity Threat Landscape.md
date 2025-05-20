@@ -470,10 +470,10 @@ There are several categories:
 ### 2. **Content of Threat Intelligence**
 
 
-Measures to assess threat intelligence:
-- Timeliness
-- accuracy
-- Relevance
+**Measures to assess threat intelligence:**
+- **Timeliness**
+- **accuracy**
+- **Relevance**
 
 Threat intelligence often includes **technical and contextual information**, such as:
 

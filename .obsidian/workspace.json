@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Binary search tree/Everything you need to know.md",
+                "file": "Security/Comptia Security +/Chapter 3 Malicious Code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Everything you need to know"
+              "title": "Chapter 3 Malicious Code"
             }
           }
         ]
@@ -200,7 +200,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -223,8 +223,10 @@
   },
   "active": "f581b16bdece9150",
   "lastOpenFiles": [
-    "AWS/Welcome.md",
+    "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
+    "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Leetcode/Binary search tree/Everything you need to know.md",
+    "AWS/Welcome.md",
     "Leetcode/Binary search tree/Random Problems.md",
     "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
     "Leetcode/Binary search tree",
@@ -243,7 +245,6 @@
     "assets/images/Pasted image 20250519162045.png",
     "assets/images/Pasted image 20250519162012.png",
     "SYSTEM DESIGN/LLD",
-    "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
     "Leetcode/Array/Counting Problems.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
@@ -262,7 +263,6 @@
     "Untitled.md",
     "Untitled 1.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
-    "Leetcode/Resources/Resources.md",
     "Leetcode/Strings",
     "Leetcode/Mathematical",
     "assets/images",
