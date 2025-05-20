@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Chapter 3 Malicious Code.md",
+                "file": "My template to approach an problem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 3 Malicious Code"
+              "title": "My template to approach an problem"
             }
           }
         ]
@@ -223,8 +223,8 @@
   },
   "active": "f581b16bdece9150",
   "lastOpenFiles": [
-    "Security/Comptia Security +/Terminologies.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
+    "Security/Comptia Security +/Terminologies.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Leetcode/Binary search tree/Everything you need to know.md",
     "AWS/Welcome.md",
