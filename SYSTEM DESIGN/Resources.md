@@ -1,3 +1,17 @@
+
+YOUTUBE:
+- 𝑮𝒂𝒖𝒓𝒂𝒗 𝑺𝒆𝒏’𝒔 𝑺𝒚𝒔𝒕𝒆𝒎 𝑫𝒆𝒔𝒊𝒈𝒏 𝑩𝒂𝒔𝒊𝒄𝒔
+- https://www.youtube.com/@bytebytego
+- 
+
+BOOKS:
+- 𝑼𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈 𝑫𝒊𝒔𝒕𝒓𝒊𝒃𝒖𝒕𝒆𝒅 𝑺𝒚𝒔𝒕𝒆𝒎𝒔 – 𝑹𝒐𝒃𝒆𝒓𝒕𝒐 𝑽𝒊𝒕𝒊𝒍𝒍𝒐
+- 𝑺𝒚𝒔𝒕𝒆𝒎 𝑫𝒆𝒔𝒊𝒈𝒏 𝑰𝒏𝒕𝒆𝒓𝒗𝒊𝒆𝒘: 𝑨𝒏 𝑰𝒏𝒔𝒊𝒅𝒆𝒓’𝒔 𝑮𝒖𝒊𝒅𝒆 – 𝑨𝒍𝒆𝒙 𝑿𝒖
+
+
+
+
+
 https://www.designgurus.io/blog/mastering-the-system-design-interview-complete-guide
 
 1. [18 System Design Concepts Every Engineer Must Know Before the Interview.](https://www.designgurus.io/blog/system-design-interview-fundamentals)
