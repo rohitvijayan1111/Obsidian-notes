@@ -25,7 +25,7 @@
 ### Vishing
 - Vishing is phishing accomplished via voice or voicemail messages. Vishing attacks rely on phone calls to social-engineer targets into disclosing personal, financial, or other useful information, or to send funds.
 
-### Smishing - email isnt smishing
+### Smishing - email isn't smishing
 - Smishing relies on text messages as part of the phishing scam. Whereas other scams often rely on targets disclosing information via social engineering, smishing scams frequently attempt to get users to click on a link in a text message
 
 ### Misinformation and Disinformation and Malinformation 

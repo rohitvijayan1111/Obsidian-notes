@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Chapter 4 Social Engineering and Password Attacks.md",
+                "file": "Leetcode/Tree/Everything you need to know.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 4 Social Engineering and Password Attacks"
+              "title": "Everything you need to know"
             }
           }
         ]
@@ -221,20 +221,21 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "f581b16bdece9150",
+  "active": "8e84bb4d66ae6df0",
   "lastOpenFiles": [
-    "My template to approach an problem.md",
+    "Leetcode/Tree/Lec 1-Traversals.md",
+    "Leetcode/Tree/Random Problems.md",
+    "Leetcode/Tree/Popular problems.md",
+    "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
     "Security/Comptia Security +/Chapter 4 Social Engineering and Password Attacks.md",
+    "My template to approach an problem.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Terminologies.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
-    "Leetcode/Binary search tree/Everything you need to know.md",
+    "Leetcode/Tree/Everything you need to know.md",
     "AWS/Welcome.md",
     "Leetcode/Binary search tree/Random Problems.md",
-    "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
     "Leetcode/Binary search tree",
-    "Leetcode/Tree/Random Problems.md",
-    "Leetcode/Tree/Lec 1-Traversals.md",
     "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
     "Leetcode/Untitled",
     "assets/images/Pasted image 20250519163155.png",
@@ -262,7 +263,6 @@
     "Minimum path, time etc.md",
     "The winner mindest.md",
     "Topics to cover.md",
-    "Untitled.md",
     "Leetcode/Strings",
     "Leetcode/Mathematical",
     "assets/images",

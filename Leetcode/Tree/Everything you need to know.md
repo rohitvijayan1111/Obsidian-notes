@@ -1,3 +1,7 @@
+>#**NOTES**
+> **Prefer using return values over global (or external) variables in recursion.**
+>
+This is a powerful mindset shift in solving recursive problems — especially in **trees**, **graphs**, and **backtracking**.
 # Basics
 1. Node :- which hold's data eg:- (1)
     
