@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview tips/TIPS.md",
+                "file": "Security/Untitled/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TIPS"
+              "title": "Untitled"
             }
           }
         ]
@@ -223,8 +223,11 @@
   },
   "active": "f581b16bdece9150",
   "lastOpenFiles": [
-    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
+    "assets/images/Pasted image 20250524202556.png",
     "Interview tips/TIPS.md",
+    "Security/Untitled/Untitled.md",
+    "Security/Untitled",
+    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Interview tips",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
@@ -263,13 +266,10 @@
     "Accountability/MAY 2025.md",
     "Accountability/MY END GOAL.md",
     "SYSTEM DESIGN/System Design was HARD until I Learned these 30 Concepts.md",
-    "2025-05-02.md",
-    "2025-05-14.md",
     "Leetcode/Strings",
     "Leetcode/Mathematical",
     "assets/images",
     "assets",
-    "Security/Comptia Security +",
     "Untitled 1.canvas",
     "Untitled 2.canvas"
   ]
