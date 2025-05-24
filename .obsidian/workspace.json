@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
+                "file": "Interview tips/TIPS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 1 Today's Security Professional"
+              "title": "TIPS"
             }
           }
         ]
@@ -223,8 +223,10 @@
   },
   "active": "f581b16bdece9150",
   "lastOpenFiles": [
-    "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
+    "Interview tips/TIPS.md",
+    "Interview tips",
+    "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
     "Core subjects/resources.md",
@@ -263,14 +265,12 @@
     "SYSTEM DESIGN/System Design was HARD until I Learned these 30 Concepts.md",
     "2025-05-02.md",
     "2025-05-14.md",
-    "Linkedin search.md",
     "Leetcode/Strings",
     "Leetcode/Mathematical",
     "assets/images",
     "assets",
     "Security/Comptia Security +",
     "Untitled 1.canvas",
-    "Untitled 2.canvas",
-    "Security/Resources"
+    "Untitled 2.canvas"
   ]
 }

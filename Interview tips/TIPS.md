@@ -1,0 +1,2 @@
+- make sure to know the latest thing in your domain ,ask they ask questions in it
+- 
