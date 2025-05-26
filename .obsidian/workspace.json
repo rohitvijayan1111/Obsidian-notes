@@ -11,13 +11,16 @@
             "id": "f581b16bdece9150",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Security/Untitled/Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": "Leetcode/Graphs/Untitled.canvas",
+                "viewState": {
+                  "x": -35.47208341900625,
+                  "y": 250.9006013146763,
+                  "zoom": -0.4424412624240015
+                }
               },
-              "icon": "lucide-file",
+              "icon": "lucide-layout-dashboard",
               "title": "Untitled"
             }
           }
@@ -223,9 +226,10 @@
   },
   "active": "f581b16bdece9150",
   "lastOpenFiles": [
+    "Security/Untitled/Untitled.md",
+    "Leetcode/Graphs/Untitled.canvas",
     "assets/images/Pasted image 20250524202556.png",
     "Interview tips/TIPS.md",
-    "Security/Untitled/Untitled.md",
     "Security/Untitled",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Interview tips",
@@ -257,7 +261,6 @@
     "assets/images/Pasted image 20250519162341.png",
     "assets/images/Pasted image 20250519162204.png",
     "assets/images/Pasted image 20250519162045.png",
-    "assets/images/Pasted image 20250519162012.png",
     "SYSTEM DESIGN/LLD",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
     "Leetcode/Array/Counting Problems.md",

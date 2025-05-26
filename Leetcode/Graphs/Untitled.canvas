@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"c4cd51de4ee2d05f","x":-51,"y":-202,"width":250,"height":60,"type":"text","text":"GRAPH\n"},
+		{"id":"278b683791f0a73f","x":-327,"y":-25,"width":250,"height":60,"type":"text","text":"DIRECTED"},
+		{"id":"27816d867dbeba8e","x":210,"y":-31,"width":250,"height":60,"type":"text","text":"UNDIRECTED"},
+		{"id":"eb1417477dd542b7","x":-559,"y":120,"width":357,"height":101,"type":"text","text":"CAN TOPO SORTING BE APPLIED\n(USED FOR ORDERED,U COMES BEFORE V ,U->V)"},
+		{"id":"60b45c833d5bddf3","x":-140,"y":120,"width":300,"height":101,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"08cdcec62450946e","fromNode":"c4cd51de4ee2d05f","fromSide":"bottom","toNode":"278b683791f0a73f","toSide":"top"},
+		{"id":"69fe4516a24981b0","fromNode":"c4cd51de4ee2d05f","fromSide":"bottom","toNode":"27816d867dbeba8e","toSide":"top"},
+		{"id":"e90e9234e822057b","fromNode":"278b683791f0a73f","fromSide":"bottom","toNode":"eb1417477dd542b7","toSide":"top"}
+	]
+}
