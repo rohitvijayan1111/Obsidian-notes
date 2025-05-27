@@ -1,6 +1,6 @@
 - Study material
 - Practice video 
-	- 
+	- Shaping pixel
 - Practice test
 	- Skillcertpro tests
 	- Certsleader
