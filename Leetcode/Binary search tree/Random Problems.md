@@ -93,3 +93,76 @@
 
     ### 📚 Related Concepts and Topics
 		#trees
+
+
+- [### Print leaf nodes from preorder traversal of BST](https://www.geeksforgeeks.org/problems/print-leaf-nodes-from-preorder-traversal-of-bst2657/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a **preorder** traversal of a **BST**, find the **leaf nodes** of the tree without building the tree.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - did a lot of pen paper work
+    - found that ,we need to do similar to constructing an tree
+    - the first node (left) is the root of the current, so we need to construct a bst to its left and right from the preorder traversal
+    - we iterate from left+1 till right , and check if preorder[i]>preorder[left], if so that is the partitioning element and we name it as mid, THE DEFAULT VALUE OF MID is RIGHT
+    - we now recursively construct the left and the right subtree
+    - IF RIGHT-left=1 then only its is an root node and we add it to the array
+
+    ---
+
+    ### ❌ Mistakes Made
+    - NO
+     
+    ---
+
+    ### ✅ Key Takeaways
+    - try recursion(TO simulate construct of bst from preorder)
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - same as intial thought
+      
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+	class Solution:
+		def leafNodes(self, preorder):
+			# code here
+	        res=[]
+	        n=len(preorder)
+	        def helper(left,right):
+	            if(right-left==0):
+	                return
+	            if(right-left==1):
+	                res.append(preorder[left])
+	                return
+	            mid=right
+	            for i in range(left+1,right):
+	                if(preorder[i]>preorder[left]):
+	                    mid=i
+	                    break
+	            
+	            # print(left,mid,right)
+	            helper(left+1,mid)
+	            helper(mid,right)
+	        
+	        helper(0,n)
+	        return res
+	     
+	    ```
+
+    ---
+
+	    
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
