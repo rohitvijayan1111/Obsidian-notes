@@ -35,6 +35,39 @@
 - AWS Point of Presence (POP)
 	- Edge locations
 	- Region cached locations ->Used to store the least frequently access to reduce the load of the edge location and the actual data center
+
+# AWS Cloud Security
 - Shared responsibility model 
 	- ![[Pasted image 20250528154224.png]]
+	- ![[Pasted image 20250528174947.png]]
+- Root user
+	- use it only for specified tasks, don't use it for daily operations , create separate account for that
+- Users->represents an entity (person or an application) that interacts with AWS resources and services.
+	- ⚠️ **By default**, an IAM user is created with **no permissions** — it can't access anything unless permissions are granted.
+- Groups->A collection of IAM users is called an IAM group.
+- policies -> IAM policies are documents. They deny or allow permissions to AWS resources and services.
+	- Identifier,version,statements(Effect ->allow,deny action->on which resource principal-> applies to whom, condition,sId)
+- Roles->IAM role is temporary access to services or resources.
+- MFA
+	- Virtual MFA, hardware key Fob, universal second factor
+- How can users access AWS
+	- management Console ->one time ops
+	- CLI-> terminal to access resources
+	- SDK-> to easily access aws resources with your application
+	 > For CLI,SDK access keys are created to access those resourees
+	 > Access Key ID ~= username • Secret Access Key ~= password
+- Auditing tools
+	- IAM Credential report (Account level)
+		- Provides the status of the users under the account
+	- IAM Access advisors (User level)
+		-  provides the last access status of the resources allowed to be accessed by the user
+		- used to modify the policy
+- ![[Pasted image 20250528183407.png]]
+
+
+
+
+# EC2
+
+- 
 	
