@@ -28,4 +28,13 @@
 	- Storage- as per data stored
 	- data transfer-> FREE FOR IN DATA TRAFFIC,BUT COSTS FOR SENDING DATA OUT OF AWS
 
- - 
+# AWS Global Infrastructure 
+
+- AWS Region ->Most of the AWS services are region based
+- AWS Availability Zones
+- AWS Point of Presence (POP)
+	- Edge locations
+	- Region cached locations ->Used to store the least frequently access to reduce the load of the edge location and the actual data center
+- Shared responsibility model 
+	- ![[Pasted image 20250528154224.png]]
+	
