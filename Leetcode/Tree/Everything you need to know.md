@@ -906,6 +906,122 @@ if __name__ == "__main__":
     ---
 
     ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given the `root` of a binary tree with unique values and the values of two different nodes of the tree `x` and `y`, return `true` _if the nodes corresponding to the values_ `x` _and_ `y` _in the tree are **cousins**, or_ `false` _otherwise._
+
+		Two nodes of a binary tree are **cousins** if they have the same depth with different parents.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - 
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+		# Definition for a binary tree node.
+	
+	# class TreeNode:
+	
+	#     def __init__(self, val=0, left=None, right=None):
+	
+	#         self.val = val
+	
+	#         self.left = left
+	
+	#         self.right = right
+	
+	class Solution:
+	
+	    def isCousins(self, root: Optional[TreeNode], a: int, b: int) -> bool:
+	
+	    # Your code here
+	
+	        #then to check if they belong to different parent
+	
+	        #to find the depth
+	
+	        #could do level order traversal but need to store the parent also, depth also
+	
+	        q=deque([])
+	
+	        q.append((root,None))
+	
+	        a_parent=None
+	
+	        b_parent=None
+	
+	        while q:
+	
+	            for i in range(len(q)):
+	
+	                node,parent=q.popleft()
+	
+	                if(node.val==a):
+	
+	                    a_parent=parent
+	
+	                if(node.val==b):
+	
+	                    b_parent=parent
+	
+	                if(node.left):
+	
+	                    q.append((node.left,node))
+	
+	                if(node.right):
+	
+	                    q.append((node.right,node))
+	
+	            if a_parent and b_parent:
+	
+	                return a_parent!=b_parent
+	
+	            elif a_parent or b_parent:
+	
+	                return False
+	
+	        return False	    
+	     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited only 1 time
+
+    ### 🗃 Space Complexity
+    - O(n)- if skewe 
+    
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+
+- ### 
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
     - 
 
     ---
