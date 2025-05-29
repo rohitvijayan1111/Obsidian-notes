@@ -170,41 +170,42 @@
     ### ✅ Final Code
 
     ```python
-    '''
-class Node:
-    def __init__(self, val):
-        self.data=val
-        self.left=None
-        self.right=None
-'''
-class Solution:
-    def sumOfLongRootToLeafPath(self, root):
-        #code here
-        def helper(root):
-            if(not root):
-                return (0,0)
-            if(not root.left and not root.right):
-                return (root.data,1)
-            lsum,llevel=helper(root.left)
-            rsum,rlevel=helper(root.right)
-            if llevel>rlevel:
-                return (lsum+root.data,1+llevel)
-            elif(rlevel>llevel):
-                return (rsum+root.data,1+rlevel)
-            else:
-                return (max(lsum,rsum)+root.data,1+rlevel)
-                
-        return helper(root)[0]
-     
+	    '''
+	class Node:
+	    def __init__(self, val):
+	        self.data=val
+	        self.left=None
+	        self.right=None
+	'''
+	class Solution:
+	    def sumOfLongRootToLeafPath(self, root):
+	        #code here
+	        def helper(root):
+	            if(not root):
+	                return (0,0)
+	            if(not root.left and not root.right):
+	                return (root.data,1)
+	            lsum,llevel=helper(root.left)
+	            rsum,rlevel=helper(root.right)
+	            if llevel>rlevel:
+	                return (lsum+root.data,1+llevel)
+	            elif(rlevel>llevel):
+	                return (rsum+root.data,1+rlevel)
+	            else:
+	                return (max(lsum,rsum)+root.data,1+rlevel)
+	                
+	        return helper(root)[0]
+	     
     ```
 
     ---
 
     ### ⏱ Time Complexity
-    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+    - **O(n)** — Since each node is visited at most once
 
     ### 🗃 Space Complexity
-    - **O(1)** — constant space; only counters used.
+    - **O(n)- skewed
+    - o(logn)- average sc
 
     ---
 
