@@ -134,3 +134,79 @@
 
     ### 📚 Related Concepts and Topics
 
+
+- ### [Sum of nodes on the longest path](https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1) 
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a binary tree **root[]**, you need to find the **sum** of the nodes on the **longest path** from the **root** to any **leaf node**. If two or more paths have the same length, the path with the **maximum** sum of node values should be considered.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - simple one 
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    '''
+class Node:
+    def __init__(self, val):
+        self.data=val
+        self.left=None
+        self.right=None
+'''
+class Solution:
+    def sumOfLongRootToLeafPath(self, root):
+        #code here
+        def helper(root):
+            if(not root):
+                return (0,0)
+            if(not root.left and not root.right):
+                return (root.data,1)
+            lsum,llevel=helper(root.left)
+            rsum,rlevel=helper(root.right)
+            if llevel>rlevel:
+                return (lsum+root.data,1+llevel)
+            elif(rlevel>llevel):
+                return (rsum+root.data,1+rlevel)
+            else:
+                return (max(lsum,rsum)+root.data,1+rlevel)
+                
+        return helper(root)[0]
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+
+    ### 🗃 Space Complexity
+    - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
