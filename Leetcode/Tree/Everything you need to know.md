@@ -614,3 +614,340 @@ if __name__ == "__main__":
     ---
 
     ### 📚 Related Concepts and Topics
+
+
+
+
+- ### [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given the `root` of a binary tree, return _the level order traversal of its nodes' values_. (i.e., from left to right, level by level).
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - BFS
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    # Definition for a binary tree node.
+
+	# class TreeNode:
+	
+	#     def __init__(self, val=0, left=None, right=None):
+	
+	#         self.val = val
+	
+	#         self.left = left
+	
+	#         self.right = right
+	
+	class Solution:
+	
+	    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+	
+	        if not root:
+	
+	            return []
+	
+	        q=deque([root])
+	
+	        res=[]
+	
+	        while q:
+	
+	            a=[]
+	
+	            for i in range(len(q)):
+	
+	                node=q.popleft()
+	
+	                a.append(node.val)
+	
+	                if(node.left):
+	
+	                    q.append(node.left)
+	
+	                if(node.right):
+	
+	                    q.append(node.right)
+	
+	            res.append(a)
+	
+	        return res
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each node is visited once
+
+    ### 🗃 Space Complexity
+    - **O(N)** where N is the number of nodes in the binary tree. In the worst case, the queue has to hold all the nodes of the last level of the binary tree, the last level could at most hold N/2 nodes hence the space complexity of the queue is proportional to O(N).
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+- ### [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - 
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+		```python
+		class Solution:
+		    def maxDepth(self, root: Optional[TreeNode]) -> int:
+		        def helper(root):
+		            if(not root):
+		                return 0
+		            left=helper(root.left)
+		            right=helper(root.right)
+		            return 1+max(left,right)
+		        return helper(root)
+				```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most once
+
+    ### 🗃 Space Complexity
+    - **O(n)** —skewed
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+- ### [Mirror Tree](https://www.geeksforgeeks.org/problems/mirror-tree/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - Given a binary tree, convert the binary tree to its Mirror tree.
+	
+	Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - 
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+	     class Solution:
+		    #Function to convert a binary tree into its mirror tree.
+		    def mirror(self, root):
+		        # Code here
+		        if(not root):
+		            return
+		        left=self.mirror(root.left)
+		        right=self.mirror(root.right)
+		        root.left=right
+		        root.right=left
+		        return root
+		     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most once
+
+    ### 🗃 Space Complexity
+    - **O(n)**
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+- ### [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    -  Given the `root` of a binary tree, invert the tree, and return _its root_.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - 
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+	class Solution:
+
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+
+        if(not root):
+
+            return
+
+        left=self.invertTree(root.left)
+
+        right=self.invertTree(root.right)
+
+        root.left=right
+
+        root.right=left
+
+        return root
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most 1
+
+    ### 🗃 Space Complexity
+    - **O(n)** - skewed
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
+
+
+- ### [993. Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    - 
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - 
+
+    ---
+
+    ### ❌ Mistakes Made
+    - 
+    - Here's the problematic sketch:
+      ```python
+      l = 0
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    - 
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+    - 
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    class Solution:
+     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** — each element is visited at most twice (once by `r`, once by `l`).
+
+    ### 🗃 Space Complexity
+    - **O(1)** — constant space; only counters used.
+
+    ---
+
+    ### 📚 Related Concepts and Topics
