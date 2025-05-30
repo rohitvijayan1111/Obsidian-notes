@@ -80,3 +80,8 @@
 
 ![[Pasted image 20250530213443.png]]
 
+
+ASG
+
+- High availability means running your application / system in at least 2 Availability Zones
+- 
