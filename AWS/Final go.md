@@ -70,4 +70,8 @@
 # EC2
 
 - 
-	
+
+# point to remember
+
+- EBS -They are bound to a specific availability zone
+- 
