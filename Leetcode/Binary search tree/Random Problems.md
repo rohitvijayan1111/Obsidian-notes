@@ -166,3 +166,243 @@
 
     ### 📚 Related Concepts and Topics
 
+- ### [Closest Neighbour in BST](https://www.geeksforgeeks.org/problems/closest-neighbor-in-bst/1)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    -  Given the **root** of a **[binary search tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/ "BST")** and a number **k**, find the greatest number in the binary search tree that is less than or equal to **k**.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - 
+
+    ---
+
+    ### ❌ Mistakes Made
+    -  an optimization code below
+    - 
+      ```python
+	     class Solution:
+		    def findMaxFork(self, root, k):
+		        def helper(node):
+		            if not node:
+		                return -1
+		            if node.data == k:
+		                return node.data
+		            elif node.data < k:
+		                right_res = helper(node.right)
+		                return right_res if right_res != -1 else node.data
+		            else:
+		                return helper(node.left)
+		        
+		        return helper(root)
+
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    -  We could have done it better by returning the value using recursion itself
+    - refer above code
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+	- basic binary search and updating the value of it when it <=k
+	
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+    
+		class Solution:
+		    def findMaxFork(self, root, k):
+		        #code here
+		        res=-1
+		        def helper(root):
+		            nonlocal res
+		            if(not root):
+		                return
+		            if(root.data>k):
+		                helper(root.left)
+		            elif(root.data<k):
+		                res=root.data
+		                helper(root.right)
+		            else:
+		                res=root.data
+		                return
+		            
+		        helper(root)
+		        return res
+     
+    ```
+
+	**Time Complexity: O(h)**
+	
+	- In the best or average case, the time complexity is **O(log n)** if the BST is balanced.
+	    
+	- In the worst case, the time complexity is **O(n)** if the BST is skewed (like a linked list).
+	    
+	
+	**Space Complexity: O(h)**
+	
+	- The space complexity is due to the recursion stack.
+	    
+	- It will be **O(log n)** for a balanced BST.
+	    
+	- It will be **O(n)** for a skewed BST.
+	### 📚 Related Concepts and Topics
+	
+	
+
+- ### [2359. Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/)
+    
+    ---
+
+    ### 🧾 Problem Summary (What is given and what is needed?) 
+    -  You are given a **directed** graph of `n` nodes numbered from `0` to `n - 1`, where each node has **at most one** outgoing edge.
+		
+		The graph is represented with a given **0-indexed** array `edges` of size `n`, indicating that there is a directed edge from node `i` to node `edges[i]`. If there is no outgoing edge from `i`, then `edges[i] == -1`.
+		
+		You are also given two integers `node1` and `node2`.
+		
+		Return _the **index** of the node that can be reached from both_ `node1` _and_ `node2`_, such that the **maximum** between the distance from_ `node1` _to that node, and from_ `node2` _to that node is **minimized**_. If there are multiple answers, return the node with the **smallest** index, and if no possible answer exists, return `-1`.
+		
+		Note that `edges` may contain cycles.
+
+    ---
+
+    ### 💭 My Initial Thoughts
+    - spent a lot of time thinking about
+    - also thought the "ATMOST ONE OUTGOING EDGE" - would give us a lead
+    
+    ---
+
+    ### ❌ Mistakes Made
+    -  could have done in an optimized way like below 
+    - Here's the problematic sketch:
+      ```python
+		       class Solution:
+		    def closestMeetingNode(self, edges: List[int], node1: int, node2: int) -> int:
+		        visited1 = set()
+		        visited2 = set()
+		        while node1 != -1 or node2 != -1:
+		            if node1 in visited1:
+		                node1 = -1
+		            
+		            if node2 in visited2:
+		                node2 = -1
+		
+		            if node1 != -1:
+		                visited1.add(node1)
+		            
+		            if node2 != -1:
+		                visited2.add(node2)
+		
+		            if node1 in visited2 and node2 in visited1:
+		                return min(node1, node2)
+		            
+		            if node1 in visited2:
+		                return node1
+		            
+		            if node2 in visited1:
+		                return node2
+		            
+		            if node1 != -1:
+		                node1 = edges[node1]
+		
+		            if node2 != -1:
+		                node2 = edges[node2]       
+		                 
+		        return -1
+           ```
+
+    ---
+
+    ### ✅ Key Takeaways
+    -  need to explore more
+    - they had only asked for the node
+    - so could have just done using the set,like which every node is visits the node of the other, then that would be node to be returned
+
+    ---
+
+    ### 🧭 Step-by-Step Approach
+	- I did dfs and calculated the distance to reach each node from node1 and stored it
+	- similarly an dfs , from node2 and if the node is visited by the node1 then the max of the two distance is taken into consideration
+	
+    ---
+
+    ### ✅ Final Code
+
+    ```python
+		class Solution:
+	
+	    def closestMeetingNode(self, edges: List[int], node1: int, node2: int) -> int:
+	
+	        n=len(edges)
+	
+	        dist={}
+	
+	        visited=[False for _ in range(n)]
+	
+	        def dfs(ind,c):
+	
+	            visited[ind]=True
+	
+	            dist[ind]=c
+	
+	            if(edges[ind]!=-1 and not visited[edges[ind]] ):
+	
+	                dfs(edges[ind],c+1)
+	
+	        dfs(node1,0)
+	
+	        self.mini=float("inf")
+	
+	        self.node=-1
+	
+	        visited=[False for _ in range(n)]
+	
+	        def dfs2(ind,c):
+	
+	            visited[ind]=True
+	
+	            if(ind in dist):
+	
+	                comp=max(c,dist[ind])
+	
+	                if(comp<self.mini):
+	
+	                    self.mini=comp
+	
+	                    self.node=ind
+	
+	                elif(comp==self.mini):
+	
+	                    self.node=min(self.node,ind)
+	
+	            if(edges[ind]!=-1 and not visited[edges[ind]]):
+	
+	                dfs2(edges[ind],c+1)
+	
+	        dfs2(node2,0)
+	
+	        return self.node if self.mini!=float("inf") else -1
+	     
+    ```
+
+    ---
+
+    ### ⏱ Time Complexity
+    - **O(n)** 
+
+    ### 🗃 Space Complexity
+    - **O(n)**
+
+    ---
+
+    ### 📚 Related Concepts and Topics
+
