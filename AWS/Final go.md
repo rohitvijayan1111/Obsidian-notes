@@ -74,4 +74,9 @@
 # point to remember
 
 - EBS -They are bound to a specific availability zone
-- 
+- EBS snapshots-> incremental storage
+- EFS-> Multiple ec2 can mount to it at once,IN MULTIPLE AZ
+- EFS IA-> automatically pushes data to EFS IA based on lifecycle policy
+
+![[Pasted image 20250530213443.png]]
+
