@@ -90,9 +90,32 @@
 	- Vertical 
 	- horizontal
 	- HIgh availability -atleast 2 Az
-- 
+- Scalability->abiility to accommodate a larger load by making the hardware stronger
+- Elasticity ->elasticity means that there will be some “auto-scaling” so that the system can scale based on the load
+- Load balancers are servers that forward internet traffic to multiple servers (EC2 Instances) downstream
+- ELB is an regional construct
+- Types:
+	- Application: Layer 7->Static url routing ->HTTP,HTTPS,RPC
+	- Network - UDP/ TCP- Layer 4 -> real time interactions,millions of request per seconds,through static ip -> TCP./UDP
+	- Gateway-> acts like a firewall , all requests go to this before ec2 gets hit (Layer 3) ->GENEVE PROTOCL
+	- classic -> 4 and 7 layer
 
 ASG
+- Has:
+	- Minimum 
+	- desired count
+	- maximum count
+- Types:
+	- Static
+	- Dynamic-> Step scaling, target scaling,
+	- Scheduled scaling
+	- Predictive scaling
 
-- High availability means running your application / system in at least 2 Availability Zones
-- 
+
+---
+Amazon S3:
+- Name should be global
+- But it is regional service
+- Stores objects (files) in bucket(directories)
+- Objects (files) have a Key • The key is the FULL path: • s3://my-bucket/my_file.txt
+- here’s no concept of “directories” within buckets (although the UI will trick you to think otherwise)
