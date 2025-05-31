@@ -28,3 +28,7 @@ class Solution:
             return self.inorderSuccessor(root.right,x)
         
 ```
+
+
+# Stack to simulate an recursion
+
