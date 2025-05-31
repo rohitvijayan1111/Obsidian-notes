@@ -25,14 +25,12 @@
             "id": "b2a0f25ebb85d559",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Behavioral Questions/Explain an point in time.md",
-                "mode": "source",
-                "source": false
+                "file": "AWS/Pasted image 20250409211938.png"
               },
-              "icon": "lucide-file",
-              "title": "Explain an point in time"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250409211938"
             }
           }
         ],
@@ -253,6 +251,8 @@
   },
   "active": "b2a0f25ebb85d559",
   "lastOpenFiles": [
+    "Behavioral Questions/resources.md",
+    "Behavioral Questions/Explain an point in time.md",
     "Leetcode/Binary search tree/patterns.md",
     "Accountability/unknown.md",
     "AWS/Welcome.md",
@@ -287,8 +287,6 @@
     "Core subjects",
     "Leetcode/Tree/Popular problems.md",
     "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
-    "Security/Comptia Security +/Chapter 4 Social Engineering and Password Attacks.md",
-    "My template to approach an problem.md",
     "Leetcode/Binary search tree",
     "Leetcode/Untitled",
     "assets/images/Pasted image 20250519163155.png",
