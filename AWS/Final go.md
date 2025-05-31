@@ -119,3 +119,5 @@ Amazon S3:
 - Stores objects (files) in bucket(directories)
 - Objects (files) have a Key • The key is the FULL path: • s3://my-bucket/my_file.txt
 - here’s no concept of “directories” within buckets (although the UI will trick you to think otherwise)
+- Max. Object Size is 5TB (5000GB)
+- 
