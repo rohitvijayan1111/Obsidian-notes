@@ -33,8 +33,7 @@
               "title": "Pasted image 20250409211938"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -249,8 +248,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "b2a0f25ebb85d559",
+  "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
+    "AWS/Pasted image 20250409211938.png",
     "Behavioral Questions/resources.md",
     "Behavioral Questions/Explain an point in time.md",
     "Leetcode/Binary search tree/patterns.md",
@@ -268,7 +268,6 @@
     "assets/images/Pasted image 20250528174947.png",
     "AWS/AWS-1.md",
     "assets/images/Pasted image 20250528154224.png",
-    "AWS/Pasted image 20250409211938.png",
     "Leetcode/Graphs/Resources.md",
     "Leetcode/DP/Pratice.md",
     "Leetcode/DP/DP PATTERN ARTICLE.md",
@@ -286,7 +285,6 @@
     "SYSTEM DESIGN/Resources.md",
     "Core subjects",
     "Leetcode/Tree/Popular problems.md",
-    "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
     "Leetcode/Binary search tree",
     "Leetcode/Untitled",
     "assets/images/Pasted image 20250519163155.png",

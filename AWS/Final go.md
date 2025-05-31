@@ -75,11 +75,22 @@
 
 - EBS -They are bound to a specific availability zone
 - EBS snapshots-> incremental storage
-- EFS-> Multiple ec2 can mount to it at once,IN MULTIPLE AZ
+	- EBS archive 
+	- EBS recycle bin
+- AMI->FOR AN REGION
+- EC2 Image builder-> used to automate the creation,maintaion validate ,test ec2 ami
+- EC2 instance store-> high performance,temporary storage
+- EFS-> Multiple ec2 can mount to it at once,IN MULTIPLE AZ (on 100s of EC2)
 - EFS IA-> automatically pushes data to EFS IA based on lifecycle policy
 
 ![[Pasted image 20250530213443.png]]
 
+
+- Load Balancing
+	- Vertical 
+	- horizontal
+	- HIgh availability -atleast 2 Az
+- 
 
 ASG
 
