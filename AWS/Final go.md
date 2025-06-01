@@ -120,4 +120,19 @@ Amazon S3:
 - Objects (files) have a Key • The key is the FULL path: • s3://my-bucket/my_file.txt
 - here’s no concept of “directories” within buckets (although the UI will trick you to think otherwise)
 - Max. Object Size is 5TB (5000GB)
+- S3 Security
+	- User based -> IAM policies
+	- Resource based: for granular access control to specific objects/buckets
+		- Object ACL
+		- bucket ACL
+- Bucket policy ->similar to the other policy- Grant public access,force encryption , access to another account
+- Bucket settings for Block Public Access
+- Amazon S3 – Static Website Hosting
+	- http://buckname.s3-website-region-amazonaws.com
+- Amazon S3 - Versioning
+	- bucket level
+	- Any file that is not versioned prior to enabling versioning will have version “null”
+	 - Suspending versioning does not delete the previous versions
+- Amazon S3 – Replication (CRR & SRR)
+	- Must enable Versioning in source and destination buckets • Cross-Region Replication (CRR) • Same-Region Replication (SRR)
 - 
