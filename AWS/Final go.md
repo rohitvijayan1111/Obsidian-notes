@@ -256,6 +256,30 @@ Auto-scaling and integrated with Spot instances • Use cases: data processing, 
 
 ---
 
+Amazon Athena
+• Serverless query service to analyze data stored in Amazon S3
+
+---
+Amazon QuickSight
+• Serverless machine learning-powered business intelligence service to create interactive dashboards
+
+---
+DocumentDB
+• Aurora is an “AWS-implementation” of PostgreSQL / MySQL … • DocumentDB is the same for MongoDB (which is a NoSQL database)
+• MongoDB is used to store, query, and index JSON data • Similar “deployment concepts” as Aurora • Fully Managed, highly available with replication across 3 AZ • DocumentDB storage automatically grows in increments of 10GB
+
+---
+Amazon Neptune
+• Fully managed graph database • A popular graph dataset would be a social network • Users have friends • Posts have comments • Comments have likes from users • Users share and like posts…
+• Highly available across 3 AZ, with up to 15 read replicas
+
+---
+Amazon Timestream
+• Fully managed, fast, scalable, serverless time series database
+• Automatically scales up/down to adjust capacity
+
+---
+
 
 
 
