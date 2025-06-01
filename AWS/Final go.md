@@ -279,6 +279,28 @@ Amazon Timestream
 • Automatically scales up/down to adjust capacity
 
 ---
+Amazon QLDB
+• QLDB stands for ”Quantum Ledger Database” • A ledger is a book recording financial transactions • Fully Managed, Serverless, High available, Replication across 3 AZ • Used to review history of all the changes made to your application data over time • Immutable system: no entry can be removed or modified, cryptographically verifiable
+
+---
+Amazon Managed Blockchain
+• Blockchain makes it possible to build applications where multiple parties can execute transactions without the need for a trusted, central authority.
+• Amazon Managed Blockchain is a managed service to: • Join public blockchain networks • Or create your own scalable private network
+
+---
+AWS Glue
+• Managed extract, transform, and load (ETL) service • Useful to prepare and transform data for analytics • Fully serverless service
+
+---
+	DMS – Database Migration Service Source DB
+• Quickly and securely migrate databases to AWS, resilient, self healing
+• The source database remains available during the migration
+EC2 instance Running DMS
+• Supports: • Homogeneous migrations: ex Oracle to Oracle
+Target DB
+• Heterogeneous migrations: ex Microsoft SQL Server to Aurora
+
+---
 
 
 
