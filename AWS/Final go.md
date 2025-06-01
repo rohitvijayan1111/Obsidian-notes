@@ -135,4 +135,60 @@ Amazon S3:
 	 - Suspending versioning does not delete the previous versions
 - Amazon S3 – Replication (CRR & SRR)
 	- Must enable Versioning in source and destination buckets • Cross-Region Replication (CRR) • Same-Region Replication (SRR)
-- 
+
+
+S3 Storage Classes
+• Amazon S3 Standard - General Purpose
+• Amazon S3 Standard-Infrequent Access (IA) 
+• Amazon S3 One Zone-Infrequent Access
+• Amazon S3 Glacier Instant Retrieval
+• Amazon S3 Glacier Flexible Retrieval
+• Amazon S3 Glacier Deep Archive 
+• Amazon S3 Intelligent Tiering
+
+Durability: • High durability (99.999999999%, 11 9’s) of objects across multiple AZ
+Availability: • Measures how readily available a service is • Varies depending on storage class • Example: S3 standard has 99.99% availability = not available 53 minutes a year
+
+
+• There are no retrieval charges in S3 Intelligent-Tiering
+• Frequent Access tier (automatic): default tier • Infrequent Access tier (automatic): objects not accessed for 30 days • Archive Instant Access tier (automatic): objects not accessed for 90 days • Archive Access tier (optional): configurable from 90 days to 700+ days • Deep Archive Access tier (optional): config. from 180 days to 700+ days
+
+
+
+IAM Access Analyzer for S3
+• Ensures that only intended people have access to your S3 buckets • Example: publicly accessible bucket, bucket shared with other AWS account… • Evaluates S3 Bucket Policies, S3 ACLs, S3 Access Point Policies • Powered by IAM Access Analyzer
+
+
+---
+SNOWCONE
+- AWS Snowcone is a small, rugged, and secure edge computing and data transfer device It features 2 CPUs, 4 GB of memory, and up to 14 TB of usable storage.
+
+SNOWBALL
+
+- • Snowball Edge Storage Optimized devices are well suited for large-scale data migrations
+and recurring transfer workflows, in addition to local computing with higher capacity
+needs.
+
+Snowball Edge Compute Optimized provides powerful computing resources for use cases
+such as machine learning, full motion video analysis, analytics, and local computing stacks.
+
+SNOW MOBILE
+
+AWS Snowmobile is an exabyte-scale data transfer service used to move large amounts of data
+to AWS.
+You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized
+shipping container, pulled by a semi trailer truck.
+
+
+pricing
+
+- You pay for device usage and data transfer out of AWS • Data transfer IN to Amazon S3 is $0.00 per GB
+- Committed Upfront • Pay in advance for monthly, 1-year, and 3-years of usage (Edge Computing) • Up to 62% discounted pricing
+
+
+---
+
+
+
+
+
