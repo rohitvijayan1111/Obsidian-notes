@@ -205,6 +205,57 @@ Benefits of DBMS managed by AWS:
 
 Note: many databases technologies could be run on EC2, but you must handle yourself the resiliency, backup, patching, high availability, fault tolerance, scaling…
 
+---
+RDS:
+- for sql
+- • It allows you to create databases in the cloud that are managed by AWS • Postgres • MySQL • MariaDB • Oracle • Microsoft SQL Server • IBM DB2 • Aurora (AWS Proprietary database)
+---
+Aurora:
+ - Aurora is a proprietary technology from AWS
+ - its cloud optimized
+ - Aurora storage automatically grows in increments of 10GB, up to 128 TB 
+ -  Aurora costs more than RDS (20% more) – but is more efficient
+ - AURORA SERVLESS->**on-demand, auto-scaling version of Amazon Aurora**, which is a **high-performance cloud-native database** that’s compatible with **MySQL** and **PostgreSQL**.
+ 
+ ---
+ RDS Deployments: Read Replicas, Multi-AZ
+- Can create up to 15 Read Replicas • Data is only written to the main DB
+
+- Multi-AZ: • Failover in case of AZ outage (high availability) • Data is only read/written to the main database • Can only have 1 other AZ as failover
+---
+Amazon ElastiCache Overview
+• The same way RDS is to get managed Relational Databases… • ElastiCache is to get managed Redis or Memcached • Caches are in-memory databases with high performance, low latency • Helps reduce load off databases for read intensive workloads
+
+---
+DynamoDB
+• Fully Managed Highly available **with replication across 3 AZ** • NoSQL database - not a relational database • Scales to massive workloads, distributed “serverless” database • Millions of requests per seconds, trillions of row, 100s of TB of storage
+- Standard & Infrequent Access (IA) Table Class
+
+DynamoDB Accelerator - DAX
+• Fully Managed in-memory cache for DynamoDB
+
+Difference with ElastiCache at the CCP level: DAX is only used for and is integrated with DynamoDB, while ElastiCache can be used for other databases
+
+DynamoDB – Global Tables
+• Make a DynamoDB table accessible with low latency in multiple-regions • Active-Active replication (read/write to any AWS Region)
+
+---
+
+ Redshift Overview
+• Redshift is based on PostgreSQL, but it’s not used for OLTP • It’s OLAP – online analytical processing (analytics and data warehousing) • Load data once every hour, not every second
+
+Columnar storage of data (instead of row based) • Massively Parallel Query Execution (MPP), highly available
+
+---
+
+Amazon EMR
+• EMR stands for “Elastic MapReduce” • EMR helps creating Hadoop clusters (Big Data) to analyze and process vast amount of data
+
+
+Auto-scaling and integrated with Spot instances • Use cases: data processing, machine learning, web indexing, big data…
+
+---
+
 
 
 
