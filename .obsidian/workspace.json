@@ -6,6 +6,7 @@
       {
         "id": "fdf03550609eca2f",
         "type": "tabs",
+        "dimension": 83.22147651006712,
         "children": [
           {
             "id": "dcc362a372d86a6c",
@@ -27,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Companies list/List of companies.md",
+                "file": "Leetcode/Greedy/Random Problems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "List of companies"
+              "title": "Random Problems"
             }
           },
           {
@@ -49,6 +50,27 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "ed24059584cd6420",
+        "type": "tabs",
+        "dimension": 16.778523489932887,
+        "children": [
+          {
+            "id": "c3528823c480e34d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -263,10 +285,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "8e84bb4d66ae6df0",
+  "active": "fa0d4141b4579019",
   "lastOpenFiles": [
-    "SYSTEM DESIGN/az.md",
+    "AWS/Welcome.md",
+    "Leetcode/Greedy/Random Problems.md",
+    "Leetcode/Greedy/Notes.md",
+    "Leetcode/Greedy/Mindmap.canvas",
     "Companies list/List of companies.md",
+    "SYSTEM DESIGN/az.md",
     "Companies list",
     "assets/images/Pasted image 20250602120942.png",
     "assets/images/Pasted image 20250602120130.png",
@@ -283,7 +309,6 @@
     "Behavioral Questions/resources.md",
     "Behavioral Questions/Explain an point in time.md",
     "Leetcode/Binary search tree/patterns.md",
-    "AWS/Welcome.md",
     "assets/images/Pasted image 20250530213443.png",
     "AWS/Resources for CCP.md",
     "Leetcode/Binary search tree/Random Problems.md",
@@ -303,8 +328,6 @@
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Interview tips",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
-    "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
-    "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
     "Core subjects",
     "Leetcode/Binary search tree",
     "Leetcode/Untitled",

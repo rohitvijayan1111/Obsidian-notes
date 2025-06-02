@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"5e75c7dcbd4ec862","x":-160,"y":-360,"width":250,"height":60,"type":"text","text":"Greedy Problems\n"},
+		{"id":"279e80ef4a9031b9","x":-507,"y":-178,"width":287,"height":118,"type":"text","text":"Two pass solution\n(When the problem revolves on neighbours and two direction)"}
+	],
+	"edges":[
+		{"id":"ad5699f907d1eaad","fromNode":"5e75c7dcbd4ec862","fromSide":"bottom","toNode":"279e80ef4a9031b9","toSide":"top"}
+	]
+}
