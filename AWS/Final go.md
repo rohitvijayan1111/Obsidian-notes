@@ -530,3 +530,41 @@ Applications plaintext
 • Secure storage for configuration and secrets • API Keys, passwords, configurations… • Serverless, scalable, durable, easy SDK • Control access permissions using IAM • Version tracking & encryption (optional
 
 ---
+---
+
+## 🌐 What is Amazon CloudFront?
+
+**Amazon CloudFront** is a **Content Delivery Network (CDN)** service from AWS that delivers data, videos, applications, and APIs to users globally with **low latency** and **high transfer speeds**.
+
+> It speeds up distribution of your content by caching copies at **edge locations** close to your users worldwide.
+
+---
+
+## How CloudFront Works
+
+1. You configure CloudFront to deliver content from an **origin** — typically an S3 bucket, an HTTP server (like your web server), or an AWS Elastic Load Balancer.
+    
+2. When a user requests content (e.g., a website image), the request is routed to the **nearest CloudFront edge location**.
+    
+3. If the content is already cached at the edge location, CloudFront delivers it immediately.
+    
+4. If not cached, CloudFront fetches it from the origin, caches it, then delivers it to the user.
+    
+5. Subsequent users near that location get the cached content quickly without going all the way to the origin.
+
+---
+CloudFront vs S3 Cross Region Replication
+
+cloudFront
+- Great for static content that must be available everywhere
+
+S3 Cross Region Replication
+- Great for dynamic content that needs to be available at low-latency in few regions
+
+---
+S3 Transfer Acceleration
+• Increase transfer speed by transferring file to an AWS edge location which will forward the data to the S3 bucket in the target reg
+
+
+---
+

@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/Final go.md",
+                "file": "SYSTEM DESIGN/az.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Final go"
+              "title": "az"
+            }
+          },
+          {
+            "id": "fa0d4141b4579019",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SYSTEM DESIGN/List of companies.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "List of companies"
             }
           },
           {
@@ -33,7 +47,8 @@
               "title": "Pasted image 20250409211938"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,18 +263,26 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "dcc362a372d86a6c",
+  "active": "fa0d4141b4579019",
   "lastOpenFiles": [
+    "SYSTEM DESIGN/az.md",
+    "SYSTEM DESIGN/List of companies.md",
+    "Companies list",
+    "assets/images/Pasted image 20250602120942.png",
+    "assets/images/Pasted image 20250602120130.png",
+    "assets/images/Pasted image 20250602115341.png",
+    "assets/images/Pasted image 20250602114904.png",
+    "Security/Untitled/Untitled.md",
+    "AWS/Final go.md",
+    "Accountability/ask the how,why.md",
+    "Accountability/unknown.md",
     "Leetcode/time complexity.md",
     "assets/images/Pasted image 20250601215518.png",
     "Leetcode/DP/DP PATTERN ARTICLE.md",
-    "AWS/Final go.md",
-    "Accountability/ask the how,why.md",
     "AWS/Pasted image 20250409211938.png",
     "Behavioral Questions/resources.md",
     "Behavioral Questions/Explain an point in time.md",
     "Leetcode/Binary search tree/patterns.md",
-    "Accountability/unknown.md",
     "AWS/Welcome.md",
     "assets/images/Pasted image 20250530213443.png",
     "AWS/Resources for CCP.md",
@@ -275,8 +298,6 @@
     "Leetcode/Graphs/Resources.md",
     "Leetcode/DP/Pratice.md",
     "Leetcode/Graphs/Untitled.canvas",
-    "Security/Untitled/Untitled.md",
-    "assets/images/Pasted image 20250524202556.png",
     "Interview tips/TIPS.md",
     "Security/Untitled",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
@@ -284,20 +305,14 @@
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
-    "Core subjects/resources.md",
-    "SYSTEM DESIGN/Resources.md",
     "Core subjects",
     "Leetcode/Binary search tree",
     "Leetcode/Untitled",
-    "assets/images/Pasted image 20250519163155.png",
-    "assets/images/Pasted image 20250519163121.png",
-    "assets/images/Pasted image 20250519163017.png",
     "SYSTEM DESIGN/LLD",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Strings",
     "Leetcode/Mathematical",
     "assets/images",
-    "assets",
     "Untitled 1.canvas",
     "Untitled 2.canvas"
   ]
