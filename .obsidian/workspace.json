@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/DP/Random.md",
+                "file": "Leetcode/DP/One go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Random"
+              "title": "One go"
             }
           },
           {
@@ -287,8 +287,9 @@
   },
   "active": "fa0d4141b4579019",
   "lastOpenFiles": [
-    "Leetcode/DP/Pratice.md",
     "Leetcode/DP/Random.md",
+    "Leetcode/DP/One go.md",
+    "Leetcode/DP/Pratice.md",
     "Leetcode/Greedy/Random Problems.md",
     "AWS/Welcome.md",
     "Leetcode/Greedy/Notes.md",
@@ -326,7 +327,6 @@
     "Leetcode/Graphs/Untitled.canvas",
     "Interview tips/TIPS.md",
     "Security/Untitled",
-    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Interview tips",
     "Core subjects",
     "Leetcode/Binary search tree",
