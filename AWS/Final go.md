@@ -305,3 +305,75 @@ Target DB
 
 
 
+
+
+**DOCKER**
+
+- • Docker is a software development platform to deploy apps • Apps are packaged in containers that can be run on any OS • Apps run the same, regardless of where they’re run
+- Where Docker images are stored?
+	- Public: Docker Hub
+	- Private: Amazon ECR (Elastic Container Registry)
+
+
+
+**ECS-Elastic Container service**
+- Launch Docker containers on AWS
+- **You must provision & maintain the infrastructure (the EC2 instances)**
+- AWS takes care of starting / stopping containers
+- Has integrations with the Application Load Balancer
+
+ECS can be container can be managed in two ways:
+- EC2 instances 
+- serverless- fargate
+
+
+Fargate
+• Launch Docker containers on AWS
+• You do not provision the infrastructure (no EC2 instances to manage) – simpler!
+• Serverless offering • AWS just runs containers for you based on the CPU / RAM you need
+
+
+ECR
+• Elastic Container Registry • Private Docker Registry on AWS
+• This is where you store your Docker images so they can be run by ECS or Fargate
+
+
+Amazon EKS
+• EKS = Elastic Kubernetes Service • Allows you to launch managed Kubernetes clusters on AWS
+• Kubernetes is an open-source system for management, deployment, and scaling of containerized apps (Docker)
+• Containers can be hosted on: • EC2 instances • Fargate (Serverless)
+• Kubernetes is cloud-agnostic (can be used in any cloud – Azure, GCP…)
+
+## 🚀 What is **AWS Lambda**?
+
+**AWS Lambda** is a **serverless compute service** that lets you **run code without provisioning or managing servers**. You simply upload your code, and Lambda runs it **in response to events** — automatically handling the **scaling, availability, and infrastructure** behind the scenes.
+
+> ✅ **Key Idea**: You write code, AWS runs it **on demand** in a fully managed environment.
+
+## 📦 Key Characteristics
+
+|Feature|Description|
+|---|---|
+|**Serverless**|No servers to manage — AWS takes care of provisioning and scaling|
+|**Event-driven**|Code runs in response to triggers like HTTP requests, file uploads, or database changes|
+|**Auto-scaling**|Scales instantly from 0 to thousands of requests in parallel|
+|**Short-lived**|Each execution is stateless and limited to **15 minutes max**|
+|**Languages supported**|Node.js, Python, Java, Go, .NET, Ruby, and custom runtimes|
+|**Pay only for what you use**|You pay **per request** and **duration (per ms)** of execution|
+
+
+
+----
+
+• You can find overall pricing information here: https://aws.amazon.com/lambda/pricing/
+• Pay per calls: • First 1,000,000 requests are free • $0.20 per 1 million requests thereafter ($0.0000002 per request)
+• Pay per duration: (in increment of 1 ms) • 400,000 GB-seconds of compute time per month for FREE • == 400,000 seconds if function is 1GB RAM • == 3,200,000 seconds if function is 128 MB RAM • After that $1.00 for 600,000 GB-seconds
+• It is usually very cheap to run AWS Lambda so it’s very popular
+
+---
+Amazon API Gateway • Example: building a serverless API
+REST API Client PROXY REQUESTS API Gateway Lambda CRUD DynamoDB
+• Fully managed service for developers to easily create, publish, maintain, monitor, and secure APIs
+• Serverless and scalable • Supports RESTful APIs and WebSocket APIs • Support for security, user authentication, API throttling, API keys, monitoring...
+
+---
