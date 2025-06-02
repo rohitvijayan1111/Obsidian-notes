@@ -427,3 +427,106 @@ Has high availability but no auto-scaling, limited AWS integrations
 **Elastic Beanstalk** is a **Platform-as-a-Service (PaaS)** offering from AWS. It lets you **deploy and manage web applications quickly** — without needing to manually configure the underlying infrastructure like servers, databases, networking, etc.
 
 ---
+### 🚀 What is **AWS CodeDeploy**?
+
+**AWS CodeDeploy** is a **deployment service** that helps you **automate the process of updating code** on:
+
+- EC2 instances
+    
+- On-premise servers
+    
+- Lambda functions
+    
+- ECS services
+    
+
+It doesn’t build your app or define infrastructure — instead, it **manages how new versions of your code get installed and activated** on your servers or services.
+
+---
+### 🧾 What is **AWS CodeCommit**?
+
+**AWS CodeCommit** is a **fully managed Git-based source control service** — basically, it’s AWS’s version of GitHub or GitLab, but hosted inside AWS.
+
+You can:
+
+- Push and pull code like any other Git repo
+    
+- Store private repositories
+    
+- Integrate with AWS services (CodeBuild, CodeDeploy, etc.)
+    
+- Use IAM for access control
+
+---
+
+### 🚀 What is **AWS CodeBuild**?
+
+**AWS CodeBuild** is a **fully managed build service** that compiles your source code, runs tests, and produces deployable artifacts (like application packages or Docker images).
+
+Basically, it automates the **“build”** step in your Continuous Integration (CI) or Continuous Delivery (CD) pipeline.
+
+---
+AWS CodePipeline
+• Orchestrate the different steps to have the code automatically pushed to production • Code => Build => Test => Provision => Deploy • Basis for CICD (Continuous Integration & Continuous Delivery)
+
+---
+AWS CodeArtifact
+• Software packages depend on each other to be built (also called code dependencies), and new ones are created
+• Storing and retrieving these dependencies is called artifact management
+
+Developers and CodeBuild can then retrieve dependencies straight from CodeArtifact
+
+---
+
+### 🚀 What is **AWS Systems Manager (SSM)**?
+
+AWS Systems Manager is a **centralized management service** that helps you **view, control, and automate operational tasks** across your AWS resources — like EC2 instances, on-prem servers, and more — all from one place.
+
+How Systems Manager works
+• We need to install the SSM agent onto the systems we control
+
+### 🔐 What is **SSM Session Manager**?
+
+It’s a **secure, auditable, and easy way to access your EC2 instances (or on-premises servers)** without needing traditional SSH.
+
+---
+
+### Why it’s awesome:
+
+- **No need to open port 22** (SSH) on your instances → reduces attack surface
+    
+- **No SSH keys or bastion hosts** → simplifies access management
+    
+- Supports **Linux, macOS, and Windows** servers
+    
+- Sessions and commands can be **logged to S3 or CloudWatch Logs** for audit and compliance
+    
+
+---
+
+### How to **start a session and execute commands**:
+
+1. **Prerequisites:**
+    
+    - EC2 instance must have the **SSM Agent installed and running** (most modern AMIs have it preinstalled)
+        
+    - The instance role must have **IAM permissions** allowing SSM access (e.g., `AmazonSSMManagedInstanceCore` policy)
+        
+    - Instance needs outbound internet or VPC endpoint to SSM
+        
+2. **Start a session:**
+    
+
+- Using AWS Console:
+    
+    - Go to Systems Manager > Session Manager
+        
+    - Select your instance and click **Start session**
+
+---
+
+Systems Manager Parameter Store
+Applications plaintext
+• Secure storage for configuration and secrets • API Keys, passwords, configurations… • Serverless, scalable, durable, easy SDK • Control access permissions using IAM • Version tracking & encryption (optional
+
+---
