@@ -371,9 +371,19 @@ Amazon EKS
 • It is usually very cheap to run AWS Lambda so it’s very popular
 
 ---
-Amazon API Gateway • Example: building a serverless API
-REST API Client PROXY REQUESTS API Gateway Lambda CRUD DynamoDB
-• Fully managed service for developers to easily create, publish, maintain, monitor, and secure APIs
-• Serverless and scalable • Supports RESTful APIs and WebSocket APIs • Support for security, user authentication, API throttling, API keys, monitoring...
+## 🌐 What is Amazon API Gateway?
+
+**Amazon API Gateway** is a **fully managed service** that enables you to **create, publish, maintain, monitor, and secure APIs** at any scale. It acts as a **"front door"** for your applications to access **backend services** such as:
+
+- AWS Lambda functions
+    
+- HTTP endpoints
+    
+- AWS services (via AWS integration)
+    
+- Other AWS resources
+    
+
+> 📌 API Gateway allows you to expose RESTful, HTTP, and WebSocket APIs securely and efficiently.
 
 ---
