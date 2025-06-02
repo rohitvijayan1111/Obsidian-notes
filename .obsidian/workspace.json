@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM DESIGN/List of companies.md",
+                "file": "Companies list/List of companies.md",
                 "mode": "source",
                 "source": false
               },
@@ -263,10 +263,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "fa0d4141b4579019",
+  "active": "8e84bb4d66ae6df0",
   "lastOpenFiles": [
     "SYSTEM DESIGN/az.md",
-    "SYSTEM DESIGN/List of companies.md",
+    "Companies list/List of companies.md",
     "Companies list",
     "assets/images/Pasted image 20250602120942.png",
     "assets/images/Pasted image 20250602120130.png",
