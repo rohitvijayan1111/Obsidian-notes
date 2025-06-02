@@ -370,6 +370,9 @@ Amazon EKS
 • Pay per duration: (in increment of 1 ms) • 400,000 GB-seconds of compute time per month for FREE • == 400,000 seconds if function is 1GB RAM • == 3,200,000 seconds if function is 128 MB RAM • After that $1.00 for 600,000 GB-seconds
 • It is usually very cheap to run AWS Lambda so it’s very popular
 
+
+**Lambda Billing: • By the time run x by the RAM provisioned • By the number of invocations**
+
 ---
 ## 🌐 What is Amazon API Gateway?
 
@@ -385,5 +388,42 @@ Amazon EKS
     
 
 > 📌 API Gateway allows you to expose RESTful, HTTP, and WebSocket APIs securely and efficiently.
+
+---
+
+AWS Batch
+
+- used to run batch processing
+- it automates manages infra and provisions it
+- it uses AWS ECS and docker for submit the job
+- we need to just submit the job and AWS Batch handles the rest
+
+---
+Amazon Lightsail
+• Virtual servers, storage, databases, and networking • Low & predictable pricing • Simpler alternative to using EC2, RDS, ELB, EBS, Route 53… • Great for people with little cloud experience!
+
+Has high availability but no auto-scaling, limited AWS integrations
+
+---
+---
+**AWS CloudFormation**
+
+**AWS CloudFormation** is a tool from Amazon Web Services (AWS) that helps you **set up and manage your cloud resources automatically**, like servers, databases, networks, and more — **using code instead of clicking around in a web dashboard**.
+
+### 🌐 What is **Infrastructure Composer**?
+
+**Infrastructure Composer** is a **visual tool in AWS** that helps you **build CloudFormation templates without writing code manually**. It lets you **drag and drop AWS resources** (like EC2 instances, S3 buckets, etc.) on a canvas and then **generates the CloudFormation code for you**.
+
+---
+
+**WS Cloud Development Kit (CDK)**
+• Define your cloud infrastructure using a familiar language: • JavaScript/TypeScript, Python, Java, and .NET
+• The code is “compiled” into a CloudFormation template (JSON/YAML)
+• You can therefore deploy infrastructure and application runtime code together
+
+---
+### 🌱 What is **AWS Elastic Beanstalk**?
+
+**Elastic Beanstalk** is a **Platform-as-a-Service (PaaS)** offering from AWS. It lets you **deploy and manage web applications quickly** — without needing to manually configure the underlying infrastructure like servers, databases, networking, etc.
 
 ---
