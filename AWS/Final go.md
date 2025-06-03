@@ -568,3 +568,60 @@ S3 Transfer Acceleration
 
 ---
 
+AWS Global Accelerator
+
+**AWS Global Accelerator** is a **networking service** that improves the **availability and performance** of your internet-facing applications by directing user traffic through the **AWS global network infrastructure**.
+
+---
+
+### 🔍 **What It Does**
+
+- **Provides 2 static Anycast IP addresses** to act as a **global entry point** for your application.
+
+
+
+### 🌐 **AWS Wavelength – Explained Simply**
+
+**AWS Wavelength** brings **AWS cloud services** closer to **mobile users and devices** by deploying AWS infrastructure **at the edge of telecom providers' 5G networks**.
+
+
+### 🏙️ **AWS Local Zones – Explained Clearly**
+
+**AWS Local Zones** are a type of **AWS infrastructure deployment** that brings **compute, storage, and select AWS services closer to large population centers**, **outside of the main AWS Regions**.
+
+
+
+
+
+----
+---
+---
+---
+
+
+Amazon SQS – Standard Queue
+
+- Fully managed service (~serverless), use to decouple applications
+- Scales from 1 message per second to 10,000s per second
+- • Default retention of messages: 4 days, maximum of 14 days 
+	- • No limit to how many messages can be in the queue
+
+
+### 📊 **Amazon Kinesis Data Streams (KDS) – Deep Dive**
+
+**Amazon Kinesis Data Streams** is a **real-time data streaming service** that allows you to **collect, process, and analyze streaming data at massive scale**.
+
+Amazon SNS
+• The “event publishers” only sends message to one SNS topic • As many “event subscribers” as we want to listen to the SNS topic notifications • Each subscriber to the topic will get all the messages
+
+
+---
+
+### 📬 **Amazon MQ – Detailed Explanation**
+
+**Amazon MQ** is a **managed message broker service** for **Apache ActiveMQ** and **RabbitMQ**. It enables applications to communicate with each other using **message queues**, while **offloading the complexity** of setting up and maintaining the underlying broker infrastructure.
+
+
+---
+
+

@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM DESIGN/az.md",
+                "file": "AWS/Final go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "az"
+              "title": "Final go"
             }
           },
           {
@@ -48,8 +48,7 @@
               "title": "Pasted image 20250409211938"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ed24059584cd6420",
@@ -285,17 +284,19 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "fa0d4141b4579019",
+  "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
-    "Leetcode/DP/Random.md",
+    "Leetcode/Tree/Lec 1-Traversals.md",
+    "Leetcode/Tree/Random Problems.md",
+    "SYSTEM DESIGN/az.md",
     "Leetcode/DP/One go.md",
+    "Leetcode/DP/Random.md",
     "Leetcode/DP/Pratice.md",
     "Leetcode/Greedy/Random Problems.md",
     "AWS/Welcome.md",
     "Leetcode/Greedy/Notes.md",
     "Leetcode/Greedy/Mindmap.canvas",
     "Companies list/List of companies.md",
-    "SYSTEM DESIGN/az.md",
     "Companies list",
     "assets/images/Pasted image 20250602120942.png",
     "assets/images/Pasted image 20250602120130.png",
@@ -317,8 +318,6 @@
     "Leetcode/Binary search tree/Random Problems.md",
     "Leetcode/Binary search tree/One Go.md",
     "Leetcode/Tree/Everything you need to know.md",
-    "Leetcode/Tree/Lec 1-Traversals.md",
-    "Leetcode/Tree/Random Problems.md",
     "assets/images/Pasted image 20250528183407.png",
     "assets/images/Pasted image 20250528174947.png",
     "AWS/AWS-1.md",
