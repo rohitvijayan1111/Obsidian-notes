@@ -12,17 +12,14 @@
             "id": "dcc362a372d86a6c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Leetcode/Sliding window/Untitled.canvas",
-                "viewState": {
-                  "x": -2.800995352860326,
-                  "y": 844.4340309214766,
-                  "zoom": -0.5246640816926955
-                }
+                "file": "Leetcode/Sliding window/one go.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "one go"
             }
           },
           {
@@ -289,10 +286,12 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
-    "assets/images/Pasted image 20250603155915.png",
-    "Leetcode/Sliding window/Untitled.md",
-    "Leetcode/Sliding window/Untitled.canvas",
+    "AWS/Welcome.md",
+    "Leetcode/Sliding window/one go.md",
+    "AWS/Pasted image 20250409211938.png",
     "Leetcode/DP/One go.md",
+    "Leetcode/Sliding window/Untitled.canvas",
+    "assets/images/Pasted image 20250603155915.png",
     "Leetcode/Sliding window",
     "Leetcode/DP/DP PATTERN ARTICLE.md",
     "AWS/Final go.md",
@@ -302,7 +301,6 @@
     "Leetcode/DP/Random.md",
     "Leetcode/DP/Pratice.md",
     "Leetcode/Greedy/Random Problems.md",
-    "AWS/Welcome.md",
     "Leetcode/Greedy/Notes.md",
     "Leetcode/Greedy/Mindmap.canvas",
     "Companies list/List of companies.md",
@@ -316,7 +314,6 @@
     "Accountability/unknown.md",
     "Leetcode/time complexity.md",
     "assets/images/Pasted image 20250601215518.png",
-    "AWS/Pasted image 20250409211938.png",
     "Behavioral Questions/resources.md",
     "Behavioral Questions/Explain an point in time.md",
     "Leetcode/Binary search tree/patterns.md",
@@ -328,7 +325,6 @@
     "assets/images/Pasted image 20250528183407.png",
     "assets/images/Pasted image 20250528174947.png",
     "AWS/AWS-1.md",
-    "assets/images/Pasted image 20250528154224.png",
     "Leetcode/Graphs/Untitled.canvas",
     "Security/Untitled",
     "Interview tips",
