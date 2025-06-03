@@ -12,14 +12,17 @@
             "id": "dcc362a372d86a6c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Leetcode/DP/One go.md",
-                "mode": "source",
-                "source": false
+                "file": "Leetcode/Sliding window/Untitled.canvas",
+                "viewState": {
+                  "x": -2.800995352860326,
+                  "y": 844.4340309214766,
+                  "zoom": -0.5246640816926955
+                }
               },
-              "icon": "lucide-file",
-              "title": "One go"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           },
           {
@@ -286,12 +289,16 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20250603155915.png",
+    "Leetcode/Sliding window/Untitled.md",
+    "Leetcode/Sliding window/Untitled.canvas",
+    "Leetcode/DP/One go.md",
+    "Leetcode/Sliding window",
     "Leetcode/DP/DP PATTERN ARTICLE.md",
     "AWS/Final go.md",
     "Leetcode/Tree/Lec 1-Traversals.md",
     "Leetcode/Tree/Random Problems.md",
     "SYSTEM DESIGN/az.md",
-    "Leetcode/DP/One go.md",
     "Leetcode/DP/Random.md",
     "Leetcode/DP/Pratice.md",
     "Leetcode/Greedy/Random Problems.md",
@@ -322,9 +329,7 @@
     "assets/images/Pasted image 20250528174947.png",
     "AWS/AWS-1.md",
     "assets/images/Pasted image 20250528154224.png",
-    "Leetcode/Graphs/Resources.md",
     "Leetcode/Graphs/Untitled.canvas",
-    "Interview tips/TIPS.md",
     "Security/Untitled",
     "Interview tips",
     "Core subjects",
@@ -334,7 +339,6 @@
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Strings",
     "Leetcode/Mathematical",
-    "assets/images",
     "Untitled 1.canvas",
     "Untitled 2.canvas"
   ]
