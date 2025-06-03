@@ -623,5 +623,23 @@ Amazon SNS
 
 
 ---
+### 📊 Amazon CloudWatch Metrics – Explained in Detail ->Monitor, log and alert
+
+**Amazon CloudWatch Metrics** are **time-ordered data points** that represent the performance of your AWS resources or applications. They are a **core part of CloudWatch**, which is AWS’s native monitoring and observability service.
+
+- • You need to run a CloudWatch agent on EC2 to push the log files you want even for on premis
+
+---
+# Event Bridge
+
+**Amazon EventBridge** is a **serverless event bus** service that helps different applications (AWS services, SaaS apps, or your own apps) communicate with each other using **events** in **real time**.
 
 
+----
+
+
+### **AWS CloudTrail – Explained in Detail**
+
+**AWS CloudTrail** is a **logging and auditing service** that **records all actions** taken within your AWS account. It helps you understand **who did what**, **when**, and **from where** — making it critical for **security, compliance, and troubleshooting**.
+
+---

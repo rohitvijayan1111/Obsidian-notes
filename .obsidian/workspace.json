@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/Final go.md",
+                "file": "Leetcode/DP/One go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Final go"
+              "title": "One go"
             }
           },
           {
@@ -286,6 +286,8 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
+    "Leetcode/DP/DP PATTERN ARTICLE.md",
+    "AWS/Final go.md",
     "Leetcode/Tree/Lec 1-Traversals.md",
     "Leetcode/Tree/Random Problems.md",
     "SYSTEM DESIGN/az.md",
@@ -303,12 +305,10 @@
     "assets/images/Pasted image 20250602115341.png",
     "assets/images/Pasted image 20250602114904.png",
     "Security/Untitled/Untitled.md",
-    "AWS/Final go.md",
     "Accountability/ask the how,why.md",
     "Accountability/unknown.md",
     "Leetcode/time complexity.md",
     "assets/images/Pasted image 20250601215518.png",
-    "Leetcode/DP/DP PATTERN ARTICLE.md",
     "AWS/Pasted image 20250409211938.png",
     "Behavioral Questions/resources.md",
     "Behavioral Questions/Explain an point in time.md",
