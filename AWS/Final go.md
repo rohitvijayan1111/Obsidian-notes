@@ -675,3 +675,12 @@ It is especially useful for **reviewing large codebases**, identifying **invisib
 
 **VPC Flow Logs** is an AWS feature that **records details about network traffic** in and out of your **VPC (Virtual Private Cloud)**. It helps you **monitor, troubleshoot, and secure** your network.
 
+
+VPC Closing Comments
+• VPC – Virtual Private Cloud • Subnets – Tied to an AZ, network partition of the VPC • Internet Gateway – at the VPC level, provide Internet Access • NAT Gateway / Instances – give internet access to private subnets • NACL – Stateless, subnet rules for inbound and outbound • Security Groups – Stateful, operate at the EC2 instance level or ENI • VPC Peering – Connect two VPC with non overlapping IP ranges, nontransitive
+• Elastic IP –fixed public IPv4, ongoing cost if not in-use © Stephane Maarek NOT FOR DISTRIBUTION © Stephane Maarek www.datacumulus.comVPC Closing Comments
+• VPC Endpoints – Provide private access to AWS Services within VPC • PrivateLink – Privately connect to a service in a 3rd party VPC • VPC Flow Logs – network traffic logs • Site to Site VPN – VPN over public internet between on-premises DC and AWS
+• Client VPN – OpenVPN connection from your computer into your VPC
+• Direct Connect – direct private connection to AWS • Transit Gateway – Connect thousands of VPC and on-premises networks together
+
+
