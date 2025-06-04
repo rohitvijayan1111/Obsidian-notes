@@ -667,3 +667,11 @@ Provides governance, compliance and audit for your AWS Account • CloudTrail is
     
 
 It is especially useful for **reviewing large codebases**, identifying **invisible bugs**, and **optimizing performance-critical code**.
+
+
+
+
+### ✅ What Are VPC Flow Logs?
+
+**VPC Flow Logs** is an AWS feature that **records details about network traffic** in and out of your **VPC (Virtual Private Cloud)**. It helps you **monitor, troubleshoot, and secure** your network.
+
