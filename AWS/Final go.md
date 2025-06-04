@@ -642,4 +642,28 @@ Amazon SNS
 
 **AWS CloudTrail** is a **logging and auditing service** that **records all actions** taken within your AWS account. It helps you understand **who did what**, **when**, and **from where** — making it critical for **security, compliance, and troubleshooting**.
 
+
+Provides governance, compliance and audit for your AWS Account • CloudTrail is enabled by default!
+• Get an history of events / API calls made within your AWS Account
+
 ---
+
+### 🧬 **AWS X-Ray – Explained in Detail**
+
+**AWS X-Ray** is a **distributed tracing service** that helps you analyze and debug **complex microservices-based applications**. It lets you see **end-to-end request flows** across your services, helping you find **performance bottlenecks**, **errors**, and **latency issues**.
+
+
+---
+
+### 🤖 **Amazon CodeGuru – Explained in Detail**
+
+**Amazon CodeGuru** is a **developer tool powered by machine learning (ML)** that helps you:
+
+1. **Improve code quality**
+    
+2. **Identify performance bottlenecks**
+    
+3. **Suggest fixes for security and reliability issues**
+    
+
+It is especially useful for **reviewing large codebases**, identifying **invisible bugs**, and **optimizing performance-critical code**.

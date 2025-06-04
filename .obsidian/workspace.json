@@ -12,17 +12,14 @@
             "id": "dcc362a372d86a6c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Leetcode/Sliding window/Untitled.canvas",
-                "viewState": {
-                  "x": 390.0961192845482,
-                  "y": 465.10322334668854,
-                  "zoom": -0.9443391848028853
-                }
+                "file": "AWS/Final go.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "Final go"
             }
           }
         ]
@@ -263,11 +260,11 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
+    "Leetcode/Sliding window/Untitled.canvas",
     "Leetcode/Sliding window/one go.md",
     "AWS/Welcome.md",
     "AWS/Pasted image 20250409211938.png",
     "Leetcode/DP/One go.md",
-    "Leetcode/Sliding window/Untitled.canvas",
     "assets/images/Pasted image 20250603155915.png",
     "Leetcode/Sliding window",
     "Leetcode/DP/DP PATTERN ARTICLE.md",
