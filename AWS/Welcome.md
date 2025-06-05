@@ -56,7 +56,7 @@ When you're ready, delete this note and make the vault your own.
 
     ### 📚 Related Concepts and Topics
 
-
+🚨
 
 
 ![[Pasted image 20250503091351.png]]

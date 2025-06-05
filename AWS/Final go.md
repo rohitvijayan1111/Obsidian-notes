@@ -684,3 +684,43 @@ VPC Closing Comments
 • Direct Connect – direct private connection to AWS • Transit Gateway – Connect thousands of VPC and on-premises networks together
 
 
+
+AWS Shield
+• AWS Shield Standard: • Free service that is activated for every AWS customer • Provides protection from attacks such as SYN/UDP Floods, Reflection attacks and other layer 3/layer 4 attacks
+• AWS Shield Advanced: • Optional DDoS mitigation service ($3,000 per month per organization) • Protect against more sophisticated attack on Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, and Route 53
+• 24/7 access to AWS DDoS response team (DRP) • Protect against higher fees during usage spikes due to DDoS
+
+
+
+AWS WAF – Web Application Firewall
+• Protects your web applications from common web exploits (Layer 7) • Layer 7 is HTTP (vs Layer 4 is TCP) • Deploy on Application Load Balancer, API Gateway, CloudFront
+
+
+AWS Network Firewall internet
+• Protect your entire Amazon VPC • From Layer 3 to Layer 7 protection
+
+
+AWS Firewall Manager
+• Manage security rules in all accounts of an AWS Organization### 🔐 **AWS CloudHSM – Detailed Explanation**
+
+---
+
+### 📘 **What is AWS CloudHSM?**
+
+**AWS CloudHSM (Hardware Security Module)** is a **cloud-based hardware device** that allows you to **securely generate and use your own encryption keys** in **FIPS 140-2 Level 3** validated hardware.
+
+> CloudHSM gives you **full control over your encryption keys**, and ensures they **never leave the HSM**.
+Rules are applied to new resources as they are created (good for compliance) across all and future accounts in your Organization
+
+
+
+
+AWS KMS (Key Management Service)
+• Anytime you hear “encryption” for an AWS service, it’s most likely KMS • KMS = AWS manages the encryption keys for us
+
+Encryption Automatically enabled: • CloudTrail Logs • S3 Glacier • Storage Gateway
+
+
+
+
+
