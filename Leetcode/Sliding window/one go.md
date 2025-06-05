@@ -4,6 +4,11 @@
 - https://medium.com/@yourstudybuddy/10-sliding-window-leetcode-problems-that-make-you-understand-better-341c5ca3fbd
 - https://medium.com/@rishu__2701/mastering-sliding-window-techniques-48f819194fd7
 
+
+# NEED TO SOLVE THIS
+
+- https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/
+- 
 # Fixed window
 
 
