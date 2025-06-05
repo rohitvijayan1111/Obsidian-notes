@@ -1,4 +1,8 @@
 
+# resources
+
+- https://medium.com/@yourstudybuddy/10-sliding-window-leetcode-problems-that-make-you-understand-better-341c5ca3fbd
+- https://medium.com/@rishu__2701/mastering-sliding-window-techniques-48f819194fd7
 
 # Fixed window
 
@@ -494,6 +498,42 @@ class Solution:
             print(l)
         return ml
         
+```
+
+
+
+# [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+```
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        l=0
+        n=len(s)
+        d={}
+        dt={}
+        ind=[0,0]
+        mini=float("inf")
+        for i in t:
+            dt[i]=dt.get(i,0)+1
+        need=len(dt)
+        have=0
+        for r in range(n):
+            if(s[r] in dt):
+                d[s[r]]=d.get(s[r],0)+1
+                if(d[s[r]]==dt[s[r]]):
+                    have+=1
+            #But d can have more than dt ->but should be allowed
+            while(have==need):
+                if(r-l+1<mini):
+                    mini=r-l+1
+                    ind=[l,r]
+                if(s[l] in dt):
+                    d[s[l]]-=1
+                    if(d[s[l]]<dt[s[l]]):
+                        have-=1
+                l+=1
+        return s[ind[0]:ind[1]+1] if mini!=float("inf") else ""
+
 ```
 
 
