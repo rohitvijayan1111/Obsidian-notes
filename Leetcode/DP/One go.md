@@ -397,3 +397,85 @@ def solve(arr):
 
     return prev
 ```
+
+
+
+# [322. Coin Change](https://leetcode.com/problems/coin-change/)
+
+
+```
+class Solution:
+        def coinChange(self, coins: List[int], amount: int) -> int:
+            
+
+            n = len(coins)
+            dp = [[float("inf") for _ in range(n)] for _ in range(amount + 1)]
+            for i in range(n):
+                dp[0][i]=0
+            for i in range(amount+1):
+                if i % coins[0]==0:
+                    dp[i][0]=i // coins[0]
+            for i in range(1,amount+1):
+                for ind in range(1,n):
+                    take = float("inf")
+                    if i-coins[ind] >= 0:
+                        take = 1+dp[i-coins[ind]][ind]
+                    
+                    not_take = dp[i][ind - 1]
+                    dp[i][ind]=min(take, not_take)
+                    
+
+            res =dp[amount][n-1]
+            return -1 if res == float("inf") else res
+
+    #--------------------------------------------------------------
+    # def recursive(self, coins: List[int], amount: int) -> int:
+    #     def dp[amount,ind):
+    #         if(amount==0):
+    #             return 0
+    #         elif(ind==0):
+    #             #IF THE AMOUNT IS ACHIEVABLE
+    #             if(amount%coins[ind]==0):
+    #                 return amount//coins[ind]
+    #             else:
+    #                 return float("inf")
+    #         #Include the coins and dont move
+    #         #include the coin and move
+    #         #dont include the coin and move
+    #         return min(dp[amount-coins[ind],ind),dp[amount-coins[ind],ind-1),dp[amount,ind-1))
+    #     n=len(coins)
+    #     res=dp[amount,n-1)
+    #     return -1 if res==float("inf") else res 
+    #-----------------------------------------------------------------
+    #  def topdown(self, coins: List[int], amount: int) -> int:
+    #     def dp[amount, ind):
+    #         if amount == 0:
+    #             return 0
+    #         if ind == 0:
+    #             if amount % coins[ind] == 0:
+    #                 return amount // coins[ind]
+    #             else:
+    #                 return float("inf")
+    #         if dp[amount][ind] != -1:
+    #             return dp[amount][ind]
+            
+    #         take = float("inf")
+    #         if amount - coins[ind] >= 0:
+    #             take = dp[amount - coins[ind], ind)
+            
+    #         take2 = float("inf")
+    #         if amount - coins[ind] >= 0:
+    #             take2 = dp[amount - coins[ind], ind - 1)
+
+    #         not_take = dp[amount, ind - 1)
+
+    #         dp[amount][ind] = min(take, take2, not_take)
+    #         return dp[amount][ind]
+
+    #     n = len(coins)
+    #     dp = [[-1 for _ in range(n)] for _ in range(amount + 1)]
+    #     res = dp[amount, n - 1)
+    #     return -1 if res == float("inf") else res
+    #-----------------------------------------------------------------
+
+```
