@@ -1079,3 +1079,37 @@ class Solution:
 
 
 
+
+# [ Print Longest Common Subsequence](https://www.naukri.com/code360/problems/print-longest-common-subsequence_8416383?leftPanelTabValue=PROBLEM)
+
+```
+def findLCS(n: int, m: int, s1: str, s2: str) -> str:
+    # Write your code here
+    n,m=m,n
+    dp=[[0 for _ in range(n+1)] for _ in range(m+1)]
+    for a in range(1,m+1):
+        for b in range(1,n+1):
+            if(s1[a-1]==s2[b-1]):
+                dp[a][b]=1+dp[a-1][b-1]
+            else:
+                dp[a][b]=max(dp[a-1][b],dp[a][b-1])
+                
+	#WE ONLY INCLUDE WHEN THE STR MATCH,ELSE WE MOVE UP
+	r=m
+    c=n
+    s=""
+    while(r>0 and c>0 and dp[r][c]!=0):
+        if(s1[r-1]==s2[c-1]):
+            s=s1[r-1]+s
+            r-=1
+            c-=1
+        else:
+            if(dp[r][c]==dp[r-1][c]):
+                r-=1
+            else:
+                c-=1
+    return s
+    
+```
+
+
