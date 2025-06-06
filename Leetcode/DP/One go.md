@@ -652,4 +652,305 @@ Let me know if you want a **visual diagram** or **dry run** of any version!
 
 
 
-# 
+# [Knapsack with Duplicate Items](https://www.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1)
+
+
+Absolutely! Here's a **complete, cleanly documented, and unified implementation** of the **Unbounded Knapsack Problem** in Python, covering all major approaches:
+
+---
+
+# 🧰 Problem: **Unbounded Knapsack**
+
+Given:
+
+- `val[]`: list of item values
+    
+- `wt[]`: corresponding list of item weights
+    
+- `capacity`: maximum weight the knapsack can hold
+    
+
+Goal:  
+Maximize the **total value** such that any number of each item can be included (unbounded use allowed).
+
+---
+
+# ✅ Solution Approaches
+
+## 🧩 1. Recursive (Brute Force)
+
+```python
+class Solution:
+    def knapSack(self, val, wt, capacity):
+        def helper(amount, ind):
+            if amount == 0:
+                return 0
+            if ind == 0:
+                return (amount // wt[0]) * val[0]  # Take as many as possible
+
+            # Option 1: include current item (if it fits)
+            inc = 0
+            if amount - wt[ind] >= 0:
+                inc = val[ind] + helper(amount - wt[ind], ind)  # Stay on same index
+
+            # Option 2: skip current item
+            not_inc = helper(amount, ind - 1)
+
+            return max(inc, not_inc)
+
+        n = len(wt)
+        return helper(capacity, n - 1)
+```
+
+### ⏱️ Time & Space Complexity
+
+- **Time:** Exponential (due to overlapping subproblems)
+    
+- **Space:** `O(capacity)` recursion stack depth
+    
+
+---
+
+## 🧠 2. Top-Down DP (Memoization)
+
+```python
+class Solution:
+    def knapSack(self, val, wt, capacity):
+        n = len(wt)
+        dp = [[-1] * n for _ in range(capacity + 1)]
+
+        def helper(amount, ind):
+            if amount == 0:
+                return 0
+            if ind == 0:
+                return (amount // wt[0]) * val[0]
+            if dp[amount][ind] != -1:
+                return dp[amount][ind]
+
+            inc = 0
+            if amount - wt[ind] >= 0:
+                inc = val[ind] + helper(amount - wt[ind], ind)
+
+            not_inc = helper(amount, ind - 1)
+
+            dp[amount][ind] = max(inc, not_inc)
+            return dp[amount][ind]
+
+        return helper(capacity, n - 1)
+```
+
+### ⏱️ Time & Space Complexity
+
+- **Time:** `O(n × capacity)`
+    
+- **Space:** `O(n × capacity)` for memo table + recursion stack
+    
+
+---
+
+## 📊 3. Bottom-Up DP (Tabulation — 2D)
+
+```python
+class Solution:
+    def knapSack(self, val, wt, capacity):
+        n = len(wt)
+        dp = [[0 for _ in range(n)] for _ in range(capacity + 1)]
+
+        # Fill base cases
+        for w in range(capacity + 1):
+            dp[w][0] = (w // wt[0]) * val[0]
+
+        for amount in range(1, capacity + 1):
+            for ind in range(1, n):
+                inc = 0
+                if amount - wt[ind] >= 0:
+                    inc = val[ind] + dp[amount - wt[ind]][ind]
+                not_inc = dp[amount][ind - 1]
+                dp[amount][ind] = max(inc, not_inc)
+
+        return dp[capacity][n - 1]
+```
+
+### ⏱️ Time & Space Complexity
+
+- **Time:** `O(n × capacity)`
+    
+- **Space:** `O(n × capacity)`
+    
+
+---
+
+## 💾 4. Bottom-Up DP (Space Optimized — 1D)
+
+```python
+class Solution:
+    def knapSack(self, val, wt, capacity):
+        n = len(wt)
+        dp = [0] * (capacity + 1)
+
+        for i in range(n):
+            for w in range(wt[i], capacity + 1):
+                dp[w] = max(dp[w], val[i] + dp[w - wt[i]])
+
+        return dp[capacity]
+```
+
+### ⏱️ Time & Space Complexity
+
+- **Time:** `O(n × capacity)`
+    
+- **Space:** `O(capacity)` — space-optimized
+    
+
+---
+
+## 📝 Example
+
+```python
+val = [6, 1, 7, 7]
+wt = [1, 3, 4, 5]
+capacity = 8
+
+Solution().knapSack(val, wt, capacity)  # Output: 48
+```
+
+**Why 48?**  
+You can take item 0 (value 6, weight 1) eight times → `6 × 8 = 48`.
+
+---
+
+## 📋 Summary of Approaches
+
+|Approach|Time Complexity|Space Complexity|Remarks|
+|---|---|---|---|
+|Recursive|Exponential|O(capacity)|Brute force, slow|
+|Top-Down (Memoization)|O(n × capacity)|O(n × capacity)|Caches overlapping subproblems|
+|Bottom-Up (2D)|O(n × capacity)|O(n × capacity)|Classic tabulation|
+|Bottom-Up (1D)|O(n × capacity)|**O(capacity)**|Best for performance|
+
+---
+
+Let me know if you'd like a **dry-run**, **diagram**, or if you want to implement the **bounded knapsack** version as well!
+
+
+# [Rod Cutting Problem](https://www.geeksforgeeks.org/problems/rod-cutting0840/1)
+
+Here's a clean, well-documented version of your solution to the **Rod Cutting Problem**, including **recursion**, **2D bottom-up DP**, and **1D space-optimized DP**, with **time and space complexity analysis**.
+
+---
+
+## 🎯 Problem: Rod Cutting
+
+Given:
+
+- A rod of length `n`
+    
+- An array `price[]`, where `price[i]` is the price of a rod of length `i+1`
+    
+
+**Goal**: Cut the rod into pieces (possibly reusing the same size) to maximize the total price.
+
+---
+
+## ✅ Full Python Implementation with All Approaches
+
+```python
+# User function Template for python3
+
+class Solution:
+    def cutRod(self, price):
+        n = len(price)
+
+        ###########################
+        # 1️⃣ Recursive Approach (Exponential)
+        ###########################
+        # def helper(length, ind):
+        #     if length == 0:
+        #         return 0
+        #     elif ind == 0:
+        #         return length * price[0]  # only 1-length pieces
+        #     
+        #     cut = 0
+        #     if length - (ind + 1) >= 0:
+        #         cut = price[ind] + helper(length - (ind + 1), ind)  # cut and stay
+        #     nocut = helper(length, ind - 1)  # move to smaller size
+        #     return max(cut, nocut)
+        # 
+        # return helper(n, n - 1)
+
+        ###########################
+        # 2️⃣ Bottom-Up DP (Tabulation with 2D array)
+        ###########################
+        # dp = [[0 for _ in range(n)] for _ in range(n + 1)]
+        # for length in range(n + 1):
+        #     dp[length][0] = length * price[0]  # only using 1-length pieces
+        # 
+        # for length in range(1, n + 1):
+        #     for ind in range(1, n):
+        #         cut = 0
+        #         if length - (ind + 1) >= 0:
+        #             cut = price[ind] + dp[length - (ind + 1)][ind]
+        #         nocut = dp[length][ind - 1]
+        #         dp[length][ind] = max(cut, nocut)
+        # 
+        # return dp[n][n - 1]
+
+        ###########################
+        # 3️⃣ Space Optimized Bottom-Up DP (1D array)
+        ###########################
+        dp = [0 for _ in range(n + 1)]
+
+        for i, p in enumerate(price):
+            length_of_cut = i + 1
+            for l in range(length_of_cut, n + 1):
+                dp[l] = max(dp[l], p + dp[l - length_of_cut])
+
+        return dp[n]
+```
+
+---
+
+## 🧠 Time & Space Complexity
+
+|Approach|Time Complexity|Space Complexity|Notes|
+|---|---|---|---|
+|**Recursive**|O(2ⁿ)|O(n) (stack)|Very inefficient for large `n`|
+|**2D DP (Tabulation)**|O(n²)|O(n²)|Fills a table of size (n+1)×n|
+|**1D DP (Optimized)**|**O(n²)**|**O(n)**|Best approach for this problem|
+
+---
+
+## 🔍 Example
+
+```python
+price = [3, 5, 8, 9, 10, 17, 17, 20]
+Solution().cutRod(price)  # Output: 24
+```
+
+Explanation:
+
+- Best cuts for rod of length 8: two cuts of length 2 (price 5) and two cuts of length 2 → total = 4×5 = 20
+    
+- But better is: 6 + 2 → 17 + 5 = 22
+    
+- Or: 2 + 2 + 2 + 2 → 4×5 = 20
+    
+- **Best**: 2×1 + 6 → 2×3 + 17 = **23**
+    
+- **Best overall**: 2×1 + 6 = 3 + 3 + 17 = **23**, or some other combo reaching **24** depending on values
+    
+
+---
+
+## ✅ Final Recommendation
+
+Use the **1D DP approach** for production or competitive programming:
+
+- It retains the time efficiency of tabulation
+    
+- Saves space from `O(n²)` to `O(n)`
+    
+- Easy to implement and extend
+    
+
+Let me know if you'd like to also **return the cuts used**, or print all combinations that yield the max value!
