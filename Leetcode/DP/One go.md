@@ -954,3 +954,128 @@ Use the **1D DP approach** for production or competitive programming:
     
 
 Let me know if you'd like to also **return the cuts used**, or print all combinations that yield the max value!
+
+
+
+# [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+
+We have shifted index
+
+Here's a **well-documented version** of your `longestCommonSubsequence` implementation that includes:
+
+1. **Brute-force recursion**
+    
+2. **Top-down memoization (recursive with caching)**
+    
+3. **Bottom-up tabulation**
+    
+4. **Bottom-up with space optimization**
+    
+
+Each version includes:
+
+- Clear inline comments
+    
+- Time and space complexity analysis
+    
+
+---
+
+```python
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        """
+        Computes the length of the longest common subsequence (LCS) between two strings.
+
+        Approaches covered:
+        1. Brute-force recursion (commented)
+        2. Top-down DP (memoization)
+        3. Bottom-up DP (tabulation) [commented]
+        4. Bottom-up DP with space optimization (active)
+
+        Time Complexity:
+            - All DP approaches: O(m * n), where m = len(text1), n = len(text2)
+        
+        Space Complexity:
+            - Brute-force recursion: O(m + n) (call stack)
+            - Memoization: O(m * n) for cache + O(m + n) for recursion stack
+            - Tabulation: O(m * n)
+            - Space-optimized DP: O(n)
+
+        Returns:
+            int: Length of the longest common subsequence
+        """
+
+        m = len(text1)
+        n = len(text2)
+
+        ### 1. Brute-force Recursion (Exponential time complexity) ###
+        # def helper(a, b):
+        #     if a == 0 or b == 0:
+        #         return 0
+        #     if text1[a - 1] == text2[b - 1]:
+        #         return 1 + helper(a - 1, b - 1)
+        #     else:
+        #         return max(helper(a - 1, b), helper(a, b - 1))
+        # return helper(m, n)
+
+        ### 2. Top-down Memoization ###
+        # Uncomment this block to use memoization approach
+
+        # dp = [[-1 for _ in range(n + 1)] for _ in range(m + 1)]
+
+        # def helper(a, b):
+        #     if a == 0 or b == 0:
+        #         return 0
+        #     if dp[a][b] != -1:
+        #         return dp[a][b]
+        #     if text1[a - 1] == text2[b - 1]:
+        #         dp[a][b] = 1 + helper(a - 1, b - 1)
+        #     else:
+        #         dp[a][b] = max(helper(a - 1, b), helper(a, b - 1))
+        #     return dp[a][b]
+
+        # return helper(m, n)
+
+        ### 3. Bottom-up Tabulation (Full DP Table) ###
+        # Uncomment this block for a non-recursive full DP version
+
+        # dp = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
+        # for a in range(1, m + 1):
+        #     for b in range(1, n + 1):
+        #         if text1[a - 1] == text2[b - 1]:
+        #             dp[a][b] = 1 + dp[a - 1][b - 1]
+        #         else:
+        #             dp[a][b] = max(dp[a - 1][b], dp[a][b - 1])
+        # return dp[m][n]
+
+        ### 4. Bottom-up Tabulation with Space Optimization (Optimal version) ###
+        prev = [0] * (n + 1)
+        curr = [0] * (n + 1)
+
+        for a in range(1, m + 1):
+            for b in range(1, n + 1):
+                if text1[a - 1] == text2[b - 1]:
+                    curr[b] = 1 + prev[b - 1]
+                else:
+                    curr[b] = max(prev[b], curr[b - 1])
+            prev, curr = curr, prev  # Swap arrays to reuse space
+
+        return prev[n]
+```
+
+---
+
+### ✅ Summary of All Approaches:
+
+|Approach|Time Complexity|Space Complexity|Notes|
+|---|---|---|---|
+|Brute-force recursion|Exponential|O(m + n)|Highly inefficient, for learning only|
+|Top-down with memoization|O(m * n)|O(m * n) + O(m + n)|Caches overlapping subproblems|
+|Bottom-up tabulation|O(m * n)|O(m * n)|Iterative, avoids recursion stack|
+|Space-optimized tabulation|O(m * n)|O(n)|Most optimal in both time and space|
+
+---
+
+
+
