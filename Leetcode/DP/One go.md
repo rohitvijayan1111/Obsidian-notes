@@ -479,3 +479,177 @@ class Solution:
     #-----------------------------------------------------------------
 
 ```
+
+
+
+
+
+# ree
+
+
+# [518. Coin Change II](https://leetcode.com/problems/coin-change-ii/)
+
+
+You're right — thanks for pointing that out! Here's the **complete and clean documentation** including all three main approaches:
+
+1. **Recursion (Exponential)**
+    
+2. **Top-Down DP (Memoization)**
+    
+3. **Bottom-Up DP (Tabulation - 2D)**
+    
+4. **Space Optimized DP (1D)**
+    
+
+---
+
+## 🪜 1. Recursive Solution (Brute Force)
+
+```python
+class Solution:
+    def change(self, amount: int, coins: List[int]) -> int:
+        def helper(target, ind):
+            if target == 0:
+                return 1  # One way to make amount 0 (choose nothing)
+            if ind == 0:
+                return 1 if target % coins[0] == 0 else 0
+
+            include = 0
+            if target - coins[ind] >= 0:
+                include = helper(target - coins[ind], ind)  # Stay on same index
+            not_include = helper(target, ind - 1)  # Move to previous index
+
+            return include + not_include
+
+        n = len(coins)
+        return helper(amount, n - 1)
+```
+
+### ❗ Time and Space Complexity:
+
+- **Time:** `O(2^n)` in worst case due to overlapping subproblems.
+    
+- **Space:** `O(amount)` for recursion stack depth.
+    
+
+---
+
+## 🧠 2. Top-Down DP (Memoization)
+
+```python
+class Solution:
+    def change(self, amount: int, coins: List[int]) -> int:
+        n = len(coins)
+        dp = [[-1 for _ in range(n)] for _ in range(amount + 1)]
+
+        def helper(target, ind):
+            if target == 0:
+                return 1
+            if ind == 0:
+                return 1 if target % coins[0] == 0 else 0
+            if dp[target][ind] != -1:
+                return dp[target][ind]
+
+            include = 0
+            if target - coins[ind] >= 0:
+                include = helper(target - coins[ind], ind)
+            not_include = helper(target, ind - 1)
+
+            dp[target][ind] = include + not_include
+            return dp[target][ind]
+
+        return helper(amount, n - 1)
+```
+
+### ✅ Time and Space Complexity:
+
+- **Time:** `O(amount × n)` — due to memoization.
+    
+- **Space:** `O(amount × n)` for memo table + recursion stack.
+    
+
+---
+
+## 📊 3. Bottom-Up DP (Tabulation — 2D)
+
+```python
+class Solution:
+    def change(self, amount: int, coins: List[int]) -> int:
+        n = len(coins)
+        dp = [[0 for _ in range(n)] for _ in range(amount + 1)]
+
+        # Base case: one way to make amount 0 (by taking nothing)
+        for i in range(n):
+            dp[0][i] = 1
+
+        # Fill column 0: only using first coin
+        for i in range(1, amount + 1):
+            dp[i][0] = 1 if i % coins[0] == 0 else 0
+
+        for target in range(1, amount + 1):
+            for ind in range(1, n):
+                include = 0
+                if target - coins[ind] >= 0:
+                    include = dp[target - coins[ind]][ind]  # stay at same coin
+                not_include = dp[target][ind - 1]  # move to previous coin
+                dp[target][ind] = include + not_include
+
+        return dp[amount][n - 1]
+```
+
+### ✅ Time and Space Complexity:
+
+- **Time:** `O(amount × n)`
+    
+- **Space:** `O(amount × n)`
+    
+
+---
+
+## 💡 4. Space Optimized DP (1D)
+
+```python
+class Solution:
+    def change(self, amount: int, coins: List[int]) -> int:
+        dp = [0] * (amount + 1)
+        dp[0] = 1  # Base case: one way to make 0
+
+        for coin in coins:
+            for target in range(coin, amount + 1):
+                dp[target] += dp[target - coin]
+
+        return dp[amount]
+```
+
+### 🧠 Why This Works:
+
+- Process each coin fully before moving to the next.
+    
+- This ensures no repeated combinations in different order.
+    
+- `dp[target] += dp[target - coin]` accumulates ways using that coin.
+    
+
+### ✅ Time and Space Complexity:
+
+- **Time:** `O(amount × n)`
+    
+- **Space:** `O(amount)`
+    
+
+---
+
+## 📋 Summary Table
+
+|Approach|Time Complexity|Space Complexity|Notes|
+|---|---|---|---|
+|Recursion (Brute)|Exponential|O(amount) stack|Inefficient, for learning only|
+|Top-Down DP|O(amount × n)|O(amount × n)|Uses memoization to avoid recomputation|
+|Bottom-Up DP|O(amount × n)|O(amount × n)|Clear table-filling approach|
+|Space Optimized DP|O(amount × n)|**O(amount)**|Best in practice|
+
+Let me know if you want a **visual diagram** or **dry run** of any version!
+
+
+
+# 
