@@ -70,4 +70,3 @@
 
 ---
 
-These resources should provide a solid foundation for your DSA and system design preparation. If you need further assistance or have specific questions, feel free to ask!
