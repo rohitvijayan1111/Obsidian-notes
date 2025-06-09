@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/DP/One go.md",
+                "file": "AWS/Resources for CCP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "One go"
+              "title": "Resources for CCP"
             }
           }
         ]
@@ -260,6 +260,7 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
+    "Leetcode/DP/One go.md",
     "Leetcode/DP/PATTERNS.md",
     "SYSTEM DESIGN/Questions.md",
     "SYSTEM DESIGN/Resources.md",
@@ -268,7 +269,6 @@
     "SYSTEM DESIGN/Untitled/Scalability.md",
     "assets/images/Pasted image 20250606212843.png",
     "assets/images/Pasted image 20250606211531.png",
-    "Leetcode/DP/One go.md",
     "Leetcode/DP/DP PATTERN ARTICLE.md",
     "Leetcode/DP/Untitled.canvas",
     "SYSTEM DESIGN/Untitled",
