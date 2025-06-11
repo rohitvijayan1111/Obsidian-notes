@@ -67,4 +67,38 @@ AWS Regions and Availability Zones Overview: 
 ![](https://assets-pt.media.datacumulus.com/aws-clf-pt/assets/pt1-q17-i1.jpg)
 
 
+## An organization needs to securely access AWS services and establish private connectivity between its Virtual Private Clouds (VPCs) and supported AWS services without using the public internet. Which AWS services can meet this requirement? (Select two)
+
+**AWS PrivateLink**
+
+AWS PrivateLink enables private connectivity between VPCs and supported AWS services without traffic traversing the public internet. It ensures secure communication for applications and services.
+
+In the following diagram, the VPC on the left has several Amazon EC2 instances in a private subnet and five VPC endpoints - three interface VPC endpoints, a resource VPC endpoint and a service-network VPC endpoint. The first interface VPC endpoint connects to an AWS service. The second interface VPC endpoint connects to a service hosted by another AWS account (a VPC endpoint service). The third interface VPC endpoint connects to an AWS Marketplace partner service. The resource VPC endpoint connects to a database. The service network VPC endpoint connects to a service network.
+
+![](https://docs.aws.amazon.com/images/vpc/latest/privatelink/images/use-cases.png)
+
+ via - [https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)
+
+**AWS Transit Gateway**
+
+AWS Transit Gateway is a highly scalable service that connects multiple VPCs and on-premises networks through a central hub. It facilitates secure, private connectivity between VPCs and supported services without using the public internet.
+
+Transit Gateway enables customers to connect thousands of VPCs. You can attach all your hybrid connectivity (VPN and Direct Connect connections) to a single gateway, consolidating and controlling your organization's entire AWS routing configuration in one place (refer to the following figure). Transit Gateway controls how traffic is routed among all the connected spoke networks using route tables. This hub-and-spoke model simplifies management and reduces operational costs because VPCs only connect to the Transit Gateway instance to gain access to the connected networks.
+
+![](https://docs.aws.amazon.com/images/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/hub-and-spoke-design.png)
+
+ via - [https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-gateway.html](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-gateway.html)
+
+Incorrect options:
+
+**Amazon Inspector** - Amazon Inspector is a security tool that assesses applications for vulnerabilities and deviations from best practices. It does not facilitate private connectivity between VPCs or AWS services.
+
+**Amazon Connect** - Amazon Connect is a contact center service designed to facilitate customer communication. It does not provide private networking capabilities.
+
+**AWS Internet Gateway** - AWS Internet Gateway is designed for internet connectivity, allowing VPC resources to communicate with the public internet. This contradicts the requirement to avoid using the public internet for connectivity.
+
+
+
+
+
 ## 
