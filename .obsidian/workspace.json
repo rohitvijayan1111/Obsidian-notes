@@ -6,7 +6,7 @@
       {
         "id": "fdf03550609eca2f",
         "type": "tabs",
-        "dimension": 83.22147651006712,
+        "dimension": 74.74832214765101,
         "children": [
           {
             "id": "dcc362a372d86a6c",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/Revision.md",
+                "file": "Leetcode/Linkedlist/Qns.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Revision"
+              "title": "Qns"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "ed24059584cd6420",
         "type": "tabs",
-        "dimension": 16.778523489932887,
+        "dimension": 25.25167785234899,
         "children": [
           {
             "id": "c3528823c480e34d",
@@ -258,10 +258,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
-    "AWS/From Practice test.md",
+    "Leetcode/Linkedlist/Random Problems.md",
+    "Leetcode/Linkedlist/Qns.md",
+    "AWS/Final go.md",
+    "Accountability/Business ideas.md",
     "AWS/Revision.md",
+    "AWS/From Practice test.md",
     "Accountability/ask the how,why.md",
     "AWS/Resources for CCP.md",
     "Leetcode/DP/One go.md",
@@ -280,7 +284,6 @@
     "AWS/Welcome.md",
     "Leetcode/Tree/Random Problems.md",
     "AWS/Pasted image 20250409211938.png",
-    "AWS/Final go.md",
     "Companies list/List of companies.md",
     "Leetcode/Sliding window/Untitled.canvas",
     "assets/images/Pasted image 20250603155915.png",
@@ -297,9 +300,6 @@
     "assets/images/Pasted image 20250602120130.png",
     "assets/images/Pasted image 20250602115341.png",
     "assets/images/Pasted image 20250602114904.png",
-    "Security/Untitled/Untitled.md",
-    "Accountability/unknown.md",
-    "Leetcode/time complexity.md",
     "assets/images/Pasted image 20250601215518.png",
     "assets/images/Pasted image 20250530213443.png",
     "Leetcode/Graphs/Untitled.canvas",
