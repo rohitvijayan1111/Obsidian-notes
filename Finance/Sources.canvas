@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"7f7e54adc91ffd7d","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"Growing money"},
+		{"id":"8b50308b62324571","x":-497,"y":106,"width":250,"height":60,"type":"text","text":"Fixed Deposit"},
+		{"id":"5a1c6c7ace7ec070","x":-200,"y":106,"width":250,"height":60,"type":"text","text":"Bonds (Avg 5% return)"},
+		{"id":"e9ba3c1169216eb1","x":-368,"y":245,"width":250,"height":60,"type":"text","text":"Government"},
+		{"id":"4ea02ff842f4b418","x":-62,"y":244,"width":250,"height":60,"type":"text","text":"Corporate"},
+		{"id":"7a691e00dbe0a7cd","x":208,"y":119,"width":250,"height":60,"type":"text","text":"Real estate"},
+		{"id":"c063ee603e24de08","x":208,"y":245,"width":250,"height":60,"type":"text","text":"appreciation"},
+		{"id":"9494313144e73f57","x":517,"y":251,"width":250,"height":60,"type":"text","text":"Rental Income"},
+		{"id":"5d71156f43a65193","x":839,"y":97,"width":250,"height":60,"type":"text","text":"Gold(9% returns)"},
+		{"id":"639183f4675bd26d","x":800,"y":244,"width":250,"height":60,"type":"text","text":"Physical"},
+		{"id":"a6de58a8e1d2f612","x":1106,"y":246,"width":250,"height":60,"type":"text","text":"ETF / SGB bonds"},
+		{"id":"1fd8c659b7e42f3f","x":-850,"y":116,"width":250,"height":60,"type":"text","text":"Equity (14%)"}
+	],
+	"edges":[
+		{"id":"9ec6e97a4d13e501","fromNode":"7f7e54adc91ffd7d","fromSide":"bottom","toNode":"8b50308b62324571","toSide":"top"},
+		{"id":"e79be711e26a1073","fromNode":"7f7e54adc91ffd7d","fromSide":"bottom","toNode":"5a1c6c7ace7ec070","toSide":"top"},
+		{"id":"969bfca5b7029111","fromNode":"5a1c6c7ace7ec070","fromSide":"bottom","toNode":"e9ba3c1169216eb1","toSide":"top"},
+		{"id":"910d34a2e8566a51","fromNode":"5a1c6c7ace7ec070","fromSide":"bottom","toNode":"4ea02ff842f4b418","toSide":"top"},
+		{"id":"c1d322bd092adb76","fromNode":"7f7e54adc91ffd7d","fromSide":"bottom","toNode":"7a691e00dbe0a7cd","toSide":"top"},
+		{"id":"89f06e039b921a00","fromNode":"7a691e00dbe0a7cd","fromSide":"bottom","toNode":"c063ee603e24de08","toSide":"top"},
+		{"id":"c09732c3bdd8df42","fromNode":"7a691e00dbe0a7cd","fromSide":"bottom","toNode":"9494313144e73f57","toSide":"top"},
+		{"id":"4944769e2909ad8c","fromNode":"7f7e54adc91ffd7d","fromSide":"bottom","toNode":"5d71156f43a65193","toSide":"top"},
+		{"id":"ab052b88e9e96173","fromNode":"5d71156f43a65193","fromSide":"bottom","toNode":"639183f4675bd26d","toSide":"top"},
+		{"id":"25c72f9202eb749a","fromNode":"5d71156f43a65193","fromSide":"bottom","toNode":"a6de58a8e1d2f612","toSide":"top"},
+		{"id":"385d762962770163","fromNode":"7f7e54adc91ffd7d","fromSide":"bottom","toNode":"1fd8c659b7e42f3f","toSide":"top"}
+	]
+}

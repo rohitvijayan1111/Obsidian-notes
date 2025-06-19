@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Linkedlist/Qns.md",
+                "file": "Finance/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Qns"
+              "title": "Untitled"
             }
           }
         ]
@@ -260,8 +260,11 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
-    "Leetcode/Linkedlist/Random Problems.md",
+    "Finance/Sources.canvas",
+    "Finance/Untitled.md",
     "Leetcode/Linkedlist/Qns.md",
+    "Finance",
+    "Leetcode/Linkedlist/Random Problems.md",
     "AWS/Final go.md",
     "Accountability/Business ideas.md",
     "AWS/Revision.md",
@@ -292,8 +295,6 @@
     "SYSTEM DESIGN/az.md",
     "Leetcode/DP/Random.md",
     "Leetcode/DP/Pratice.md",
-    "Leetcode/Greedy/Random Problems.md",
-    "Leetcode/Greedy/Notes.md",
     "Leetcode/Greedy/Mindmap.canvas",
     "Companies list",
     "assets/images/Pasted image 20250602120942.png",
@@ -310,7 +311,6 @@
     "Leetcode/Untitled",
     "SYSTEM DESIGN/LLD",
     "Leetcode/Array/Couting problem flow chart.canvas",
-    "Leetcode/Strings",
     "Untitled 1.canvas",
     "Untitled 2.canvas"
   ]
