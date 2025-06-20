@@ -508,7 +508,7 @@ Corporate actions like **dividends, bonuses, splits, buybacks, and rights issues
 Would you like a visual summary or flashcards for easy revision?
 
 # [Order Types](https://zerodha.com/varsity/chapter/understanding-the-various-order-types/)
-
+	
 Sure! Here's a **summary and translation in English** of the video you posted. It appears to be a **tutorial video on different order types used in stock trading**, especially focusing on platforms like Zerodha.
 
 ---
