@@ -392,3 +392,43 @@ So in summary:
 - Every investor's perception matters — even for the same stock.
 
 
+# ## 6.7 – How to calculate returns?
+
+Now, everything in markets boils down to one thing. Generating a reasonable rate of return! All past stock market sins are forgiven if your trade generates a good return. Returns are usually expressed in terms of annual yield. There are different kinds of returns that you need to be aware of. The following will give you a sense of what they are and how to calculate these returns.
+
+**_Absolute Return_** – This is the return that your trade or investment generates in absolute terms. It helps you answer this question – I bought Infosys at 3030 and sold it at 3550. How much percentage return did I generate?
+
+The formula to calculate is – [Ending Period Value / Starting Period Value – 1]*100
+
+i.e. [3550/3030 -1] *100
+
+= 0.1716 * 100
+
+= 17.16%
+
+A 17.6% is not a bad return at all!
+
+_**Compounded Annual Growth Rate (CAGR)** –_ An absolute return can be misleading if you want to compare two investments. CAGR helps you answer this question – I bought Infosys at 3030, held the stock for two years, and sold it at 3550. At what rate did my investment grow over the last two years?
+
+CAGR factors in the time component, which we had ignored when we computed the absolute return.
+
+The formula to calculate CAGR is…
+
+![CAGR](http://zerodha.com/varsity/wp-content/uploads/2014/08/CAGR.jpg)
+
+Applying this to answer the question…
+
+{[3550/3030]^(1/2) – 1} = 8.2%
+
+This means the investment grew at a rate of 8.2% for two years. As of today, the bank fixed deposit market offers 5.5% with capital protection hence, 8.2% return looks ok compared to a fixed deposit.
+
+So, always use CAGR to check returns over multiple years. Use absolute return when your time frame is for a year or lesser.
+
+What if you bought Infosys at 3030 and sold it at 3550 within six months? In that case, you have generated 17.16% in 6 months, which translates to 34.32% (17.16% * 2) for the year.
+
+So the point is if you have to compare returns, it’s best done when the return is expressed on an annualized basis.
+# Types of Analysis
+
+
+- Fundamental Analyis ->Long term investment
+- Technical analysis -> short term->go and find the trend based on the market
