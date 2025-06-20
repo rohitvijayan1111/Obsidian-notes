@@ -391,8 +391,255 @@ So in summary:
     
 - Every investor's perception matters — even for the same stock.
 
+# Corporate actions
 
-# ## 6.7 – How to calculate returns?
+The video you’ve shared explains **corporate actions**, which are decisions taken by a company that affect its shareholders. Here's a simplified explanation and breakdown of the key corporate actions discussed:
+
+---
+
+### **1. Dividends**
+
+- **What it is**: A **portion of the company's profit** distributed to shareholders.
+    
+- **Example**: Wipro paid ₹1 dividend when the **face value** of the share was ₹2. This means the **dividend yield** was 50%.
+    
+- **Key point**: Dividends are **not mandatory**. They are paid at the discretion of the company.
+    
+- **Impact**: Once a stock goes **ex-dividend**, its price generally drops by the dividend amount.
+    
+
+---
+
+### **2. Bonus Shares**
+
+- **What it is**: **Free shares** given to existing shareholders from the company’s reserves.
+    
+- **Example**:
+    
+    - 1:1 Bonus → If you had 100 shares, you now have 200.
+        
+    - Price halves, but **total value remains the same**.
+        
+- **Purpose**: Increases the number of shares in the market, making the stock more **affordable** for small (retail) investors.
+    
+- **Impact**: No change in overall value of investment; just more shares at a lower price per share.
+    
+
+---
+
+### **3. Stock Split**
+
+- **What it is**: Reduces the **face value** of shares and increases the **number of shares**.
+    
+- **Example**: In a 1:2 split, a share with ₹10 face value becomes ₹5, and you get 2 shares for every 1.
+    
+- **Impact**: Makes the stock price appear lower, again encouraging more retail participation.
+    
+
+---
+
+### **4. Buyback**
+
+- **What it is**: A company **buys back its own shares** using its profits.
+    
+- **Why it's done**:
+    
+    - To boost **Earnings Per Share (EPS)**
+        
+    - To **show confidence** in the company
+        
+    - To **prevent takeovers**
+        
+- **Methods**:
+    
+    - **Open market purchase**
+        
+    - **Tender/fixed price offer**
+        
+- **Impact**: Usually **bullish**; reduces supply of shares, often increasing price.
+    
+
+---
+
+### **5. Rights Issue**
+
+- **What it is**: A way for a company to raise capital from **existing shareholders**.
+    
+- **Details**:
+    
+    - Shareholders are given a **right** to buy additional shares.
+        
+    - Price is usually **lower** than market price.
+        
+- **Impact**: Allows companies to get funding without going for a new IPO. It's a **privilege** given to current shareholders.
+    
+
+---
+
+### **Corporate Action Timeline**
+
+Every corporate action follows this timeline:
+
+|Stage|Description|
+|---|---|
+|**Announcement Date**|The date when the action is publicly declared.|
+|**Record Date**|The date by which you must be a shareholder to be eligible.|
+|**Ex-Date**|Usually 2 days **before** the record date. You must own shares **before this date** to qualify.|
+
+---
+
+### **Other Corporate Actions (Briefly Mentioned)**
+
+- OFS (Offer for Sale)
+    
+- Rights Entitlement
+    
+- Mergers & Acquisitions
+    
+- Reverse Mergers
+    
+
+---
+
+### **Key Takeaway**
+
+Corporate actions like **dividends, bonuses, splits, buybacks, and rights issues** directly affect shareholders. Understanding them helps investors make informed decisions and take advantage of benefits or avoid surprises.
+
+Would you like a visual summary or flashcards for easy revision?
+
+# [Order Types](https://zerodha.com/varsity/chapter/understanding-the-various-order-types/)
+
+Sure! Here's a **summary and translation in English** of the video you posted. It appears to be a **tutorial video on different order types used in stock trading**, especially focusing on platforms like Zerodha.
+
+---
+
+## 🎯 **Topic**: Types of Orders in Stock Trading (Buy/Sell) – Explained in Simple Terms
+
+---
+
+### 🧑‍🏫 **Introduction**
+
+- The video is hosted by **Pratik Singh**, who explains **various types of trading orders** that investors can use while buying or selling stocks.
+    
+
+---
+
+### 🛒 **Types of Orders**
+
+#### 1. **CNC (Cash and Carry)**
+
+- Used for **long-term investments**.
+    
+- You must pay **full amount upfront** to buy stocks.
+    
+- These shares are **delivered to your Demat account**.
+    
+- Example: You buy Axis Bank shares using CNC for delivery.
+    
+
+---
+
+#### 2. **MIS (Margin Intraday Square-off)**
+
+- For **intraday trading only** (buy and sell on the same day).
+    
+- You **get leverage**, meaning you can buy more shares than you have cash for.
+    
+- **All positions are squared off before market close** automatically.
+    
+- Example: You buy shares in the morning and sell before 3:30 PM.
+    
+
+---
+
+### 📦 **Order Types**
+
+#### A. **Limit Order**
+
+- You specify the **price at which you want to buy/sell**.
+    
+- The order only executes **if the stock reaches your price**.
+    
+- Useful when you don’t want to overpay or undersell.
+    
+
+#### B. **Market Order**
+
+- Order is executed **immediately at the best available market price**.
+    
+- You don’t control the exact price, but execution is fast.
+    
+
+---
+
+### 🛡️ **Stop-Loss Orders**
+
+Used to **minimize losses** if the stock moves against your expectation.
+
+#### 1. **Stop-Loss Limit**
+
+- You set a **trigger price** and a **limit price**.
+    
+- Once the stock hits the trigger, the limit order is placed.
+    
+
+#### 2. **Stop-Loss Market**
+
+- You set only a **trigger price**.
+    
+- Once it hits, a **market order** is placed, and the stock is sold at the best price available.
+    
+
+---
+
+### 💼 **GTT (Good Till Triggered)**
+
+- This is like a **long-term stop-loss or target order**.
+    
+- It stays valid until the trigger condition is met.
+    
+- Useful for investors who can’t monitor the market constantly.
+    
+
+---
+
+### 📈 **Short Selling**
+
+- If you believe a stock will **fall**, you can sell first and buy later.
+    
+- Common in **intraday trading**.
+    
+- You borrow shares to sell and buy them back at a lower price to profit.
+    
+
+---
+
+### 🧠 **Other Key Points**
+
+- You can place **entry + stop-loss + target** together using **BO (Bracket Order)** or **CO (Cover Order)** in some platforms.
+    
+- Always monitor **order execution** and **open positions**.
+    
+- Understand **settlement cycles (T+1, T+2)**.
+    
+- Avoid blindly entering trades — always use risk management.
+    
+
+---
+
+### 📍 **Conclusion**
+
+- Learn different **order types** (CNC, MIS, Limit, Market, Stop-Loss, GTT, etc.).
+    
+- Match your trading style (intraday or long-term) to the appropriate order type.
+    
+- In the next video, they’ll talk about **how to analyze stocks**.
+    
+
+---
+
+Would you like a **visual chart** or a **comparison table** between these order types for quick revision?
+#  6.7 – How to calculate returns?
 
 Now, everything in markets boils down to one thing. Generating a reasonable rate of return! All past stock market sins are forgiven if your trade generates a good return. Returns are usually expressed in terms of annual yield. There are different kinds of returns that you need to be aware of. The following will give you a sense of what they are and how to calculate these returns.
 
