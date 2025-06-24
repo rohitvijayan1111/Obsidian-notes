@@ -1,3 +1,6 @@
+- **Backtracking Problem Pattern**  
+🔗 https://leetcode.com/problems/permutations/solutions/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)/
+
 𝗕𝗮𝗰𝗸𝘁𝗿𝗮𝗰𝗸𝗶𝗻𝗴 (𝗥𝗲𝗰𝘂𝗿𝘀𝗶𝗼𝗻) is one of the topics where people struggle the most. But this is a super important topic to master for interviews. Here is a list of problems to solve to clear your concepts in backtracking.  
   
 𝗪𝗵𝗮𝘁 𝗶𝘀 𝗕𝗮𝗰𝗸𝘁𝗿𝗮𝗰𝗸𝗶𝗻𝗴?  

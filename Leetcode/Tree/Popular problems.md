@@ -1,3 +1,10 @@
+
+- **Tree Patterns**  
+https://leetcode.com/discuss/post/1337373/tree-question-pattern-2021-placement-by-t65qm/
+
+DP On trees
+
+
 Trees are very important for [Google](https://www.linkedin.com/company/google/) interviews. Here are all the patterns and problems that I solved for [Microsoft](https://www.linkedin.com/company/microsoft/) and [Google](https://www.linkedin.com/company/google/) using [LeetCode](https://www.linkedin.com/company/leet-code/) and CSES!  
   
 𝗣𝗮𝘁𝘁𝗲𝗿𝗻 𝟭: 𝗗𝗶𝘀𝘁𝗮𝗻𝗰𝗲 𝗕𝗲𝘁𝘄𝗲𝗲𝗻 𝗡𝗼𝗱𝗲𝘀  
