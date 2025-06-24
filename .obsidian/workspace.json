@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Graphs/Popular Questions.md",
+                "file": "SYSTEM DESIGN/Untitled/Scalability.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Popular Questions"
+              "title": "Scalability"
             }
           }
         ]
@@ -238,8 +238,15 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
+    "SYSTEM DESIGN/2)Load Balancing.md",
+    "SYSTEM DESIGN/1) Horizontal Vs Vertical Scaling.md",
+    "SYSTEM DESIGN/Untitled/Scalability.md",
+    "SYSTEM DESIGN/System Design was HARD until I Learned these 30 Concepts.md",
+    "SYSTEM DESIGN/Resources.md",
+    "SYSTEM DESIGN/Questions.md",
     "SYSTEM DESIGN/LLD/LLD materials.md",
     "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
+    "Leetcode/Graphs/Popular Questions.md",
     "Leetcode/Recursion/Backtracking problems.md",
     "Leetcode/Recursion/Other Problems.md",
     "Finance/Trading notes.md",
@@ -258,18 +265,11 @@
     "AWS/Resources for CCP.md",
     "Leetcode/DP/One go.md",
     "Leetcode/DP/PATTERNS.md",
-    "SYSTEM DESIGN/Questions.md",
-    "SYSTEM DESIGN/Resources.md",
     "Leetcode/Resources/ALL IN ONE ARTICLE FOR LEETCODE.md",
-    "Leetcode/Resources/Resources.md",
-    "SYSTEM DESIGN/Untitled/Scalability.md",
     "assets/images/Pasted image 20250606212843.png",
     "assets/images/Pasted image 20250606211531.png",
-    "Leetcode/DP/DP PATTERN ARTICLE.md",
     "Leetcode/DP/Untitled.canvas",
     "SYSTEM DESIGN/Untitled",
-    "Leetcode/Sliding window/one go.md",
-    "Leetcode/Tree/Random Problems.md",
     "AWS/Pasted image 20250409211938.png",
     "Leetcode/Sliding window/Untitled.canvas",
     "assets/images/Pasted image 20250603155915.png",

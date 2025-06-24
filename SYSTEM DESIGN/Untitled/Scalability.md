@@ -68,3 +68,9 @@ ADD EXTRA LOAD BALANCER AND PARTITION
 
 ![[Pasted image 20250606212843.png]]
 
+
+
+
+- That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.   
+  
+Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis. An external persistent cache will have better performance than an external database. By external I mean that the data store does not reside on the application servers. Instead, it is somewhere in or near the data center of your application servers.
