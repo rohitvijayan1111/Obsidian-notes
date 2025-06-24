@@ -1,2 +1,2 @@
 **Binary Search Patterns**  
-🔗 https://leetcode.com/discuss/study-guide/2143958/ultimate-binary-search-handbook
+🔗 https://leetcode.com/discuss/post/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems/
