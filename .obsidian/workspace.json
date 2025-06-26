@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM DESIGN/Design primer notes/Scalability.md",
+                "file": "SYSTEM DESIGN/Design primer notes/INTRO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scalability"
+              "title": "INTRO"
             }
           }
         ]
@@ -238,8 +238,9 @@
   },
   "active": "dcc362a372d86a6c",
   "lastOpenFiles": [
-    "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
     "SYSTEM DESIGN/Design primer notes/Scalability.md",
+    "SYSTEM DESIGN/Design primer notes/INTRO.md",
+    "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
     "Behavioral Questions/Questions.md",
     "Leetcode/Binary Search/Binary Search - upper bound,lower bound.md",
     "Finance/Trading notes.md",
@@ -268,7 +269,6 @@
     "SYSTEM DESIGN/Questions.md",
     "SYSTEM DESIGN/LLD/LLD materials.md",
     "Leetcode/Graphs/Popular Questions.md",
-    "Leetcode/Recursion/Other Problems.md",
     "Finance/Sources.canvas",
     "Finance",
     "assets/images/Pasted image 20250606212843.png",
