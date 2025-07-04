@@ -329,7 +329,7 @@ class Solution:
 
 # Varied 
 
-## [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) 🚨
+## [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) 🚨 
 
 ### Description 
 
@@ -341,6 +341,7 @@ We can find this by doing atmost k- atmost k-1 element
 ```
 class Solution:
     def numberOfSubarrays(self, nums: List[int], k: int) -> int:
+	    #ATMMOST K
         def helper(k):
             count=0
             n=len(nums)
