@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fdf03550609eca2f",
+        "id": "c206b19c0a43b1c6",
         "type": "tabs",
         "children": [
           {
-            "id": "dcc362a372d86a6c",
+            "id": "9e785c8dcffd331b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -236,8 +236,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "dcc362a372d86a6c",
+  "active": "9e785c8dcffd331b",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20250709222813.png",
+    "project review/Pasted.md",
+    "project review/Pragati Mitra.md",
+    "assets/images/Pasted image 20250709220036.png",
+    "assets/images/Pasted image 20250709215455.png",
     "assets/images/Pasted image 20250709215108.png",
     "assets/images/Pasted image 20250709215028.png",
     "assets/images/Pasted image 20250709214731.png",
@@ -246,11 +251,7 @@
     "assets/images/Pasted image 20250709211217.png",
     "assets/images/Pasted image 20250709204325.png",
     "assets/images/Pasted image 20250709204052.png",
-    "assets/images/Pasted image 20250709204024.png",
-    "assets/images/Pasted image 20250709183820.png",
-    "assets/images/Pasted image 20250709183157.png",
     "Leetcode/Heap/problems.md",
-    "project review/Pragati Mitra.md",
     "project review",
     "Leetcode/Heap/Resources.md",
     "Leetcode/Stack/Stack problems.md",
@@ -278,7 +279,6 @@
     "Leetcode/Graphs/Resources.md",
     "Leetcode/Two pointer",
     "Leetcode/Binary Search/Untitled",
-    "Leetcode/DP/DP PATTERN ARTICLE.md",
     "Leetcode/DP/Untitled.canvas",
     "Finance/Sources.canvas",
     "Finance",

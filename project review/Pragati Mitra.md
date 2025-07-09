@@ -86,20 +86,43 @@ Compiling all this into a single, coherent, and visually engaging annual report 
 
 ### HOD (head of the department) Role
 
-> Dashboard:
-> As soon as the HOD login, they will be able to visually see the stastically data on the faculty,students and also the placement status (year wise-which could be changed in the dropdown)
+> The HOD dashboard provides a **comprehensive visual overview** of faculty performance, student progress, and placement statistics. It’s designed to support **data-driven decision-making** through customizable insights.
 
+---
+#### 📊 Dashboard Overview
 
+Upon login, the HOD is presented with an **interactive dashboard** displaying:
+- Year-wise **placement statistics**
+- Faculty performance summaries 
+- Student achievement metrics
+    
+A **dropdown menu** allows filtering data by academic year, department, or other criteria.
 ![[Pasted image 20250709212001.png]]
 
-to visualize more customizably the user can create additional graph based on the Key performance indicators in two ways :
+To empower HODs/Principal/IQAC with deeper insights, the platform offers two intuitive methods to create custom graphs based on **Key Performance Indicators (KPIs):**
 
-i) Prompting an inbuilt graph generator to create graph that user asks in natural language
- ![[Pasted image 20250709215028.png]]
- ![[Pasted image 20250709215108.png]
+#### Method 1: **Natural Language Graph Generation**
+
+- Users can simply **describe the graph they want** in plain English.
+- An **AI-powered inbuilt graph generator** interprets the prompt and renders the requested visualization.
+>Example:
+>Create a multistack graph that helps us visualize the no of students who are eligible for placements and no of students who have already been placed.
+
+![[Pasted image 20250709215028.png]]![[Pasted image 20250709215455.png]]
+ The **multi-stacked bar graph** is then **automatically added to the user's dashboard** for quick reference and ongoing analysis.
  
- The multistacked bar graph of placement details gets added to the dashboard of that user.
-ii) Create an sql query from the options given -> for computer professionals/administrators
+ii)For users with technical expertise—such as **administrators or computer professionals**—the platform allows custom data visualization through **SQL queries**  via these dropdowns and input boxes .
 ![[Pasted image 20250709214731.png]]
+#### Email 
+Users can send emails directly to other students, faculty, or the HOD within the institution using the **built-in email system**—eliminating the need to switch to external platforms like Gmail.
+![[Pasted image 20250709220036.png]]
+
+#### Chatting feature 
+
+Users can engage in real-time conversations with **other HODs, faculty, and students** through the built-in chat system. This facilitates **collaborative discussions** on common topics, departmental matters, and academic updates—all within the platform.
+
+![[Pasted image 20250709222813.png]]
+
+
 
 
