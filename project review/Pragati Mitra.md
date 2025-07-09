@@ -57,7 +57,14 @@ Compiling all this into a single, coherent, and visually engaging annual report 
 
 ### Student Pages
 
-> Students has their own login to keep track of their achievements and other details/
+> Each student has their own secure login, allowing them to **track and manage their academic and extracurricular achievements**, as well as maintain personal and institutional details.
+
+####  Key Features:
+
+- **Login Portal:** Secure access via unique credentials
+- **Achievements Tracker:** Add and manage academic, research, and extracurricular accomplishments
+- **Profile Management:** Update personal details, course information, and contact data
+- **Document Upload:** Upload certificates, project reports, and other relevant documents
 
 ![[Pasted image 20250709204024.png]]
 ![[Pasted image 20250709204052.png]]
@@ -65,11 +72,34 @@ Compiling all this into a single, coherent, and visually engaging annual report 
 
 # Faculty Login
 
-> The faculty can see the analytical data of the students under them and also upload their achievements as well.
+>Faculty members have dedicated login access to **view analytical data** of the students under their mentorship and to **upload and manage their own achievements**.
+
+#### Key Features:
+
+- **Secure Faculty Login:** Role-based authentication for faculty access
+- **Student Insights Dashboard:** View academic performance, achievements, and activity logs of students they oversee
+- **Faculty Achievements Upload:** Submit publications, certifications, awards, and other professional milestones
 
 ![[Pasted image 20250709204325.png]]
 
 
 
-# HOD (head of the department) Role
+### HOD (head of the department) Role
+
+> Dashboard:
+> As soon as the HOD login, they will be able to visually see the stastically data on the faculty,students and also the placement status (year wise-which could be changed in the dropdown)
+
+
+![[Pasted image 20250709212001.png]]
+
+to visualize more customizably the user can create additional graph based on the Key performance indicators in two ways :
+
+i) Prompting an inbuilt graph generator to create graph that user asks in natural language
+ ![[Pasted image 20250709215028.png]]
+ ![[Pasted image 20250709215108.png]
+ 
+ The multistacked bar graph of placement details gets added to the dashboard of that user.
+ii) Create an sql query from the options given -> for computer professionals/administrators
+![[Pasted image 20250709214731.png]]
+
 
