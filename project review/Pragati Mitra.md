@@ -57,4 +57,19 @@ Compiling all this into a single, coherent, and visually engaging annual report 
 
 ### Student Pages
 
+> Students has their own login to keep track of their achievements and other details/
+
+![[Pasted image 20250709204024.png]]
+![[Pasted image 20250709204052.png]]
+
+
+# Faculty Login
+
+> The faculty can see the analytical data of the students under them and also upload their achievements as well.
+
+![[Pasted image 20250709204325.png]]
+
+
+
+# HOD (head of the department) Role
 
