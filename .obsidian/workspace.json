@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My template to approach an problem.md",
+                "file": "Leetcode/Graphs/One-go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "My template to approach an problem"
+              "title": "One-go"
             }
           }
         ]
@@ -238,6 +238,11 @@
   },
   "active": "9e785c8dcffd331b",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20250710101839.png",
+    "Leetcode/Graphs/Popular Questions.md",
+    "Leetcode/Graphs/One-go.md",
+    "Leetcode/Graphs/minimum path,cost,dist etc.md",
+    "My template to approach an problem.md",
     "Leetcode/Sliding window/one go.md",
     "Leetcode/Sliding window/Resources.md",
     "project review/Pragati Mitra.md",
@@ -272,10 +277,6 @@
     "Leetcode/Bit Manipulation",
     "Leetcode/Tree/Resources.md",
     "Leetcode/Tree/Popular problems.md",
-    "Leetcode/Two pointer/Resources.md",
-    "Leetcode/Recursion/Backtracking problems.md",
-    "Leetcode/DP/Resource.md",
-    "Leetcode/Graphs/Resources.md",
     "Leetcode/Two pointer",
     "Leetcode/Binary Search/Untitled",
     "Leetcode/DP/Untitled.canvas",
