@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c206b19c0a43b1c6",
+        "id": "be58682aef67514e",
         "type": "tabs",
         "children": [
           {
-            "id": "9e785c8dcffd331b",
+            "id": "119b8231653cec97",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project review/Pragati Mitra.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Pragati Mitra"
+              "title": "New tab"
             }
           }
         ]
@@ -236,8 +232,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9e785c8dcffd331b",
+  "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "project review/Pragati Mitra.md",
+    "project review/2025-05-13.md",
+    "project review/Pasted.md",
+    "project review/Pragati Mitra 1.md",
     "assets/images/Pasted image 20250710143209.png",
     "assets/images/Pasted image 20250710134338.png",
     "assets/images/Pasted image 20250710134336.png",
@@ -248,15 +248,12 @@
     "assets/images/Pasted image 20250710133935.png",
     "assets/images/Pasted image 20250710133536.png",
     "assets/images/Pasted image 20250710133457.png",
-    "assets/images/Pasted image 20250710133436.png",
     "Leetcode/Graphs/One-go.md",
     "Leetcode/Graphs/Popular Questions.md",
     "Leetcode/Graphs/minimum path,cost,dist etc.md",
     "My template to approach an problem.md",
     "Leetcode/Sliding window/one go.md",
     "Leetcode/Sliding window/Resources.md",
-    "project review/Pragati Mitra.md",
-    "project review/Pasted.md",
     "Leetcode/Heap/problems.md",
     "project review",
     "Leetcode/Heap/Resources.md",
@@ -276,7 +273,6 @@
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
     "Leetcode/Tree/Resources.md",
-    "Leetcode/Tree/Popular problems.md",
     "Leetcode/Two pointer",
     "Leetcode/Binary Search/Untitled",
     "Leetcode/DP/Untitled.canvas",
