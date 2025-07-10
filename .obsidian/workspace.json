@@ -11,10 +11,14 @@
             "id": "119b8231653cec97",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "project review/Medco.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Medco"
             }
           }
         ]
@@ -234,6 +238,11 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "assets/images/Screenshot_2025-07-10-21-28-05-162_com.example.pdl.jpg",
+    "assets/images/WhatsApp Image 2025-07-10 at 16.42.28_ebfa00ca.jpg",
+    "assets/images/Screenshot_2025-07-10-21-45-45-525_com.example.pdl.jpg",
+    "assets/images/Pasted image 20250710154946.png",
+    "project review/Medco.md",
     "project review/Pragati Mitra.md",
     "project review/2025-05-13.md",
     "project review/Pasted.md",
@@ -245,9 +254,6 @@
     "assets/images/Pasted image 20250710134100.png",
     "assets/images/Pasted image 20250710134050.png",
     "assets/images/Pasted image 20250710133949.png",
-    "assets/images/Pasted image 20250710133935.png",
-    "assets/images/Pasted image 20250710133536.png",
-    "assets/images/Pasted image 20250710133457.png",
     "Leetcode/Graphs/One-go.md",
     "Leetcode/Graphs/Popular Questions.md",
     "Leetcode/Graphs/minimum path,cost,dist etc.md",
@@ -269,10 +275,8 @@
     "SYSTEM DESIGN/Design primer notes/Scalability.md",
     "SYSTEM DESIGN/LLD/1)Introduction to LLD . How to Approach LLD Problems in an Interview.md",
     "Behavioral Questions/Questions.md",
-    "Finance/Trading notes.md",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
-    "Leetcode/Tree/Resources.md",
     "Leetcode/Two pointer",
     "Leetcode/Binary Search/Untitled",
     "Leetcode/DP/Untitled.canvas",
