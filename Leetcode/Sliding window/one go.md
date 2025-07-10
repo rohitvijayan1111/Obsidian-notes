@@ -322,6 +322,38 @@ class Solution:
         return ans
 ```
 
+# [3439. Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/)
+
+the problem becomes simple when we convert the events into their gaps and perform a fixed k sliding window on the gaps array
+```
+class Solution:
+    def maxFreeTime(self, eventTime: int, k: int, startTime: List[int], endTime: List[int]) -> int:
+        n = len(startTime)
+        freeGaps = []
+
+        # Gap before the first meeting
+        if startTime[0] > 0:
+            freeGaps.append(startTime[0])
+        
+        # Gaps between meetings
+        for i in range(1, n):
+            freeGaps.append(startTime[i] - endTime[i - 1])
+        
+        # Gap after the last meeting
+        if endTime[-1] < eventTime:
+            freeGaps.append(eventTime - endTime[-1])
+
+        maxFreeDuration = 0
+        currentSum = 0
+
+        for i in range(len(freeGaps)):
+            currentSum += freeGaps[i]
+            if i >= k + 1:
+                currentSum -= freeGaps[i - (k + 1)]
+            maxFreeDuration = max(maxFreeDuration, currentSum)
+
+        return maxFreeDuration
+```
 
 
 
