@@ -161,14 +161,67 @@ The IQAC coordinator is capable of organizing the data in the form of  forms thr
 i) The inbuilt form feature
 ii) Linking with google sheets 
 iii)Integrating details from other database that exists in the server.
-
+![[Pasted image 20250710131355.png]]
 i)Inbuilt Form
 
 Here as IQAC role they would be only be able to view the data of that other departments have filled in through form.
 ![[Pasted image 20250710123032.png]]
 
 apart from these, the IQAC can :
-	i)Lock Forms - if the form is locked , no can add new records, edit records, 
+	i)Lock Forms - if the form is locked , no can add new records, edit records, delete records. only view can be done
+	![[Pasted image 20250710123236.png]]
 
+
+ii) Deadline - deadlines can be assigned to these forms so that i can create an sense of urgency to fill in the data at the right time
+![[Pasted image 20250710123421.png]]
+
+
+iii)Delete Form - This feature is to delete the forms that were created. in order to prevent accidental deletion. user has to type in the name of the form itself to delete
+
+![[Pasted image 20250710123620.png]]
+
+iv) Google forms
+
+Fetches data Realtime from the google form and renders it here
+![[Pasted image 20250710131416.png]]
+![[Pasted image 20250710131500.png]]
+![[Pasted image 20250710131514.png]]
+
+
+
+
+# report
+
+
+#### Form list
+
+![[Pasted image 20250710131905.png]]
+
+
+#### create report
+![[Pasted image 20250710132114.png]]
+each sub section can be assigned to different user based on the mail id.
+
+User can only see and modify sections that they are assigned only.
+
+they are provided checkbox to select which subsections that they want in the report. the subsections have predefined SQL queries written for it to fetch the data.
+
+Since the data is in tabular form and for the report we would textual content is needed right? a small is done by provided by giving an automatic AI generated Introduction and the content for that subsection. 
+
+The user can further edit this content as they want.
+
+![[Pasted image 20250710132858.png]]
+![[Pasted image 20250710132929.png]]
+
+The users can also upload images (along with description to appear in the report).  Also youtube URL could be added to the report.
+
+IN PDF version an QR is rendered instead of the Link to simplify the user
+IN HTML version the Video is embedded.
+
+
+The data need to persist right? all cant be done at one moment right, hence we have give an option to save each subsection.
+
+
+What if we want to revert ? no worries we have provided Versioning control to revert to previous version
 
 
