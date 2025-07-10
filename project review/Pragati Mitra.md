@@ -225,3 +225,35 @@ The data need to persist right? all cant be done at one moment right, hence we h
 What if we want to revert ? no worries we have provided Versioning control to revert to previous version
 
 
+
+Report generation is an collaborative process right? no worries we have provided a discussion and feedback section where the can discuss and raise disputes.
+
+![[Pasted image 20250710133536.png]]
+graphs are also added automatically to visualize the data
+![[Pasted image 20250710133316.png]]
+![[Pasted image 20250710133343.png]]
+![[Pasted image 20250710133436.png]]
+![[Pasted image 20250710133457.png]]
+
+
+
+# PDF Report output
+![[Pasted image 20250710133935.png]]
+![[Pasted image 20250710133949.png]]
+
+## HTML Version
+
+![[Pasted image 20250710134100.png]]
+![[Pasted image 20250710134119.png]]
+
+
+
+## ADD on feature:
+
+Worry where what features are there need any guidance? we have our inbult pragati bot which will guide with user queries as it is pretrained with our websites data.
+
+![[Pasted image 20250710134338.png]]
+
+
+# Infrastructure login
+
