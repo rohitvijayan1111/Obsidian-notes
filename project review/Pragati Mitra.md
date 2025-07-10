@@ -129,7 +129,46 @@ Users can engage in real-time conversations with **other HODs, faculty, and stud
 The forms created by all IQAC coordinators are automatically assigned to all HOD. they are responsible for managing the data of their department in these forms.
 
 i) The can perform CRUD operations on the forms (Role based -> only their department level)
+Read/View the data departmental level ONLY
+![[Pasted image 20250710113455.png]]
+![[Pasted image 20250710113605.png]]
+![[Pasted image 20250710121135.png]]
+![[Pasted image 20250710121214.png]]
 ii) assign individual forms to the faculty so that they would take responsibility of that particular form alone.
+
+The forms are assigned in an clever way, the faculty aren't created a new user to assign these forms. rather a simple email id(google) is enough to assign these forms. So the user can login with their google account and access these forms and manage them
+
+![[Pasted image 20250710122040.png]]
+
+a mail notification is sent to the assigned user . so going forward any deadline assigned to them is also assigned to them.
+![[Pasted image 20250710122013.png]]
 iii)They can also manage those assigned users i.e remove the user if not needed.
+![[Pasted image 20250710122114.png]]
+
+
+# IQAC -POV
+
+#### Dashboard page
+
+The IQAC dashboard board page has a detailed analysis on various metric like students, faculty and placement department wise making it visually appealing to the them.
+
+![[Pasted image 20250710122333.png]]
+
+
+#### Form pages
+
+The IQAC coordinator is capable of organizing the data in the form of  forms through 3 ways:
+i) The inbuilt form feature
+ii) Linking with google sheets 
+iii)Integrating details from other database that exists in the server.
+
+i)Inbuilt Form
+
+Here as IQAC role they would be only be able to view the data of that other departments have filled in through form.
+![[Pasted image 20250710123032.png]]
+
+apart from these, the IQAC can :
+	i)Lock Forms - if the form is locked , no can add new records, edit records, 
+
 
 
