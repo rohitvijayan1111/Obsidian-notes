@@ -45,3 +45,62 @@ Hence:
 ![[Pasted image 20250710101839.png]]
 
 
+### **Adjacency Matrix**
+
+An adjacency matrix of a graph is a two-dimensional array of size n x n, where n is the number of nodes in the graph, with the property that a[ i ][ j ] = 1 if the edge (vᵢ, vⱼ) is in the set of edges, and a[ i ][ j ] = 0 if there is no such edge.
+
+The space needed to represent a graph using its adjacency matrix is n² locations. Space complexity = (n*n), It is a costly method as n² locations are consumed.
+
+
+### **Adjacency Lists**
+
+This is a node-based representation. In this representation, we associate with each node a list of nodes adjacent to it. Normally an array is used to store the nodes. The array provides random access to the adjacency list for any particular node.  
+Consider the example of the following **undirected graph**,
+
+
+ So, the space needed to represent an undirected graph using its adjacency list is 2 x E locations, where E denotes the number of edges.
+
+Space complexity = O(2xE)
+
+ The space needed to represent a directed graph using its adjacency list is E locations, where E denotes the number of edges, as here each edge data appears only once.
+
+Space complexity = O(E)
+
+
+## ✅ BFS Traversal of a Graph
+
+### 🔁 **Time Complexity (TC):**
+
+O(V+E)
+**Why:**
+
+- Each node (V) is enqueued and dequeued **once**: `O(V)`
+    
+- All neighbors (edges) are iterated over **once total**: `O(E)`
+    
+    - In an **undirected** graph, every edge appears **twice** in the adjacency list (once for each node), but is processed once due to the `visited[]` array.
+        
+
+---
+
+### 💾 **Space Complexity (SC):**
+
+O(V+E)
+
+**Breakdown:**
+
+- `visited[]` → `O(V)`
+    
+- `queue` → In worst case, all `V` nodes might be in the queue: `O(V)`
+    
+- `adjacency list` → `O(V + E)` (given as input)
+    
+- `bfs[]` result list → `O(V)`
+    
+
+So overall:
+
+undirected
+sc=O(V+2E) TC=O(V+2E)
+directed
+SC= O(V + E) TC=O(V+E)

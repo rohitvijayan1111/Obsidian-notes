@@ -124,5 +124,12 @@ Users can engage in real-time conversations with **other HODs, faculty, and stud
 ![[Pasted image 20250709222813.png]]
 
 
+#### Forms
+
+The forms created by all IQAC coordinators are automatically assigned to all HOD. they are responsible for managing the data of their department in these forms.
+
+i) The can perform CRUD operations on the forms (Role based -> only their department level)
+ii) assign individual forms to the faculty so that they would take responsibility of that particular form alone.
+iii)They can also manage those assigned users i.e remove the user if not needed.
 
 
