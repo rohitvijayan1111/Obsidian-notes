@@ -85,7 +85,7 @@ O(V+E)
 
 ### 💾 **Space Complexity (SC):**
 
-O(V+E)
+O(V)*2 ->only for visited and at max it stores the all the vertex
 
 **Breakdown:**
 
@@ -101,9 +101,13 @@ O(V+E)
 So overall:
 
 undirected
-sc=O(V+2E) TC=O(V+2E)
+tc=O(V+2E) TC=O(V+2E)
 directed
-SC= O(V + E) TC=O(V+E)
+tC= O(V + E) TC=O(V+E)
 
 
 
+**DFS:**
+
+tc= o(v+E) (directed), O(V+2E) (undirected graph)
+sc=O(V) (visited) + O(V)-> auxiliary stack space
