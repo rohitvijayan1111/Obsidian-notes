@@ -1113,3 +1113,43 @@ def findLCS(n: int, m: int, s1: str, s2: str) -> str:
 ```
 
 
+
+### [Cutting Binary String](https://www.geeksforgeeks.org/problems/cutting-binary-string1342/1)
+
+```
+from functools import lru_cache
+
+class Solution:
+    def cuts(self, s):
+        # code here
+        n=len(s)
+        powerset5=set()
+        stop=2**31
+        no=1
+        while(no<stop):
+            powerset5.add(no)
+            no*=5
+        
+        @lru_cache(None)
+        def helper(start):
+            if(start==n):
+                return 0
+            
+            min_cuts=float("inf")
+            for i in range(start+1,n+1):
+                sub=s[start:i]
+                if sub[0]=='0':
+                    continue
+                
+                value=int(sub,2)
+                if(value in powerset5):
+                    next_cut=helper(i)
+                    if(next_cut!=float("inf")):
+                        min_cuts = min(min_cuts, next_cut + 1)
+
+            return min_cuts
+        
+        result = helper(0)
+        return result if result != float('inf') else -1
+                
+```
