@@ -16,3 +16,6 @@
 3:30-4:30- break/ youtube time
 4:30-7:30-core/system design 
 9:00-10:30-leetcode revision
+
+
+	
