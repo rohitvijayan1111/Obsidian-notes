@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Final/Chapter-1.md",
+                "file": "Security/Comptia Security +/Final/Glossary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter-1"
+              "title": "Glossary"
             }
           }
         ]
@@ -239,7 +239,7 @@
   "active": "119b8231653cec97",
   "lastOpenFiles": [
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
-    "Security/Comptia Security +/Final/Chapter-1.md",
+    "Security/Comptia Security +/Final/Glossary.md",
     "Security/Comptia Security +/Final",
     "Accountability/unknown.md",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
