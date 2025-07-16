@@ -5,6 +5,6 @@ Keywords:
 
 
 ## Lesson-2
-- advanced persistent threats (APTs)
+- APT – Advanced Persistent Threat
 - 
 
