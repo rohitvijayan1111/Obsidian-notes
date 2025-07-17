@@ -11,7 +11,34 @@ weekends -> core + system design+leet+security+
 	i)behavioral
 
 
-security jobs :
+DAILY TO DOS:
+i)tryhackme 
+security+ - 4 hrs
+leetcode- 3 hrs
+
+
+DAILY :
+- SYSTEM DESIGN 
+- LEETCODE
+- BECKN- 1HR
+- Tryhackme
+- security+
+
+
+4:00AM - 7:10AM- SECURITY+
+7:45AM-8:05AM- STOCK
+9:15AM-12:50AM-TryhackMe 
+1:30-3:00 AM- BECKN
+4:40-7:30- leetcode
+8:15- 11:00-system design
+
+SCHEDULE:
+i)SUNDAYS
+- CORE SUBJECT - OS,DBMS,CN,REACT,NODE,EXPRESS,SQL
+- DEVELOPMENT
+- APTITUDE
+- LEETCODE POD 
+
 - zoho
 	- Skills required:
 		- 1st round - code review - java,python,ruby,c++ -> OWASP code bug(in )
@@ -22,7 +49,7 @@ security jobs :
 			- pentester lab -  also has codereview and labs -around 600 labs ,3000k for 3 months using student id
 			- scripts to automate attacks
 			- bash scripting
-			- RANA KALI-YT
+			- rana khali-YT
 			- ITSEC-HTB SERIES
 			- 
 		- 3rd round- 
