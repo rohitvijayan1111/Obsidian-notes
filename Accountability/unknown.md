@@ -14,6 +14,15 @@ weekends -> core + system design+leet+security+
 security jobs :
 - zoho
 	- Skills required:
+		- 1st round - code review - java,python,ruby,c++ -> OWASP code bug(in )
+		- 2nd round- exploit an web application -> only using burp suite
+			- portswigger -117 labs
+			- owasp - juice shop , web goat
+			- pentester lab -  also has codereview and labs -around 600 labs ,3000k for 3 months using student id
+			- scripts to automate attacks
+			- bash scripting
+			- 
+		- 3rd round- 
 - Scybers
 	- skills required:
 	- https://www.linkedin.com/company/scybers/?originalSubdomain=in
@@ -25,4 +34,3 @@ security jobs :
 - equiniti
 - crisil
 - TCS
-- 
