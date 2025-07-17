@@ -21,4 +21,8 @@ security jobs :
 - NTT Data
 - Deloitte
 - Alation
+- crisil
+- equiniti
+- crisil
+- TCS
 - 
