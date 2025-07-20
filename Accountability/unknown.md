@@ -7,9 +7,11 @@
 4:30-7:30-core/system design /project review
 9:00-10:30-leetcode revision
 
-weekends -> core + system design+leet+security+
+weekends -> core + system design+leetc0de+security+
 	i)behavioral
 
+
+TODAY
 
 DAILY TO DOS:
 i)tryhackme 
