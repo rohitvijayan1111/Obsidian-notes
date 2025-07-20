@@ -137,3 +137,54 @@ The **Internet** is the **worldwide system** of **interconnected networks** — 
 | Accessibility | Private or limited access        | Public and globally accessible                 |
 | Example       | Office LAN, Home Wi-Fi           | Google, YouTube, Email, Web                    |
 
+# terms in a browser
+---
+### 🌐 **1. Web Client**
+- A **Web Client** is the user-side of internet communication.
+- It refers to the **browser** or any software you use to access websites.
+- **Example**: When you use Chrome or Firefox to open a website, your browser is acting as the **Web Client**.
+- Sometimes, helper software (like PDF readers or media players) also supports the client.
+---
+###  **2. Web Browser**
+- A **Web Browser** is the program (software) that helps you **search, retrieve, and display web content** like web pages, images, videos, etc.
+- It **sends requests** to websites (web servers) and shows you the results.
+- Common browsers:
+    - Google Chrome
+    - Mozilla Firefox
+    - Safari
+    - Microsoft Edge
+---
+### 📄 **3. Webpage**
+- A **Webpage** is a **single document** on the internet.
+- It is written using **HTML (structure)** and **CSS (style)**.
+- You view it using a browser.
+- A webpage contains:
+    - Text
+    - Images
+    - Videos
+    - Links
+- The **Home Page** is the **main or starting page** of a website.
+- Each webpage has its **own unique address** (called a **URL**) you see in the address bar of your browser.
+---
+### 🌐 **4. Website**
+- A **Website** is a **collection of related webpages** grouped under one **domain name**.
+- Example:
+    - `https://www.wikipedia.org` is a **website**.
+    - The pages like `/main`, `/about`, `/contact` are its **webpages**.
+- Websites are built for:
+    - Sharing information
+    - Selling products
+    - Providing services
+    - Entertainment, and more
+---
+### 🔍 **5. Search Engine**
+- A **Search Engine** is a **tool or website** that helps you find information on the internet.
+- You enter a query (keywords), and it shows you a list of matching results (webpages, images, videos, etc.).
+- Examples of search engines:
+    - **Google**
+    - **Bing**
+    - **Yahoo**
+    - **DuckDuckGo**
+- Instead of typing the exact website address, you can just **search for what you need**, and the engine will help you find the most relevant results.
+
+

@@ -69,3 +69,12 @@ i)SUNDAYS
 - equiniti
 - crisil
 - TCS
+
+
+
+Personal performance test:
+
+- have to
+- able to(But i didnt)
+- want to
+- 
