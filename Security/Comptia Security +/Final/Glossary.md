@@ -16,4 +16,7 @@ Keywords:
 - **Indicators of Compromise (IoCs)** 
 	- are pieces of forensic data that identify potentially malicious activity on a system or network.
 
-	
+# Lesson-3
+
+- RAT- Remote access Trojan
+- or endpoint detection and response (EDR) tools 
