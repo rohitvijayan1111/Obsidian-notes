@@ -40,3 +40,56 @@ Ransomware
 | **Patch Management**      | Fixes vulnerabilities ransomware may exploit                      |
 | **Network Segmentation**  | Limits the spread across internal systems                         |
 | **User Training**         | Helps avoid phishing and social engineering traps                 |
+## 🧨 **Trojans & Remote Access Trojans (RATs)**
+
+### 🔍 **What is a Trojan?**
+
+- A **Trojan** is malicious software disguised as a legitimate application.
+    
+- It **doesn’t replicate** like a virus or worm.
+    
+- It tricks users into **installing or running** it, then performs malicious actions in the background.
+    
+
+---
+
+### 👁️‍🗨️ **What is a RAT (Remote Access Trojan)?**
+
+- A special type of Trojan that **provides remote control** to an attacker.
+    
+- Acts like **legitimate remote access tools** (e.g., TeamViewer, AnyDesk).
+    
+- Often gives full access: file browsing, webcam/microphone access, keystroke logging, and more.
+    
+- **Hard to detect**, especially when attackers use known tools or legitimate-looking apps.
+## 🛡️ **How Trojans and RATs Are Detected and Mitigated**
+
+### 🔐 **Detection Techniques**
+
+|Tool/Method|Role|
+|---|---|
+|**Antivirus/Antimalware**|Signature-based detection of known malware|
+|**EDR (Endpoint Detection & Response)**|Behavioral monitoring, anomaly detection|
+|**Network Monitoring**|Detects C2 (Command & Control) traffic or strange DNS queries|
+|**Application Control**|Restricts what users can install or run|
+|**Heuristics & Sandboxing**|Detects suspicious behavior even in unknown files|
+
+---
+
+### 🧯 **Mitigation Techniques**
+
+|Practice|Explanation|
+|---|---|
+|**Security Awareness Training**|Educate users not to download apps from untrusted sources|
+|**Application Whitelisting**|Only allow approved apps to be installed|
+|**Restrict Admin Privileges**|Prevent users from installing software or modifying system settings|
+|**Use official app stores**|Third-party apps pose greater risk|
+|**Regular Software Updates**|Patch vulnerabilities that RATs exploit|
+|**Monitor false positives cautiously**|Avoid disabling detection of legitimate tools used as RATs|
+
+
+### 🛡️ What is **EDR (Endpoint Detection and Response)?**
+
+**EDR** is a **security solution** that monitors, detects, investigates, and responds to threats on **endpoint devices** (like laptops, desktops, and servers). It goes beyond traditional antivirus by focusing on **behavior, visibility, and response**.
+
+

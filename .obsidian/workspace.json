@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Final/Glossary.md",
+                "file": "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Glossary"
+              "title": "Chapter-3 Malicious code"
             }
           }
         ]
@@ -238,12 +238,12 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Final/Glossary.md",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Core subjects/CN.md",
     "Accountability/unknown.md",
     "Core subjects/resources.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
-    "Security/Comptia Security +/Final/Glossary.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Security/Comptia Security +/Final",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
