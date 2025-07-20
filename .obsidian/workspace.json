@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/unknown.md",
+                "file": "Core subjects/CN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "unknown"
+              "title": "CN"
             }
           }
         ]
@@ -238,10 +238,12 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "Core subjects/resources.md",
+    "Core subjects/CN.md",
+    "Accountability/unknown.md",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Final/Glossary.md",
-    "Accountability/unknown.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Security/Comptia Security +/Final",
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
@@ -266,7 +268,6 @@
     "Leetcode/Array/Two pointer.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Leetcode/Array/Article on counting.md",
-    "project review/Medco.md",
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-27-18-808_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-27-12-005_com.android.camera.jpg",
@@ -277,7 +278,6 @@
     "assets/images/Screenshot_2025-07-10-21-22-21-153_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-22-16-979_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-21-41-356_com.example.pdl.jpg",
-    "project review/Pragati Mitra.md",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
