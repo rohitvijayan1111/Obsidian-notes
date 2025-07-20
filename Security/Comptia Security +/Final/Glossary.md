@@ -21,5 +21,7 @@ Keywords:
 - RAT- Remote access Trojan
 - or endpoint detection and response (EDR) tools 
 - Internet Relay Chat (IRC) via port 6667
-
+- digital rights management (DRM) monitoring
+- Software restriction policies (SRPs)
+- 
 

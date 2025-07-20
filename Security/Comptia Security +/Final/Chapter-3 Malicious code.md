@@ -230,3 +230,109 @@ Because worms **self-install and self-replicate**, they can spread **rapidly and
 - Prevent with **network controls**, **patching**, and **endpoint protection**
 
 
+Here's a complete breakdown of **Spyware**, as relevant for the **CompTIA Security+ (SY0-701)** exam and general cybersecurity understanding:
+
+---
+
+## 🕵️ What Is **Spyware**?
+
+**Spyware** is a type of **malware** that covertly gathers information about a user, system, or organization **without their consent**. It typically operates in the background and sends collected data to a **third party**, often over the Internet.
+
+---
+
+## 🎯 **Goals of Spyware**
+
+|Objective|Description|
+|---|---|
+|**Surveillance**|Monitor user activity, including keystrokes, web browsing, and application usage|
+|**Data Theft**|Capture sensitive info like passwords, credit card numbers, emails, etc.|
+|**Advertising manipulation**|Redirect search traffic, inject ads, or modify browser settings|
+|**Stalking**|Track users’ locations, chats, or communications (stalkerware)|
+|**DRM enforcement**|Monitor software/media use for licensing violations (common with commercial spyware)|
+
+---
+
+## 🧬 **How Spyware Works**
+
+Spyware can:
+
+- Be **bundled** with legitimate software (Trojan-style)
+    
+- **Exploit vulnerabilities** to install silently
+    
+- **Disguise itself** as a useful utility (e.g., a performance booster)
+    
+- Use **remote access** tools to exfiltrate info
+    
+- **Inject into browsers** or system processes
+    
+
+---
+
+## 🔍 Common **Indicators of Compromise (IoCs)** for Spyware
+
+|IoC Type|Examples|
+|---|---|
+|**Remote access indicators**|Unusual outbound traffic, unknown IPs|
+|**File signatures**|Known spyware-related hashes or file names|
+|**Disguised processes**|Fake system processes like `svch0st.exe`, `explorr.exe`|
+|**Browser injection**|Popups, unexpected redirects, modified search engines|
+|**Keylogging or screen-capture** behaviors|Frequent memory access, capturing window focus, API calls like `GetAsyncKeyState()`|
+
+---
+
+## 🧠 Notable Types of Spyware
+
+|Type|Description|
+|---|---|
+|**Keyloggers**|Capture keystrokes to steal credentials or sensitive data|
+|**Stalkerware**|Used to monitor personal activity, especially in abusive relationships|
+|**Adware**|Tracks browsing activity to deliver ads or manipulate traffic|
+|**System monitors**|Collect detailed reports on computer use (e.g., installed apps, screenshots)|
+
+---
+
+## 🛡️ **Spyware Mitigation & Prevention**
+
+### 🔐 Prevention
+
+- **User awareness training**: Avoid shady installers, cracked software, and phishing links
+    
+- **Application whitelisting**: Only allow pre-approved software
+    
+- **Software restriction policies (SRPs)** or **Group Policy** controls on Windows
+    
+
+### 🧰 Detection and Removal
+
+- **Antimalware and EDR tools**: Use antispyware modules within antimalware suites
+    
+- **Behavior-based detection**: Identify apps mimicking legit tools but acting suspiciously
+    
+- **Network monitoring**: Detect data exfiltration or contact with C2 servers
+    
+
+### ⚠️ Challenges
+
+- **Spyware may masquerade as legitimate software**
+    
+- **It may be installed intentionally by insiders or abusers**
+    
+- **Might not trigger high-severity alerts**, especially in commercial bundles
+    
+
+---
+
+## 📝 SY0-701 Key Takeaways
+
+|Concept|Detail|
+|---|---|
+|**Definition**|Malware that secretly collects info about users/systems|
+|**Motivation**|Surveillance, monetization, theft, abuse|
+|**Forms**|Keyloggers, adware, stalkerware, system monitors|
+|**IoCs**|Remote access, injected processes, suspicious network traffic|
+|**Mitigation**|Awareness, restricted software controls, antimalware/EDR tools|
+
+---
+
+Would you like a **diagram** showing how spyware operates within a system, or a **real-world case study** like Pegasus or FinFisher spyware?
