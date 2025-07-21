@@ -33,4 +33,5 @@ Lesson -4
 - CISA (Cybersecurity and Infrastructure Security Agency)
 - BEC-Business email compromise
 - EAC, or email account compromise
-- 
+- B. Shoulder surfing 
+- . An on-path attack
