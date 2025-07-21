@@ -25,3 +25,12 @@ Keywords:
 - Software restriction policies (SRPs)
 - 
 
+
+
+Lesson -4
+- MDM- misinformation, disinformation, and malinformation
+- TRUST- Tell your story, Ready your team, understand and assess MDM, Strategies response , Track outcomes
+- CISA (Cybersecurity and Infrastructure Security Agency)
+- BEC-Business email compromise
+- EAC, or email account compromise
+- 
