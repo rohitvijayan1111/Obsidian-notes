@@ -41,4 +41,8 @@ Lesson-5
 - Federal Information Security Modernization Act (FISMA)
 - Approved Scanning Vendor (ASV)
 - **intrusive plug-ins**.
+- NIST- national institute of standard and technology
+- **Security Content Automation Protocol (SCAP)** 
+- Common Configuration Enumeration (CCE) 
+- Common Platform Enumeration (CPE) 
 - 
