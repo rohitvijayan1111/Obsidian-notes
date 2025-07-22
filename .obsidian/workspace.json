@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Final/Glossary.md",
+                "file": "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Glossary"
+              "title": "Chapter-5 Security Assessment and Testing"
             }
           }
         ]
@@ -236,10 +236,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "119b8231653cec97",
   "lastOpenFiles": [
-    "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Final/Glossary.md",
+    "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Core subjects/CN.md",
