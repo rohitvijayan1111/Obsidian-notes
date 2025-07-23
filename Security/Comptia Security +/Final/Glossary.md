@@ -45,5 +45,6 @@ Lesson-5
 - **Security Content Automation Protocol (SCAP)** 
 - Common Configuration Enumeration (CCE) 
 - Common Platform Enumeration (CPE) 
+- DNS- Domain name system
 
 
