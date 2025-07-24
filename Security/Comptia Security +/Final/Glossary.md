@@ -2,7 +2,8 @@
 ## Lesson-1
 Keywords:
 - Payment Card Industry Data Security Standard (PCI DSS)
-
+- OSI- open source interconnection
+- 
 
 ## Lesson-2
 - APT – Advanced Persistent Threat
