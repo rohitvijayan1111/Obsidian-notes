@@ -46,5 +46,7 @@ Lesson-5
 - Common Configuration Enumeration (CCE) 
 - Common Platform Enumeration (CPE) 
 - DNS- Domain name system
+- **Rules of Engagement (RoE)**
+- 
 
 
