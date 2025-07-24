@@ -48,6 +48,7 @@ Lesson-5
 - Common Platform Enumeration (CPE) 
 - DNS- Domain name system
 - **Rules of Engagement (RoE)**
+- SSAE 18-**Statement on Standards for Attestation Engagements No. 18**
 - 
 
 
