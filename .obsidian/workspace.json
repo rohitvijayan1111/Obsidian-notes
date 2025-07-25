@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Final/Glossary.md",
+                "file": "tryhackme/Networking lesson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Glossary"
+              "title": "Networking lesson"
             }
           }
         ]
@@ -238,8 +238,8 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
-    "tryhackme/Networking lesson.md",
     "Security/Comptia Security +/Final/Glossary.md",
+    "tryhackme/Networking lesson.md",
     "tryhackme",
     "Security/THM/to cover.md",
     "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",

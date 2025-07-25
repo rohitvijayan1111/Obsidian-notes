@@ -16,4 +16,16 @@
 	- adds the mac address to the packet , and it is called as frame
 	- Inside every network-enabled computer is a **N**etwork **I**nterface Card (**NIC**) which comes with a unique MAC address to identify it.
 
-- 
+- Network layer
+- Transport layer
+- session layer
+	- The **Session Layer** is responsible for **establishing, maintaining, and terminating communication sessions** between two devices (e.g., computers, applications) on a network
+	- This includes authentication and authorization (e.g., logging into a remote server).
+	- **Checkpoints (Synchronization):**
+		- Implements **checkpoints** in data streams.
+		- If data is lost or corrupted, the transfer resumes from the last checkpoint, not from the beginning — this **saves bandwidth and time**.
+- presentation layer
+	- This layer acts as a translator for data to and from the application layer (layer 7)
+	- Security features such as data encryption (like HTTPS when visiting a secure site) occur at this layer.
+- Application layer
+	- 
