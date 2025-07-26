@@ -224,16 +224,36 @@ Would you like a **visual diagram** (sequence chart) to go along with this? It h
 
 #  UDP
 
+- UDP is a **stateless** protocol that doesn't require a constant connection between the two devices for data to be sent.
 - UDP is used in situations where applications can tolerate data being lost (such as video streaming or voice chat) or in scenarios where an unstable connection is not the end-all.
-- 
+
+|                     |                                                                                                                                                                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Header**          | **Description**                                                                                                                                                                                                                   |
+| Time to Live (TTL)  | This field sets an expiry timer for the packet, so it doesn't clog up your network if it never manages to reach a host or escape!                                                                                                 |
+| Source Address      | The IP address of the device that the packet is being sent from, so that data knows where to return to.                                                                                                                           |
+| Destination Address | The device's IP address the packet is being sent to so that data knows where to travel next.                                                                                                                                      |
+| Source Port         | This value is the port that is opened by the sender to send the UDP packet from. This value is randomly chosen (out of the ports from 0-65535 that aren't already in use at the time).                                            |
+| Destination Port    | This value is the port number that an application or service is running on the remote host (the one receiving the data); for example, a webserver running on port 80. Unlike the source port, this value is not chosen at random. |
+| Data                | This header is where data, i.e. bytes of a file that is being transmitted, is stored.                                                                                                                                             |
 
 
-|   |   |
-|---|---|
-|**Header**|**Description**|
-|Time to Live (TTL)|This field sets an expiry timer for the packet, so it doesn't clog up your network if it never manages to reach a host or escape!|
-|Source Address|The IP address of the device that the packet is being sent from, so that data knows where to return to.|
-|Destination Address|The device's IP address the packet is being sent to so that data knows where to travel next.|
-|Source Port|This value is the port that is opened by the sender to send the UDP packet from. This value is randomly chosen (out of the ports from 0-65535 that aren't already in use at the time).|
-|Destination Port|This value is the port number that an application or service is running on the remote host (the one receiving the data); for example, a webserver running on port 80. Unlike the source port, this value is not chosen at random.|
-|Data|This header is where data, i.e. bytes of a file that is being transmitted, is stored.|
+# PORTS
+
+- networking devices also use ports to enforce strict rules when communicating with one another. 
+- When a connection has been established (recalling from the OSI model's room), any data sent or received by a device will be sent through these ports. In computing, ports are a numerical value between **0** and **65535** (65,535).
+- Because ports can range from anywhere between 0-65535, there quickly runs the risk of losing track of what application is using what port. A busy harbour is chaos! Thankfully, we associate applications, software and behaviours with a standard set of rules.
+
+|   |   |   |
+|---|---|---|
+|**Protocol**|**Port Number**|**Description**|
+|**F**ile **T**ransfer **P**rotocol (**FTP**)|21|This protocol is used by a file-sharing application built on a client-server model, meaning you can download files from a central location.|
+|**S**ecure **Sh**ell (**SSH**)|22|This protocol is used to securely login to systems via a text-based interface for management.|
+|**H**yper**T**ext Transfer Protocol (**HTTP**)|80|This protocol powers the World Wide Web (WWW)! Your browser uses this to download text, images and videos of web pages.|
+|**H**yper**T**ext **T**ransfer **P**rotocol **S**ecure (**HTTPS**)|443|This protocol does the exact same as above; however, securely using encryption.|
+|**S**erver **M**essage **B**lock (**SMB**)|445|This protocol is similar to the File Transfer Protocol (FTP); however, as well as files, SMB allows you to share devices like printers.|
+|**R**emote **D**esktop **P**rotocol (**RDP**)|3389|This protocol is a secure means of logging in to a system using a visual desktop interface (as opposed to the text-based limitations of the SSH protocol).|
+
+We have only briefly covered the more common protocols in cybersecurity. You can [find a table of the 1024 common ports listed](http://www.vmaxx.net/techinfo/ports.htm) for more information.
+
+
