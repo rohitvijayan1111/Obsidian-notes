@@ -28,4 +28,8 @@
 	- This layer acts as a translator for data to and from the application layer (layer 7)
 	- Security features such as data encryption (like HTTPS when visiting a secure site) occur at this layer.
 - Application layer
-	- 
+	- - - Initiates requests to lower layers to perform tasks like file transfers, email delivery, or web browsing.
+	- allows networked services (e.g., web servers, FTP servers) to announce their presence.
+
+
+
