@@ -69,6 +69,18 @@ i)SUNDAYS
 - equiniti
 - crisil
 - TCS
+-   Synopsys Inc
+- Honeywell
+- Google
+- Service Now
+- UST
+- RealPage
+- BNP paribas
+- Infosys
+- Flipkart
+- Nutanix
+- Sentinel One
+- 
 
 
 

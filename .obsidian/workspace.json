@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Networking lesson.md",
+                "file": "Accountability/Microsoft prep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking lesson"
+              "title": "Microsoft prep"
             }
           }
         ]
@@ -236,17 +236,19 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "119b8231653cec97",
   "lastOpenFiles": [
-    "Security/Comptia Security +/Final/Glossary.md",
+    "assets/images/Pasted image 20250726103936.png",
+    "Accountability/unknown.md",
+    "Accountability/Microsoft prep.md",
     "tryhackme/Networking lesson.md",
+    "Security/Comptia Security +/Final/Glossary.md",
     "tryhackme",
     "Security/THM/to cover.md",
     "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Core subjects/CN.md",
-    "Accountability/unknown.md",
     "Core subjects/resources.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
@@ -266,8 +268,6 @@
     "Finance/Trading notes.md",
     "Finance/Untitled.md",
     "Finance/Sources.canvas",
-    "Leetcode/Resources/DSA PLAN.md",
-    "Leetcode/Resources/ALL IN ONE ARTICLE FOR LEETCODE.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-27-18-808_com.example.pdl.jpg",
