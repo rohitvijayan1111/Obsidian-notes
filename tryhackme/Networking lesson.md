@@ -33,3 +33,26 @@
 
 
 
+
+TCP/ IP model
+
+
+LAYERS:
+- data link/ network interface
+- internet 
+- transport 
+- application
+
+
+**TCP PROTOCOL** - Transmission control protocol
+
+- tcp protocol is an protocol used to create a dedicated connection to transfer data between two devices
+- it is used when the data must be sent correctly and shouldnt suffer any data losses
+
+
+WORKING OF TCP PROTOCOL:
+
+CONNECTION ESTABLISHMENT:
+- SYN - sent from the sender  to the recevier
+- ACK- sent from the receiver to acknowledge the sender
+- 

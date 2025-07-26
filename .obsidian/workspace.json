@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/Microsoft prep.md",
+                "file": "tryhackme/Networking lesson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Microsoft prep"
+              "title": "Networking lesson"
             }
           }
         ]
@@ -238,9 +238,10 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
-    "assets/images/Pasted image 20250726103936.png",
     "Accountability/unknown.md",
+    "Accountability/MY END GOAL.md",
     "Accountability/Microsoft prep.md",
+    "assets/images/Pasted image 20250726103936.png",
     "tryhackme/Networking lesson.md",
     "Security/Comptia Security +/Final/Glossary.md",
     "tryhackme",
@@ -261,7 +262,6 @@
     "Accountability/ask the how,why.md",
     "Accountability/Business ideas.md",
     "Accountability/MAY 2025.md",
-    "Accountability/MY END GOAL.md",
     "SYSTEM DESIGN/Book/CHAPTER 1 SCALE FROM ZERO TO MILLIONS OF USERS.md",
     "SYSTEM DESIGN/Book",
     "Leetcode/DP/One go.md",
@@ -278,7 +278,6 @@
     "assets/images/Screenshot_2025-07-10-21-22-29-441_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-22-21-153_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-22-16-979_com.example.pdl.jpg",
-    "assets/images/Screenshot_2025-07-10-21-21-41-356_com.example.pdl.jpg",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
