@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/How The Web Works.md",
+                "file": "tryhackme/How Websites Work.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How The Web Works"
+              "title": "How Websites Work"
             }
           }
         ]
@@ -238,11 +238,13 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "tryhackme/How The Web Works.md",
+    "tryhackme/How Websites Work.md",
+    "assets/images/Pasted image 20250727181046.png",
     "tryhackme/Networking lesson.md",
     "Accountability/ask the how,why.md",
     "Accountability/Business ideas.md",
     "Accountability/unknown.md",
-    "tryhackme/How The Web Works.md",
     "Accountability/MY END GOAL.md",
     "Accountability/Microsoft prep.md",
     "assets/images/Pasted image 20250726103936.png",
@@ -267,7 +269,6 @@
     "SYSTEM DESIGN/Book",
     "Leetcode/DP/One go.md",
     "Finance/Trading notes.md",
-    "Finance/Untitled.md",
     "Finance/Sources.canvas",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
@@ -278,7 +279,6 @@
     "assets/images/Screenshot_2025-07-10-21-24-14-828_com.android.camera.jpg",
     "assets/images/Screenshot_2025-07-10-21-22-29-441_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-22-21-153_com.example.pdl.jpg",
-    "assets/images/Screenshot_2025-07-10-21-22-16-979_com.example.pdl.jpg",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
