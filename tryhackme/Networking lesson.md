@@ -298,4 +298,91 @@ We'll cover the two primary categories of firewalls in the table below:
 |Stateful|This type of firewall uses the entire information from a connection; rather than inspecting an individual packet, this firewall determines the behaviour of a device **based upon the entire connection**.<br><br>This firewall type consumes many resources in comparison to stateless firewalls as the decision making is dynamic. For example, a firewall could allow the first parts of a TCP handshake that would later fail.<br><br>If a connection from a host is bad, it will block the entire device.|
 |Stateless|This firewall type uses a static set of rules to determine whether or not **individual packets** are acceptable or not. For example, a device sending a bad packet will not necessarily mean that the entire device is then blocked.<br><br>Whilst these firewalls use much fewer resources than alternatives, they are much dumber. For example, these firewalls are only effective as the rules that are defined within them. If a rule is not exactly matched, it is effectively useless.<br><br>However, these firewalls are great when receiving large amounts of traffic from a set of hosts (such as a Distributed Denial-of-Service attack)|
 
-# n
+# VPN
+
+A **VPN (Virtual Private Network)** works by creating a **secure, encrypted connection** between your device and a remote server operated by the VPN provider. Here's a step-by-step breakdown of how it works:
+
+---
+
+### 🔐 1. **Encryption**
+
+When you use a VPN, your data is **encrypted** before it leaves your device. This means that even if someone intercepts your internet traffic (like hackers, your ISP, or on public Wi-Fi), they can't read it.
+
+---
+
+### 🌍 2. **Secure Tunnel**
+
+The encrypted data is sent through a **VPN tunnel** to the VPN server. This tunnel is a secure connection that protects your data as it travels through the internet.
+
+---
+
+### 🌐 3. **VPN Server Communication**
+
+Your data reaches the **VPN server**, which then decrypts it and sends it to the final destination (e.g., a website or online service). The response from the website is also encrypted and sent back through the VPN server to you.
+
+---
+
+### 🕵️ 4. **IP Address Masking**
+
+Because your internet traffic appears to come from the VPN server, websites and services only see the **VPN server's IP address**, not your real one. This hides your location and helps protect your identity.
+
+---
+
+## 🎯 Summary of Key Benefits
+
+|Feature|Description|
+|---|---|
+|**Encryption**|Protects your data from spying|
+|**IP Masking**|Hides your real IP address|
+|**Bypassing Restrictions**|Lets you access blocked content (e.g., geo-restricted websites)|
+|**Public Wi-Fi Security**|Keeps you safe on open networks|
+|**Privacy from ISP**|Prevents your internet provider from tracking your activity|
+
+---
+
+## 📌 Example
+
+Let’s say you're in India and want to access content only available in the US:
+
+1. You connect to a VPN and choose a US server.
+    
+2. Your data is encrypted and sent to the VPN’s US server.
+    
+3. The server forwards your request to the US website.
+    
+4. The website sees a US IP address, so it lets you in.
+    
+5. The response is sent back through the VPN to you securely.
+    
+
+---
+
+---
+
+## 🔒 VPN Technologies Overview
+
+|**Technology**|**Description**|**Strengths**|**Weaknesses**|
+|---|---|---|---|
+|**PPP** (Point-to-Point Protocol)|Base protocol used to establish direct connections between two nodes. Provides basic authentication and can support encryption. Commonly used by **PPTP**.|Lightweight, easy to use|**Not routable** (cannot cross networks), weak security|
+|**PPTP** (Point-to-Point Tunneling Protocol)|Encapsulates PPP packets to create VPN tunnels over IP networks.|Easy to set up, supported on almost all OSs|**Weak encryption**, known vulnerabilities|
+|**IPSec** (Internet Protocol Security)|Encrypts IP packets directly. Often used with L2TP (Layer 2 Tunneling Protocol) or IKEv2 for enhanced functionality.|Strong encryption, secure, widely supported|Complex to configure, can be blocked by firewalls|
+
+---
+
+## 🧰 How They Work Together
+
+- **PPP** provides the **core VPN connection**, user authentication, and optional encryption. But it can’t go over the internet on its own.
+    
+- **PPTP** wraps PPP traffic inside IP packets so it **can travel across the internet** — forming the actual VPN tunnel.
+    
+- **IPSec** skips PPP altogether and **secures data directly at the IP level**, making it **more secure and modern**, although harder to set up.
+
+
+
+
+# SWITCH
+What is a Switch?
+
+A switch is a dedicated networking device responsible for providing a means of connecting to multiple devices. Switches can facilitate many devices (from 3 to 63) using Ethernet cables.
+
+Switches can operate at both layer 2 and layer 3 of the OSI model. However, these are exclusive in the sense that Layer 2 switches cannot operate at layer 3.
