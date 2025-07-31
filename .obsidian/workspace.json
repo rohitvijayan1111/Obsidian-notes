@@ -11,14 +11,17 @@
             "id": "119b8231653cec97",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "tryhackme/Linux.md",
-                "mode": "source",
-                "source": false
+                "file": "Leetcode/Array/Couting problem flow chart.canvas",
+                "viewState": {
+                  "x": 418.28391654673044,
+                  "y": 123.66446698314257,
+                  "zoom": -1.2974088862037967
+                }
               },
-              "icon": "lucide-file",
-              "title": "Linux"
+              "icon": "lucide-layout-dashboard",
+              "title": "Couting problem flow chart"
             }
           }
         ]
@@ -238,8 +241,10 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
-    "SYSTEM DESIGN/Questions.md",
     "tryhackme/Linux.md",
+    "project review/Medco.md",
+    "project review/2025-05-13.md",
+    "SYSTEM DESIGN/Questions.md",
     "tryhackme/How The Web Works.md",
     "tryhackme/Networking lesson.md",
     "Core subjects/resources.md",
@@ -266,8 +271,6 @@
     "Security/Comptia Security +/Resources that help.md",
     "Accountability/july.md",
     "Leetcode/Graphs/One-go.md",
-    "Accountability/MAY 2025.md",
-    "SYSTEM DESIGN/Book/CHAPTER 1 SCALE FROM ZERO TO MILLIONS OF USERS.md",
     "SYSTEM DESIGN/Book",
     "Finance/Sources.canvas",
     "Leetcode/Array/Couting problem flow chart.canvas",
