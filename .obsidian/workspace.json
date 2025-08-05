@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM DESIGN/Resources.md",
+                "file": "Leetcode/Array/Merge Interval.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resources"
+              "title": "Merge Interval"
             }
           }
         ]
@@ -238,6 +238,8 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "SYSTEM DESIGN/Resources.md",
+    "Leetcode/Array/Merge Interval.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "tryhackme/Linux.md",
     "project review/Medco.md",
@@ -267,7 +269,6 @@
     "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
     "Security/Comptia Security +/Chapter 2 Cybersecurity Threat Landscape.md",
     "Security/Comptia Security +/Resources that help.md",
-    "Accountability/july.md",
     "SYSTEM DESIGN/Book",
     "Finance/Sources.canvas",
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
