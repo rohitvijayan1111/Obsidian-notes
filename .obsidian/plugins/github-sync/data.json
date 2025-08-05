@@ -1,7 +1,7 @@
 {
   "remoteURL": "https://github.com/rohitvijayan1111/Obsidian-notes.git",
   "gitLocation": "",
-  "syncinterval": 60,
+  "syncinterval": 30,
   "isSyncOnLoad": true,
   "checkStatusOnLoad": true
 }

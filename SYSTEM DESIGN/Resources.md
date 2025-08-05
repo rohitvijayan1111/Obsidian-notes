@@ -3,6 +3,13 @@ YOUTUBE:
 - 𝑮𝒂𝒖𝒓𝒂𝒗 𝑺𝒆𝒏’𝒔 𝑺𝒚𝒔𝒕𝒆𝒎 𝑫𝒆𝒔𝒊𝒈𝒏 𝑩𝒂𝒔𝒊𝒄𝒔
 - https://www.youtube.com/@bytebytego
 - Primer
+- https://www.youtube.com/playlist?list=PLrtCHHeadkHp92TyPt1Fj452_VGLipJnL
+
+
+GITHUB:
+- Design primer
+- https://github.com/ashishps1/awesome-low-level-design
+- https://github.com/ashishps1/awesome-system-design-resources
 
 BOOKS:
 - 𝑼𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈 𝑫𝒊𝒔𝒕𝒓𝒊𝒃𝒖𝒕𝒆𝒅 𝑺𝒚𝒔𝒕𝒆𝒎𝒔 – 𝑹𝒐𝒃𝒆𝒓𝒕𝒐 𝑽𝒊𝒕𝒊𝒍𝒍𝒐
