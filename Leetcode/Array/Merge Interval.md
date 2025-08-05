@@ -17,3 +17,40 @@ The approach is as follows:
 7. We return the merged list of intervals as the answer.
 
 This solution guarantees that we merge all overlapping intervals and result in a list of intervals with no overlaps.
+
+
+# [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
+
+```
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        #TWO CASES:
+        #i)the interval is overlapping with any of the current interval
+        #ii)the interval is not overlapping ->what if before start ot at the end
+        #iii)after inserting/,erging need to check if further it can be merged or not
+        res = []
+        inserted = False
+
+        for interval in intervals:
+            # Case 1: current interval is before newInterval
+            if interval[1]<newInterval[0]:
+                res.append(interval)
+            # Case 2: current interval is after newInterval
+            elif interval[0]>newInterval[1]:
+                if not inserted:
+                    res.append(newInterval)
+                    inserted=True
+                res.append(interval)
+            # Case 3: Overlapping intervals – merge
+            else:
+                newInterval[0]=min(newInterval[0],interval[0])
+                newInterval[1]=max(newInterval[1],interval[1])
+        
+        # If newInterval not inserted yet 
+        if not inserted:
+            res.append(newInterval)
+        
+        return res
+```
+
+
