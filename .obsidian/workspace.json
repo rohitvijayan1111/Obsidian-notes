@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Oracle Certs/Network.md",
+                "file": "Oracle Certs/Devops.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Network"
+              "title": "Devops"
             }
           }
         ]
@@ -237,10 +237,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20250807180520.png",
+    "assets/images/Pasted image 20250807180425.png",
     "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
-    "Oracle Certs/Network.md",
+    "Oracle Certs/Devops.md",
     "Oracle Certs",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Leetcode/Array/Segment Tree.md",
@@ -271,7 +273,6 @@
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Security/Comptia Security +/Final",
-    "Security/Comptia Security +/1.2 Summarize fundamental security concepts.md",
     "SYSTEM DESIGN/Book",
     "Finance/Sources.canvas",
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
@@ -280,7 +281,6 @@
     "assets/images/Screenshot_2025-07-10-21-25-21-447_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-25-04-556_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-24-14-828_com.android.camera.jpg",
-    "assets/images/Screenshot_2025-07-10-21-22-29-441_com.example.pdl.jpg",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
