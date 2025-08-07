@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Array/Segment Tree.md",
+                "file": "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Segment Tree"
+              "title": "Chapter-4 Social Engineering and Password Attacks"
             }
           }
         ]
@@ -238,9 +238,10 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
+    "Leetcode/Array/Segment Tree.md",
     "assets/images/Pasted image 20250806143820.png",
     "Leetcode/Array/Merge Interval.md",
-    "Leetcode/Array/Segment Tree.md",
     "SYSTEM DESIGN/Resources.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "tryhackme/Linux.md",
@@ -264,7 +265,6 @@
     "Security/THM/to cover.md",
     "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
-    "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Security/Comptia Security +/Final",
@@ -278,7 +278,6 @@
     "assets/images/Screenshot_2025-07-10-21-25-04-556_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-24-14-828_com.android.camera.jpg",
     "assets/images/Screenshot_2025-07-10-21-22-29-441_com.example.pdl.jpg",
-    "assets/images/Screenshot_2025-07-10-21-22-21-153_com.example.pdl.jpg",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
