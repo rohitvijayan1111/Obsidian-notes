@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
+                "file": "Oracle Certs/Network.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter-4 Social Engineering and Password Attacks"
+              "title": "Network"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "87a988b65f70f0f7",
@@ -238,6 +239,9 @@
   },
   "active": "119b8231653cec97",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
+    "Oracle Certs/Network.md",
+    "Oracle Certs",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Leetcode/Array/Segment Tree.md",
     "assets/images/Pasted image 20250806143820.png",
@@ -264,7 +268,6 @@
     "tryhackme",
     "Security/THM/to cover.md",
     "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
-    "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
     "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Security/Comptia Security +/Final",
@@ -285,7 +288,6 @@
     "Leetcode/Binary Search/Untitled",
     "Leetcode/DP/Untitled.canvas",
     "Finance",
-    "SYSTEM DESIGN/Design primer notes",
     "Leetcode/Sliding window/Untitled.canvas",
     "Leetcode/Greedy/Mindmap.canvas",
     "Leetcode/Graphs/Untitled.canvas",
