@@ -186,7 +186,68 @@ Steganography can also be used for legitimate purposes, however. Adding digital 
 
 - Partition encryption
 	- is similar to FDE but targets a specific partition of a hard drive instead of the entire disk
+	- Partition encryption is particularly useful when dealing with dual-boot systems or when segregating sensitive data
 
 - File-level encryption focuses on individual files. This method allows users to encrypt specific files rather than entire drives or partitions
 
-- Volume encryption involves encrypting a set “volume” on a storage device, which could contain several folders and files]
+- Volume encryption involves encrypting a set “volume” on a storage device, which could contain several folders and files
+- Volume encryption is useful when you want to encrypt a large amount of data at once but don't need to encrypt an entire disk or partition.
+
+
+# Encryption of DB
+
+## 1️⃣ Database-Level Encryption
+
+This means you encrypt **big chunks of the database all at once**.
+
+### Two main types:
+
+**A. Transparent Data Encryption (TDE)**
+
+- Encrypts the _entire database_ (or the whole storage file).
+    
+- Works “under the hood” — applications don’t need to change their code.
+    
+- Protects data **at rest** (on disk).
+    
+- Example: If someone steals the database file, they can’t read it without the encryption key.
+    
+- Downside: If an attacker hacks the running database server, they can still see decrypted data.
+    
+
+**B. Column-Level Encryption (CLE)**
+
+- Encrypts **specific columns** in a table (like passwords, credit card numbers, SSNs).
+    
+- Other columns stay unencrypted for performance.
+    
+- Good for targeting only the sensitive parts.
+    
+- Requires some application-level work to encrypt/decrypt the column values.
+    
+
+---
+
+## 2️⃣ Record-Level Encryption
+
+- Instead of encrypting whole columns or the entire database, you encrypt **individual rows (records)**.
+    
+- Each record could even have a **different encryption key**.
+    
+- Offers **very fine control** over who can see what.
+    
+- Often used in **multi-tenant** or **shared databases**, where each user or organization’s data must be isolated.
+    
+- More secure but more complex to manage (many keys, more encryption operations).
+    
+
+---
+
+## 3️⃣ Quick comparison
+
+|Level|Scope|Pros|Cons|
+|---|---|---|---|
+|**TDE**|Whole database file|Easy to set up, protects at rest|Can’t stop insiders with DB access|
+|**CLE**|Specific columns|Efficient, targeted|Application changes needed|
+|**Record-level**|Individual rows|Very granular, great isolation|Complex key management, slower|
+
