@@ -176,3 +176,17 @@ Steganography can also be used for legitimate purposes, however. Adding digital 
 
 
 
+# Protecting Data at Rest with Different Levels of Encryption
+
+## Encrypting Data on Disk
+
+- Full-disk encryption (FDE) 
+	- is a form of encryption where all the data on a hard drive is automatically encrypted, including the operating system and system files
+	- However, once the system is booted, the entire disk is accessible, which means data is vulnerable if the system is compromised while running
+
+- Partition encryption
+	- is similar to FDE but targets a specific partition of a hard drive instead of the entire disk
+
+- File-level encryption focuses on individual files. This method allows users to encrypt specific files rather than entire drives or partitions
+
+- Volume encryption involves encrypting a set “volume” on a storage device, which could contain several folders and files]
