@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Oracle Certs/Devops.md",
+                "file": "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Devops"
+              "title": "Chapter 5 Security Assessment and Testing"
+            }
+          },
+          {
+            "id": "ebe19afefbce7083",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 7 Cryptography and the PKI"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "87a988b65f70f0f7",
@@ -237,12 +251,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "119b8231653cec97",
+  "active": "ebe19afefbce7083",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
+    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
+    "Oracle Certs/Devops.md",
     "assets/images/Pasted image 20250807180520.png",
     "assets/images/Pasted image 20250807180425.png",
     "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
-    "Oracle Certs/Devops.md",
     "Oracle Certs",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Leetcode/Array/Segment Tree.md",
@@ -271,7 +287,6 @@
     "Security/THM/to cover.md",
     "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Chapter 3 Malicious Code.md",
-    "Security/Comptia Security +/Chapter 1 Today's Security Professional.md",
     "Security/Comptia Security +/Final",
     "SYSTEM DESIGN/Book",
     "Finance/Sources.canvas",
@@ -280,7 +295,6 @@
     "assets/images/Screenshot_2025-07-10-21-27-12-005_com.android.camera.jpg",
     "assets/images/Screenshot_2025-07-10-21-25-21-447_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-25-04-556_com.example.pdl.jpg",
-    "assets/images/Screenshot_2025-07-10-21-24-14-828_com.android.camera.jpg",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
