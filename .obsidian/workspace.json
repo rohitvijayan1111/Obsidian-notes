@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
+                "file": "Books/Zero To One.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 7 Cryptography and the PKI"
+              "title": "Zero To One"
             }
           }
         ],
@@ -253,10 +253,12 @@
   },
   "active": "ebe19afefbce7083",
   "lastOpenFiles": [
+    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
+    "Books/Zero To One.md",
+    "Books",
     "assets/images/Pasted image 20250809193229.png",
     "assets/images/Pasted image 20250809193212.png",
     "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
-    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
     "Oracle Certs/Devops.md",
     "assets/images/Pasted image 20250807180520.png",
     "assets/images/Pasted image 20250807180425.png",
@@ -294,14 +296,12 @@
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-27-18-808_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-27-12-005_com.android.camera.jpg",
-    "assets/images/Screenshot_2025-07-10-21-25-21-447_com.example.pdl.jpg",
     "project review",
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
     "Leetcode/Two pointer",
     "Leetcode/Binary Search/Untitled",
     "Leetcode/DP/Untitled.canvas",
-    "Finance",
     "Leetcode/Sliding window/Untitled.canvas",
     "Leetcode/Greedy/Mindmap.canvas",
     "Leetcode/Graphs/Untitled.canvas",

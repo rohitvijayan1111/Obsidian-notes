@@ -251,3 +251,31 @@ This means you encrypt **big chunks of the database all at once**.
 |**CLE**|Specific columns|Efficient, targeted|Application changes needed|
 |**Record-level**|Individual rows|Very granular, great isolation|Complex key management, slower|
 
+
+## 3️⃣ The **challenge–response** process
+
+1. **Bob says**: “Hi Alice, I’m Bob.”
+    
+2. **Alice says**: “If you’re really Bob, prove it — here’s a random word: `HELLO`.”
+    
+3. Bob **applies the shared code** (reverse the letters) → `OLLEH`.
+    
+4. Bob sends back `OLLEH` to Alice.
+    
+5. Alice checks:
+    
+    - She reverses it → `HELLO`
+        
+    - Matches her challenge? ✅ Yes.
+        
+6. Alice now **trusts that Bob knows the secret**, so he must be the real Bob.
+
+## 5️⃣ Real-life equivalent
+
+In real systems:
+
+- The “challenge” is a **random number (nonce)**.
+    
+- The “code” is an encryption algorithm or hash function with a **secret key**.
+    
+- This prevents replay attacks and ensures you’re talking to the genuine user.
