@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Zero To One.md",
+                "file": "exams/unit-1 MSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zero To One"
+              "title": "unit-1 MSA"
             }
           }
         ],
@@ -251,10 +251,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "ebe19afefbce7083",
   "lastOpenFiles": [
-    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
+    "assets/images/Pasted image 20250819211847.png",
     "Books/Zero To One.md",
+    "exams/unit-1 MSA.md",
+    "exams",
+    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
     "Books",
     "assets/images/Pasted image 20250809193229.png",
     "assets/images/Pasted image 20250809193212.png",
@@ -288,8 +291,6 @@
     "assets/images/Pasted image 20250726103936.png",
     "Security/Comptia Security +/Final/Glossary.md",
     "tryhackme",
-    "Security/THM/to cover.md",
-    "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Final",
     "SYSTEM DESIGN/Book",
     "Finance/Sources.canvas",
@@ -300,7 +301,6 @@
     "Leetcode/Untitled 1",
     "Leetcode/Bit Manipulation",
     "Leetcode/Two pointer",
-    "Leetcode/Binary Search/Untitled",
     "Leetcode/DP/Untitled.canvas",
     "Leetcode/Sliding window/Untitled.canvas",
     "Leetcode/Greedy/Mindmap.canvas",
