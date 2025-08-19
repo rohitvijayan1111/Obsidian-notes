@@ -5,4 +5,16 @@
 - Future of progress (two types)
 	- Horizontal (Globalization - 1 to n)
 	- Vertical (0 to 1-Technology)
-	- 
+
+# Chapter -2 Party like it's 1999
+
+
+Lessons for the dotcom bubble
+
+- Make Incremental advances
+- Stay lean and flexible
+- Improve on the competition - dont try to create a new market prematurely
+- Focus on Product not Sales
+
+
+
