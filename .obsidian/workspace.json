@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "exams/unit-1 MSA.md",
+                "file": "Security/Comptia Security +/Chapter- 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "unit-1 MSA"
+              "title": "Chapter- 7"
             }
           }
         ],
@@ -238,6 +238,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -253,11 +254,16 @@
   },
   "active": "ebe19afefbce7083",
   "lastOpenFiles": [
+    "exams/unit-1 MSA.md",
+    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
+    "Security/Comptia Security +/Untitled 2.base",
+    "Security/Comptia Security +/Untitled 1.base",
+    "Security/Comptia Security +/Untitled.base",
+    "Security/Comptia Security +/Chapter- 7.md",
+    "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "assets/images/Pasted image 20250819211847.png",
     "Books/Zero To One.md",
-    "exams/unit-1 MSA.md",
     "exams",
-    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
     "Books",
     "assets/images/Pasted image 20250809193229.png",
     "assets/images/Pasted image 20250809193212.png",
@@ -287,20 +293,14 @@
     "Accountability/Business ideas.md",
     "Accountability/unknown.md",
     "Accountability/MY END GOAL.md",
-    "Accountability/Microsoft prep.md",
     "assets/images/Pasted image 20250726103936.png",
-    "Security/Comptia Security +/Final/Glossary.md",
     "tryhackme",
     "Security/Comptia Security +/Final",
     "SYSTEM DESIGN/Book",
     "Finance/Sources.canvas",
     "assets/images/Screenshot_2025-07-10-21-27-25-355_com.example.pdl.jpg",
     "assets/images/Screenshot_2025-07-10-21-27-18-808_com.example.pdl.jpg",
-    "assets/images/Screenshot_2025-07-10-21-27-12-005_com.android.camera.jpg",
     "project review",
-    "Leetcode/Untitled 1",
-    "Leetcode/Bit Manipulation",
-    "Leetcode/Two pointer",
     "Leetcode/DP/Untitled.canvas",
     "Leetcode/Sliding window/Untitled.canvas",
     "Leetcode/Greedy/Mindmap.canvas",
