@@ -50,7 +50,7 @@ If hotel booking fails, the system needs to **cancel the flight reservation** to
 
 ---
 
-## 🔹 Types of SAGA Pattern
+## 🔹 [Types of SAGA Pattern ](https://medium.com/cloud-native-daily/microservices-patterns-part-04-saga-pattern-a7f85d8d4aa3)
 
 There are **two main types**:
 
@@ -135,12 +135,12 @@ There are **two main types**:
 
 ## 🔹 Quick Comparison
 
-|Feature|Choreography Saga|Orchestration Saga|
-|---|---|---|
-|**Control**|Decentralized (event-driven)|Centralized (orchestrator)|
-|**Complexity**|Harder to monitor|Easier to monitor|
-|**Scalability**|High (no central brain)|Can bottleneck at orchestrator|
-|**Use Case**|Simple workflows|Complex workflows|
+| Feature         | Choreography Saga            | Orchestration Saga             |
+| --------------- | ---------------------------- | ------------------------------ |
+| **Control**     | Decentralized (event-driven) | Centralized (orchestrator)     |
+| **Complexity**  | Harder to monitor            | Easier to monitor              |
+| **Scalability** | High (no central brain)      | Can bottleneck at orchestrator |
+| **Use Case**    | Simple workflows             | Complex workflows              |
 
 ---
 
@@ -175,3 +175,17 @@ There are **two main types**:
 ---
 
 Would you like me to also **draw a simple diagram (flow chart)** of both types so it’s more visual and easier to remember?
+
+
+
+
+# [Deployment models](https://dennylesmana.medium.com/microservices-deployment-patterns-ca1343c89e13)
+- single service per host
+- multiple service per host
+- service instance per VM
+- service instance per Container
+- Serverless
+- A/B Testing
+- Canary deployment
+- Blue Green deployment
+
