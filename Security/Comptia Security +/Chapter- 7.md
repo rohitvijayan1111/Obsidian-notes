@@ -49,32 +49,18 @@ Where:
 ### **3. Example: Vigenère Cipher** (famous polyalphabetic cipher)
 
 #### Plaintext:
-
 `ATTACKATDAWN`
-
 #### Keyword:
-
 `LEMONLEMONLE`
-
 #### Step-by-step:
-
 - A (0) + L (11) = L (11)
-    
 - T (19) + E (4) = X (23)
-    
 - T (19) + M (12) = F (5)
-    
 - A (0) + O (14) = O (14)
-    
 - C (2) + N (13) = P (15)
-    
 - K (10) + L (11) = V (21)
-    
 - ... (continue process)
-    
-
 #### Ciphertext:
-
 `LXFOPVEFRNHR`
 
 
