@@ -279,3 +279,5 @@ The **12-factor app** is a set of best practices for building cloud-friendly, sc
 - Unlike VMs, containers **share the host OS**, reducing overhead and startup time.
     
 - Orchestration platforms like Kubernetes make **large-scale container management** easier.
+
+![[Pasted image 20250828110712.png]]
