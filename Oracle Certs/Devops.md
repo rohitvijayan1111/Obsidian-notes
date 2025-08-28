@@ -280,4 +280,227 @@ The **12-factor app** is a set of best practices for building cloud-friendly, sc
     
 - Orchestration platforms like Kubernetes make **large-scale container management** easier.
 
+
+
+# Docker commands
+Absolutely! Let’s break down this Docker demo into **clear, organized points** so it’s easier to understand and remember.
+
+---
+
+## 🔹 Setting Up Docker
+
+- **Docker installation**: Must have Docker installed locally, or you can use **OCI Cloud Shell** (pre-configured with Docker).
+    
+- **Check Docker version**:
+    
+    ```bash
+    docker -v
+    ```
+    
+
+---
+
+## 🔹 Basic Docker Commands
+
+### **1. Running a Container**
+
+- Command:
+    
+    ```bash
+    docker run <image_name>
+    ```
+    
+- Example:
+    
+    ```bash
+    docker run hello-world
+    ```
+    
+    - Pulls image from Docker Hub if not present locally.
+        
+    - Prints a message (“Hello from Docker”).
+        
+- Check downloaded images:
+    
+    ```bash
+    docker images
+    ```
+    
+
+---
+
+### **2. Managing Containers**
+
+- **List running containers:**
+    
+    ```bash
+    docker ps
+    ```
+    
+- **List all containers (running + stopped):**
+    
+    ```bash
+    docker ps -a
+    ```
+    
+- **Remove a container:**
+    
+    ```bash
+    docker rm <container_id_or_name>
+    ```
+    
+
+---
+
+### **3. Interactive Shell Access**
+
+- Command:
+    
+    ```bash
+    docker run -it busybox sh
+    ```
+    
+- `-it` → interactive mode + pseudo-TTY
+    
+- Access shell inside the container:
+    
+    ```bash
+    pwd       # check current directory
+    ls        # list files
+    exit      # exit the container
+    ```
+    
+- Exiting with `exit` stops the container.
+    
+- Use **Ctrl + D** to exit the shell **without stopping the container**.
+    
+
+---
+
+### **4. Running Containers in Detached Mode**
+
+- Command:
+    
+    ```bash
+    docker run -d -p <host_port>:<container_port> <image_name>
+    ```
+    
+- `-d` → detached mode (runs in background)
+    
+- `-p` → maps host port to container port
+    
+- Example:
+    
+    ```bash
+    docker run -d -p 80:80 nginx
+    ```
+    
+    - Container runs NGINX server, port 80 accessible on host.
+        
+- Test connection using `curl` on mapped port.
+    
+
+---
+
+### **5. Start, Stop, Restart**
+
+- Start stopped container:
+    
+    ```bash
+    docker start <container_id>
+    ```
+    
+- Stop running container:
+    
+    ```bash
+    docker stop <container_id>
+    ```
+    
+- Restart container:
+    
+    ```bash
+    docker restart <container_id>
+    ```
+    
+
+---
+
+### **6. Inspecting Containers**
+
+- **Check container port mapping:**
+    
+    ```bash
+    docker port <container_id>
+    ```
+    
+- **View logs:**
+    
+    ```bash
+    docker logs <container_id>
+    ```
+    
+- **Detailed container info:**
+    
+    ```bash
+    docker inspect <container_id>
+    ```
+    
+    - Shows image, state, CPU, memory, network, and storage info.
+        
+- **View top processes in a container:**
+    
+    ```bash
+    docker top <container_id>
+    ```
+    
+- **Execute commands inside running container:**
+    
+    ```bash
+    docker exec -it <container_id> sh
+    ```
+    
+    - Gives interactive shell inside a running container.
+        
+
+---
+
+## 🔹 Key Takeaways
+
+1. **Images vs Containers**
+    
+    - Image → template
+        
+    - Container → running instance
+        
+2. **Interactive vs Detached Mode**
+    
+    - Interactive → `-it`, for shell access
+        
+    - Detached → `-d`, runs in background
+        
+3. **Container Management**
+    
+    - `docker ps`, `docker ps -a`, `docker rm`
+        
+    - `docker start`, `docker stop`, `docker restart`
+        
+4. **Inspect & Logs**
+    
+    - Monitor container performance, network, storage, and logs.
+        
+5. **Port Mapping**
+    
+    - Map container ports to host ports to expose services.
+        
+
+✅ **In short:** Docker lets you **run, manage, and monitor containers efficiently** using simple commands, making it easier to develop and deploy applications in isolated, portable environments.
+
+---
+
+If you want, I can make a **diagram showing all these commands and their effect on container lifecycle**—from pulling an image to starting, stopping, and inspecting a container.
+
+Do you want me to make that diagram?
+
 ![[Pasted image 20250828110712.png]]
+
+
