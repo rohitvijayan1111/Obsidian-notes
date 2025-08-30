@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Final go"
             }
+          },
+          {
+            "id": "152194b2956f4571",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -252,7 +264,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ebe19afefbce7083",
+  "active": "cc89f94e77906f40",
   "lastOpenFiles": [
     "Oracle Certs/Devops.md",
     "assets/images/Pasted image 20250828110712.png",
