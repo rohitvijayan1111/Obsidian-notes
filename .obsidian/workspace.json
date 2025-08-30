@@ -39,16 +39,30 @@
             "id": "152194b2956f4571",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.12"
+                "file": "project review/Pragati Mitra.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "icon": "lucide-file",
+              "title": "Pragati Mitra"
+            }
+          },
+          {
+            "id": "386b5bf1651a4a83",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/images/Pasted image 20250709182113 1.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250709182113 1"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -264,8 +278,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cc89f94e77906f40",
+  "active": "386b5bf1651a4a83",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20250709182113.png",
+    "assets/images/Pasted image 20250709182113 1.png",
+    "project review/Pragati Mitra.md",
     "Oracle Certs/Devops.md",
     "assets/images/Pasted image 20250828110712.png",
     "assets/images/Pasted image 20250828102543.png",
@@ -289,7 +306,6 @@
     "Books/Zero To One.md",
     "exams",
     "Books",
-    "assets/images/Pasted image 20250809193229.png",
     "Security/Comptia Security +/Chapter 5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Final/Chapter-4 Social Engineering and Password Attacks.md",
     "Oracle Certs",
@@ -307,7 +323,6 @@
     "Core subjects/resources.md",
     "Core subjects/CN.md",
     "tryhackme/How Websites Work.md",
-    "Accountability/ask the how,why.md",
     "tryhackme",
     "Security/Comptia Security +/Final",
     "SYSTEM DESIGN/Book",
