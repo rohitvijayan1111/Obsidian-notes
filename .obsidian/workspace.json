@@ -216,9 +216,19 @@
               "icon": "calendar-with-checkmark",
               "title": "Timeline"
             }
+          },
+          {
+            "id": "2d254393392d36f8",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -241,7 +251,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ebe19afefbce7083",
+  "active": "2d254393392d36f8",
   "lastOpenFiles": [
     "assets/images/Pasted image 20250709182113 1.png",
     "assets/images/Pasted image 20250709182113.png",
