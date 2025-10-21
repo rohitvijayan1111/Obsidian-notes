@@ -3,15 +3,16 @@ Topics Covered:
 * Aws Regions, Az, AWS Points of Presence (Edge Locations)
 
 
-IAM
-
-- Global configured not limited to one region
-- IAM Has :
-	- Users
-	- Groups
-	- Roles
-	- Policies
-		- Inline Policy
+AWS Account
+ └── IAM (Global)
+      ├── Users ──> can belong to → Groups
+      ├── Groups ──> have Policies
+      ├── Roles ──> assumed by entities/services
+      ├── Policies:
+      │    ├── AWS Managed
+      │    ├── Customer Managed
+      │    └── Inline
+      └── Resource-based Policies (attached directly to resources)
 
 
 Policy format:
