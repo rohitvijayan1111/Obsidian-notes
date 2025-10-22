@@ -5,7 +5,7 @@
 - how did amazon pull up aws so easily for end users
 - so corporates save to some x no of passwords to check if we are reusing the password?
 - **how MFA (Multi-Factor Authentication)** works, and the old hardware tokens are actually the ancestors of the authenticator apps we use today -> **TOTP algorithm 
-- 
+- how does brave work without ads
 
 
 CYBER SEC:
