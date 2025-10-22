@@ -31,4 +31,12 @@ resource: -> policy on which resource
 }}
 ```
 
+Permission Boundary:
+A **permissions boundary** says:
 
+> “Even if a user’s policies say _Allow_, they can only perform actions that are also _Allowed_ by the boundary.”
+> 
+
+If a user has **AdministratorAccess** but a **permissions boundary** allowing only S3 actions,  
+➡️ the user can access **only S3** — because the **boundary limits** what the policy can grant.  
+🧠 **Final permission = intersection of user policy and boundary; boundaries never grant extra access.**

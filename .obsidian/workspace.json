@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/time complexity.md",
+                "file": "AWS/DVA/NOTES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "time complexity"
+              "title": "NOTES"
             }
           }
         ]
@@ -239,6 +239,7 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "Leetcode/time complexity.md",
     "AWS/DVA/NOTES.md",
     "Accountability/ask the how,why.md",
     "AWS/DVA",
@@ -285,7 +286,6 @@
     "project review/Medco.md",
     "project review/2025-05-13.md",
     "SYSTEM DESIGN/Questions.md",
-    "tryhackme/How The Web Works.md",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
     "Leetcode/Sliding window/Untitled.canvas",
