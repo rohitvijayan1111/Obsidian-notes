@@ -40,3 +40,46 @@ A **permissions boundary** says:
 If a user has **AdministratorAccess** but a **permissions boundary** allowing only S3 actions,  
 ➡️ the user can access **only S3** — because the **boundary limits** what the policy can grant.  
 🧠 **Final permission = intersection of user policy and boundary; boundaries never grant extra access.**
+
+
+- HOW To open an user account in aws??
+
+
+# MFA
+
+
+ Types:
+ - Virtual MFA
+ - U2F(Universal two factor) security key
+ - Hardware Key Fob MFA Device
+
+
+## 🧩 **How to Configure AWS MFA (Multi-Factor Authentication)**
+
+### 🔧 Steps:
+
+1. **Sign in** to the **AWS Management Console** as the IAM user or root user.
+    
+2. Go to **IAM → Users → [Your Username] → Security Credentials** tab.
+    
+3. Under **Multi-Factor Authentication (MFA)**, click **“Assign MFA device.”**
+    
+4. Choose the device type:
+    
+    - **Virtual MFA device** (recommended) – e.g., Google Authenticator, Authy, or AWS Virtual MFA App.
+        
+    - **Hardware key/fob** – physical MFA device like YubiKey.
+        
+5. Scan the QR code using your MFA app.
+    
+6. Enter **two consecutive MFA codes** displayed on your app.
+    
+7. Click **“Add MFA”** — setup complete ✅
+
+
+# Types of AWS Access
+
+- AWS Management Console (protected by password + MFA)
+-  AWS Command Line Interface (CLI): protected by access keys 
+- AWS Software Developer Kit (SDK) - for code: protected by access keys
+
