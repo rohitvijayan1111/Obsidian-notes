@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/ask the how,why.md",
+                "file": "AWS/DVA/NOTES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ask the how,why"
+              "title": "NOTES"
             }
           }
         ]
@@ -239,9 +239,9 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "Accountability/ask the how,why.md",
     "AWS/DVA/NOTES.md",
     "Leetcode/time complexity.md",
-    "Accountability/ask the how,why.md",
     "AWS/DVA",
     "AWS/CCP",
     "project review/Pragati Mitra.md",
