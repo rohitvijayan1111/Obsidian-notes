@@ -130,4 +130,19 @@
 - go to create security group
 - choose vpc
 - configure inbound and outbound rules with the desired ports
+
+
+# SSH
+
+IN LINUX:
+
+- ssh -i x.pem ec2-user@ipaddress
+- ensure that pem is 400,permission - to provide unprotected private key
+
+
+IN windows:
+
+- download putty
+- download key pair as ppk
+- or use putty key generator
 - 
