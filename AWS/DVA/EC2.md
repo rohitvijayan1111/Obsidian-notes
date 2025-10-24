@@ -101,10 +101,23 @@
     - Pull code from GitHub, etc.
 
 
-
 **NOTE:** AS THE EC2, STOPS AND RESTRART THE PUBLIC IP CHANGES AUTOMATICALLY BY DEFAULT,BUT NOT THE PRIVATE IP (IT REMAINS SAME)
 
 
 # types of instances
 
 ![[Pasted image 20251024184428.png]]
+
+![[Pasted image 20251024184454.png]]
+![[Pasted image 20251024184533.png]]
+![[Pasted image 20251024184550.png]]
+
+
+![[Pasted image 20251024184739.png]]
+
+![[Pasted image 20251024184814.png]]
+
+
+![[Pasted image 20251024184935.png]]
+
+
