@@ -120,4 +120,14 @@
 
 ![[Pasted image 20251024184935.png]]
 
+![[Pasted image 20251024191907.png]]
 
+
+
+# Security Group
+
+
+- go to create security group
+- choose vpc
+- configure inbound and outbound rules with the desired ports
+- 
