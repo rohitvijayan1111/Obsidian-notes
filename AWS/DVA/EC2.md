@@ -205,6 +205,17 @@ Don't panic. Use **EC2 Instance Connect** from the next lecture. Make sure you
 This is probably because you have stopped your EC2 instance and then started it again today. **When you do so, the public IP of your EC2 instance will change.** Therefore, in your command, or Putty configuration, please make sure to edit and save the new public IP.
 
   
+# Configuring IAM role for EC2 instance: 
+(coz by default cannot access IAM, it requires Access and secret key,but it is not safe - so we use Roles)
 
-**Happy troubleshooting!**  
-Stephane
+## Create an IAM Role:
+- choose the aws service for which role
+- select the policy to applied
+- specify the role name
+- and create it
+
+## Attaching to EC2:
+
+under actions -> Security -> MOdify IAM role ->attach the role that we created.
+
+
