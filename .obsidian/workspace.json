@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/DVA/EC2.md",
+                "file": "AWS/CCP/AWS-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EC2"
+              "title": "AWS-1"
             }
           }
         ]
@@ -239,6 +239,13 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "AWS/CCP/Final go.md",
+    "AWS/CCP/Welcome.md",
+    "AWS/CCP/Revision.md",
+    "AWS/CCP/Resources for CCP.md",
+    "AWS/CCP/From Practice test.md",
+    "AWS/CCP/AWS-1.md",
+    "AWS/DVA/EC2.md",
     "assets/images/Pasted image 20251024191907.png",
     "assets/images/Pasted image 20251024184935.png",
     "assets/images/Pasted image 20251024184845.png",
@@ -250,8 +257,6 @@
     "assets/images/Pasted image 20251024184454.png",
     "assets/images/Pasted image 20251024184428.png",
     "AWS/DVA/IAM.md",
-    "AWS/DVA/EC2.md",
-    "assets/images/Pasted image 20251023224336.png",
     "Accountability/ask the how,why.md",
     "Leetcode/time complexity.md",
     "AWS/DVA",
@@ -261,7 +266,6 @@
     "tryhackme/HACKER101.md",
     "Interview prep/HTML",
     "Interview prep",
-    "AWS/CCP/Final go.md",
     "Oracle Certs/Devops.md",
     "Security/Comptia Security +/Chapter- 7.md",
     "Security/Comptia Security +/Resources that help.md",
@@ -281,11 +285,7 @@
     "Oracle Certs",
     "Security/Comptia Security +/Final/Chapter-3 Malicious code.md",
     "Leetcode/Array/Segment Tree.md",
-    "Leetcode/Array/Merge Interval.md",
-    "SYSTEM DESIGN/Resources.md",
     "Leetcode/Array/Couting problem flow chart.canvas",
-    "tryhackme/Linux.md",
-    "project review/Medco.md",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
     "Leetcode/Sliding window/Untitled.canvas",
