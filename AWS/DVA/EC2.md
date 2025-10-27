@@ -204,7 +204,9 @@ Don't panic. Use **EC2 Instance Connect** from the next lecture. Make sure you
 
 This is probably because you have stopped your EC2 instance and then started it again today. **When you do so, the public IP of your EC2 instance will change.** Therefore, in your command, or Putty configuration, please make sure to edit and save the new public IP.
 
-  
+![[Pasted image 20251027093313.png]]
+
+
 # Configuring IAM role for EC2 instance: 
 (coz by default cannot access IAM, it requires Access and secret key,but it is not safe - so we use Roles)
 
@@ -220,7 +222,16 @@ under actions -> Security -> MOdify IAM role ->attach the role that we created.
 
 
 
+![[Pasted image 20251027093334.png]]
 
+
+![[Pasted image 20251027093355.png]]
+
+![[Pasted image 20251027093424.png]]
+
+![[Pasted image 20251027093503.png]]
+
+![[Pasted image 20251027093450.png]]
 
 *NOTE: EC2, EBS are bound to specific Avalability Zones*
 
