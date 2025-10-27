@@ -94,4 +94,32 @@ With **Fast Snapshot Restore**, that delay disappears.
 5. Click **Copy Snapshot**
 
 
-TO CREATE 
+TO CREATE VOLUME:
+
+Once copied:
+
+- You can go to the destination Region (e.g., `us-east-1`)   
+- Then create a **volume** from it there, in any AZ within that new region.
+
+
+# Recyle Bin
+- only EBS snapshots and AMI could be stored here
+- for this we need to create retention rules -> retention period 
+
+
+
+# snapshot pricing
+
+- - Typically around **$0.05 per GB-month** (varies by region).
+        
+- **Incremental storage model**
+    
+    - The **first snapshot** stores a **full copy** of the volume.
+        
+    - Later snapshots store **only changed blocks** since the last snapshot → more cost-efficient.
+
+### ✅ **Revision Summary (Exam-style)**
+
+> Creating an EBS snapshot has **no upfront cost**,  
+> but you’re charged for **snapshot storage in S3**, based on the **data size** (incremental).  
+> Additional charges apply for **Fast Snapshot Restore** or **cross-region copies**.
