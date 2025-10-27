@@ -219,3 +219,8 @@ This is probably because you have stopped your EC2 instance and then started it 
 under actions -> Security -> MOdify IAM role ->attach the role that we created.
 
 
+
+
+
+*NOTE: EC2, EBS are bound to specific Avalability Zones*
+
