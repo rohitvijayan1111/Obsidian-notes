@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/DVA/EC2.md",
+                "file": "AWS/DVA/EBS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EC2"
+              "title": "EBS"
             }
           }
         ]
@@ -239,6 +239,7 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "AWS/DVA/EC2.md",
     "assets/images/Pasted image 20251027093503.png",
     "assets/images/Pasted image 20251027093450.png",
     "assets/images/Pasted image 20251027093424.png",
@@ -246,7 +247,6 @@
     "assets/images/Pasted image 20251027093334.png",
     "assets/images/Pasted image 20251027093313.png",
     "AWS/DVA/EBS.md",
-    "AWS/DVA/EC2.md",
     "AWS/DVA/IAM.md",
     "AWS/CCP/AWS-1.md",
     "AWS/CCP/Final go.md",
@@ -258,7 +258,6 @@
     "assets/images/Pasted image 20251024184935.png",
     "assets/images/Pasted image 20251024184845.png",
     "assets/images/Pasted image 20251024184838.png",
-    "assets/images/Pasted image 20251024184814.png",
     "Accountability/ask the how,why.md",
     "Leetcode/time complexity.md",
     "AWS/DVA",
