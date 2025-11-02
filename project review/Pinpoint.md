@@ -1,29 +1,104 @@
-- Pinpoint is an AI powered Hyperlocal marketing platform powered by Nokia's NAC and IBM wastonx Orchestrator.
-- Problem statement /usecase of pinpoint:
-	- Imagine that you walk pass a bakery shop down the street, they are giving an offer of 20% today, but you are not aware of it. The visibility of the shop goes invisible just as you walk past it.
-	- The local business cant spend a lot of money in digital marketing via google ads etc. So it is a problem for both the consumer and tthe business owners.
+## **Pinpoint: AI-Powered Hyperlocal Marketing Platform**
 
-- Solution:
-	- Shop owner registers their shop in our application , once they register they can add their products and create offer campaigns to attract footfall customers.
-	- So when the Consumer who has onboarded into our application will get notification of the offer, when the shop comes inside the Geofence of the customer.
-	- HE IS THE BEST PART: Geofence when created, when user comes in or goes out triggers notification. but we used it otherway, instead of creating geofence around the shops we did around the user. since notification is only sent to the users who have subscribed to that fence, which would be impossible for a consumer who hasnt visited shop before.
-	  
-	  
-	  THE NAC Used are:
-	  - Location Retrieval API
-	  - Geofence
-	  - Device status -> If device is online could send push notification, if network connected send SMS
-	  
-	 Features :
-	 - Our custom built campaign poster creates poster via HTML.
-	 - Push Notification
-	 
-	 Usage of IBM WastonX orchestrator:
-	 *  So when the shop owner creates Campaign here is what is done:
-		 * Master agent: Orchestrates Agents like Poster agent A,B , Push Notification Text Generator , Review Agent, Personalization agent.
-		 * Poster Agent A & B: 
-			 * Gets the Campaign title, offer, shop details with its products
-			 * Creates HTML code, which is later snapshot into Image and saved in backend
-		- Push Notification:
-			- To attract users with catchy phrases just like swiggy and zomato, created an agent, that takes the campaign details and the products details of the shop to created push notification text and send it along with image url to push it as push notification with firebase 
-	     - 
+**Powered by Nokia’s NAC and IBM watsonx Orchestrator**
+
+---
+
+### **Problem Statement / Use Case**
+
+Imagine walking past a bakery offering **20% off today**, but you never find out — their visibility disappears the moment you walk by.
+
+Local businesses often face this issue — they lack affordable and effective ways to reach nearby customers. Running ads on platforms like Google or Meta can be costly and inefficient for small businesses. As a result, both **consumers miss out on nearby deals**, and **local business owners lose potential customers**.
+
+---
+
+### **Solution Overview**
+
+**Pinpoint** bridges this gap by connecting local businesses with nearby consumers in real time using AI and hyperlocal technology.
+
+- **For Shop Owners:**  
+    They register their store on the platform, add their products, and create promotional campaigns to attract nearby customers.
+    
+- **For Consumers:**  
+    Once they onboard, users receive **real-time notifications** about relevant offers from shops **within their vicinity** — powered by dynamic geofencing.
+    
+
+---
+
+### **Unique Geofencing Innovation**
+
+Traditionally, geofences are created **around shops**, and notifications are sent to users who have subscribed to those areas — which limits reach.
+
+**Pinpoint reverses this logic:**  
+We create **geofences around users instead of shops**. This means that as users move, they receive notifications from nearby shops **without needing prior subscriptions**, ensuring **maximum visibility** for local businesses.
+
+---
+
+### **Nokia NAC APIs Utilized**
+
+- **Location Retrieval API** – Fetches precise user and shop locations.
+    
+- **Geofence API** – Triggers events when users enter or exit a defined zone.
+    
+- **Device Status API** – Checks device connectivity to decide whether to send **push notifications** (if online) or **SMS alerts** (if offline).
+    
+
+---
+
+### **Platform Features**
+
+- **AI-Generated Campaign Posters** – Custom posters created using HTML templates.
+    
+- **Real-Time Push Notifications** – Alerts users with engaging offers and images.
+    
+
+---
+
+### **Integration with IBM watsonx Orchestrator**
+
+When a shop owner creates a campaign, **watsonx Orchestrator** coordinates multiple specialized AI agents to automate and optimize the process.
+
+#### **Master Agent**
+
+- Manages and orchestrates sub-agents for poster creation, text generation, review analysis, and personalization.
+    
+
+#### **Poster Agents (A & B)**
+
+- Receive campaign details such as title, offer, and shop information.
+    
+- Generate **HTML-based poster designs**, which are then converted into image snapshots and stored in the backend.
+    
+
+#### **Push Notification Agent**
+
+- Creates **catchy and personalized notification texts**, similar to Swiggy or Zomato’s style.
+    
+- Combines the generated text with the campaign image URL and delivers it to users via **Firebase Cloud Messaging (FCM)**.
+    
+
+#### **Review Analysis Agent**
+
+- Performs **sentiment analysis** on customer feedback.
+    
+- Categorizes reviews as positive or negative and identifies **key topics** such as _pricing, service, quality, and ambiance_.
+    
+- Detects **complaint trends** and satisfaction drivers for businesses.
+    
+
+#### **Personalization Agent**
+
+- Analyzes user preferences and engagement history.
+    
+- Scores and ranks campaigns based on the user’s recent interests.
+    
+- Pushes **personalized offers** with the highest relevance scores to the user.
+    
+
+---
+
+### **Summary**
+
+Pinpoint leverages **Nokia’s advanced network capabilities** and **IBM watsonx’s AI orchestration** to empower local businesses with affordable, automated, and hyper-targeted marketing — ensuring that **no great offer goes unnoticed**.
+
+
