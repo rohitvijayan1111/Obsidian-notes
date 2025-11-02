@@ -379,3 +379,60 @@ Would retrieve a phone’s **current or last known location**, but it’s disabl
 ---
 
 Would you like me to show how to **integrate this file into a Flask API backend** (so you can receive Nokia geofence callbacks and trigger business logic)?
+
+
+# Working of Geofence
+
+`implement_geofence()` — main startup job:
+
+- Reads `DATABASE_URL` from env, fixes the `postgresql+psycopg2://` prefix to `postgresql://` for psycopg2.
+    
+- Connects to Postgres (`psycopg2.connect(raw_dsn)`).
+    
+- SELECTs all devices: `SELECT uid, phone_number FROM devices;`
+    
+- Iterates devices:
+    
+    - (Temporarily) overrides `phone_number` with a hardcoded test number `"+36719991000"` (comment says to remove later).
+        
+    - Calls `get_device_location(...)` to fetch the device location (this function was commented out in your earlier code — ensure a real implementation exists).
+        
+    - Parses `latitude`, `longitude`, `radius`, `lastLocationTime`.
+        
+    - Calls `get_device_connectivity_status(phone_number)` and writes `latitude`, `longitude` and connectivity status back into the DB.
+        
+    - Calls `create_geofence_subscription(phone_number, current_lat, current_lon, radius)` to create a geofence in Nokia.
+        
+    - Hits the internal shops service `/shops//active_campaigns_nearby` with `lat`, `lon`, `radius` to fetch nearby campaigns and calls `send_notify(phone_number, campaign_title, poster_path)` for each campaign.
+        
+- Closes DB cursor and connection.
+
+# working of how HTML is made as image
+
+- **Build HTML template string**
+    
+    - A full HTML document is built in `prompt_html` with inline CSS sized to 1080×720 (poster dimensions).
+        
+    - Template injects `offer`, `shop_name`, `shop_address`, start/end formatted dates, and the optional inline logo block.
+        
+    - Background image is loaded from an Unsplash URL (embedded via CSS).
+        
+- **Render HTML → PNG via Playwright**
+    
+    - `playwright.sync_api.sync_playwright()` is used to launch Chromium.
+        
+    - A browser page with viewport `width: 1080, height: 720` is created.
+        
+    - `page.set_content(prompt_html, wait_until="load")` writes the HTML into the page.
+        
+    - `page.screenshot(path=poster_path, full_page=True)` captures the screenshot and writes the PNG to disk.
+        
+    - Browser is closed.
+        
+- **Return result**
+    
+    - Checks that the poster file exists.
+        
+    - Returns `201` JSON: `{"message":"Poster generated","poster_url":"/uploads/<filename>"}`.
+        
+    - Note: this `poster_url` is a **path**; your app must serve files from `UPLOAD_FOLDER` at `/uploads/` (e.g., Flask `send_from_directory` or via web server)
