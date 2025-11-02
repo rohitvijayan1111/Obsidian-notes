@@ -1,0 +1,4 @@
+- Pinpoint is an AI powered Hyperlocal marketing platform powered by Nokia's NAC and IBM wastonx Orchestrator.
+- Problem statement /usecase of pinpoint:
+	- Imagine that you walk pass a bakery shop down the street, they are giving an offer of 20% today, but you are not aware of it. The visibility of the shop goes invisible just as you walk past it.
+	- The local business cant spend a lot of money in digital marketing via google ads, 
