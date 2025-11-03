@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/NOV 2025.md",
+                "file": "Accountability/ask the how,why.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NOV 2025"
+              "title": "ask the how,why"
             }
           }
         ]
@@ -239,8 +239,8 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
-    "project review/ZeroTrust.md",
     "Accountability/NOV 2025.md",
+    "project review/ZeroTrust.md",
     "project review/Pinpoint.md",
     "AWS/DVA/EBS.md",
     "AWS/DVA/EC2.md",
