@@ -112,4 +112,141 @@ Absolutely. any money greater than 10 years, it'll be a painful process of
 
 HOW TO CHOOSE MF :
 
+
 ![[Pasted image 20251104092337.png]]
+
+
+ou'll be
+
+42:05
+
+shocked on one thing which is a finding higher the last point return lower the chance
+
+## The mindset shift that separates rich from comfortable
+
+42:13
+
+that he will deliver that return next year. Oh, so basically the fund which has the highest rank last year less there is a
+
+42:20
+
+probability that it'll give the the similar returns next year. Next year. So that has been the study. Uh there is a minus.68
+
+42:27
+
+negative correlation and people buy all funds when it's time to sell
+
+42:33
+
+and they sell all funds when it is time to buy. I think a classic example of that has been the quant mutual funds
+
+
+---
+There's a best asset class. Be married to an asset class. Don't be married to a scheme. Got it. Best asset class. I think what
+
+43:12
+
+you've been trying saying from the last 1 hour is that equity. Within equity, which mutual fund will be
+
+43:18
+
+the best? That depends on the time horizon and the time in which you're investing in that mutual fund. So, how
+
+43:23
+
+long do you typically need to give a mutual fund after you've invested to sort of judge whether it was a good call
+
+43:28
+
+or a bad call? If you're doing it self and uh you're
+
+43:34
+
+managing your own money then four to five years four to five years and what will I look at by analyzing it just the CGR in
+
+43:41
+
+compared to other other category average no I would see whether he has beaten the benchmark
+
+43:46
+
+okay benchmark of that so or it could be the category average of that scheme uh because categories are quite uh
+
+43:53
+
+everybody is operating in a different it's just the benchmark of that scheme so if it's a midcap mutual fund compare
+
+43:58
+
+it to the midcap index Tier one benchmark. See what Sebi did in 2018 was told everybody please follow one
+
+44:04
+
+benchmarker. That's tier one benchmark is common for everyone. Tier one benchmark. Tier one benchmark. There's something
+
+44:10
+
+called tier 2 benchmark. Okay. So if you're buying a mutual fund, if you're buying a midcap fund in India,
+
+44:16
+
+the benchmark is Nifty Midcap 150. Okay. There are at least seven different
+
+44:21
+
+midcap indices NSE and BSE publish. Okay. If this was not enough, FTSC and MSEI
+
+44:28
+
+also published their midcap index. But if you're a mutual fund investor, your life has to be revolving around Nifty
+
+
+---
+dcap 150. So this is for just the midcap mutual fund, right? But let's say I'm investing
+
+44:39
+
+in a multicap fund or let's say the parakari flexi cap fund considered to be one of the best mutual funds. What am I
+
+44:46
+
+comparing that with to say that benchmark for flexiap is n 500 nse 500.
+
+44:52
+
+What sebi did now in 2018? They said take nse 500 divide this into three
+
+44:57
+
+m 100 stocks is large cap subsequent 150 is midcap the last 250 is small cap
+
+45:04
+
+they've created three babies out of nse 500 and said this is the benchmarking of
+
+45:09
+
+tier 1 for most of the funds in India got it got it uh but yeah uh anybody who understands
+
+45:15
+
+the formation of this uh if I'm doing benchmarking n 500 NC's website today
+
+45:22
+
+running or at least 5 days back said NEC 500 is the top 500 companies in Indian listed
+
+
+---
+
+
+![[Pasted image 20251104093032.png]]
+
+5)SMALL CAP
+
+2025 bEST:
+1)FLEXI CAP-> HDFC
+2)MULTI CAP->INVESO
+3)LARGE CAP->QAUT LARGE CAP
+4)MID CAP->KOTAK EMERGING
+5)SMALL CAP->INVESCO
