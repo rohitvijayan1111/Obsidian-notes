@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Accountability/ask the how,why.md",
+                "file": "Finance/Investment percentage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ask the how,why"
+              "title": "Investment percentage"
             }
           }
         ]
@@ -239,6 +239,10 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20251104081743.png",
+    "assets/images/Pasted image 20251104081708.png",
+    "Accountability/ask the how,why.md",
+    "Finance/Investment percentage.md",
     "Accountability/NOV 2025.md",
     "project review/ZeroTrust.md",
     "project review/Pinpoint.md",
@@ -260,8 +264,6 @@
     "assets/images/Pasted image 20251024191907.png",
     "assets/images/Pasted image 20251024184935.png",
     "assets/images/Pasted image 20251024184845.png",
-    "assets/images/Pasted image 20251024184838.png",
-    "Accountability/ask the how,why.md",
     "Leetcode/time complexity.md",
     "AWS/DVA",
     "AWS/CCP",
@@ -277,11 +279,9 @@
     "Finance/Mutual funds.md",
     "Finance/Trading notes.md",
     "exams/unit-1 MSA.md",
-    "Security/Comptia Security +/Chapter 7 Cryptography and the PKI.md",
     "Security/Comptia Security +/Untitled 2.base",
     "Security/Comptia Security +/Untitled 1.base",
     "Security/Comptia Security +/Untitled.base",
-    "Books/Zero To One.md",
     "exams",
     "Books",
     "Oracle Certs",
