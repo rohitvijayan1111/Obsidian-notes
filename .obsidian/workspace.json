@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Finance/how to choose MF.md",
+                "file": "AWS/DVA/IAM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how to choose MF"
+              "title": "IAM"
             }
           }
         ]
@@ -239,6 +239,8 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "AWS/DVA/EBS.md",
+    "Finance/how to choose MF.md",
     "assets/images/Pasted image 20251107185753.png",
     "assets/images/Pasted image 20251107185626.png",
     "assets/images/Pasted image 20251107185513.png",
@@ -248,12 +250,9 @@
     "assets/images/Pasted image 20251107185228.png",
     "assets/images/Pasted image 20251107185210.png",
     "assets/images/Pasted image 20251107185156.png",
-    "AWS/DVA/EBS.md",
-    "Finance/how to choose MF.md",
     "Finance/Investment percentage.md",
     "Finance/Mutual funds.md",
     "assets/images/Pasted image 20251104093032.png",
-    "assets/images/Pasted image 20251104092337.png",
     "Accountability/ask the how,why.md",
     "Accountability/NOV 2025.md",
     "project review/ZeroTrust.md",

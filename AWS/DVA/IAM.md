@@ -46,7 +46,7 @@ If a user has **AdministratorAccess** but a **permissions boundary** allowing on
 - HOW To open an user account in aws??
 
 ## IAM Roles
-• Some AWS service will need tc perform actions on your behalf
+• Some AWS service will need to perform actions on your behalf
 • To do so, we will assign permissions to AWS services with IAM Roles
 
 ### Creating IAM Roles
