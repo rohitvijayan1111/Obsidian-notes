@@ -28,6 +28,7 @@
 ## Features:
 - EBS Snapshot Archive-> used to archive, it to reduce cost, could take upto 24 to 72 hrs
 - Recyle Bin for archive-> used to prevent accidental deletion, retention duration could be from 1 day to 1year
+
 ## Fast Snapshot Restore (FSR)** — AWS EBS
 
 ### 🧩 **What it is:**
@@ -101,8 +102,42 @@ Once copied:
 - You can go to the destination Region (e.g., `us-east-1`)   
 - Then create a **volume** from it there, in any AZ within that new region.
 
+# DOUBT
+### 🔹 1. **EBS snapshots are _region-specific_, not AZ-specific**
 
-# Recyle Bin
+- **An EBS snapshot is stored in Amazon S3 within a specific AWS Region.**
+    
+- It is **not tied to a single Availability Zone (AZ)**.
+    
+- You can **create new EBS volumes from that snapshot in _any AZ_ within the same region.**
+    
+
+✅ Example:
+
+> You take a snapshot of a volume in **us-east-1a**.  
+> You can use that snapshot to create a new volume in **us-east-1b** or **us-east-1c** (still in `us-east-1` region).
+
+❌ You **cannot** directly use that snapshot to create a volume in another region (like `us-west-2`) — unless you **copy** it first.
+
+---
+
+### 🔹 2. **Cross-Region Snapshot Copy**
+
+If you want to use the snapshot in another region:
+
+- Use **“Copy Snapshot”** in the AWS Console or `aws ec2 copy-snapshot` CLI command.
+    
+- This creates a _new_ snapshot in the destination region.
+    
+- Then you can create EBS volumes in _any AZ_ within that new region.
+    
+
+✅ Example:
+
+> Copy snapshot from `us-east-1` → `eu-west-1`  
+> Then create volumes in any AZ of `eu-west-1` (like `eu-west-1a`, `eu-west-1b`, etc.)
+
+# Recycle Bin
 - only EBS snapshots and AMI could be stored here
 - for this we need to create retention rules -> retention period 
 

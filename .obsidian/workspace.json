@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/DVA/IAM.md",
+                "file": "AWS/DVA/EBS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IAM"
+              "title": "EBS"
             }
           }
         ]
@@ -239,6 +239,7 @@
   },
   "active": "ba2cd53e897f55f0",
   "lastOpenFiles": [
+    "AWS/DVA/IAM.md",
     "AWS/DVA/EBS.md",
     "Finance/how to choose MF.md",
     "assets/images/Pasted image 20251107185753.png",
@@ -258,7 +259,6 @@
     "project review/ZeroTrust.md",
     "project review/Pinpoint.md",
     "AWS/DVA/EC2.md",
-    "AWS/DVA/IAM.md",
     "AWS/CCP/AWS-1.md",
     "AWS/CCP/Final go.md",
     "AWS/CCP/Welcome.md",
