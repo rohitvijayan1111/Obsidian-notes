@@ -158,3 +158,9 @@ If you want to use the snapshot in another region:
 > Creating an EBS snapshot has **no upfront cost**,  
 > but you’re charged for **snapshot storage in S3**, based on the **data size** (incremental).  
 > Additional charges apply for **Fast Snapshot Restore** or **cross-region copies**.
+
+
+| Goal                                         | Action Needed                                        | Notes                   |
+| -------------------------------------------- | ---------------------------------------------------- | ----------------------- |
+| Use snapshot in another **AZ** (same region) | Just **create volume** and pick a different AZ       | No need to copy         |
+| Use snapshot in another **region**           | **Copy snapshot** to that region, then create volume | Needed for cross-region |

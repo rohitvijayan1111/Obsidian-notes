@@ -7,8 +7,8 @@
 - **how MFA (Multi-Factor Authentication)** works, and the old hardware tokens are actually the ancestors of the authenticator apps we use today -> **TOTP algorithm 
 - how does brave work without ads
 - how is image, been interpreted in binary
-- 
-
+- robot.txt
+how is an entire html page coming in response
 
 CYBER SEC:
 - working of DNS server- subdomain
