@@ -87,12 +87,12 @@ the receiver sends back `ACK = 101` to confirm all 100 bytes were received.
 
 When the communication is complete, the connection must be closed **gracefully** to release system resources.
 
-|Step|Who Sends|Packet|Purpose|
-|---|---|---|---|
-|1.|**Sender**|`FIN`|Requests to close its side of the connection|
-|2.|**Receiver**|`ACK`|Acknowledges the FIN|
-|3.|**Receiver**|`FIN`|Now requests to close its own side|
-|4.|**Sender**|`ACK`|Acknowledges the receiver's FIN|
+| Step | Who Sends    | Packet | Purpose                                      |
+| ---- | ------------ | ------ | -------------------------------------------- |
+| 1.   | **Sender**   | `FIN`  | Requests to close its side of the connection |
+| 2.   | **Receiver** | `ACK`  | Acknowledges the FIN                         |
+| 3.   | **Receiver** | `FIN`  | Now requests to close its own side           |
+| 4.   | **Sender**   | `ACK`  | Acknowledges the receiver's FIN              |
 
 ✅ Connection is fully closed on both sides.
 
