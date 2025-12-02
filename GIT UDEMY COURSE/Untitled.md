@@ -47,3 +47,43 @@ similar to checkpoints in game, where if anything happens the game will be loade
 
 > TO CHECK THE USER NAME
 > git config user.name
+
+
+
+
+command to open the GUI(File manager etc from the cmd of the current folder)
+
+> IN Windows
+> start .
+
+
+> for linux /mac
+> open .
+
+
+
+Touch command
+
+> use to create file and edit file ig
+
+touch <filename1> <file2> etc
+
+
+mkdir 
+mkdir <folder1> <folder2>
+
+
+ls -a
+
+
+rm -rf ->(-rf mean recurisve force)<- used for folders
+
+
+
+Git status-> used to see the status of github repository
+
+Git init -> used to intialize a git repository in the current working directory
+
+what if i use git init, already in a folder that is already inited
+
+
