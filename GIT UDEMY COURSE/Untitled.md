@@ -9,3 +9,31 @@ similar to checkpoints in game, where if anything happens the game will be loade
 
 - Checkpoints
 - Branching
+
+
+
+## Who uses GIT
+
+- Developer/engineering team
+- others non tech people
+- government
+- scientist 
+- Writers
+
+
+## Difference between GIT and Github
+![[Pasted image 20251202171301.png]]
+
+
+## Various ways to interact with GIT
+
+- commandline
+- GUI-> gitKraken
+
+
+> Git requires UNIX based interface, so we need to install git bash for windows
+
+## Setup 
+
+- Default branch name is "master", but you could use any
+- try to install the git usage in VSC,rather than VIM
