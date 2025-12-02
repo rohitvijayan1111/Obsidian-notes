@@ -86,4 +86,11 @@ Git init -> used to intialize a git repository in the current working directory
 
 what if i use git init, already in a folder that is already inited
 
+so when we do git init:
+the data is stored in .git folder
 
+
+
+git add-> add the data to the stagged area, to be commited
+> we can add every folder, or be selective
+git commit-> commits the stagged data
