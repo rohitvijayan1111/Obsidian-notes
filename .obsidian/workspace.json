@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Networking lesson.md",
+                "file": "GIT UDEMY COURSE/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking lesson"
+              "title": "Untitled"
             }
           }
         ],
@@ -117,8 +117,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -283,6 +282,11 @@
   },
   "active": "96930c54cd950ed4",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20251202165532.png",
+    "assets/images/Pasted image 20251202165343.png",
+    "tryhackme/Networking lesson.md",
+    "GIT UDEMY COURSE/Untitled.md",
+    "GIT UDEMY COURSE",
     "Accountability/ask the how,why.md",
     "Accountability/Untitled.md",
     "AWS/DVA/EC2.md",
@@ -301,7 +305,6 @@
     "assets/images/Pasted image 20251107185156.png",
     "Finance/Investment percentage.md",
     "Finance/Mutual funds.md",
-    "assets/images/Pasted image 20251104093032.png",
     "Accountability/NOV 2025.md",
     "project review/ZeroTrust.md",
     "project review/Pinpoint.md",
@@ -320,15 +323,11 @@
     "Interview prep/HTML",
     "Interview prep",
     "Oracle Certs/Devops.md",
-    "Security/Comptia Security +/Chapter- 7.md",
-    "Security/Comptia Security +/Resources that help.md",
-    "Security/Comptia Security +/Final/Chapter-5 Security Assessment and Testing.md",
     "Security/Comptia Security +/Untitled 2.base",
     "Security/Comptia Security +/Untitled 1.base",
     "Security/Comptia Security +/Untitled.base",
     "exams",
     "Books",
-    "Oracle Certs",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
