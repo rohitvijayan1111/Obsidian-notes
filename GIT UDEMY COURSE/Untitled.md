@@ -93,4 +93,17 @@ the data is stored in .git folder
 
 git add-> add the data to the stagged area, to be commited
 > we can add every folder, or be selective
+
+git add <f1><f2>
+	git add . (possible?)
 git commit-> commits the stagged data
+
+git commit -> some pop up comes
+git commit -m "messages heere"
+
+
+after commiting -> it will tell working tree clean,nothing to commit
+
+
+
+git log -> shows commit histroy (name, email,mesage)
