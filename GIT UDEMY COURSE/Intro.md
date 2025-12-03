@@ -181,6 +181,7 @@ Output:
 ### 🧠 Internal working:
 - Git takes a snapshot of the file
 - Stores it temporarily in staging area
+- after git add ., it indicates to commit 
 ---
 # 🟥 **4. `git commit` — Create a Checkpoint**
 ## ✔ What it does:
@@ -201,7 +202,7 @@ Creates a **permanent snapshot** of your project.
     - Time
     - Commit message
     - Unique ID (SHA)
-- After commi
+- After committing it says "Working tree clean. no changes to commit"
 
 ### 📌 Example:
 `git add . git commit -m "Initial commit"`
@@ -209,4 +210,19 @@ Creates a **permanent snapshot** of your project.
 ## Doubts that i got:
 - What is Untracked files-> files that are newly created and not already in git
 - Why do we need staging area-> coz sometime we may not commit all the files
-- 
+
+
+## Git log
+
+# ATOMIC Commit
+
+- each commit must focus on one thing
+
+MEssage text:
+- in present tense not past
+- write like order to the codebase to change the behaviour
+
+
+## Seeing the shorten version of commit logs (Since commit message could be big and we cant see the id easily)
+
+- git logs --pretty=online
