@@ -121,35 +121,92 @@ similar to checkpoints in game, where if anything happens the game will be loade
 
 `pwd        # show current path cd folder  # move into folder cd ..      # go back one level cd /       # go to root cd ~       # go to home directory`
 
-# over
-d
+# Basics
 
-Git status-> used to see the status of github repository
+- Repository:
+	- A Git "Repo" is a workspace which tracks and manages files within a folder.
+- Committing:
+	- Making a commit is similar to making a save in a video game. We're taking a snapshot of a git repository in time.
+	- When saving a file, we are saving the state of a single file. With Git, we can save the state of multiple files and folders together.
 
-Git init -> used to intialize a git repository in the current working directory
+# 🧩 **1. `git init` — Initialize Git Repository**
+## ✔ What it does:
+- Creates a hidden `.git` folder inside your project
+- Converts normal folder → Git-controlled folder
+- Starts version control
+### 🔧 Command:
+`git init`
+### 🎯 When to use:
+- At the **very beginning** of a new project
+- Before you start tracking any files
+### 🧠 Internal working:
+- Creates `.git` folder
+- Inside it: commits, branches, logs, configurations
+- Entire Git magic happens here
+### 📌 Example:
+`mkdir myproject cd myproject git init`
 
-what if i use git init, already in a folder that is already inited
+Output:
+`Initialized empty Git repository...`
 
-so when we do git init:
-the data is stored in .git folder
+---
 
+# 🟦 **2. `git status` — See What’s Happening**
 
+## ✔ What it does:
+- Shows files you changed
+- Shows untracked files
+- Shows which branch you're on
+- Shows what’s staged and unstaged
+### 🔧 Command:
+`git status`
+### 🎯 Use this every time:
+- Before adding files
+- Before committing
+- To understand what Git sees
+### 📌 Example output:
+`Untracked files:   index.html`
+---
+# 🟩 **3. `git add` — Move Files to Staging Area**
+## ✔ What it does:
+- Selects the files you want to include in next commit
+- Sends them to **staging area**
+### 🔧 Commands:
+`git add file.txt       # add specific file git add folder/        # add folder git add .              # add EVERYTHING`
 
-git add-> add the data to the stagged area, to be commited
-> we can add every folder, or be selective
+### 🎯 Why staging area exists?
+- So you can choose **which changes** go into commit
+- Gives fine control
+- Prevents accidental commits
+### 🧠 Internal working:
+- Git takes a snapshot of the file
+- Stores it temporarily in staging area
+---
+# 🟥 **4. `git commit` — Create a Checkpoint**
+## ✔ What it does:
+Creates a **permanent snapshot** of your project.
 
-git add <f1><f2>
-	git add . (possible?)
-git commit-> commits the stagged data
+### 🔧 Command:
+`git commit -m "message"`
 
-git commit -> some pop up comes
-git commit -m "messages heere"
+### 🎯 Good commit messages:
+- “Added login page”
+- “Fixed home page UI bug”
+- “Updated database config”
+### 🧠 Internal working:
+- Git creates a **commit object**
+- Stores:
+    - Snapshot of files
+    - Your name/email
+    - Time
+    - Commit message
+    - Unique ID (SHA)
+- After commi
 
+### 📌 Example:
+`git add . git commit -m "Initial commit"`
 
-after commiting -> it will tell working tree clean,nothing to commit
-
-
-
-git log -> shows commit histroy (name, email,mesage)
-
-dd
+## Doubts that i got:
+- What is Untracked files-> files that are newly created and not already in git
+- Why do we need staging area-> coz sometime we may not commit all the files
+- 
