@@ -270,3 +270,33 @@ git status -> shows the status of all the branches
 
 
 git commit -a -m "messgw"
+
+
+
+difference between switch and checkout
+
+
+git switch -c "branch names" ->create an branch and moves to it
+
+
+Switching to another branch before commiting:
+
+- it will throw a warning to commit /stash the changes
+- if not then the changes would be lost
+will not throw warning if the file that was changed/creaated is unique
+if conflicts it will throw warning 
+
+
+git branch --delete/--d <branch name>
+?does it allow delete the branch in the same branch, should i have to switch to other branch?
+it shows some conflict like the branch is not fully merged, are sure to delete it
+(anywhere but not in the branch)
+
+
+for rename->u have to be inside that brach
+git branch -m <renamed name>
+
+
+HEad:
+- in .git it stores a head, file where it would refer to a file, which will have the latest commit code for each branch, so we switch branches this file path changes in the head
+- 
