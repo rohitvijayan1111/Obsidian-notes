@@ -242,3 +242,31 @@ Ammending a commit:
 website--> topal.com/ignoreigonore.io has an template code for gitignore for various techstack
 
 
+
+
+
+GITHUB-> creates a branchh called main and not master
+
+HEAD->current locatio
+
+
+Git branches-> pointer for each branch to point to the latest commit
+
+
+git branches ->lists branches
+
+
+to create branches
+git branches <branch_name>-> 
+- but pointer (head) still in the previous branch
+- does it have the data of the previous branch???
+
+git switch <branch name>
+
+
+
+git status -> shows the status of all the branches
+- how does it show in the pov in each branch same result?
+
+
+git commit -a -m "messgw"
