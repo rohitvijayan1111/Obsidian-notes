@@ -311,3 +311,11 @@ git switch
 > fast forward merge(no)
 > how will the logs look like it
 
+if it isnt a fast forward commit,means there is change in the main branch and the new branch, then git automatically, creates a commit,which merges these two, and the parent of this would be both the branches
+
+
+merge conflicts
+
+COnflict markers -> <<<<hEad
+
+f
