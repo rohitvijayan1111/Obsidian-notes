@@ -299,4 +299,15 @@ git branch -m <renamed name>
 
 HEad:
 - in .git it stores a head, file where it would refer to a file, which will have the latest commit code for each branch, so we switch branches this file path changes in the head
-- 
+
+
+
+# Git merge
+
+move to the branch where u have to merge the code
+git switch
+	git merge <other branch nae>
+
+> fast forward merge(no)
+> how will the logs look like it
+
