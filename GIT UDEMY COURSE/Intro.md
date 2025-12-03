@@ -225,4 +225,20 @@ MEssage text:
 
 ## Seeing the shorten version of commit logs (Since commit message could be big and we cant see the id easily)
 
-- git logs --pretty=online
+- git logs --pretty=oneline --abbrev-commit
+
+Gitkraken
+
+
+Ammending a commit:
+
+- to fix the mistake that you had made in the previous commit alone
+	- what if other user commits before i try to ammend
+- git commit --ammend (opens text edito
+
+
+.gitignore
+
+website--> topal.com/ignoreigonore.io has an template code for gitignore for various techstack
+
+
