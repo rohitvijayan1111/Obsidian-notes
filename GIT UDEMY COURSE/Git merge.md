@@ -177,15 +177,19 @@ This clearly shows:
 
 
 
-git diff, compares staging area and working directory 
+git diff, compares staging area and working directory (all unstagged changes)
 
 
-git diff HEAD -> head/branch and working directory
-
-
+git diff HEAD -> head/branch and working directory (all changes stagged and un-stagged since head )
+ 
 
 what will be shown in git diff head, i have created  a new file, in working directory 
 shows one file
 
 when we commit it and see ,git diff head,
 will comparing it will list as 
+
+
+
+git diff -- cached / --staged
+
