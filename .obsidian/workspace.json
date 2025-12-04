@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview prep/Leetcode revision/Sorting.md",
+                "file": "Interview prep/Leetcode revision/Binary search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sorting"
+              "title": "Binary search"
             }
           }
         ],
@@ -282,8 +282,9 @@
   },
   "active": "96930c54cd950ed4",
   "lastOpenFiles": [
-    "GIT UDEMY COURSE/Git merge.md",
     "Interview prep/Leetcode revision/Sorting.md",
+    "Interview prep/Leetcode revision/Binary search.md",
+    "GIT UDEMY COURSE/Git merge.md",
     "Interview prep/Leetcode revision",
     "GIT UDEMY COURSE/Intro.md",
     "assets/images/Pasted image 20251202173949.png",
@@ -321,7 +322,6 @@
     "AWS/CCP",
     "project review/Pragati Mitra.md",
     "Interview prep/HTML/Untitled.md",
-    "tryhackme/HACKER101.md",
     "Interview prep/HTML",
     "Interview prep",
     "Security/Comptia Security +/Untitled 2.base",
