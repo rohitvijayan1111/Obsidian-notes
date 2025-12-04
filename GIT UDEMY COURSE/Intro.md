@@ -330,6 +330,9 @@ You must untrack it manually:
 
 
 
+
+	
+
 GITHUB-> creates a branchh called main and not master
 
 HEAD->current locatio
@@ -403,3 +406,4 @@ merge conflicts
 
 COnflict markers -> <<<<hEad
 
+if merge branching is done, will both the repo will hve the same code or only the main repo?
