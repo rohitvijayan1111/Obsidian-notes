@@ -49,3 +49,5 @@ sol = Solution()
 sol.mergeSort(arr, 0, len(arr) - 1)
 print(*arr)
 ```
+
+- Quick sort Hoare's approach
