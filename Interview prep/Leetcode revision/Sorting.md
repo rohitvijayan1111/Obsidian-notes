@@ -53,3 +53,4 @@ print(*arr)
 - Quick sort Hoare's approach
 
 
+in merge sort and quick sort, we try to break down the array into partition that go logn and each partition would at max could n time therefore nlogn
