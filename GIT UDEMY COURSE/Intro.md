@@ -211,37 +211,122 @@ Creates a **permanent snapshot** of your project.
 - What is Untracked files-> files that are newly created and not already in git
 - Why do we need staging area-> coz sometime we may not commit all the files
 
+---
+
 
 ## Git log
 
+`git log` shows:
+- All commits
+- Commit IDs (SHA)
+- Author name
+- Email
+- Commit date/time
+- Commit message
+### **Command:**
+`git log`
+### **Sample Output:**
+`commit a3dfd1234e89c91cbe58fa12e65e67cd1ab2234a Author: Rohit <rohit@example.com> Date:   Sun Feb 16 10:52:21 2025      Added user authentication feature`
+
+You’ll see commits from latest → oldest.
+It is like the **timeline / history viewer** of your Git project.
+
+|Command|Meaning|
+|---|---|
+|`git log`|Full commit history|
+|`git log --oneline`|One-line summary of commits|
+|`git log --graph`|Visual tree of branches|
+|`git log -p`|Log with code diff|
+|`git log file.txt`|History of a specific file|
+|`git log --author=""`|Filter by author|
+|`git log --since=""`|Filter by date|
+
 # ATOMIC Commit
 
-- each commit must focus on one thing
+### ✅ **Definition**
+An **Atomic Commit** is a commit that focuses on _one single purpose_ or _one single logical change_.
 
-MEssage text:
-- in present tense not past
-- write like order to the codebase to change the behaviour
+### 📌 **Meaning:**
+- Each commit should do **ONE thing only**, not many.
+- The commit should be **small, understandable, and reversible**. 
+- If something goes wrong, you can revert that one small unit without affecting unrelated code.
 
+## 📝 **Commit Message Style Guidelines**
+## 1. **Present tense, not past**
+- ❌ “Fixed bug”
+- ✔ “Fix bug”
+    
+## 2. **Imperative style**
+Write like **an instruction or command to the codebase**.
+Examples:
+- “Add login authentication”
+- “Update dashboard route”
 
-## Seeing the shorten version of commit logs (Since commit message could be big and we cant see the id easily)
+**Think of it as:**  
+“What should this commit _do_ to the code?”
+Because tools like Git auto-generate messages like:
 
-- git logs --pretty=oneline --abbrev-commit
+**"This commit will…"**
+
+So your message should complete the sentence:
+- **This commit will _Add login page_** ✔
+- **This commit will _Fixed login page_** ❌ (wrong tense)
+
+# **Shortened Commit Logs in Git**
+By default, `git log` shows **big, detailed commit messages**, author, date, and full SHA (40 characters).  
+This becomes hard to read when history grows.
+So Git provides a way to show a **clean, one-line, shortened version** of each commit.
+
+---
+# 🧩 **Command:**
+`git log --pretty=oneline --abbrev-commit`
+# ⭐ What This Command Does
+### ✔ `--pretty=oneline`
+- Shows every commit in **one single line**
+- Removes author, date, extra details
+- Gives you a cleaner history
+### ✔ `--abbrev-commit`
+- Shortens the long 40-char commit ID (SHA) to ~7 characters
+- Easier to read
+- Easier to copy/paste
+- Still unique enough to identify commits
+---
+# 🎯 **Example Output**
+`a1b2c3d Fix user login bug 
+d4e5f6a Add JWT authentication`
 
 Gitkraken
+- use it do in a GUI
+
+## **Amending a Commit in Git**
+Sometimes after making a commit, you realize:
+- You forgot to add a file
+- You made a typo in the commit message
+- You want to update the commit message
+- You forgot to stage a change
+    
+Git allows you to **fix ONLY the previous commit** using:
+`git commit --amend`
+# ⭐ What `git commit --amend` Does
+When you run amend:
+- It **replaces** the previous commit
+- It does NOT create a new commit
+- It becomes a **new edited version** of the old commit
+- The commit **SHA changes** (important)
+  
+**Only amend commits that you haven’t pushed yet—amending pushed commits rewrites history and can break your team’s work.**
 
 
-Ammending a commit:
 
-- to fix the mistake that you had made in the previous commit alone
-	- what if other user commits before i try to ammend
-- git commit --ammend (opens text edito
-
-
-.gitignore
-
-website--> topal.com/ignoreigonore.io has an template code for gitignore for various techstack
-
-
+## **`.gitignore`**
+- Tells Git which files/folders NOT to track
+- Prevents pushing unwanted files to GitHub
+- Keeps repo clean and secure
+- Use template generators like Toptal/gitignore.io
+### 🧠 Important Note
+If a file was **already tracked by Git**, adding it to `.gitignore` won’t stop Git from tracking it.
+You must untrack it manually:
+`git rm --cached filename`
 
 
 
@@ -318,4 +403,3 @@ merge conflicts
 
 COnflict markers -> <<<<hEad
 
-f
