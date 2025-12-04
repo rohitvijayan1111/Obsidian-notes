@@ -331,7 +331,37 @@ You must untrack it manually:
 
 
 
-	
+# Git Branches
+
+- **A Git branch is like a separate copy of your project where you can work without affecting the main code.**
+- Think of it like _parallel universes_ of your code.
+- We could do feature branching and later merge it into the main branch
+
+## ✔ See all branches
+
+`git branch`
+## ✔ Create a branch
+
+`git branch feature-login`
+
+## ✔ Switch to a branch
+
+`git checkout feature-login`
+
+```
+git switch <branch name>
+```
+## ✔ Create + switch (most used)
+
+`git checkout -b feature-login`
+
+```
+git switch -c <branch_name>
+```
+## ✔ Delete a branch (after merge)
+
+`git branch -d feature-login`
+
 
 GITHUB-> creates a branchh called main and not master
 
