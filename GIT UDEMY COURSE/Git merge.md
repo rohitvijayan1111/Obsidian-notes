@@ -177,4 +177,15 @@ This clearly shows:
 
 
 
-git diff, compares staging area and working directory
+git diff, compares staging area and working directory 
+
+
+git diff HEAD -> head/branch and working directory
+
+
+
+what will be shown in git diff head, i have created  a new file, in working directory 
+shows one file
+
+when we commit it and see ,git diff head,
+will comparing it will list as 
