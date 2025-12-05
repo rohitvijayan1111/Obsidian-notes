@@ -261,4 +261,6 @@ IF there are multiple stashes in the stash list, and if i use git stash pop? wha
 
 
 ![[Pasted image 20251205121433.png]]
+
+git stash drop?
 ![[Pasted image 20251205121515.png]]
