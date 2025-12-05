@@ -179,7 +179,11 @@ This clearly shows:
 
 git diff, compares staging area and working directory (all unstagged changes)
 
+a/File.txt b/File.txt
 
+@ 3,5 4,5
++++
+--
 git diff HEAD -> head/branch and working directory (all changes stagged and un-stagged since head )
  
 
@@ -193,3 +197,35 @@ will comparing it will list as
 
 git diff -- cached / --staged
 
+staged area and the branch/HEAD(i.e last committed)
+
+
+```git diff --cached <filename>``` 
+
+just this file
+
+
+comparing branches
+```
+git diff <branch1>..<branh2>
+git diff <branch1> <branh2>
+a<- branch1
+b<- branch2
+```
+
+
+comparing commits
+
+```
+git diff <commithash1>..<commithash2>
+git diff <commithash1> <commithash2>
+
+order matters
+```
+
+
+
+# What will happen if i dont push my changes and try to switch the branch
+
+- if no conflicts , the changes will come along with the branch  u want to switch to
+- else git wont allow,unless u commit the changes etc
