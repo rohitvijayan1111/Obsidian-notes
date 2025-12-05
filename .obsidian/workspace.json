@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview prep/Leetcode revision/Binary search.md",
+                "file": "Leetcode/Array/Article on counting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Binary search"
+              "title": "Article on counting"
             }
           }
         ],
@@ -282,8 +282,8 @@
   },
   "active": "96930c54cd950ed4",
   "lastOpenFiles": [
-    "Interview prep/Leetcode revision/Sorting.md",
     "Interview prep/Leetcode revision/Binary search.md",
+    "Interview prep/Leetcode revision/Sorting.md",
     "Accountability/ask the how,why.md",
     "GIT UDEMY COURSE/Git merge.md",
     "Interview prep/Leetcode revision",

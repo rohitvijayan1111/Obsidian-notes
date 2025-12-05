@@ -240,3 +240,129 @@ A typical approach for **Count of Range Sum** is to recursively sort and merge p
 Each of these categories leverages the above techniques. By recognizing the pattern (prefix sum, sliding window, monotonic queue, etc.) and applying the optimal method, you can efficiently solve most subarray-counting problems. The linked LeetCode problems are good practice for each type, and their discussions often outline these strategies as well.
 
 **Sources:** LeetCode problem discussions and algorithm explanations were used to summarize these approaches. Each cited work provides detailed justification for the techniques used.
+
+
+
+# [3381. Maximum Subarray Sum With Length Divisible by K](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/)
+
+```python
+class Solution:
+    def maxSubarraySum(self, nums: List[int], k: int) -> int:
+        prefix=[float("inf") for _ in range(k)]
+        n=len(nums)
+        prefix[0]=0
+        res=float("-inf")
+        sums=0
+        for i in range(n):
+            sums+=nums[i]
+            #find mod k to to remove it
+            l=i+1
+            mod=l%k
+            res=max(res,sums-prefix[mod])
+            prefix[mod]=min(prefix[mod],sums)
+        return res
+```
+
+Here’s a **clear, intuitive summary** of the core idea behind the problem _“Maximum Subarray Sum With Length Divisible by K”_:
+
+---
+
+## 🌟 **What the problem is really asking**
+
+You want to find a **contiguous subarray** whose:
+
+1. **Length is divisible by `k`**  
+    (so the subarray can have length `k`, `2k`, `3k`, …)
+    
+2. **Sum is as large as possible**
+    
+
+---
+
+## 🧠 **Key Insight: Use Prefix Sums + Remainders**
+
+To check subarrays quickly, we use **prefix sums**:
+
+```
+prefix[i] = sum of nums[0..i-1]
+```
+
+A subarray from `l` to `r` has sum:
+
+```
+prefix[r+1] - prefix[l]
+```
+
+### 🔑 Important condition:
+
+The length `(r - l + 1)` must be divisible by `k`.
+
+This is equivalent to:
+
+```
+(r+1 - l) % k == 0
+→ (prefix index r+1) and (l) must have the **same remainder mod k**
+```
+
+---
+
+## 🎯 **So the trick becomes:**
+
+As we compute prefix sums, **group them by their remainder mod k**  
+(`prefix[i] % k`).
+
+Within each remainder group:
+
+- We want to **maximize** `prefix[r] - prefix[l]`,
+    
+- Which means **take the smallest prefix sum seen so far** in that group,
+    
+- And subtract it from the current prefix.
+    
+
+This ensures the subarray length is divisible by `k`.
+
+---
+
+## ✨ **Why this works**
+
+Because subarray length is controlled by the **prefix index difference**, and modulo arithmetic tells us:
+
+> Two indices have a difference divisible by `k`  
+> **iff**  
+> They have the same prefix sum remainder mod `k`.
+
+So every remainder group is like its own little "bucket" where valid subarrays live.
+
+---
+
+## ✔️ **Simple Concept Summary**
+
+- Compute prefix sums.
+    
+- Look at remainders modulo `k`.
+    
+- For each remainder group, always keep track of the **minimum prefix sum** seen.
+    
+- Every time you reach a new prefix sum, try to form the best possible subarray ending here by subtracting the smallest earlier prefix sum with the same remainder.
+    
+- Keep the maximum over all choices.
+    
+
+---
+
+## 🧩 **Analogy**
+
+Imagine you have `k` shelves.  
+You place each prefix sum onto the shelf labeled by its remainder `mod k`.
+
+Whenever you add a new prefix sum to a shelf, you check:
+
+> "What’s the smallest number already on this shelf?"
+> 
+> Subtracting that gives the largest subarray sum ending here with a valid length.
+
+---
+
+
+
