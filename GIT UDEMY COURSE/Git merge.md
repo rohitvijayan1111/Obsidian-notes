@@ -229,3 +229,15 @@ order matters
 
 - if no conflicts , the changes will come along with the branch  u want to switch to
 - else git wont allow,unless u commit the changes etc
+
+
+
+Git stash:
+- used to temporary store the uncommitted files before switching to another branch, so that the changes arent brought together to the other branch
+- git stash
+- git stash pop
+
+What will happen if put git stash pop in another branch , where i didnt give the stash, is stash global or limited to that branch alone.
+
+( The changes get completely removed? even in the branch that we did the git stash?)
+![[Pasted image 20251205115611.png]]
