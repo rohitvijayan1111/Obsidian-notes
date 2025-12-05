@@ -39,3 +39,15 @@ What if we have stagged changes? at that time also will it move back in time
 ![[Pasted image 20251205125745.png]]
 will the changes will be still there in the working directory or will it be removed from there s well?
 it will just removed from the stagged, not deleted
+
+
+![[Pasted image 20251205130154.png]]
+
+ The changes (difference) are in the working directory,the git moves to that commit hash, so we can move these changes to a different branch if we want
+
+
+![[Pasted image 20251205131452.png]]
+![[Pasted image 20251205131918.png]]
+
+ ![[Pasted image 20251205132153.png]]
+ 
