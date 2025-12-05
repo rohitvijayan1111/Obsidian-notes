@@ -1,3 +1,4 @@
+
 Below is a **clean, organized, professionally formatted Markdown version** of your notes on **Git Merge**, including diagrams for clarity.
 
 ---
@@ -241,3 +242,23 @@ What will happen if put git stash pop in another branch , where i didnt give the
 
 ( The changes get completely removed? even in the branch that we did the git stash?)
 ![[Pasted image 20251205115611.png]]
+
+
+
+git stah list
+- Lists the all the stashed works
+
+
+how are these labels applied to git stash 
+![[Pasted image 20251205121210.png]]
+
+does the stash count increase in increasing order or how is it?
+
+
+
+
+IF there are multiple stashes in the stash list, and if i use git stash pop? what will it happen? will it remove the recent stash or everything
+
+
+![[Pasted image 20251205121433.png]]
+![[Pasted image 20251205121515.png]]
