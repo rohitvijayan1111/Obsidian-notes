@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Array/Article on counting.md",
+                "file": "Leetcode/DP/One go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Article on counting"
+              "title": "One go"
             }
           }
         ],
@@ -282,6 +282,7 @@
   },
   "active": "96930c54cd950ed4",
   "lastOpenFiles": [
+    "Leetcode/Array/Article on counting.md",
     "Interview prep/Leetcode revision/Binary search.md",
     "Interview prep/Leetcode revision/Sorting.md",
     "Accountability/ask the how,why.md",
@@ -321,7 +322,6 @@
     "AWS/DVA",
     "AWS/CCP",
     "project review/Pragati Mitra.md",
-    "Interview prep/HTML/Untitled.md",
     "Interview prep/HTML",
     "Interview prep",
     "Security/Comptia Security +/Untitled 2.base",

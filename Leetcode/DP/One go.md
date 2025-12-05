@@ -1,4 +1,214 @@
+# MIN1,MIN2 tricck
+Great question — this shows you’re thinking like a **DP expert**.  
+The **min1 / min2 trick** is not random; it comes from a specific DP pattern.
 
+Below is the **general rule** for when you _can_ and _cannot_ use it, with examples.
+
+---
+
+✅ **WHEN you can use the min1/min2 technique**
+
+You can use this trick **whenever your DP transition is:**
+
+```
+dp[i][j] = cost[i][j] + min(dp[i+1][x])   over all x ≠ j
+```
+
+or more generally:
+
+```
+dp[i][j] = something(j) + best_value among all other states except j
+```
+
+This structure appears in problems where:
+
+- You must choose one option out of **k choices** per step
+    
+- You are **not allowed to choose the same choice as the previous step**
+    
+- Transition requires computing  
+    → **minimum over all other choices except j**
+    
+
+### ✔️ Then instead of scanning all k states each time,
+
+you can store:
+
+- the minimum (min1)
+    
+- the second minimum (min2)
+    
+- the index of the minimum (idx_min1)
+    
+
+---
+
+## ⭐ Classic DP problems where min1/min2 works
+
+### 1️⃣ Paint House II / Walls Coloring II
+
+You used it already:
+
+```
+dp[i][j] = cost[i][j] + min(dp[i+1][x] for x != j)
+```
+
+---
+
+### 2️⃣ K Colors, No Adjacent Same (Strings, Arrays)
+
+Example:
+
+Given array `nums`, choose color for each index with rule:
+
+```
+dp[i][color] = nums[i][color] + min(dp[i-1][c] for all c != color)
+```
+
+Same structure → min1/min2 applies.
+
+---
+
+### 3️⃣ Partitioning sequences where "same as last" is disallowed
+
+If your recurrence is:
+
+```
+dp[i][state] = weight + min(dp[i-1][all other states])
+```
+
+(Where states are mutually exclusive choices).
+
+Example: painting fence with multiple colors + constraints.
+
+---
+
+### 4️⃣ Choosing best station/option except the same one
+
+For example:
+
+```
+dp[day][station] = cost + min(dp[day+1][other stations])
+```
+
+Very common in path DP, resource assignment DP.
+
+---
+
+## 🚫 **WHEN you CANNOT use this trick**
+
+### ❌ Case 1: Transition does NOT use “min over all other states”
+
+Examples:
+
+```
+dp[i][j] = dp[i-1][j] + dp[i-1][j-1]
+dp[i][j] = max(...)
+dp[i][j] = something not involving excluding j
+```
+
+The min1/min2 trick **ONLY applies for minimization problems** of a very specific type.
+
+---
+
+### ❌ Case 2: There is another constraint besides “x ≠ j”
+
+For example:
+
+```
+dp[i][j] = cost + min(dp[i-1][x]) where x must satisfy multiple rules
+```
+
+If more than one rule filters x, then just excluding the minimum sometimes fails.
+
+---
+
+### ❌ Case 3: Transition depends on dp[i][j] in more complex ways
+
+If the recurrence uses:
+
+- dp[i][j-1]
+    
+- dp[i][j+1]
+    
+- dp[i][j] itself
+    
+- dp[i-1][j] only
+    
+
+Then you can't use min1/min2.
+
+---
+
+## 🧠 **General Rule You Can Memorize**
+
+Use **min1/min2 optimization** _when all these are true_:
+
+### ✔ DP state is:
+
+`dp[i][choice]`  
+and there are **k choices**.
+
+### ✔ Transition is:
+
+“pick the best DP from previous step, except the one with the same choice.”
+
+### ✔ The only invalid transition is:
+
+cannot transition from `j → j`.
+
+### ✔ You want:
+
+`min over all choices except j`  
+and not something more complex.
+
+### ✔ Cost structure is linear / additive per step.
+
+Whenever you see this structure → **instantly use min1/min2**.
+
+---
+
+## 🎯 **Why it works mathematically**
+
+For a row like:
+
+```
+[5, 7, 8, 13]
+```
+
+To compute `min(all except index j)`:
+
+- If j is _not_ index of global min → answer = global min
+    
+- If j _is_ index of global min → answer = second global min
+    
+
+That is the entire trick.
+
+You avoid scanning all `k` values each time.
+
+---
+
+## 🔥 Summary Table — When to Apply
+
+|DP Pattern|min1/min2 works?|Reason|
+|---|---|---|
+|`dp[i][j] = cost + min(dp[i-1][x] for x != j)`|✔ Yes|Exact match|
+|Choose a different category each step|✔ Yes|Only exclusion is “same category”|
+|Multi-constraint transitions|❌ No|Need more filters|
+|Local transitions (j-1, j+1 only)|❌ No|Not “min of all others”|
+|Transitions using sum, not min|❌ No|Trick only applies to min/max|
+
+---
+
+## If you want
+
+I can give you:
+
+✅ A rule-of-thumb cheat sheet  
+✅ 10 practice problems where the min1/min2 trick applies  
+✅ How to identify the pattern in < 3 seconds  
+Just say the word.
 # [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ## Recursion 
