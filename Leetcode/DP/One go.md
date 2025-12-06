@@ -1363,3 +1363,11 @@ class Solution:
         return result if result != float('inf') else -1
                 
 ```
+
+
+# [OPTIMAL GAME PROBLEM](https://www.geeksforgeeks.org/problems/optimal-strategy-for-a-game-1587115620/1)
+
+```PYTHON
+
+
+```
