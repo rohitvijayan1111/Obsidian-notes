@@ -17,3 +17,6 @@ init at declaration
 
 
 u cant use a variable before init
+
+
+use can use keywords as variable name using "@" sign
