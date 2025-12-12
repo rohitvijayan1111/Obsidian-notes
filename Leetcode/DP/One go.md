@@ -1368,6 +1368,50 @@ class Solution:
 # [OPTIMAL GAME PROBLEM](https://www.geeksforgeeks.org/problems/optimal-strategy-for-a-game-1587115620/1)
 
 ```PYTHON
+## 1) Key observation (intuition)
 
+When it’s your turn on the subarray `i..j`, you have two choices:
+
+- Pick `arr[i]` → then the opponent plays optimally on `i+1..j`.
+    
+- Pick `arr[j]` → then the opponent plays optimally on `i..j-1`.
+    
+
+Important: the opponent tries to **minimize** _your eventual_ total (because they maximize their own). That fact leads to a `min` inside our recurrence.
+
+---
+
+## 2) Define DP like Striver
+
+Let `dp[i][j]` = **maximum value the current player** can collect from the subarray `i..j` (both players play optimally).
+
+If you pick `i`:
+
+- Opponent will then leave you the worse of two sub-subproblems:
+    
+    - If opponent picks `i+1` → you get `dp[i+2][j]`
+        
+    - If opponent picks `j` → you get `dp[i+1][j-1]`  
+        So value when picking `i` is:
+        
+
+`take_i = arr[i] + min( dp[i+2][j], dp[i+1][j-1] )`
+
+If you pick `j`:
+
+`take_j = arr[j] + min( dp[i+1][j-1], dp[i][j-2] )`
+
+Take the best of these:
+
+`dp[i][j] = max( take_i, take_j )`
+
+Base cases:
+
+- `dp[i][i] = arr[i]` (only one coin)
+    
+- If indices go out of range for `dp[...]` treat them as `0` (conveniently handled in code).
+    
+
+Time: `O(n^2)`; Space: `O(n^2)`.
 
 ```

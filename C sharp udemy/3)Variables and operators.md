@@ -1,0 +1,11 @@
+
+Console.WriteLine
+Console.ReadKey()
+
+
+
+in c#,once the variable has been declared, its type can't be changed only the value can(should be of the declared type)
+
+- a variable can't be redeclared in the scope
+
+string -> double quotes
