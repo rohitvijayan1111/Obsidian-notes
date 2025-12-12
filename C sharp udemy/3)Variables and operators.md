@@ -9,3 +9,11 @@ in c#,once the variable has been declared, its type can't be changed only the va
 - a variable can't be redeclared in the scope
 
 string -> double quotes
+
+Declaration 
+initialization 
+init at declaration
+
+
+
+u cant use a variable before init
