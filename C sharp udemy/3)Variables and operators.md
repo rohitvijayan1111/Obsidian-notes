@@ -69,3 +69,7 @@ Quickwatch:
 - If the first part of the operand in || , C# would not execute the second operand
 - same for &&, if first false, then second operand isnt checked
 
+
+Methods
+
+![[Pasted image 20251215160242.png]]
