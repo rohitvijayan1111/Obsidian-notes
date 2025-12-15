@@ -21,6 +21,9 @@ NOTE:
 - use can use keywords as variable name using "@" sign
 - Compile-time error: _Cannot implicitly convert type_->assigning a value of the wrong type to a variable 
 - Strongly typed-> means datatype of a variable cannot be changed
+- When you run a console app **by double-clicking the `.exe` file** (or in some older setups), the console window may close instantly when the program finishes.
+
+`Console.ReadKey()` keeps the window open so you can **see the output**.
 
 # operator precedence
 a=10
@@ -40,6 +43,10 @@ we can add paranthesis to this , to avoid such issue
 
 
 for readline:
+```C#
+Console.ReadLine()// nothing should be put in
+```
+
 ![[Pasted image 20251215105736.png]]
 
 
@@ -53,4 +60,5 @@ to move forward from breakpoint, oneline F10 or ![[Pasted image 20251215110001.p
 
 Quickwatch:
 
-- 
+- Select the string, right "Quickwatch", u can put in expression and test its workings
+![[Pasted image 20251215111110.png]]
