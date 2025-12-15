@@ -22,6 +22,7 @@ NOTE:
 - Compile-time error: _Cannot implicitly convert type_->assigning a value of the wrong type to a variable 
 - Strongly typed-> means datatype of a variable cannot be changed
 - When you run a console app **by double-clicking the `.exe` file** (or in some older setups), the console window may close instantly when the program finishes.
+-   C# is a statically-typed programming language, which means..
 
 `Console.ReadKey()` keeps the window open so you can **see the output**.
 
@@ -73,3 +74,9 @@ Quickwatch:
 Methods
 
 ![[Pasted image 20251215160242.png]]
+
+
+
+![[Pasted image 20251215162132.png]]
+
+- methods can be used before they can be declared 
