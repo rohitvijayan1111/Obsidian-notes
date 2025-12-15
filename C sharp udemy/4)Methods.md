@@ -6,3 +6,8 @@
 ```
 int.Parse(userinput);
 ```
+
+
+SOLUTIONS:
+- a group of projects
+- to run a new project, that we have created, right click on the project and select set as startup project
