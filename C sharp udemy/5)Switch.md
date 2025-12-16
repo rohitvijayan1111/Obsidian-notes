@@ -25,3 +25,8 @@ the above possible in modern day c#
 
 
 ![[Pasted image 20251216214015.png]]
+
+
+![[Pasted image 20251216221511.png]]
+
+![[Pasted image 20251216221542.png]]
