@@ -14,3 +14,6 @@ SOLUTIONS:
 
 
 >	Learn about predefined functions etc
+
+
+- should we always use double quotes in C#
