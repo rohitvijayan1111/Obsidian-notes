@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C sharp udemy/5)Switch.md",
+                "file": "Motivatio/Videos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5)Switch"
+              "title": "Videos"
             }
           }
         ]
@@ -239,12 +239,14 @@
   },
   "active": "5baff3e616050f16",
   "lastOpenFiles": [
+    "C sharp udemy/5)Switch.md",
+    "Motivatio/Videos.md",
+    "Motivatio",
     "assets/images/Pasted image 20251216221542.png",
     "assets/images/Pasted image 20251216221511.png",
     "assets/images/Pasted image 20251216214015.png",
     "assets/images/Pasted image 20251216212958.png",
     "C sharp udemy/4)Methods.md",
-    "C sharp udemy/5)Switch.md",
     "C sharp udemy/3)Variables and operators.md",
     "assets/images/Pasted image 20251215162132.png",
     "assets/images/Pasted image 20251215160242.png",
@@ -252,7 +254,6 @@
     "assets/images/Pasted image 20251215110001.png",
     "assets/images/Pasted image 20251215105736.png",
     "assets/images/Pasted image 20251215103235.png",
-    "assets/images/Pasted image 20251215103107.png",
     "C sharp udemy/2)Compilation.md",
     "C sharp udemy/1)Configuring.md",
     "GIT UDEMY COURSE/Undoing changes and time travelling.md",
@@ -284,7 +285,6 @@
     "Interview prep/HTML",
     "Interview prep",
     "Security/Comptia Security +/Untitled 2.base",
-    "Security/Comptia Security +/Untitled 1.base",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
