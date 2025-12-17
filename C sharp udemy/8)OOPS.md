@@ -118,4 +118,10 @@ That’s it. Once you keep that rule in mind, C# APIs start making perfect sense
 >NOTE:
 >Usually, in C#, we cant use uninitialized variables
 >but with FIELDS IN CLASS, it is initialized with a default value
-> 
+
+
+
+![[Pasted image 20251217204104.png]]
+
+![[Pasted image 20251217204243.png]]![[Pasted image 20251217204329.png]]
+![[Pasted image 20251217204353.png]]
