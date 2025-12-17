@@ -74,3 +74,8 @@ https://docs.google.com/document/d/1EsRcNv33QH9Wi2B1uAmkvwHq_p4NKw0QtijpxM0VlqM/
 
 
 ![[Pasted image 20251217123837.png]]
+
+# Loop performance optimization
+
+- try to break, when ur operation has been done
+- if possible, do the heavy calls outside the nested loops( database calls, not dependent on the loop )
