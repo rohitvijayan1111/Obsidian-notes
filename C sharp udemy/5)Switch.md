@@ -41,4 +41,36 @@ https://docs.google.com/document/d/1EsRcNv33QH9Wi2B1uAmkvwHq_p4NKw0QtijpxM0VlqM/
 - '' indicates a char
 - so if we want to return `char` type , use single quotes'
 - string is a collection of char
-- 
+- so using += i can concatinate a char with string, as well as string with string 
+
+
+![[Pasted image 20251217122453.png]]
+![[Pasted image 20251217122530.png]]
+
+
+![[Pasted image 20251217122853.png]]
+
+.Length is used to find the length of the string
+
+
+
+# For loop:
+
+- has three sections, initialization section, condition section, iterator section
+- ![[Pasted image 20251217123231.png]]
+- iterator is executed only after the end of the loop
+![[Pasted image 20251217123330.png]]
+
+
+
+# break
+
+
+- stops the execution of the loop
+
+# continue
+- skips the current iterations of the loop and moves to the next iteration
+# .All method
+
+
+![[Pasted image 20251217123837.png]]
