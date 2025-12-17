@@ -36,3 +36,20 @@ Clear
 ![[Pasted image 20251217133447.png]]
 
 ![[Pasted image 20251217134006.png]]
+
+![[Pasted image 20251217134354.png]]
+
+
+OUT KEYWORD:
+
+![[Pasted image 20251217135541.png]]
+
+
+- out keywords, works like , the variable itself is passed, and not its copy
+
+
+# TryParse
+![[Pasted image 20251217135923.png]]
+
+
+![[Pasted image 20251217155055.png]]
