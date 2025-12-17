@@ -26,4 +26,6 @@
 ![[Pasted image 20251217130414.png]]
 
 - ![[Pasted image 20251217131305.png]]
-- how come, length is got
+- how come, length is got from 0,1 (like the m,n)?
+- ![[Pasted image 20251217131523.png]]
+- 
