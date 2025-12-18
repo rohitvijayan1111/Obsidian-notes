@@ -208,4 +208,23 @@ FOr public, it must be in pascal Case
 - ![[Pasted image 20251218111626.png]]![[Pasted image 20251218111654.png]]
 - ![[Pasted image 20251218111806.png]]![[Pasted image 20251218111840.png]]
 - ![[Pasted image 20251218111857.png]]
-- 
+
+
+# nameof
+
+![[Pasted image 20251218113354.png]]
+
+
+
+# readonly
+
+![[Pasted image 20251218114628.png]]
+![[Pasted image 20251218114648.png]]
+![[Pasted image 20251218114711.png]]
+
+- cant give var, for const variable 
+- const variable name must be in capital letter
+- ![[Pasted image 20251218114937.png]]
+![[Pasted image 20251218114906.png]]
+- for const, normal addition operations are fine, but method calling wont be allowed  
+- for readonly, the default value will be used, if nothing is given
