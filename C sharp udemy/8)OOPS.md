@@ -444,4 +444,40 @@ Just ask 😊
 - a static method should not call an non static method , as it might have value restricted to the object
 - ![[Pasted image 20251218131458.png]]
 - ![[Pasted image 20251218131537.png]]
-- 
+- If we dont initialize it would automatically be intialized to its default value
+
+# static constructor
+- would be called when the first instance of the class is created
+- ![[Pasted image 20251218133015.png]]
+
+
+
+# SPLIT AND JOIN METHOD
+
+
+**string.Split** takes a **string** and a **separator** as parameters. It splits the string into pieces by the separator. The separator can either be a string or a char.
+
+  
+
+![](https://img-c.udemycdn.com/redactor/raw/coding_exercise_instructions/2023-03-16_19-03-07-2eff270c58ec8b2bc167258a653a7460.PNG)
+
+For example, for the string **"this,is,some,string"** and separator '**,**', it will return a 4-element array with **"this" "is" "some" "string"** strings inside.
+
+  
+
+  
+
+**string.Join** does the opposite: it takes a collection of strings and joins them with a given separator. Please notice that this method is a **static** method in the string class. The separator can be a char or a string.
+
+  
+
+![](https://img-c.udemycdn.com/redactor/raw/coding_exercise_instructions/2023-03-16_19-03-08-5f4a3b9d6067b346377d92902ae17f2f.PNG)
+
+In this case, the result will be the following string:
+
+**"one--two--three"**
+
+
+# SINGLE RESPONSIBLE PRINCIPLE
+
+![[Pasted image 20251218133852.png]]
