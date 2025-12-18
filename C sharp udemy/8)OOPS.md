@@ -430,4 +430,18 @@ Just ask 😊
 - DOUBT:
   - how will the compiler know if we are defining a property or a method, when defining similar to expression body method
   - ![[Pasted image 20251218124615.png]]
-  - 
+
+![[Pasted image 20251218130048.png]]
+
+
+# static method
+
+![[Pasted image 20251218131050.png]]
+
+
+![[Pasted image 20251218131151.png]]
+- Static method can be only called with the class name and not with the object
+- a static method should not call an non static method , as it might have value restricted to the object
+- ![[Pasted image 20251218131458.png]]
+- ![[Pasted image 20251218131537.png]]
+- 
