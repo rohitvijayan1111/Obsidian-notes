@@ -125,3 +125,12 @@ That’s it. Once you keep that rule in mind, C# APIs start making perfect sense
 
 ![[Pasted image 20251217204243.png]]![[Pasted image 20251217204329.png]]
 ![[Pasted image 20251217204353.png]]
+
+![[Pasted image 20251218101354.png]]
+![[Pasted image 20251218101642.png]]
+FOr public, it must be in pascal Case
+![[Pasted image 20251218101822.png]]
+- After defining the default constructor won't work and would through an error
+- ![[Pasted image 20251218101851.png]]
+- Default values, can be set to the fields, if in constructor any value for that field is provided , it would get overridden
+- 
