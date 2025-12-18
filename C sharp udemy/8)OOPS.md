@@ -404,3 +404,30 @@ If you want, next I can explain:
 Just ask 😊
 
 ![[Pasted image 20251218122632.png]]
+
+
+# Object intializer
+
+- if we dont define the value for the properties it, will be assigned a default value according to its type
+- ![[Pasted image 20251218123508.png]]
+
+
+ WHat will happen if we pass the same value from both the constructor and the object intializer
+ - the one sent via the constructor is called first, as it is invoked first
+ - then the object initialzer executes and overrides to its value
+ - works only when the property has a public access scope and not private
+ - To solve tha problem new keyword called init is used, the value could be set only when the object is created.
+
+
+# Computed properties
+
+![[Pasted image 20251218124207.png]]
+- calling this property, each time will build a string which may not be very efficient
+
+
+- METHOD ressembles actions and properties ressembles data
+- ![[Pasted image 20251218124434.png]]
+- DOUBT:
+  - how will the compiler know if we are defining a property or a method, when defining similar to expression body method
+  - ![[Pasted image 20251218124615.png]]
+  - 
