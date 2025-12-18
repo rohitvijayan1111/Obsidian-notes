@@ -9,6 +9,7 @@
 
 DOUBT:
 - how methods belong to objects?? shouldnt it be the class
+- In C#, a top-level class is `internal` by default, while a nested class is `private` by default.
 
 ![[Pasted image 20251217161140.png]]
 ![[Pasted image 20251217161954.png]]
@@ -133,4 +134,34 @@ FOr public, it must be in pascal Case
 - After defining the default constructor won't work and would through an error
 - ![[Pasted image 20251218101851.png]]
 - Default values, can be set to the fields, if in constructor any value for that field is provided , it would get overridden
-- 
+- LEARN DATETIME
+
+
+# TOP LEVEL STATEMENTS
+
+![[Pasted image 20251218103441.png]]
+- We can have only a single file where they class need not be defined and inside which all code must be written. It gets internally converted to a Class
+- SO ALL CODE IN C#, must be written inside a **class**
+- ![[Pasted image 20251218103637.png]]
+  THEY CANNOT HAVE ACCESS MODIFER, Specification, it can only be accessed only inside this file
+
+
+# Adding methods to classes
+
+![[Pasted image 20251218103900.png]]
+
+![[Pasted image 20251218103944.png]]
+- default access modifier for a method in a class, is **Private**
+
+
+# Encapsulation
+![[Pasted image 20251218104306.png]]
+
+![[Pasted image 20251218104507.png]]
+
+
+# Method Overloading
+
+> To create a constructor quickly in VS Community, we need to type ctor and tab button twice, it will create an constructor,with any parameter, so to add them, right click on those fields that you want to add to the constructor and quick action and refactoring, add parameters to the constructor name()
+
+
