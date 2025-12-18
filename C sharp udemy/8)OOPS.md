@@ -228,3 +228,179 @@ FOr public, it must be in pascal Case
 ![[Pasted image 20251218114906.png]]
 - for const, normal addition operations are fine, but method calling wont be allowed  
 - for readonly, the default value will be used, if nothing is given
+
+
+# Properties
+
+- getter and setter methods , are called properties in c#
+- ![[Pasted image 20251218120453.png]]
+- ![[Pasted image 20251218120548.png]]
+> So by default, the getter and setter are defined??
+
+
+# Backing field
+![[Pasted image 20251218120822.png]]
+![[Pasted image 20251218120841.png]]
+
+![[Pasted image 20251218121143.png]]
+![[Pasted image 20251218121032.png]]
+value can be only set during the declaration or in the constructor, even when trying to set value inside the same class it , would throw error
+
+
+![[Pasted image 20251218122038.png]]
+
+
+# working of properties
+This is a **very common and very good confusion** — you’re touching the core idea of **what properties actually are in C#** 👍  
+Let’s clear it up cleanly and conceptually.
+
+---
+
+## Short answer (key idea)
+
+> **A property is NOT a variable.**
+> 
+> A property is a **pair of methods** (`get` and `set`) that _access_ a variable (a **field**).
+
+---
+
+## How it really works under the hood
+
+### Field (actual variable in memory)
+
+```csharp
+private int _age;
+```
+
+- This is a real variable
+    
+- It stores data in memory
+    
+
+---
+
+### Property (controlled access to the field)
+
+```csharp
+public int Age
+{
+    get { return _age; }
+    set { _age = value; }
+}
+```
+
+- `get` → method that **returns the field**
+    
+- `set` → method that **assigns the field**
+    
+- `value` → implicit parameter to `set`
+    
+
+So when you write:
+
+```csharp
+person.Age = 25;
+```
+
+What actually happens:
+
+```csharp
+set_Age(25);
+```
+
+---
+
+## Why properties exist at all
+
+If we only used public fields:
+
+```csharp
+public int Age;
+```
+
+❌ No validation  
+❌ No control  
+❌ Breaking changes if logic is added later
+
+With properties:
+
+```csharp
+public int Age
+{
+    get => _age;
+    set
+    {
+        if (value >= 0)
+            _age = value;
+    }
+}
+```
+
+✔ Validation  
+✔ Encapsulation  
+✔ Future-proof design
+
+---
+
+## What about auto-properties?
+
+This is where confusion usually comes from.
+
+```csharp
+public int Age { get; set; }
+```
+
+You **don’t see a field**, but it **still exists**.
+
+The compiler secretly generates:
+
+```csharp
+private int <Age>k__BackingField;
+```
+
+So:
+
+- Property still uses a field
+    
+- The field is just **hidden**
+    
+
+---
+
+## Summary Table
+
+|Concept|Field|Property|
+|---|---|---|
+|Stores data|✅ Yes|❌ No|
+|Has memory|✅ Yes|❌ No|
+|Contains logic|❌ No|✅ Yes|
+|Accessed like variable|✅ Yes|✅ Yes|
+|Encapsulation|❌ No|✅ Yes|
+
+---
+
+## Mental model (important)
+
+> **Field = storage**  
+> **Property = gatekeeper**
+
+---
+
+## Interview-ready one-liner 🎯
+
+> In C#, a property does not store data itself; it provides controlled access to a field, which is the actual variable that holds the data.
+
+---
+
+If you want, next I can explain:
+
+- Why C# discourages public fields
+    
+- Difference between properties and methods
+    
+- `get; private set;` and `init`
+    
+
+Just ask 😊
+
+![[Pasted image 20251218122632.png]]
