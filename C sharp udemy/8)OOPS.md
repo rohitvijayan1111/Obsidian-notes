@@ -165,3 +165,47 @@ FOr public, it must be in pascal Case
 > To create a constructor quickly in VS Community, we need to type ctor and tab button twice, it will create an constructor,with any parameter, so to add them, right click on those fields that you want to add to the constructor and quick action and refactoring, add parameters to the constructor name()
 
 
+![[Pasted image 20251218110004.png]]
+
+- The method signature should be different
+
+
+# Constructor Overloading
+
+- needs to be distinguishable by the paramter
+
+
+# Calling one constructor from other
+
+![[Pasted image 20251218110308.png]]
+![[Pasted image 20251218110342.png]]
+
+![[Pasted image 20251218110605.png]]
+
+
+# Expression bodied methods
+- can be used when there is only one expression in the method
+![[Pasted image 20251218110620.png]]
+
+# this keyword
+
+- can be used to pass the instance / object in a method
+- to assign values
+- to can constructor 
+
+
+
+![[Pasted image 20251218111020.png]]
+
+
+
+# optional parameter
+
+
+![[Pasted image 20251218111503.png]]
+
+- giving the default value for the parameter, makes it optional
+- ![[Pasted image 20251218111626.png]]![[Pasted image 20251218111654.png]]
+- ![[Pasted image 20251218111806.png]]![[Pasted image 20251218111840.png]]
+- ![[Pasted image 20251218111857.png]]
+- 
