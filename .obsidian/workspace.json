@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C sharp udemy/8)OOPS.md",
+                "file": "Finance/Varsity/types of investments.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8)OOPS"
+              "title": "types of investments"
             }
           }
         ]
@@ -237,8 +237,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2d254393392d36f8",
+  "active": "5baff3e616050f16",
   "lastOpenFiles": [
+    "C sharp udemy/8)OOPS.md",
+    "Finance/Varsity/types of investments.md",
+    "Finance/Varsity",
     "assets/images/Pasted image 20251218133852.png",
     "assets/images/Pasted image 20251218133015.png",
     "assets/images/Pasted image 20251218131537.png",
@@ -249,9 +252,7 @@
     "assets/images/Pasted image 20251218130048.png",
     "assets/images/Pasted image 20251218124615.png",
     "assets/images/Pasted image 20251218124609.png",
-    "assets/images/Pasted image 20251218124434.png",
     "Motivatio/Videos.md",
-    "C sharp udemy/8)OOPS.md",
     "C sharp udemy/7)List.md",
     "C sharp udemy/6)Array.md",
     "C sharp udemy/5)Switch.md",
@@ -284,7 +285,6 @@
     "AWS/CCP",
     "Interview prep/HTML",
     "Interview prep",
-    "Security/Comptia Security +/Untitled 2.base",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
