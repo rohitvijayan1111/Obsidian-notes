@@ -481,3 +481,9 @@ In this case, the result will be the following string:
 # SINGLE RESPONSIBLE PRINCIPLE
 
 ![[Pasted image 20251218133852.png]]
+
+
+
+# Dont Repeat yourself principle
+![[Pasted image 20251219203159.png]]
+![[Pasted image 20251219203209.png]]
