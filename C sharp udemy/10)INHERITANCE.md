@@ -9,4 +9,6 @@
 - even if the same field in used in the parent's class, and the childs class , each of them, will have its own sets of values
 - ![[Pasted image 20251220204308.png]]
 - is this same for every programming language
-- 
+
+
+![[Pasted image 20251220212445.png]]
