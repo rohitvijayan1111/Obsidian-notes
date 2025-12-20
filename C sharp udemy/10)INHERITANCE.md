@@ -12,3 +12,12 @@
 
 
 ![[Pasted image 20251220212445.png]]
+
+
+
+![[Pasted image 20251220212604.png]]
+![[Pasted image 20251220212734.png]]
+
+![[Pasted image 20251220213130.png]]
+
+takes notes from the video (107)
