@@ -29,4 +29,7 @@ Long answer: **they _can_, but usually _shouldn’t_** — and here’s the nuan
 
 > **Non-controller classes should NOT coordinate or depend on other domain classes.**  
 > That coordination belongs in a **Controller / Orchestrator**.
-> 
+
+
+
+![[Pasted image 20251220180924.png]]
