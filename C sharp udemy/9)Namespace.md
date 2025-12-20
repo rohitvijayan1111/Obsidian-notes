@@ -33,3 +33,19 @@ Long answer: **they _can_, but usually _shouldn’t_** — and here’s the nuan
 
 
 ![[Pasted image 20251220180924.png]]
+
+
+
+
+# ENUM DATATYPE
+
+![[Pasted image 20251220193107.png]]
+![[Pasted image 20251220193125.png]]
+
+![[Pasted image 20251220193135.png]]
+![[Pasted image 20251220193328.png]]
+![[Pasted image 20251220193406.png]]
+
+
+
+# magic number anti-pattern
