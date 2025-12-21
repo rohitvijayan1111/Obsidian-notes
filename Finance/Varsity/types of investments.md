@@ -88,3 +88,6 @@ While the Sensex and Nifty represent the broader markets, certain indices repres
 8. Once the order is completed, you can view the trade details in the trade book. In the case of a market order, you can view the exact trade price by accessing the trade book.
 9. The market watch enables you to see bids and offer prices.
 10. The bid & offer prices refer to the price at which you can buy and sell shares. The top 5 bid and offer prices are displayed in the market depth window by default.
+
+
+https://zerodha.com/varsity/chapter/key-events-and-their-impact-on-markets/
