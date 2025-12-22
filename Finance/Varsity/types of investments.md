@@ -91,3 +91,66 @@ While the Sensex and Nifty represent the broader markets, certain indices repres
 
 
 https://zerodha.com/varsity/chapter/key-events-and-their-impact-on-markets/
+## 📌 Key Events & Indicators to Track
+
+- **Monetary Policy (RBI meetings)**
+    
+    - Track **Repo Rate, Reverse Repo Rate, CRR** decisions by Reserve Bank of India
+        
+    - Rate hikes → slow growth, hurt markets
+        
+    - Rate cuts → boost liquidity, help growth
+        
+    - Interest-rate sensitive sectors react first (banks, autos, real estate)
+        
+- **Inflation Data**
+    
+    - Watch **CPI** (consumer inflation) & **WPI** (wholesale inflation)
+        
+    - CPI matters more for RBI decisions
+        
+    - Released monthly by Ministry of Statistics and Programme Implementation
+        
+    - High inflation → negative for markets, pressure to raise rates
+        
+- **Index of Industrial Production (IIP)**
+    
+    - Measures industrial activity
+        
+    - Rising IIP → economic strength (positive for markets)
+        
+    - Falling IIP → slowdown, may force rate cuts
+        
+- **Purchasing Managers’ Index (PMI)**
+    
+    - Survey-based business sentiment indicator
+        
+    - **Above 50** → expansion (positive)
+        
+    - **Below 50** → contraction (negative)
+        
+- **Union Budget (Annual Event)**
+    
+    - Major policy, tax, and reform announcements
+        
+    - Impacts specific sectors and index heavyweights
+        
+    - Markets can be highly volatile on budget day
+        
+- **Corporate Earnings (Quarterly)**
+    
+    - Compare **actual results vs street expectations**
+        
+    - Better than expected → stock rises
+        
+    - Worse than expected → stock falls
+        
+    - Guidance matters a lot (e.g., Infosys announcements)
+        
+- **Non-Financial / Global Events**
+    
+    - Wars, pandemics, elections, geopolitical tensions
+        
+    - Can affect commodities, energy prices, supply chains
+        
+    - Global events impact global markets; local events impact domestic markets
