@@ -492,3 +492,14 @@ Because:
 - Git cannot merge this automatically
     
 - You will face `non-fast-forward` errors
+
+
+
+# removing a file that is already getting tracked by git
+# 🧠 Important Note
+
+If a file was **already tracked by Git**, adding it to `.gitignore` won’t stop Git from tracking it.
+
+You must untrack it manually:
+
+`git rm --cached filename`
