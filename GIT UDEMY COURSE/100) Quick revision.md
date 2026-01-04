@@ -35,3 +35,17 @@ git add folder/        # add folder
 `git commit -am "message"`
 
 ⚠ Works only for files previously tracked (not new ones).
+
+
+q)if i commit everything that is in my stagging area, will the stagging area be empty? if so how will git status compare the working directory and the stagg area, it would show complete difference right
+
+Yes. After you commit, the staging area becomes empty _relative to HEAD_.  
+And no — `git status` will NOT show a “complete difference.”
+
+
+- `git status` always reports **relative to the current branch**
+- If you see:
+
+`HEAD detached at a3f2e9c`
+
+➡ You are **not on a branch**, HEAD points directly to a commit.
