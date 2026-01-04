@@ -1,4 +1,4 @@
-````markdown
+
 # Git Complete Guide
 
 ## Table of Contents
