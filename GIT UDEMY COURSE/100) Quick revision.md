@@ -49,3 +49,6 @@ And no — `git status` will NOT show a “complete difference.”
 `HEAD detached at a3f2e9c`
 
 ➡ You are **not on a branch**, HEAD points directly to a commit.
+
+
+# Understanding of Git St
