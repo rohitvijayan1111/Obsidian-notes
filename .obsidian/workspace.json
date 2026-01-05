@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Real World Bug Hunting/HTTP parameter pollution.md",
+                "file": "Finance/Varsity/Fundamental Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTP parameter pollution"
+              "title": "Fundamental Analysis"
             }
           }
         ]
@@ -218,8 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,13 +238,18 @@
   },
   "active": "5baff3e616050f16",
   "lastOpenFiles": [
-    "Security/Resources/Untitled.md",
+    "assets/images/Pasted image 20260105061712.png",
+    "assets/images/Pasted image 20260105061554.png",
+    "assets/images/Pasted image 20260105061348.png",
+    "Finance/Varsity/types of investments.md",
+    "Finance/Varsity/Fundamental Analysis.md",
+    "assets/images/Pasted image 20260104220211.png",
     "Security/Real World Bug Hunting/HTTP parameter pollution.md",
+    "Security/Resources/Untitled.md",
     "Security/Real World Bug Hunting",
     "Security/Resources/Web application security.md",
     "GIT UDEMY COURSE/100) Quick revision.md",
     "GIT UDEMY COURSE/1) Intro.md",
-    "Finance/Varsity/types of investments.md",
     "C sharp udemy/8)OOPS.md",
     "C sharp udemy/10)INHERITANCE.md",
     "C sharp udemy/9)Namespace.md",
@@ -257,9 +261,6 @@
     "assets/images/Pasted image 20251220204308.png",
     "assets/images/Pasted image 20251220203739.png",
     "assets/images/Pasted image 20251220195134.png",
-    "assets/images/Pasted image 20251220195108.png",
-    "assets/images/Pasted image 20251220193406.png",
-    "assets/images/Pasted image 20251220193328.png",
     "Finance/Varsity",
     "Motivatio/Videos.md",
     "C sharp udemy/7)List.md",
@@ -278,8 +279,6 @@
     "Interview prep/Leetcode revision/Binary search.md",
     "Accountability/Untitled.md",
     "Accountability/ask the how,why.md",
-    "AWS/DVA/EFS.md",
-    "Leetcode/Array/Article on counting.md",
     "Interview prep/Leetcode revision",
     "GIT UDEMY COURSE",
     "AWS/DVA",

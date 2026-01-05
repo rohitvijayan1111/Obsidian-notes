@@ -1,4 +1,4 @@
-
+![[Pasted image 20260104220211.png]]
 
 # ###  Fixed Income Instruments
 1. Bank’s Fixed deposits
