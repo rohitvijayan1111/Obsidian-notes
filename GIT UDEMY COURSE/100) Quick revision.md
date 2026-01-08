@@ -503,3 +503,30 @@ If a file was **already tracked by Git**, adding it to `.gitignore` won’t stop
 You must untrack it manually:
 
 `git rm --cached filename`
+
+
+# GIT Branches
+
+# 🚀 Basic Branch Commands
+
+## ✔ See all branches
+
+`git branch`
+
+## ✔ Create a branch
+
+`git branch feature-login`
+
+## ✔ Switch to a branch
+
+`git checkout feature-login`
+
+## ✔ Create + switch (most used)
+
+`git checkout -b feature-login`
+
+## ✔ Delete a branch (after merge)
+
+`git branch -d feature-login`
+
+
