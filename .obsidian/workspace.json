@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GIT UDEMY COURSE/Git merge.md",
+                "file": "tryhackme/Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git merge"
+              "title": "Linux"
             }
           }
         ],
@@ -267,8 +267,9 @@
   },
   "active": "cffa3f115449e6a5",
   "lastOpenFiles": [
-    "GIT UDEMY COURSE/100) Quick revision.md",
     "GIT UDEMY COURSE/Git merge.md",
+    "tryhackme/HACKER101.md",
+    "GIT UDEMY COURSE/100) Quick revision.md",
     "GIT UDEMY COURSE/Undoing changes and time travelling.md",
     "GIT UDEMY COURSE/1) Intro.md",
     "Finance/Varsity/Fundamental Analysis.md",
