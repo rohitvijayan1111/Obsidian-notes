@@ -23,6 +23,17 @@ public static string DescribeDay(int dayNumber)
 
 the above possible in modern day c#
 
+class Test
+{
+    static int x;
+
+    static Test()
+    {
+        x = 10;
+    }
+}
+
+
 
 ![[Pasted image 20251216214015.png]]
 
@@ -64,17 +75,12 @@ https://docs.google.com/document/d/1EsRcNv33QH9Wi2B1uAmkvwHq_p4NKw0QtijpxM0VlqM/
 
 
 # break
-
-
 - stops the execution of the loop
-
 # continue
 - skips the current iterations of the loop and moves to the next iteration
 # .All method
-
-
 ![[Pasted image 20251217123837.png]]
-
+The **`.All()`** method is a **LINQ** extension method used to check **whether every element in a collection satisfies a condition**.
 # Loop performance optimization
 
 - try to break, when ur operation has been done
