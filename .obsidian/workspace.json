@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C sharp udemy/Memory allocation of Collections.md",
+                "file": "C sharp udemy/Dictionary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Memory allocation of Collections"
+              "title": "Dictionary"
             }
           }
         ],
@@ -268,8 +268,11 @@
   },
   "active": "cffa3f115449e6a5",
   "lastOpenFiles": [
-    "C sharp udemy/Array memory alloc.md",
+    "C sharp udemy/Exception handling.md",
+    "C sharp udemy/Dictionary.md",
+    "C sharp udemy/Untitled",
     "C sharp udemy/Memory allocation of Collections.md",
+    "C sharp udemy/Array memory alloc.md",
     "C sharp udemy/Working of String.md",
     "C sharp udemy/Working of Stack ANd Queue.md",
     "C sharp udemy/6)Array.md",
@@ -297,8 +300,6 @@
     "Security/Real World Bug Hunting",
     "Security/Resources/Web application security.md",
     "C sharp udemy/10)INHERITANCE.md",
-    "C sharp udemy/9)Namespace.md",
-    "The winner mindest.md",
     "assets/images/Pasted image 20251220213130.png",
     "assets/images/Pasted image 20251220212734.png",
     "assets/images/Pasted image 20251220212604.png",
@@ -313,7 +314,6 @@
     "GIT UDEMY COURSE",
     "AWS/DVA",
     "AWS/CCP",
-    "Interview prep/HTML",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
