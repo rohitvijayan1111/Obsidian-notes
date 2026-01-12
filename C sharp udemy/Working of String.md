@@ -1,3 +1,4 @@
+STRING ONLY DOES VALUE BASED REFERENCE
 
 Short answer: **No — the `string` variable itself does _not_ store the address of the first character.**  
 But you’re _very close_. Let’s make the distinction crystal clear.
