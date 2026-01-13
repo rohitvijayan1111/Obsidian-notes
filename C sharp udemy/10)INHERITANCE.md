@@ -13,7 +13,11 @@
 
 ![[Pasted image 20251220212445.png]]
 
-
+NOTE: 
+below the try to do follow:
+```
+the ingredient class doesnt have the field Name so showing error
+```
 
 ![[Pasted image 20251220212604.png]]
 ![[Pasted image 20251220212734.png]]
