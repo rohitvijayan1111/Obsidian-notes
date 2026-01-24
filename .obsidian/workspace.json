@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Motivatio/Videos.md",
+                "file": "AWS/DVA/EBS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Videos"
+              "title": "EBS"
             }
           }
         ],
@@ -282,8 +282,9 @@
   },
   "active": "789760630e9731c2",
   "lastOpenFiles": [
-    "Interview tips/TIPS.md",
+    "tryhackme/ONESHOT/Linux.md",
     "Motivatio/Videos.md",
+    "Interview tips/TIPS.md",
     "Security/Real World Bug Hunting/HTTP parameter pollution.md",
     "Security/Resources/Web application security.md",
     "Security/Resources/How to begin.md",
@@ -303,7 +304,6 @@
     "Topics to cover.md",
     "Untitled.md",
     "Untitled 1.md",
-    "tryhackme/ONESHOT/Linux.md",
     "C sharp udemy/2222222222222.md",
     "assets/images/Pasted image 20260116211025.png",
     "C sharp udemy/8)OOPS.md",
