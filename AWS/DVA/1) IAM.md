@@ -43,6 +43,9 @@ PROCESS OF CREATING AN USER:
 CREATING A GROUP:
 - GROUP NAME, POLICY 
 
+MFA: 
+acount > security credential
+
 Permission Boundary:
 A **permissions boundary** says:
 
