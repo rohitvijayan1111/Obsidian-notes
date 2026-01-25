@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/DVA/EBS.md",
+                "file": "AWS/DVA/1) IAM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EBS"
+              "title": "1) IAM"
             }
           }
         ],
@@ -282,6 +282,7 @@
   },
   "active": "789760630e9731c2",
   "lastOpenFiles": [
+    "AWS/DVA/EBS.md",
     "tryhackme/ONESHOT/Linux.md",
     "Motivatio/Videos.md",
     "Interview tips/TIPS.md",
@@ -309,7 +310,6 @@
     "C sharp udemy/8)OOPS.md",
     "tryhackme/How The Web Works.md",
     "tryhackme/ONESHOT",
-    "C sharp udemy/Naming Conventions.md",
     "C sharp udemy/Untitled",
     "assets/images/Pasted image 20260105061712.png",
     "assets/images/Pasted image 20260105061554.png",

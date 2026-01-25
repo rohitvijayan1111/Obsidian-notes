@@ -2,6 +2,7 @@
 Topics Covered:
 * Aws Regions, Az, AWS Points of Presence (Edge Locations)
 
+
 # IAM
 
 AWS Account
@@ -31,6 +32,16 @@ principal -> For whom and all this policy is applied   // (Only in resource-base
 resource: -> policy on which resource
 }}
 ```
+
+
+PROCESS OF CREATING AN USER:
+- SEARCH IAM
+- CREATE USER - ENTER USER NAME
+- SET PASSWORD -AUTOGENERATE,CUSTOM PASSWORD,USER MUST RESET PASSWORD AT NEXT SIGNIN
+- CAN USER TO GROUP AND POLICIES
+
+CREATING A GROUP:
+- GROUP NAME, POLICY 
 
 Permission Boundary:
 A **permissions boundary** says:
