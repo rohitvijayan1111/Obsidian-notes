@@ -1,0 +1,5 @@
+- start early
+- set a goal - invest accordingly
+- research about the goal
+- do SIP
+- find tax efficient investment 

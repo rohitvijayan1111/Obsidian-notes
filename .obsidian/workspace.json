@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/DVA/1) IAM.md",
+                "file": "Finance/1)TIPS ON PERSONAL FINANCE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) IAM"
+              "title": "1)TIPS ON PERSONAL FINANCE"
             }
           }
         ],
@@ -282,6 +282,8 @@
   },
   "active": "789760630e9731c2",
   "lastOpenFiles": [
+    "AWS/DVA/1) IAM.md",
+    "Finance/1)TIPS ON PERSONAL FINANCE.md",
     "AWS/DVA/EBS.md",
     "tryhackme/ONESHOT/Linux.md",
     "Motivatio/Videos.md",
@@ -307,8 +309,6 @@
     "Untitled 1.md",
     "C sharp udemy/2222222222222.md",
     "assets/images/Pasted image 20260116211025.png",
-    "C sharp udemy/8)OOPS.md",
-    "tryhackme/How The Web Works.md",
     "tryhackme/ONESHOT",
     "C sharp udemy/Untitled",
     "assets/images/Pasted image 20260105061712.png",
