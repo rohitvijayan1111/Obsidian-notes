@@ -112,3 +112,43 @@ If you are using a float, then it will print a maximum of 7 digits, if you are u
 - Default value - default(int)
 
 ery built-in data type has a default value. All the numeric type has 0 as the default value, boolean has false, and char has ‘\0’ as the default value
+
+
+##### **Literals in C#**
+
+The Literals in C# are the fixed values (or hard-coded values) given to your variable and these values cannot be modified during the execution of the program.
+
+1. The fixed values are called Literals in C#.
+2. Literal is a value that is used by the variables.
+
+![[Pasted image 20260210075040.png]]
+
+![[Pasted image 20260210075421.png]]
+A suffix can also be used with the integer literals like U or u are used for unsigned numbers while l or L are used for long numbers. For a better understanding, please have a look at the following example.
+
+
+> Reason why we add f and m to float and decimal number
+![[Pasted image 20260210075634.png]]
+
+
+## representation of char -> can be in alphabets, unicode , \n (escape char)
+
+
+![[Pasted image 20260210075937.png]]
+
+
+# Type casting
+
+##### **What is Type Casting in C#?**
+
+In simple words, we can say that Type Casting or Type Conversion in C# is the process to change one data type value into another data type.
+
+
+##### **Implicit Conversion or Implicit Type Casting / Automatic Type Conversion in C#**
+
+The Implicit Conversion or Implicit Type Casting in C# is automatically done by the compiler and in this case, there will be no data loss. Here, the typecasting or type conversion is done from a smaller data type to a larger data type. This type of type conversion is safe.
+
+**Implicit Type Casting happens when:**
+
+1. The two data types are compatible.
+2. When we assign a value of a smaller data type to a bigger data type.
