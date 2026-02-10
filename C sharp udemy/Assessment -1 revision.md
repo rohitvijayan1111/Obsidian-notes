@@ -78,3 +78,9 @@ Methods:
 
 
 Convert.ToInt32() -> used to convert from various types into int (parseInt only string input). But For string input Convert.ToInt32() internally uses .parseInt
+
+
+# Datatypes
+
+
+So, the byte data type is good if you are reading the raw data or binary data, or the data without doing any kind of transformations or encoding. And char data type is good when you want to represent or show multilingual data or Unicode data to the end user.
