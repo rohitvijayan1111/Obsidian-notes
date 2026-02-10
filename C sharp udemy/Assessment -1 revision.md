@@ -82,5 +82,27 @@ Convert.ToInt32() -> used to convert from various types into int (parseInt only 
 
 # Datatypes
 
+- byte (1 byte) - range (0 to 255) (By default unsigned, if need signed use sbyte, can store character(ASCII), byte array)
 
+- Char (2 bytes) - used to store character. Follows UTF-16
+- Short (2 bytes) or Convert.Int16 
+- int (4 bytes) ot Convert.Int32
+- long (8 bytes) - Convert.Int64
+If need usigned use uChar, etc
 So, the byte data type is good if you are reading the raw data or binary data, or the data without doing any kind of transformations or encoding. And char data type is good when you want to represent or show multilingual data or Unicode data to the end user.
+
+
+##### **When to use Signed and when to use unsigned data type in C#?**
+
+See, if you want to store only positive numbers, then it is recommended to use an unsigned data type, why because with a signed **short data type** the maximum positive number that you can store is **32767** but with unsigned **ushort** data type the maximum positive number you can store is **65535**.
+
+##### **Comparison between Float, Double, and Decimal:**
+
+###### **Size:**
+
+1. Float uses 4 Bytes or 32 bits to represent data.
+2. Double uses 8 Bytes or 64 bits to represent data.
+3. Decimal uses 16 Bytes or 128 bits to represent data.
+###### **Example to Understand Accuracy:**
+
+If you are using a float, then it will print a maximum of 7 digits, if you are using double, maximum it will print 15 digits and if you are using a decimal maximum, it will print 29 digits.
