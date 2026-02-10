@@ -106,3 +106,9 @@ See, if you want to store only positive numbers, then it is recommended to use a
 ###### **Example to Understand Accuracy:**
 
 If you are using a float, then it will print a maximum of 7 digits, if you are using double, maximum it will print 15 digits and if you are using a decimal maximum, it will print 29 digits.
+
+- Size of a datatype - sizeof(int)
+- Max and min value - int.MaxValue, int.MinValue
+- Default value - default(int)
+
+ery built-in data type has a default value. All the numeric type has 0 as the default value, boolean has false, and char has ‘\0’ as the default value
