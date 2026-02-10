@@ -46,3 +46,35 @@ CLR stands for Common Language Runtime and it is the core component under the .
 	- .NET or .NET - cross platform
 	- Xamarian - supports mobile application both android and ios
 
+###### **C# is Compiled and Interpreted:**
+
+We know a programming language is either compiled or interpreted. But C# combines both approaches. That’s why C# is called a two-stage system.
+
+First C# compiler CSC translates source code into an intermediate language code known as MSIL (Microsoft Intermediate Language) or CIL (Common Intermediate Language) code. But these MSIL or CIL or IL codes are not machine instructions. So, in the second stage, these MSIL or CIL, or IL codes are interpreted by the C# interpreter (One Component of CLR called JIT- Just in Time Compiler). As a result, machine instructions will be generated which are directly executed by the machine. Hence, we are saying C# is both interpreted and compiled language.
+
+# structure of a program
+
+- namespace (using system, and namespace to hold classes)
+- there must be a startup class to hold the main function.
+
+
+# Console class
+
+- used for IO
+
+PROPERTIES:
+
+- Foregroundcolor
+- Backgroundcolor
+- Title.
+
+Methods:
+- Beep()
+- Read() -> reads a character and returns ascii
+- ReadLine()
+- Write()
+- WriteLine()
+- ReadKey()
+
+
+Convert.ToInt32() -> used to convert from various types into int (parseInt only string input). But For string input Convert.ToInt32() internally uses .parseInt
