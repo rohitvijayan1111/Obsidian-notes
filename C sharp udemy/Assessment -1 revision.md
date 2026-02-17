@@ -100,7 +100,6 @@ See, if you want to store only positive numbers, then it is recommended to use a
 ##### **Comparison between Float, Double, and Decimal:**
 
 ###### **Size:**
-
 1. Float uses 4 Bytes or 32 bits to represent data.
 2. Double uses 8 Bytes or 64 bits to represent data.
 3. Decimal uses 16 Bytes or 128 bits to represent data.
