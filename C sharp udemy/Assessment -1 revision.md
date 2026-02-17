@@ -88,6 +88,7 @@ Convert.ToInt32() -> used to convert from various types into int (parseInt only 
 - Short (2 bytes) or Convert.Int16 
 - int (4 bytes) ot Convert.Int32
 - long (8 bytes) - Convert.Int64
+
 If need usigned use uChar, etc
 So, the byte data type is good if you are reading the raw data or binary data, or the data without doing any kind of transformations or encoding. And char data type is good when you want to represent or show multilingual data or Unicode data to the end user.
 
