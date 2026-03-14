@@ -525,3 +525,392 @@ With SafeFileHandle:
 GC or Dispose will release the handle safely
 
 
+
+# METHODS
+`FileStream` is a **byte-based stream** used to read and write files. It inherits from the base class **`Stream`**, so many of its methods actually come from `Stream`.
+
+We can group the important methods into **reading, writing, positioning, buffering, and lifecycle methods**.
+
+---
+
+# 1. Read Methods (Reading Bytes)
+
+These methods read **raw bytes** from the file.
+
+### `Read()`
+
+```csharp
+int bytesRead = fs.Read(buffer, offset, count);
+```
+
+Parameters:
+
+```text
+buffer → byte array to store data
+offset → start index in the array
+count  → number of bytes to read
+```
+
+Example:
+
+```csharp
+byte[] buffer = new byte[100];
+
+using FileStream fs = new FileStream("data.txt", FileMode.Open);
+
+int bytesRead = fs.Read(buffer, 0, buffer.Length);
+```
+
+Returns:
+
+```text
+Number of bytes actually read
+0 → end of file
+```
+
+---
+
+### `ReadByte()`
+
+Reads **one byte at a time**.
+
+```csharp
+int value = fs.ReadByte();
+```
+
+Returns:
+
+```text
+0–255 → byte value
+-1    → end of file
+```
+
+Example:
+
+```csharp
+int b;
+
+while((b = fs.ReadByte()) != -1)
+{
+    Console.Write((char)b);
+}
+```
+
+---
+
+### `ReadAsync()`
+
+Asynchronous read.
+
+```csharp
+await fs.ReadAsync(buffer, offset, count);
+```
+
+Used in **high-performance or UI applications**.
+
+---
+
+# 2. Write Methods (Writing Bytes)
+
+These methods write **bytes to the file**.
+
+### `Write()`
+
+```csharp
+fs.Write(buffer, offset, count);
+```
+
+Example:
+
+```csharp
+byte[] data = System.Text.Encoding.UTF8.GetBytes("Hello");
+
+using FileStream fs = new FileStream("data.txt", FileMode.Create);
+
+fs.Write(data, 0, data.Length);
+```
+
+---
+
+### `WriteByte()`
+
+Writes **a single byte**.
+
+```csharp
+fs.WriteByte(65);
+```
+
+This writes ASCII `'A'`.
+
+---
+
+### `WriteAsync()`
+
+Asynchronous write.
+
+```csharp
+await fs.WriteAsync(buffer, 0, buffer.Length);
+```
+
+---
+
+# 3. Positioning Methods
+
+These methods control the **file pointer**.
+
+---
+
+### `Seek()`
+
+Moves the file position.
+
+```csharp
+fs.Seek(offset, SeekOrigin.Begin);
+```
+
+Example:
+
+```csharp
+fs.Seek(0, SeekOrigin.Begin);
+```
+
+Possible origins:
+
+```text
+SeekOrigin.Begin
+SeekOrigin.Current
+SeekOrigin.End
+```
+
+---
+
+### `Position` Property
+
+Gets or sets the current position.
+
+```csharp
+long pos = fs.Position;
+
+fs.Position = 10;
+```
+
+---
+
+# 4. File Size Methods
+
+### `Length`
+
+Returns file size.
+
+```csharp
+long size = fs.Length;
+```
+
+---
+
+### `SetLength()`
+
+Changes file size.
+
+```csharp
+fs.SetLength(1000);
+```
+
+This may:
+
+- truncate the file
+    
+- expand the file
+    
+
+---
+
+# 5. Buffer and Flush Methods
+
+### `Flush()`
+
+Writes buffered data to the OS.
+
+```csharp
+fs.Flush();
+```
+
+Flow:
+
+```text
+FileStream buffer → OS cache
+```
+
+---
+
+### `FlushAsync()`
+
+Async version.
+
+```csharp
+await fs.FlushAsync();
+```
+
+---
+
+# 6. Closing and Cleanup Methods
+
+### `Close()`
+
+Closes the file stream.
+
+```csharp
+fs.Close();
+```
+
+---
+
+### `Dispose()`
+
+Releases resources.
+
+```csharp
+fs.Dispose();
+```
+
+`Close()` internally calls `Dispose()`.
+
+Best practice:
+
+```csharp
+using FileStream fs = new FileStream("data.txt", FileMode.Open);
+```
+
+---
+
+# 7. Locking Methods
+
+These interact with OS file locking.
+
+### `Lock()`
+
+Locks part of a file.
+
+```csharp
+fs.Lock(position, length);
+```
+
+Example:
+
+```csharp
+fs.Lock(0, 100);
+```
+
+Prevents other processes from accessing that region.
+
+---
+
+### `Unlock()`
+
+Releases the lock.
+
+```csharp
+fs.Unlock(0, 100);
+```
+
+---
+
+# 8. Important Properties
+
+### `CanRead`
+
+```csharp
+fs.CanRead
+```
+
+Returns `true` if reading is allowed.
+
+---
+
+### `CanWrite`
+
+```csharp
+fs.CanWrite
+```
+
+---
+
+### `CanSeek`
+
+```csharp
+fs.CanSeek
+```
+
+Indicates whether the stream supports seeking.
+
+---
+
+### `Name`
+
+Returns file path.
+
+```csharp
+string name = fs.Name;
+```
+
+---
+
+# 9. Constructor Variants
+
+Typical constructor:
+
+```csharp
+FileStream(
+    string path,
+    FileMode mode,
+    FileAccess access,
+    FileShare share,
+    int bufferSize
+)
+```
+
+Example:
+
+```csharp
+FileStream fs = new FileStream(
+    "data.txt",
+    FileMode.OpenOrCreate,
+    FileAccess.ReadWrite,
+    FileShare.Read,
+    4096
+);
+```
+
+---
+
+# 10. Quick Summary Table
+
+|Category|Methods|
+|---|---|
+|Reading|`Read()`, `ReadByte()`, `ReadAsync()`|
+|Writing|`Write()`, `WriteByte()`, `WriteAsync()`|
+|Position|`Seek()`, `Position`|
+|File size|`Length`, `SetLength()`|
+|Buffer|`Flush()`, `FlushAsync()`|
+|Lifecycle|`Close()`, `Dispose()`|
+|Locking|`Lock()`, `Unlock()`|
+
+---
+
+# Final Mental Model
+
+`FileStream` mainly provides **four core capabilities**:
+
+```text
+1. Read bytes
+2. Write bytes
+3. Move the file pointer
+4. Manage buffering and OS handle
+```
+
+Everything else supports these core operations.
+
+---
+
+If you'd like, I can also show you **the 5 most commonly used FileStream patterns in real applications** (like copying files, appending logs, reading large files efficiently, etc.).
+
