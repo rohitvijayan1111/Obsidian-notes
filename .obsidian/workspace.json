@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C sharp udemy/Files/Stream Reader and Stream Writer.md",
+                "file": "C sharp udemy/Files/File class.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stream Reader and Stream Writer"
+              "title": "File class"
             }
           }
         ],
@@ -296,8 +296,9 @@
   },
   "active": "f1125f16c87630aa",
   "lastOpenFiles": [
-    "C sharp udemy/Files/File Stream.md",
     "C sharp udemy/Files/Stream Reader and Stream Writer.md",
+    "C sharp udemy/Files/File class.md",
+    "C sharp udemy/Files/File Stream.md",
     "assets/images/Pasted image 20260314104125.png",
     "assets/images/Pasted image 20260314104114.png",
     "assets/images/Pasted image 20260314104104.png",
@@ -330,7 +331,6 @@
     "Linkedin search.md",
     "2025-05-02.md",
     "2025-05-14.md",
-    "Minimum path, time etc.md",
     "assets/images/Pasted image 20260116211025.png",
     "tryhackme/ONESHOT",
     "assets/images/Pasted image 20260105061712.png",
