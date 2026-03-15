@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C sharp udemy/Files/TextReadwe.md",
+                "file": "C sharp udemy/Files/FileInfo and DirectoryInfo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TextReadwe"
+              "title": "FileInfo and DirectoryInfo"
             }
           }
         ],
@@ -310,8 +310,12 @@
   },
   "active": "d7f81980de0041f7",
   "lastOpenFiles": [
-    "C sharp udemy/Files/Stream Reader and Stream Writer.md",
+    "assets/images/Pasted image 20260315073052.png",
+    "C sharp udemy/Files/StringReader and StringWriter.md",
+    "C sharp udemy/Files/FileInfo and DirectoryInfo.md",
+    "C sharp udemy/Untitled.md",
     "C sharp udemy/Files/TextReadwe.md",
+    "C sharp udemy/Files/Stream Reader and Stream Writer.md",
     "C sharp udemy/Files/File Stream.md",
     "C sharp udemy/Files/File class.md",
     "assets/images/Pasted image 20260314104125.png",
@@ -341,10 +345,6 @@
     "Security/Resources/CTF.md",
     "Security/THM/to cover.md",
     "tryhackme/How Websites Work.md",
-    "tryhackme/Linux.md",
-    "tryhackme/Networking lesson.md",
-    "Linkedin search.md",
-    "2025-05-02.md",
     "assets/images/Pasted image 20260116211025.png",
     "tryhackme/ONESHOT",
     "assets/images/Pasted image 20260105061712.png",
