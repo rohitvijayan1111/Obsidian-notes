@@ -1,3 +1,19 @@
+
+##### **Points to Remember:**
+
+1. TextWriter is an abstract class belonging to the System.IO namespace.
+2. It is used to write a sequential series of characters into a file.
+3. It is the base class of StreamWriter and StringWriter which is used to write characters to streams and strings respectively.
+4. By default, it is not thread-safe.
+5. As it is an abstract class, its object cannot be created. Any class implementing TextWriter must minimally implement its Write(Char) method to create its useful instance.
+Like StreamWriter there are also other classes that are derived from the TextWriter class and provide the implementation for the members of TextWriter. The following is the list of derived classes with the help of which we can work with TextWriter:
+
+6. **IndentedTextWriter**: It is used to insert a tab string and to track the current indentation level.
+7. **StreamWriter**: It is used to write characters to a stream in a particular encoding.
+8. **StringWriter**: It is used to write information to a string. The information is stored in an underlying StringBuilder.
+9. **HttpWriter**: It provides an object of TextWriter class that can be accessed through the intrinsic HttpResponse object.
+10. **HtmlTextWriter**: It is used to write markup characters and text to an ASP.NET server control output stream.
+
 Understanding **`TextReader` and `TextWriter`** is important because they are the **foundation of all text-based I/O in .NET**. Classes like **`StreamReader`, `StreamWriter`, `StringReader`, and `StringWriter`** are built on top of them.
 
 We’ll break it down step-by-step so you see **why they exist, how they work internally, and how other classes derive from them**.
@@ -82,15 +98,9 @@ Using `TextReader` solves this.
 void Print(TextReader reader)
 ```
 
-Now it works with:
 
-```
-StreamReader
-StringReader
-custom readers
-```
 
-This is **polymorphism**.
+
 
 ---
 
