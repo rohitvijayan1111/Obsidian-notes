@@ -96,7 +96,7 @@ C# uses the `ThreadPriority` enum with five levels:
 |`Highest`|4|Scheduled most frequently|
 
 ---
-
+![[Pasted image 20260326075447.png]]
 ### Basic Usage
 
 ```csharp
@@ -538,7 +538,7 @@ await SomeOperationAsync().ConfigureAwait(false);
 
 ---
 
-### 3. AsyncLocal<T> — The Most Important Flow Mechanism
+### 3. ```AsyncLocal<T>``` — The Most Important Flow Mechanism
 
 `AsyncLocal<T>` is the modern, correct way to flow ambient data across async operations. It is the backbone of how frameworks like ASP.NET Core flow request data, correlation IDs, and more.
 
@@ -744,10 +744,761 @@ Thread A                     Thread Pool
     │  _asyncLocal = "REQ-001"    │  ← Thread A unaffected
 ```
 
----
 
 ### Key Takeaways
 
 `ExecutionContext` is the **invisible environment** that travels with every unit of async work in .NET. It ensures that identity, permissions, diagnostic data, and ambient values are preserved transparently across thread boundaries, async continuations, and parallel tasks — without you having to manually pass them through every method signature.
 
 The four things to firmly understand are: it **flows automatically**, it uses **copy-on-write** for efficiency, child modifications **never affect parents**, and it can be **suppressed** when isolation is needed. Everything else in async programming builds on these four behaviors.
+
+
+# New thread()
+
+## `new Thread()` in C# — Complete Guide
+
+---
+
+### What is `new Thread()`?
+
+`new Thread()` explicitly creates a **dedicated OS-level thread** managed directly by you — not by the thread pool. Unlike `Task.Run()` which borrows a pool thread, `new Thread()` allocates a brand new thread with its own stack, registers, and OS resources.
+
+```
+new Thread()                    Thread Pool (Task.Run)
+     │                                │
+     ▼                                ▼
+OS allocates new thread         Reuses existing thread
+~1MB stack allocated            No allocation
+You manage lifecycle            CLR manages lifecycle
+Full control                    Limited control
+Expensive to create             Cheap to use
+```
+
+---
+
+### Thread Constructor Overloads
+
+There are four ways to construct a thread:
+
+csharp
+
+```csharp
+// 1. ThreadStart delegate — no parameter
+Thread t1 = new Thread(new ThreadStart(MyMethod));
+
+// 2. Lambda — no parameter (most common)
+Thread t2 = new Thread(() => Console.WriteLine("Hello"));
+
+// 3. ParameterizedThreadStart — accepts one object parameter
+Thread t3 = new Thread(new ParameterizedThreadStart(MyMethodWithParam));
+
+// 4. Lambda with parameter via closure (preferred over #3)
+string data = "Hello";
+Thread t4 = new Thread(() => Console.WriteLine(data));
+```
+
+---
+
+### Core Properties of Thread
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        Thread t = new Thread(() => Thread.Sleep(5000));
+
+        // --- Identity ---
+        t.Name = "WorkerThread";           // Name for debugging
+        int id = t.ManagedThreadId;        // Unique CLR thread ID
+
+        // --- Type ---
+        t.IsBackground = true;             // Background vs Foreground
+        bool isPool = t.IsThreadPoolThread;// Is it a pool thread?
+
+        // --- Priority ---
+        t.Priority = ThreadPriority.Normal;// Lowest/BelowNormal/Normal/AboveNormal/Highest
+
+        // --- State ---
+        bool isAlive = t.IsAlive;          // Has started and not terminated
+        ThreadState state = t.ThreadState; // Unstarted/Running/Stopped/etc.
+
+        t.Start();
+
+        Console.WriteLine($"Name         : {t.Name}");
+        Console.WriteLine($"ID           : {t.ManagedThreadId}");
+        Console.WriteLine($"Is Alive     : {t.IsAlive}");
+        Console.WriteLine($"Is Background: {t.IsBackground}");
+        Console.WriteLine($"Is Pool      : {t.IsThreadPoolThread}");
+        Console.WriteLine($"Priority     : {t.Priority}");
+        Console.WriteLine($"State        : {t.ThreadState}");
+    }
+}
+```
+
+---
+
+### Foreground vs Background Threads
+
+This is one of the most important distinctions in manual thread management:
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        // FOREGROUND thread (default)
+        // Process will NOT exit until this thread finishes
+        Thread foreground = new Thread(() =>
+        {
+            Thread.Sleep(5000);
+            Console.WriteLine("Foreground done");
+        });
+        foreground.IsBackground = false; // default — not needed explicitly
+
+        // BACKGROUND thread
+        // Process CAN exit even if this thread is still running
+        Thread background = new Thread(() =>
+        {
+            Thread.Sleep(5000);
+            Console.WriteLine("Background done"); // may never print!
+        });
+        background.IsBackground = true;
+
+        foreground.Start();
+        background.Start();
+
+        Console.WriteLine("Main thread exiting...");
+        // Process waits for foreground thread
+        // Background thread is killed when process exits
+    }
+}
+```
+
+||Foreground|Background|
+|---|---|---|
+|Default?|Yes|No — must set explicitly|
+|Keeps process alive?|Yes|No|
+|Use case|Critical work|Daemon/service work|
+|Killed on exit?|No|Yes|
+
+---
+
+### All Thread Methods — In Depth
+
+---
+
+#### `Start()` — Begins thread execution
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        // Start with no argument
+        Thread t1 = new Thread(() =>
+        {
+            Console.WriteLine($"t1 running on thread {Thread.CurrentThread.ManagedThreadId}");
+        });
+        t1.Start();
+
+        // Start with a parameter (ParameterizedThreadStart)
+        Thread t2 = new Thread((param) =>
+        {
+            Console.WriteLine($"t2 received: {param}");
+        });
+        t2.Start("Hello from Main!");
+
+        // Preferred: capture via closure — strongly typed
+        string message = "Closure data";
+        Thread t3 = new Thread(() =>
+        {
+            Console.WriteLine($"t3 got: {message}"); // captures message
+        });
+        t3.Start();
+
+        t1.Join();
+        t2.Join();
+        t3.Join();
+    }
+}
+```
+
+---
+
+#### `Join()` — Wait for a thread to finish
+
+`Join()` blocks the calling thread until the target thread terminates. It is how you synchronize thread completion.
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        Thread worker = new Thread(() =>
+        {
+            Console.WriteLine("Worker: starting heavy computation...");
+            Thread.Sleep(3000); // simulate work
+            Console.WriteLine("Worker: done!");
+        });
+
+        worker.Start();
+
+        Console.WriteLine("Main: waiting for worker...");
+        worker.Join(); // Main blocks here until worker finishes
+        Console.WriteLine("Main: worker has completed, continuing.");
+    }
+}
+```
+
+**Join with timeout — don't wait forever:**
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        Thread worker = new Thread(() =>
+        {
+            Thread.Sleep(5000); // takes 5 seconds
+        });
+
+        worker.Start();
+
+        // Wait at most 2 seconds
+        bool finished = worker.Join(TimeSpan.FromSeconds(2));
+
+        if (finished)
+            Console.WriteLine("Worker completed in time.");
+        else
+            Console.WriteLine("Worker timed out — still running.");
+    }
+}
+```
+
+---
+
+#### `Sleep()` — Pause the current thread
+
+`Thread.Sleep()` is a **static method** — it always affects the calling thread, never another thread.
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Before sleep");
+
+        Thread.Sleep(2000);                      // sleep 2 seconds (milliseconds)
+        Thread.Sleep(TimeSpan.FromSeconds(2));   // same — using TimeSpan
+
+        Thread.Sleep(0);  // Special: yield to same-or-higher priority threads
+        Thread.Sleep(-1); // Special: sleep indefinitely until interrupted
+
+        Console.WriteLine("After sleep");
+    }
+}
+```
+
+**`Sleep(0)` vs `Yield()`:**
+
+csharp
+
+```csharp
+Thread.Sleep(0);    // Yields to threads of EQUAL OR HIGHER priority only
+Thread.Yield();     // Yields to ANY runnable thread on the SAME processor
+                    // Returns false if no thread was ready to run
+```
+
+---
+
+#### `Interrupt()` — Wake a sleeping or waiting thread
+
+`Interrupt()` throws a `ThreadInterruptedException` inside a thread that is in a **waiting state** (`Sleep`, `Join`, `Wait`).
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        Thread worker = new Thread(() =>
+        {
+            try
+            {
+                Console.WriteLine("Worker: going to sleep for 10 seconds");
+                Thread.Sleep(10000);
+                Console.WriteLine("Worker: woke up normally");
+            }
+            catch (ThreadInterruptedException)
+            {
+                Console.WriteLine("Worker: was interrupted! Cleaning up...");
+                // Perform cleanup here
+            }
+        });
+
+        worker.Start();
+        Thread.Sleep(1000); // Let worker start sleeping
+
+        worker.Interrupt();  // Wake it up with an exception
+
+        worker.Join();
+        Console.WriteLine("Main: done");
+    }
+}
+```
+
+**Important:** If `Interrupt()` is called while the thread is **not** in a wait state, the interrupt is "pending" and will fire the next time the thread enters a wait state.
+
+---
+
+#### `Abort()` — Force terminate (obsolete)
+
+`Thread.Abort()` was used to forcefully terminate a thread by throwing `ThreadAbortException`. It is **marked obsolete** in .NET 5+ and throws `PlatformNotSupportedException` in .NET Core.
+
+csharp
+
+```csharp
+// .NET Framework only — DO NOT use in modern .NET
+Thread t = new Thread(() =>
+{
+    try
+    {
+        while (true) { /* work */ }
+    }
+    catch (ThreadAbortException)
+    {
+        // Always re-thrown even if caught — can't stop it
+        Console.WriteLine("Thread aborted");
+    }
+    finally
+    {
+        Console.WriteLine("Finally runs even on abort");
+    }
+});
+
+t.Start();
+t.Abort(); // OBSOLETE — never use this
+```
+
+**The correct modern replacement — use CancellationToken:**
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        CancellationTokenSource cts = new CancellationTokenSource();
+        CancellationToken token = cts.Token;
+
+        Thread worker = new Thread(() =>
+        {
+            while (!token.IsCancellationRequested)
+            {
+                Console.WriteLine("Working...");
+                Thread.Sleep(500);
+            }
+            Console.WriteLine("Worker: cancellation detected, exiting cleanly.");
+        });
+
+        worker.Start();
+        Thread.Sleep(2000);
+
+        cts.Cancel(); // Signal cancellation — clean and cooperative
+        worker.Join();
+        Console.WriteLine("Main: worker stopped.");
+    }
+}
+```
+
+---
+
+#### `SpinWait` — Busy-wait without yielding to OS
+
+For very short waits where sleeping would be too expensive, `SpinWait` keeps the CPU busy-spinning:
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    static volatile bool _ready = false;
+
+    static void Main()
+    {
+        Thread worker = new Thread(() =>
+        {
+            Thread.Sleep(100); // simulate some setup
+            _ready = true;
+        });
+        worker.Start();
+
+        // Spin until ready — no OS context switch overhead
+        SpinWait spin = new SpinWait();
+        while (!_ready)
+        {
+            spin.SpinOnce(); // yields CPU intelligently
+            // First few iterations: CPU spin (no OS involvement)
+            // After threshold: calls Thread.Yield() then Thread.Sleep(0)
+        }
+
+        Console.WriteLine("Ready signal received!");
+        worker.Join();
+    }
+}
+```
+
+---
+
+#### `GetCurrentProcessorId()` and thread diagnostics
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+using System.Diagnostics;
+
+class Program
+{
+    static void Main()
+    {
+        Thread t = new Thread(() =>
+        {
+            // Which thread am I?
+            Console.WriteLine($"Managed ID    : {Thread.CurrentThread.ManagedThreadId}");
+            Console.WriteLine($"OS Thread ID  : {Environment.CurrentManagedThreadId}");
+            Console.WriteLine($"Is Pool Thread: {Thread.CurrentThread.IsThreadPoolThread}");
+            Console.WriteLine($"Is Background : {Thread.CurrentThread.IsBackground}");
+            Console.WriteLine($"Thread State  : {Thread.CurrentThread.ThreadState}");
+            Console.WriteLine($"Priority      : {Thread.CurrentThread.Priority}");
+        });
+
+        t.Name = "DiagnosticsThread";
+        t.Start();
+        t.Join();
+    }
+}
+```
+
+---
+
+### Thread Local Storage — `ThreadLocal<T>`
+
+Each thread can have its own **independent copy** of a value using `ThreadLocal<T>`:
+
+csharp
+
+```csharp
+using System;
+using System.Threading;
+
+class Program
+{
+    // Each thread gets its own instance
+    static ThreadLocal<Random> _random = new ThreadLocal<Random>(
+        () => new Random(Thread.CurrentThread.ManagedThreadId)
+    );
+
+    static ThreadLocal<int> _callCount = new ThreadLocal<int>();
+
+    static void Work()
+    {
+        _callCount.Value++;
+
+        int roll = _random.Value.Next(1, 7);
+        Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId}: " +
+                          $"roll={roll}, calls={_callCount.Value}");
+    }
+
+    static void Main()
+    {
+        Thread[] threads = new Thread[4];
+
+        for (int i = 0; i < 4; i++)
+        {
+            threads[i] = new Thread(() =>
+            {
+                Work();
+                Work(); // callCount is per-thread — no sharing
+            });
+            threads[i].Start();
+        }
+
+        foreach (var t in threads) t.Join();
+    }
+}
+```
+
+
+# Thread.sleep(0) vs Thread.yield()
+Great questions! Let me address both clearly.
+
+---
+
+## 1) Does `Join()` and `Sleep()` Block the Thread?
+
+**Yes — both block the thread, but in different ways.**
+
+### `Sleep()` — Self-blocking
+
+The thread blocks **itself** voluntarily.
+
+```
+Thread A
+   │
+   │── Thread.Sleep(3000)
+   │
+   ▼
+[BLOCKED] ← Thread A is suspended by OS
+   │         OS removes it from CPU scheduling
+   │         No CPU cycles consumed
+   │         3 seconds pass...
+   ▼
+[RESUMED] ← OS wakes Thread A, puts it back in scheduler
+   │
+   ▼
+  continues...
+```
+
+The thread that calls `Sleep` is the one that gets blocked. It cannot do anything while sleeping — it is completely suspended at the OS level.
+
+---
+
+### `Join()` — Caller blocks, waiting for another thread
+
+The thread that **calls** Join blocks — not the thread being joined.
+
+```
+Main Thread          Worker Thread
+     │                    │
+     │   worker.Start()   │
+     │──────────────────▶ │
+     │                    │ doing work...
+     │   worker.Join()    │
+     │                    │ doing work...
+     ▼                    │ doing work...
+ [BLOCKED]               │ doing work...
+     │                    │
+     │                    ▼
+     │               [FINISHED]
+     ▼
+ [RESUMED] ◀─────────────┘
+     │
+  continues...
+```
+
+```csharp
+Thread worker = new Thread(() =>
+{
+    Thread.Sleep(3000); // worker blocks itself
+});
+
+worker.Start();
+worker.Join(); // Main thread blocks here, waiting for worker
+// Main resumes only after worker finishes
+```
+
+So to directly answer:
+
+|Method|Who gets blocked?|Why?|
+|---|---|---|
+|`Thread.Sleep(n)`|The thread that **calls** Sleep|Suspends itself for n ms|
+|`thread.Join()`|The thread that **calls** Join|Waits for target thread to finish|
+
+---
+
+## 2) `Sleep(0)` vs `Thread.Yield()` — Deep Explanation
+
+First, understand the concept of **CPU scheduling**.
+
+### How the OS Schedules Threads
+
+The OS gives each thread a **time slice** (typically 15–20ms on Windows). When the slice expires, the OS **preempts** the thread and picks the next one to run. This is called a **context switch**.
+
+```
+Time ──────────────────────────────────────────▶
+
+Thread A  [====runs====][    ][====runs====][    ]
+Thread B  [    ][====runs====][    ][====runs====]
+
+           ↑              ↑
+       context         context
+        switch          switch
+```
+
+Both `Sleep(0)` and `Yield()` say **"I voluntarily give up the rest of my time slice"** — but they differ in _who they yield to_.
+
+---
+
+### `Thread.Sleep(0)` — Yield to Equal or Higher Priority Only
+
+```
+Current thread calls Sleep(0)
+           │
+           ▼
+    OS Scheduler looks at ready queue
+           │
+           ├── Any thread with EQUAL or HIGHER priority ready?
+           │         YES → switch to that thread
+           │         NO  → current thread KEEPS running immediately
+           │               (returns instantly, no context switch)
+```
+
+```csharp
+Thread.Sleep(0);
+// "I'll yield — but ONLY if someone equally or more important is waiting.
+//  If not, I keep running immediately."
+```
+
+**Scenario A — Equal priority thread is waiting:**
+
+```
+Thread A (Normal priority) calls Sleep(0)
+Thread B (Normal priority) is ready
+
+Result: OS switches to Thread B
+        Thread A waits for its next turn
+```
+
+**Scenario B — Only lower priority thread is waiting:**
+
+```
+Thread A (Normal priority) calls Sleep(0)
+Thread B (Low priority) is ready
+
+Result: Thread A KEEPS running
+        Sleep(0) had NO effect — returned instantly
+```
+
+---
+
+### `Thread.Yield()` — Yield to ANY Thread on Same Processor
+
+```
+Current thread calls Yield()
+           │
+           ▼
+    OS Scheduler looks at THIS PROCESSOR'S ready queue
+           │
+           ├── Any thread ready on this processor (ANY priority)?
+           │         YES → switch to that thread
+           │               Yield() returns TRUE
+           │         NO  → current thread keeps running
+           │               Yield() returns FALSE
+```
+
+```csharp
+bool switched = Thread.Yield();
+// "I'll yield to ANYONE waiting on my processor.
+//  Tell me if an actual switch happened."
+```
+
+**Key difference from `Sleep(0)`:**
+
+`Yield()` will switch to a **lower priority** thread if that's all that's available. `Sleep(0)` will not.
+
+---
+
+### Side-by-Side Comparison
+
+```
+System state:
+  Thread A — Normal priority — currently running
+  Thread B — Low priority    — ready and waiting
+  Thread C — Normal priority — ready and waiting
+
+─────────────────────────────────────────────────
+Thread A calls Sleep(0):
+  Considers Thread B? NO  — lower priority, ignored
+  Considers Thread C? YES — equal priority, switches!
+  Result: switches to Thread C
+
+─────────────────────────────────────────────────
+Thread A calls Yield():
+  Considers Thread B? YES — any priority counts
+  Considers Thread C? YES — any priority counts
+  Result: switches to next ready thread (B or C)
+```
+
+---
+
+### The `bool` Return Value of `Yield()`
+
+`Yield()` returns `true` or `false` telling you whether an actual switch happened:
+
+```csharp
+bool actualSwitchHappened = Thread.Yield();
+
+if (actualSwitchHappened)
+{
+    // Another thread ran — the yield was meaningful
+}
+else
+{
+    // No other thread was ready — we kept running
+    // This means we're alone on this processor right now
+}
+```
+
+`Sleep(0)` returns `void` — you get no feedback.
+
+---
+
+### When to Use Each
+
+**`Sleep(0)`** — when you want to be cooperative but only with threads of equal or higher importance. Commonly used in spin-lock implementations to be polite without over-yielding.
+
+**`Thread.Yield()`** — when you want to be maximally cooperative and let any waiting thread run, regardless of priority. Better for tight loops where you want to avoid starving any thread.
+
+**Neither** — in modern async code, prefer `await Task.Yield()` which reschedules the continuation on the thread pool without blocking any thread at all:
+
+```csharp
+// Modern async equivalent — doesn't block, just reschedules
+await Task.Yield();
+// Returns control to caller, continuation runs on thread pool
+```
+
+
+![[Pasted image 20260326075245.png]]

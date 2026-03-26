@@ -308,8 +308,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2d254393392d36f8",
+  "active": "d7f81980de0041f7",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20260326075447.png",
+    "assets/images/Pasted image 20260326075245.png",
     "C sharp udemy/threading/thread.md",
     "C sharp udemy/threading/One-go.md",
     "assets/images/Pasted image 20260320054753.png",
@@ -329,7 +331,6 @@
     "C sharp udemy/Files/Stream Reader and Stream Writer.md",
     "C sharp udemy/Files/File Stream.md",
     "C sharp udemy/Files/File class.md",
-    "assets/images/Pasted image 20260314104125.png",
     "C sharp udemy/Files",
     "C sharp udemy/Assessment -1 revision.md",
     "C sharp udemy/2222222222222.md",
@@ -347,7 +348,6 @@
     "Security/Resources/Vulnerability.md",
     "Security/Resources/Untitled.md",
     "Security/Resources/CTF.md",
-    "Security/THM/to cover.md",
     "tryhackme/ONESHOT",
     "Security/Real World Bug Hunting",
     "Finance/Varsity",
