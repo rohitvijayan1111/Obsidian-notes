@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "three way handshake",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -322,12 +322,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "5aa51cb9ef3c7e90",
+  "active": "8e84bb4d66ae6df0",
   "lastOpenFiles": [
+    "C sharp udemy/Files/Untitled.md",
     "C sharp udemy/Files/TextReadwe.md",
     "C sharp udemy/Files/Stream Reader and Stream Writer.md",
     "C sharp udemy/Files/File Stream.md",
-    "C sharp udemy/Files/Untitled.md",
     "C sharp udemy/Files/File class.md",
     "C sharp udemy/Files/StringReader and StringWriter.md",
     "C sharp udemy/Files/FileInfo and DirectoryInfo.md",
