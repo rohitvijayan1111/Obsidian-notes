@@ -35,3 +35,8 @@ Socialize
 
 ![[Pasted image 20260404123649.png]]
 ![[Pasted image 20260404123819.png]]
+
+
+![[Pasted image 20260404124741.png]]
+
+![[Pasted image 20260404125024.png]]
