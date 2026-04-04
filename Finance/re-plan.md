@@ -1,3 +1,5 @@
+
+Socialize
 # Formula to find in how many years, your money will get doubled.
 
 ![[Pasted image 20260404111112.png]]
@@ -30,3 +32,6 @@
 
 
 
+
+![[Pasted image 20260404123649.png]]
+![[Pasted image 20260404123819.png]]
