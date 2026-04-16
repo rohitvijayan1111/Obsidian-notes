@@ -75,6 +75,24 @@ This document is prepared to gather clarifications and confirm assumptions regar
 - Quit games may be stored in history with status = “Abandoned”
 - Confirmation prompt will be shown to the user, to prevent accidental quitting.
 
+## **2.6 Game History & Replay**
+
+### Questions
+
+1. Should history include:
+    - Opponent details?
+    - Game mode?
+    - Moves played?
+2. What does “time” represent:
+    - Game duration?
+    - Completion timestamp?
+
+### Assumptions
+
+- History will store:
+    - Moves, result, mode, timestamp
+- Time refers to **game completion time**
+- Replay will be **step-by-step**
 ## **2.7 UI / Controls**
 
 ### Questions
@@ -89,9 +107,8 @@ This document is prepared to gather clarifications and confirm assumptions regar
 
 ### Assumptions
 
-- Input via **number keys (1–9)**
+- Key-based (arrows + enter) to move across and choose the option
 - Menu selection via **number-based navigation**
-- Basic UI without advanced theming
 ## **2.8 Error Handling**
 
 ### Questions
