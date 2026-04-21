@@ -1,69 +1,151 @@
-## Technical Insights Gained
+Here’s a clearer, well-structured version of your requirements:
 
-### Task 1 - File Data Processor
+---
 
-- Created a large file of size 1GB Approx using StreamWriter.
-- SubTask 1, Read from the file using FileStream alone with BufferSize.
-- In SubTask2, When Used Buffered stream along with FileStream able to see positive performance impact.
-- Such as Less Time taken to read and process the data with help of buffered chunks.
-- Able to See Mb/s speed difference in below images!
+# **Report Management System – Requirements**
 
-- Also when Manipulating Buffer Size of FileStream and buffered stream, got to know:
+## **1. Report Setup & Configuration**
 
-![File Stream High Buffer Than Buffered Stream](images/Task1-2_FileStreamHighBufferThanBufferedStream.png)
-- Above image indicates when File Stream Buffer size is greater than buffered stream the speed of data read is 2582.06 mb/s.
+- Define **report name**.
+    
+- Configure **reporting cycles**, including:
+    
+    - Start date and end date
+        
+    - Review timelines
+        
+    - Reporting year(s)
+        
+- Allow **intermediate deadlines** for departments and individual users.
+    
 
-![File Stream Buffer Equal BufferedStream](images/Task1-2_FileStreamEqualBufferOfBufferedStream.png)
-- Above image indicates when File Stream Buffer size is Equal to buffered stream the speed of data read is 4217.13 mb/s.
+---
 
-![File Stream Low Buffer Than Buffered Stream](images/Task1-2_FileStreamLowBufferThanBufferedStream.png)
-- Above image indicates when File Stream Buffer size is Lesser than buffered stream the speed of data read is 4048.59 mb/s.
+---
 
-- Shows, when buffer size of FileStream is equal or less, it has good performance than greater.
-  - This is because the reading works like Disk -> OS cache -> FileStream internal buffer -> BufferedStream buffer -> local buffer.
-  - When FileStream buffer is greater or equal, .NET optimize it by direct read by BufferStream  - Avoiding Double copy.
-	
-Note : Even used FileStream for text file handling as per requirement, its better to use StreamWriter Reader. One reason can be streamReader use automatic encoding and direct reading text, in filestream want to manually encode it as used in the code.
+## **2. Sections & Content Structure**
 
-### Task 2 - File Data Processor with Asynchronous Methods
+- Create **sections and subsections** with custom names.
+- Define **content blocks** within each section/subsection.
+- Content blocks should remain **editable during report creation**, and users should also be able to **add, modify, or remove sections and subsections** as needed.
+- Allow assigning the **same section/subsection to multiple users or departments**.
+- Provide an option to define:
+    - **Data source at subsection level**, or
+    - **Data source at section level** (if subsection-level is not required).
+- Enable **access control** for sections and subsections.
 
-- Implemented the Task1 File Data Processor in Asynchronous way, such that multiple task can utilize the method parallel.
+---
 
- ![Asynchronous File Handling](images/Task2_AsynchronousFileHandling.png)
-- In Above Image, Reading and Process 3 Files, where each file take 5.19s, 5.89s & 7.20s
-  - It Should have taken 18.28s to run all 3 files in synchronous one-by-one way.
-  - But It took only 7.2 Seconds to Run Entire 3 File reading process when executed parallel with async await.
-- Same happens for File Read -> Process -> Write.
+## **3. Task Assignment & Workflow**
 
-### Task 3 - Investigate Issues in Basic File usage.
+- Assign **tasks or sections** with specific **review deadlines**.
+    
+- Configure a **multi-level approval workflow** for reviewing tasks.
+    
+- Each submission should support:
+    
+    - Review
+        
+    - Approval
+        
+    - Rework (send back for corrections)
+        
 
-- The Issue Identified are commented as Insight's in below Image.
+---
 
-![Insights On File Handling Code Issue](images/Task3_InsightsOnFileHandlingCodeIssue.png)
-- It can be fixed, by simply using StreamWriter and StreamReader which is specially used for Text based file handling.
-- BinaryReader Writer for Binary is used. Internal Buffer in these are efficient for common case.
+## **4. Status Tracking**
 
-- Time Take by code with issue - using Memory Stream and File Stream - Refer Below Image
+- Support the following statuses:
+    
+    - Not Started
+        
+    - In Progress
+        
+    - Submitted
+        
+    - Under Review
+        
+    - Approved
+        
+    - Sent Back
+        
+    - Locked
+        
+- Provide **filters and dashboards** for institute-level monitoring.
+    
 
-![Time Taken CodeWithIssue](images/Task3_TimeTakenCodeWithIssue.png)
+---
 
-- Time Take by code when issue fixed - using StreamWriter Reader - Refer Below Image
+## **5. Review & Collaboration**
 
-![Time Taken IssueFixedCode](images/Task3_TimeTakenIssueFixedCode.png)
+- Enable reviewers to:
+    
+    - Add **comments on specific content blocks**
+        
+    - Track **changes and version history**
+        
+    - **Compare current and previous versions**
+        
 
-- We could see the positive performance impact after using StreamWriter Reader. Though it may seem very less - for large file it would have huge impact.
+---
 
-### Task 4 - Logging System for Multiple Users. 
+## **6. Version Control & Modifications**
 
-- Identified the issue in SubTask1 and commented along the code.
-- Got to know about locking mechanism for accessing same file parallel by multiple threads.
-- The performance difference is visible through time taken by code with issue and fixed.
-- Below is the output of modified code.
+- Implement a **version control system** for reports.
+    
+- Allow **modification of report structure** while preserving previous versions.
+    
+- Maintain full **audit history** of changes.
+    
 
-![Thread Safe Logging](images/Task4-3_ThreadSafeLogging.png)
+---
 
-- When tried to run parallel processing for Given starter code or even updated synchronous code, We get exceptions.
+## **7. Reporting Cycle Closure & Archival**
 
-![Thread UnSafe Logging with Old Code](images/Task4-3_ThreadSafeLogging_OldCode.png)
+- Provide the ability to:
+    
+    - **Close a reporting cycle**
+        
+    - **Lock further edits**
+        
+    - **Archive the final report** along with all supporting data for auditing and reference
+        
 
-These are the Insights gained through these assignment, apart learned about buffers, stream, and Task Thread.
+---
+
+## **8. Multi-language Support**
+
+- Allow **multiple language variants per section**.
+    
+- Generate **language-specific compiled reports**.
+    
+- Ensure **content consistency across languages**.
+    
+
+---
+
+## **9. UI & Design Customization**
+
+- Support customization of:
+    
+    - **Table headers**
+        
+    - **Text styles**
+        
+    - Overall **color schemes**
+        
+
+---
+
+## **10. Dashboards & Insights**
+
+- Provide dashboards displaying:
+    
+    - **Completion percentage** by section and department
+        
+    - **Overdue tasks**
+        
+    - **Bottlenecks**
+        
+- Enable **real-time monitoring** for timely completion of reports.
+    
