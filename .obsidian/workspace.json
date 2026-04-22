@@ -106,6 +106,20 @@
             }
           },
           {
+            "id": "56f5522d0172b7a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C sharp udemy/Files/Untitled 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
+          },
+          {
             "id": "ab6607dddf5b2a97",
             "type": "leaf",
             "state": {
@@ -120,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -336,11 +350,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "5aa51cb9ef3c7e90",
+  "active": "56f5522d0172b7a8",
   "lastOpenFiles": [
+    "C sharp udemy/Files/Untitled.md",
+    "C sharp udemy/Files/Untitled 1.md",
     "C sharp udemy/Files/Schema.md",
     "C sharp udemy/Files/Schema 1.md",
-    "C sharp udemy/Files/Untitled.md",
     "C sharp udemy/Files/TextReadwe.md",
     "C sharp udemy/assignment 17.md",
     "Linkedin search.md",
@@ -376,7 +391,6 @@
     "AWS/DVA/EBS.md",
     "tryhackme/ONESHOT/Linux.md",
     "Motivatio/Videos.md",
-    "Interview tips/TIPS.md",
     "tryhackme/ONESHOT",
     "Security/Real World Bug Hunting",
     "Finance/Varsity",
