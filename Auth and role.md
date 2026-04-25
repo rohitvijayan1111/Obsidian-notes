@@ -50,24 +50,29 @@ CREATE TYPE auth_action AS ENUM (
 --   - Admin deactivates account
 --     → is_active = false
 -- ============================================================
-
-CREATE TABLE user_credentials (
+CREATE TABLE users (
     id                   UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id              UUID        NOT NULL REFERENCES users (id) UNIQUE,
+    institute_id         UUID        NOT NULL REFERENCES institutes (id),
+    department_id        UUID        REFERENCES departments (id),
+    full_name            TEXT        NOT NULL,
+    email                TEXT        NOT NULL,
+    profile_image_url    TEXT,
     password_hash        TEXT        NOT NULL,
-    is_temporary         BOOLEAN     NOT NULL DEFAULT true,
     must_change_password BOOLEAN     NOT NULL DEFAULT true,
-    failed_attempts      SMALLINT    NOT NULL DEFAULT 0,
-    locked_until         TIMESTAMPTZ,               -- NULL = not locked
+    locked_until         TIMESTAMPTZ,
     last_login_at        TIMESTAMPTZ,
     password_changed_at  TIMESTAMPTZ,
     is_active            BOOLEAN     NOT NULL DEFAULT true,
-    created_at           TIMESTAMPTZ NOT NULL DEFAULT now(),
-    updated_at           TIMESTAMPTZ NOT NULL DEFAULT now()
+    created_by           UUID        REFERENCES users (id),
+    created_at           TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE INDEX idx_user_credentials_user ON user_credentials (user_id);
+CREATE UNIQUE INDEX uq_users_email
+    ON users (institute_id, email)
+    WHERE is_active = true;
 
+CREATE INDEX idx_users_institute  ON users (institute_id);
+CREATE INDEX idx_users_department ON users (department_id);
 
 -- ============================================================
 -- TABLE: password_reset_tokens
@@ -100,42 +105,6 @@ CREATE INDEX idx_prt_user    ON password_reset_tokens (user_id);
 CREATE INDEX idx_prt_token   ON password_reset_tokens (token_hash);
 CREATE INDEX idx_prt_active  ON password_reset_tokens (expires_at)
     WHERE used_at IS NULL;
-
-
--- ============================================================
--- TABLE: user_sessions
---
--- One row per user. Tracks the single active session.
--- Logging in from a new device overwrites the existing row
--- (old session is automatically invalidated — single session policy).
---
--- INSERT: First time a user successfully logs in (no existing row).
--- UPSERT: Every subsequent successful login overwrites token,
---         ip_address, user_agent, expires_at.
--- UPDATE: last_active_at refreshed on each authenticated request
---         (heartbeat — e.g. every 5 minutes).
--- DELETE: On logout OR when session expires.
---
--- TO CHECK IF A SESSION IS VALID:
---   SELECT * FROM user_sessions
---   WHERE token_hash = $hash AND expires_at > now();
--- ============================================================
-
-CREATE TABLE user_sessions (
-    id             UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id        UUID        NOT NULL REFERENCES users (id) UNIQUE,
-    token_hash     TEXT        NOT NULL,
-    ip_address     INET,
-    user_agent     TEXT,
-    last_active_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    expires_at     TIMESTAMPTZ NOT NULL,
-    created_at     TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
-CREATE UNIQUE INDEX uq_sessions_user  ON user_sessions (user_id);
-CREATE INDEX idx_sessions_token
-    ON user_sessions (token_hash);
-
 
 -- ============================================================
 -- TABLE: login_audit_logs
@@ -284,35 +253,24 @@ INSERT INTO roles (name, display_name, description, is_system) VALUES
 -- SOFT REVOKE: revoked_at set when a role is removed.
 --              Row is never hard-deleted (audit trail).
 -- ============================================================
-
 CREATE TABLE user_roles (
-    id            UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id       UUID        NOT NULL REFERENCES users (id),
-    role_id       UUID        NOT NULL REFERENCES roles (id),
-    institute_id  UUID        NOT NULL REFERENCES institutes (id),
-    department_id UUID        REFERENCES departments (id),
-    assigned_by   UUID        NOT NULL REFERENCES users (id),
-    assigned_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
-    expires_at    TIMESTAMPTZ,
-    revoked_at    TIMESTAMPTZ,
-    notes         TEXT
+    id          UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id     UUID        NOT NULL REFERENCES users (id),
+    role_id     UUID        NOT NULL REFERENCES roles (id),
+    assigned_by UUID        NOT NULL REFERENCES users (id),
+    assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    expires_at  TIMESTAMPTZ,
+    revoked_at  TIMESTAMPTZ,
+    notes       TEXT
 );
 
 CREATE INDEX idx_user_roles_user
     ON user_roles (user_id) WHERE revoked_at IS NULL;
-CREATE INDEX idx_user_roles_dept
-    ON user_roles (department_id) WHERE revoked_at IS NULL;
 
--- Prevent assigning the same dept-scoped role twice to the same user
-CREATE UNIQUE INDEX uq_user_role_dept
-    ON user_roles (user_id, role_id, institute_id, department_id)
-    WHERE revoked_at IS NULL AND department_id IS NOT NULL;
-
--- Prevent assigning the same institute-wide role twice to the same user
-CREATE UNIQUE INDEX uq_user_role_institute
-    ON user_roles (user_id, role_id, institute_id)
-    WHERE revoked_at IS NULL AND department_id IS NULL;
-
+-- A user cannot be assigned the same role twice
+CREATE UNIQUE INDEX uq_user_role
+    ON user_roles (user_id, role_id)
+    WHERE revoked_at IS NULL;
 
 -- ============================================================
 -- TABLE: role_delegations
