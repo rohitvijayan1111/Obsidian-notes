@@ -7,6 +7,17 @@ Here is the complete, final schema for all identity and auth tables with clear o
 -- ENUM TYPES
 -- ============================================================
 
+institution table
+
+department table
+
+CREATE TYPE user_status AS ENUM (
+    'ACTIVE',
+    'INACTIVE',
+    'SUSPENDED',
+    'DELETED'
+);
+
 CREATE TYPE auth_action AS ENUM (
     'login_success',
     'login_failed',
@@ -50,21 +61,20 @@ CREATE TYPE auth_action AS ENUM (
 --   - Admin deactivates account
 --     → is_active = false
 -- ============================================================
-CREATE TABLE users (
-    id                   UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
-    institute_id         UUID        NOT NULL REFERENCES institutes (id),
-    department_id        UUID        REFERENCES departments (id),
-    full_name            TEXT        NOT NULL,
-    email                TEXT        NOT NULL,
-    profile_image_url    TEXT,
-    password_hash        TEXT        NOT NULL,
-    must_change_password BOOLEAN     NOT NULL DEFAULT true,
-    locked_until         TIMESTAMPTZ,
-    last_login_at        TIMESTAMPTZ,
-    password_changed_at  TIMESTAMPTZ,
-    is_active            BOOLEAN     NOT NULL DEFAULT true,
-    created_by           UUID        REFERENCES users (id),
-    created_at           TIMESTAMPTZ NOT NULL DEFAULT now()
+CREATE TABLE users (  
+	id UUID PRIMARY KEY DEFAULT gen_random_uuid(),  
+	institute_id UUID NOT NULL REFERENCES institutes (id),  
+	department_id UUID REFERENCES departments (id),  
+	full_name TEXT NOT NULL,  
+	email TEXT NOT NULL,  
+	password_hash TEXT NOT NULL,  
+	profile_image_url TEXT,  
+	must_change_password BOOLEAN NOT NULL DEFAULT true,  
+	last_login_at TIMESTAMPTZ,  
+	password_changed_at TIMESTAMPTZ,  
+	account_status user_status NOT NULL DEFAULT 'ACTIVE',  
+	created_by UUID REFERENCES users (id),  
+	created_at TIMESTAMPTZ NOT NULL DEFAULT now()  
 );
 
 CREATE UNIQUE INDEX uq_users_email
@@ -141,15 +151,15 @@ CREATE TABLE login_audit_logs (
     occurred_at     TIMESTAMPTZ NOT NULL DEFAULT now()
 ) PARTITION BY RANGE (occurred_at);
 
+CREATE INDEX idx_lal_user     ON login_audit_logs (user_id, occurred_at DESC);
+CREATE INDEX idx_lal_action   ON login_audit_logs (action,  occurred_at DESC);
+CREATE INDEX idx_lal_occurred ON login_audit_logs (occurred_at DESC);
+
 -- Create one partition per month (add each month in advance via migration)
 CREATE TABLE login_audit_logs_2026_04 PARTITION OF login_audit_logs
     FOR VALUES FROM ('2026-04-01') TO ('2026-05-01');
 CREATE TABLE login_audit_logs_2026_05 PARTITION OF login_audit_logs
     FOR VALUES FROM ('2026-05-01') TO ('2026-06-01');
-
-CREATE INDEX idx_lal_user     ON login_audit_logs (user_id, occurred_at DESC);
-CREATE INDEX idx_lal_action   ON login_audit_logs (action,  occurred_at DESC);
-CREATE INDEX idx_lal_occurred ON login_audit_logs (occurred_at DESC);
 
 
 -- ============================================================
@@ -261,7 +271,6 @@ CREATE TABLE user_roles (
     assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     expires_at  TIMESTAMPTZ,
     revoked_at  TIMESTAMPTZ,
-    notes       TEXT
 );
 
 CREATE INDEX idx_user_roles_user
@@ -301,7 +310,6 @@ CREATE TABLE role_delegations (
     report_id     UUID        NOT NULL REFERENCES reports (id), -- scoped to one reporting year
     delegated_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
     revoked_at    TIMESTAMPTZ,
-    notes         TEXT,
     CONSTRAINT uq_delegation
         UNIQUE (delegatee_id, role_id, department_id, report_id)
 );
@@ -313,169 +321,3 @@ CREATE INDEX idx_delegations_delegatee
 ```
 
 ---
-
-## When data flows — one complete lifecycle
-
-```
-1. Super Admin onboards Dr. Sharma as a Contributor
-   → INSERT users             (profile)
-   → INSERT user_credentials  (temp password, must_change = true)
-   → INSERT user_roles        (role = contributor, dept = Research)
-   → INSERT password_reset_tokens (one-time setup link sent to Dr. Sharma)
-
-2. Dr. Sharma clicks the link and sets his password
-   → UPDATE user_credentials  (new hash, is_temporary = false, must_change = false)
-   → UPDATE password_reset_tokens (used_at = now())
-   → INSERT login_audit_logs  (action = password_reset_used)
-
-3. Dr. Sharma logs in
-   → UPSERT user_sessions     (new token, ip, user_agent)
-   → UPDATE user_credentials  (last_login_at = now(), failed_attempts = 0)
-   → INSERT login_audit_logs  (action = login_success)
-
-4. Dr. Sharma types wrong password 3 times
-   → UPDATE user_credentials  (failed_attempts = 3, locked_until = now() + 30 min)
-   → INSERT login_audit_logs  (action = login_failed) × 3
-   → INSERT login_audit_logs  (action = account_locked)
-
-5. HoD goes on leave, delegates nodal officer to Dr. Sharma for Report 2026
-   → INSERT role_delegations  (delegator=HoD, delegatee=Sharma, report=2026)
-
-6. Dr. Sharma logs out
-   → DELETE user_sessions     (row removed)
-   → INSERT login_audit_logs  (action = logout)
-```
-
-
-Q & A
-
-why is it better to store user roles in a separate table rather than saving it along with the user credentials?
-
-Good question. Here are the concrete reasons.
-
----
-
-## Reason 1 — A user can hold more than one role
-
-If roles were stored in `user_credentials`, you'd need either a text column or an array:
-
-```sql
--- Storing in credentials (wrong approach)
-user_credentials
-───────────────────────────────────────────
-user_id   role
-u-001     'contributor'         ← only one role possible
-
--- Or worse, an array
-user_id   roles
-u-001     ['contributor', 'reviewer']  ← can't index, can't query cleanly
-```
-
-With `user_roles` as a separate table:
-
-```sql
-user_roles
-───────────────────────────────────────────────────────────
-user_id   role_id                  department_id
-u-001     contributor              dept-research
-u-001     reviewer                 dept-clinical   ← same user, two roles, different depts
-```
-
-Dr. Sharma can be a **Contributor in Research** and a **Reviewer in Clinical** simultaneously. You cannot model this in a single column.
-
----
-
-## Reason 2 — Roles are scoped to departments
-
-A role is not just a label — it carries context: **which department** it applies to.
-
-```sql
--- Can't express this in a credentials column
-u-001  contributor  →  Research Department
-u-001  reviewer     →  Clinical Department
-```
-
-`user_credentials` is about authentication (password, lock state). It has no concept of departments. Mixing department scope into credentials breaks separation of concerns entirely.
-
----
-
-## Reason 3 — Role assignments have their own lifecycle
-
-Each role assignment has metadata that belongs to it, not to the user or their password:
-
-```sql
-user_roles
-────────────────────────────────────────────────────────────────────
-user_id  role_id      assigned_by  assigned_at   expires_at   revoked_at
-u-001    contributor  admin-001    Jan 1 2026     NULL         NULL
-u-001    reviewer     admin-001    Mar 1 2026     Dec 31 2026  NULL  ← time-bound
-u-001    contributor  admin-001    Jan 1 2025     NULL         Dec 31 2025 ← revoked
-```
-
-- Who assigned the role?
-- When was it assigned?
-- Does it expire?
-- Was it revoked and when?
-
-None of this belongs in `user_credentials`. Credentials track **authentication state** — password hash, lock status, last login. Roles track **authorization state** — who gave access to what and when.
-
----
-
-## Reason 4 — Querying becomes clean and efficient
-
-With a separate table you can answer operational questions with simple indexed queries:
-
-```sql
--- All contributors in Research Department
-SELECT u.full_name FROM users u
-JOIN user_roles ur ON ur.user_id = u.id
-JOIN roles r ON r.id = ur.role_id
-WHERE r.name = 'contributor'
-  AND ur.department_id = 'dept-research'
-  AND ur.revoked_at IS NULL;
-
--- All roles held by Dr. Sharma
-SELECT r.display_name, ur.department_id
-FROM user_roles ur
-JOIN roles r ON r.id = ur.role_id
-WHERE ur.user_id = 'u-001' AND ur.revoked_at IS NULL;
-```
-
-If roles were stored as an array in `user_credentials`, both queries would require scanning every row and unpacking arrays — no index can help you.
-
----
-
-## Reason 5 — Separation of concerns
-
-The three tables each have one clear job:
-
-```
-user_credentials  →  Authentication   "Is this password correct? Is the account locked?"
-                      Changes when:    password changes, login fails, account locked
-
-user_roles        →  Authorization    "What is this user allowed to do and where?"
-                      Changes when:    admin assigns/revokes a role
-
-users             →  Identity         "Who is this person?"
-                      Changes when:    name, email, department changes
-```
-
-Mixing any two of these together means a change in one reason forces you to touch a table that belongs to another concern — a violation of the Single Responsibility Principle that causes bugs and confusion over time.
-
----
-
-## The simple test
-
-Ask: _"Can this user have more than one value of this thing?"_
-
-|Thing|Multiple per user?|Separate table needed?|
-|---|---|---|
-|Password|No — one password|No — column in user_credentials|
-|Role|Yes — multiple roles, multiple depts|Yes — user_roles table|
-|Email|No — one email|No — column in users|
-|Session|No — one active session|No — column in user_sessions|
-
-The moment the answer is **yes**, a column can't model it correctly — you need a table.
-
-
-
