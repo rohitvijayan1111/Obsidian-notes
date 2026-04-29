@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Auth and role.md",
+                "file": "GIT UDEMY COURSE/Stocls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Auth and role"
+              "title": "Stocls"
             }
           }
         ],
@@ -378,10 +378,19 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2d254393392d36f8",
+  "active": "62485e2b10f8a89c",
   "lastOpenFiles": [
-    "Report module.md",
+    "assets/images/Pasted image 20260429073136.png",
+    "assets/images/Pasted image 20260429073106.png",
+    "assets/images/Pasted image 20260429071200.png",
+    "assets/images/Pasted image 20260429071142.png",
+    "assets/images/Pasted image 20260429071057.png",
+    "assets/images/Pasted image 20260429070957.png",
+    "assets/images/Pasted image 20260429070601.png",
+    "assets/images/Pasted image 20260429070433.png",
     "Auth and role.md",
+    "GIT UDEMY COURSE/Stocls.md",
+    "Report module.md",
     "C sharp udemy/Files/Schema.md",
     "C sharp udemy/Files/Annual report.md",
     "C sharp udemy/Files/Untitled.md",
@@ -393,15 +402,8 @@
     "assets/images/Pasted image 20260414192420.png",
     "assets/images/Pasted image 20260414054647.png",
     "assets/images/Pasted image 20260414054608.png",
-    "assets/images/Pasted image 20260414053224.png",
     "Security/Wireshark/intro.md",
-    "assets/images/Pasted image 20260407051052.png",
     "Security/Wireshark",
-    "assets/images/Pasted image 20260404125024.png",
-    "assets/images/Pasted image 20260404124741.png",
-    "assets/images/Pasted image 20260404123819.png",
-    "assets/images/Pasted image 20260404123649.png",
-    "assets/images/Pasted image 20260404115042.png",
     "C sharp udemy/threading/One-go.md",
     "C sharp udemy/Files/Stream Reader and Stream Writer.md",
     "C sharp udemy/Files/File Stream.md",
@@ -417,8 +419,6 @@
     "C sharp udemy/3)Variables and operators.md",
     "Security/THM/Windows commandline.md",
     "Finance/1)TIPS ON PERSONAL FINANCE.md",
-    "AWS/DVA/1) IAM.md",
-    "AWS/DVA/EBS.md",
     "tryhackme/ONESHOT",
     "Security/Real World Bug Hunting",
     "Finance/Varsity",
