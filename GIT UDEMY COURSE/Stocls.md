@@ -14,3 +14,8 @@ Free cash flow - must be +ve
 
 
 ![[Pasted image 20260429073106.png]]![[Pasted image 20260429073136.png]]
+
+
+
+
+![[Pasted image 20260429082649.png]]
