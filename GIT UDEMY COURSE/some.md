@@ -1,4 +1,4 @@
-Need to study on the default vlau
+Need to study on the default values of the datatypes.
 
 |Literal Type|Example|
 |---|---|
