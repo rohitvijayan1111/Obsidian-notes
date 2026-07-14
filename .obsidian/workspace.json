@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GIT UDEMY COURSE/some.md",
+                "file": "embedded/to do.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "some"
+              "title": "to do"
             }
           }
         ],
@@ -392,19 +392,23 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2d254393392d36f8",
+  "active": "38a95ce6596af181",
   "lastOpenFiles": [
-    "GIT UDEMY COURSE/Stocls.md",
+    "assets/images/Pasted image 20260714073526.png",
+    "assets/images/Pasted image 20260714073158.png",
+    "assets/images/Pasted image 20260714073008.png",
+    "assets/images/Pasted image 20260714072914.png",
+    "assets/images/Pasted image 20260714072643.png",
+    "assets/images/Pasted image 20260714072544.png",
+    "assets/images/Pasted image 20260714072507.png",
+    "assets/images/Pasted image 20260714072406.png",
+    "assets/images/Pasted image 20260714072241.png",
+    "assets/images/Pasted image 20260714072226.png",
+    "assets/images/Pasted image 20260714071348.png",
     "GIT UDEMY COURSE/some.md",
-    "assets/images/Pasted image 20260429082649.png",
-    "assets/images/Pasted image 20260429073136.png",
-    "assets/images/Pasted image 20260429073106.png",
-    "assets/images/Pasted image 20260429071200.png",
-    "assets/images/Pasted image 20260429071142.png",
-    "assets/images/Pasted image 20260429071057.png",
-    "assets/images/Pasted image 20260429070957.png",
-    "assets/images/Pasted image 20260429070601.png",
-    "assets/images/Pasted image 20260429070433.png",
+    "embedded/to do.md",
+    "embedded",
+    "GIT UDEMY COURSE/Stocls.md",
     "Auth and role.md",
     "Report module.md",
     "C sharp udemy/Files/Schema.md",
@@ -415,7 +419,6 @@
     "C sharp udemy/assignment 17.md",
     "Linkedin search.md",
     "Finance/re-plan.md",
-    "assets/images/Pasted image 20260414192420.png",
     "Security/Wireshark/intro.md",
     "Security/Wireshark",
     "C sharp udemy/threading/One-go.md",
@@ -431,15 +434,12 @@
     "C sharp udemy/Assessment -1 revision.md",
     "C sharp udemy/2222222222222.md",
     "C sharp udemy/3)Variables and operators.md",
-    "Security/THM/Windows commandline.md",
-    "Finance/1)TIPS ON PERSONAL FINANCE.md",
     "tryhackme/ONESHOT",
     "Security/Real World Bug Hunting",
     "Finance/Varsity",
     "Motivatio",
     "C sharp udemy",
     "GIT UDEMY COURSE/Untitled",
-    "Interview prep/Leetcode revision",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
