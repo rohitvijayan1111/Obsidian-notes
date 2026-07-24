@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "embedded/to do.md",
+                "file": "AI/Foundation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "to do"
+              "title": "Foundation"
             }
           }
         ],
@@ -394,6 +394,13 @@
   },
   "active": "38a95ce6596af181",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20260725043219.png",
+    "assets/images/Pasted image 20260725042630.png",
+    "embedded/to do.md",
+    "AI/Foundation.md",
+    "Untitled 2",
+    "Untitled 1",
+    "AI",
     "assets/images/Pasted image 20260714073526.png",
     "assets/images/Pasted image 20260714073158.png",
     "assets/images/Pasted image 20260714073008.png",
@@ -403,10 +410,7 @@
     "assets/images/Pasted image 20260714072507.png",
     "assets/images/Pasted image 20260714072406.png",
     "assets/images/Pasted image 20260714072241.png",
-    "assets/images/Pasted image 20260714072226.png",
-    "assets/images/Pasted image 20260714071348.png",
     "GIT UDEMY COURSE/some.md",
-    "embedded/to do.md",
     "embedded",
     "GIT UDEMY COURSE/Stocls.md",
     "Auth and role.md",
@@ -433,13 +437,9 @@
     "C sharp udemy/Files",
     "C sharp udemy/Assessment -1 revision.md",
     "C sharp udemy/2222222222222.md",
-    "C sharp udemy/3)Variables and operators.md",
     "tryhackme/ONESHOT",
     "Security/Real World Bug Hunting",
     "Finance/Varsity",
-    "Motivatio",
-    "C sharp udemy",
-    "GIT UDEMY COURSE/Untitled",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
