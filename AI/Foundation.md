@@ -22,7 +22,7 @@ RAG (Chunking strategy, Embedding models, The more advanced agentic version of R
 
 How does code editor -> Claude + Devin work?
 
-
+what is pydantic models
 
 IN gpt model -> only decoder (no encoder) i.e Decoder only model
 
@@ -42,3 +42,6 @@ Autogen
 
 
 System design
+
+![[Pasted image 20260725111308.png]]
+![[Pasted image 20260725111442.png]]

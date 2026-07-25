@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Foundation.md",
+                "file": "AI/Work.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Foundation"
+              "title": "Work"
             }
           }
         ],
@@ -394,10 +394,13 @@
   },
   "active": "38a95ce6596af181",
   "lastOpenFiles": [
+    "AI/Foundation.md",
+    "AI/Work.md",
+    "assets/images/Pasted image 20260725111442.png",
+    "assets/images/Pasted image 20260725111308.png",
     "assets/images/Pasted image 20260725043219.png",
     "assets/images/Pasted image 20260725042630.png",
     "embedded/to do.md",
-    "AI/Foundation.md",
     "Untitled 2",
     "Untitled 1",
     "AI",
@@ -407,9 +410,6 @@
     "assets/images/Pasted image 20260714072914.png",
     "assets/images/Pasted image 20260714072643.png",
     "assets/images/Pasted image 20260714072544.png",
-    "assets/images/Pasted image 20260714072507.png",
-    "assets/images/Pasted image 20260714072406.png",
-    "assets/images/Pasted image 20260714072241.png",
     "GIT UDEMY COURSE/some.md",
     "embedded",
     "GIT UDEMY COURSE/Stocls.md",
