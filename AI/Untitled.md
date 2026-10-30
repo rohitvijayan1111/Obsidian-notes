@@ -12,3 +12,5 @@ x)Hooks -> Changelog
 
 
 ![[Pasted image 20261030121422.png]]
+
+![[Pasted image 20261030160046.png]]
