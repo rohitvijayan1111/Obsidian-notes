@@ -16,4 +16,4 @@ II)END_TURN
 ![[Pasted image 20261114172816.png]]
 
 ![[Pasted image 20261114173943.png]]![[Pasted image 20261114174339.png]]![[Pasted image 20261114174202.png]]
-![[Pasted image 20261114174610.png]]
+![[Pasted image 20261114174610.png]]'![[Pasted image 20261114175853.png]]

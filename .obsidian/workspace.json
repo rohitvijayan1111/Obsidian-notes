@@ -181,12 +181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Untitled 1.md",
+                "file": "AI/CCAF/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Untitled"
             }
           }
         ],
@@ -410,6 +410,13 @@
   },
   "active": "e18be72a3157d980",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20261114182041.png",
+    "assets/images/Pasted image 20261114181003.png",
+    "assets/images/Pasted image 20261114180946.png",
+    "AI/CCAF/Agentic loop.md",
+    "AI/CCAF/Untitled.md",
+    "AI/CCAF",
+    "assets/images/Pasted image 20261114175853.png",
     "assets/images/Pasted image 20261114174610.png",
     "assets/images/Pasted image 20261114174339.png",
     "assets/images/Pasted image 20261114174202.png",
@@ -417,12 +424,7 @@
     "assets/images/Pasted image 20261114172816.png",
     "assets/images/Pasted image 20261114172722.png",
     "assets/images/Pasted image 20261114172330.png",
-    "assets/images/Pasted image 20261114172203.png",
-    "assets/images/Pasted image 20261114172134.png",
-    "assets/images/Pasted image 20261114171537.png",
-    "assets/images/Pasted image 20261114170601.png",
     "AI/Work.md",
-    "AI/Untitled 1.md",
     "AI/Foundation.md",
     "AI/Untitled.md",
     "Business/Untitled.md",
@@ -451,11 +453,9 @@
     "C sharp udemy/Files/File Stream.md",
     "C sharp udemy/Files/File class.md",
     "C sharp udemy/Files/StringReader and StringWriter.md",
-    "C sharp udemy/Files/FileInfo and DirectoryInfo.md",
     "C sharp udemy/threading",
     "C sharp udemy/Files",
     "tryhackme/ONESHOT",
-    "Security/Real World Bug Hunting",
     "Leetcode/Array/Couting problem flow chart.canvas",
     "Finance/Sources.canvas",
     "Leetcode/DP/Untitled.canvas",
