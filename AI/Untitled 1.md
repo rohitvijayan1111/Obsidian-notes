@@ -11,3 +11,9 @@ II)END_TURN
 ![[Pasted image 20261114172134.png]]![[Pasted image 20261114172203.png]]
 
 ![[Pasted image 20261114172330.png]]
+
+![[Pasted image 20261114172722.png]]
+![[Pasted image 20261114172816.png]]
+
+![[Pasted image 20261114173943.png]]![[Pasted image 20261114174339.png]]![[Pasted image 20261114174202.png]]
+![[Pasted image 20261114174610.png]]
