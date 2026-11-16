@@ -195,12 +195,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/CCAF/Gate.md",
+                "file": "Motivatio/figuring out.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gate"
+              "title": "figuring out"
             }
           }
         ],
@@ -424,21 +424,22 @@
   },
   "active": "fb4772f0b361a5d4",
   "lastOpenFiles": [
-    "assets/images/Pasted image 20261115131303.png",
-    "assets/images/Pasted image 20261115130209.png",
-    "AI/CCAF/Subagents.md",
+    "assets/images/Pasted image 20261116204634.png",
+    "assets/images/Pasted image 20261116204601.png",
+    "assets/images/Pasted image 20261116204544.png",
+    "assets/images/Pasted image 20261116204456.png",
+    "assets/images/Pasted image 20261116204412.png",
+    "assets/images/Pasted image 20261116204251.png",
+    "assets/images/Pasted image 20261116204134.png",
+    "assets/images/Pasted image 20261116204000.png",
+    "assets/images/Pasted image 20261116203928.png",
+    "assets/images/Pasted image 20261116203824.png",
+    "assets/images/Pasted image 20261116203719.png",
     "AI/CCAF/Gate.md",
-    "assets/images/Pasted image 20261115104945.png",
-    "assets/images/Pasted image 20261115104408.png",
+    "Motivatio/figuring out.md",
+    "AI/CCAF/Subagents.md",
     "AI/CCAF/Agentic loop.md",
     "AI/Foundation.md",
-    "assets/images/Pasted image 20261114195805.png",
-    "assets/images/Pasted image 20261114195615.png",
-    "assets/images/Pasted image 20261114194710.png",
-    "assets/images/Pasted image 20261114194623.png",
-    "assets/images/Pasted image 20261114193652.png",
-    "assets/images/Pasted image 20261114193548.png",
-    "assets/images/Pasted image 20261114182041.png",
     "AI/CCAF",
     "AI/Work.md",
     "AI/Untitled.md",
@@ -466,7 +467,6 @@
     "C sharp udemy/threading/One-go.md",
     "C sharp udemy/Files/Stream Reader and Stream Writer.md",
     "C sharp udemy/Files/File Stream.md",
-    "C sharp udemy/Files/File class.md",
     "C sharp udemy/threading",
     "C sharp udemy/Files",
     "tryhackme/ONESHOT",
