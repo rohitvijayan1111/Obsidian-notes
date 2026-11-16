@@ -195,12 +195,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Motivatio/figuring out.md",
+                "file": "AI/CCAF/hooks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "figuring out"
+              "title": "hooks"
             }
           }
         ],
@@ -424,6 +424,10 @@
   },
   "active": "fb4772f0b361a5d4",
   "lastOpenFiles": [
+    "AI/CCAF/Untitled.md",
+    "AI/CCAF/Subagents.md",
+    "AI/Untitled.md",
+    "Motivatio/figuring out.md",
     "assets/images/Pasted image 20261116204906.png",
     "assets/images/Pasted image 20261116204634.png",
     "assets/images/Pasted image 20261116204601.png",
@@ -434,15 +438,11 @@
     "assets/images/Pasted image 20261116204134.png",
     "assets/images/Pasted image 20261116204000.png",
     "assets/images/Pasted image 20261116203928.png",
-    "assets/images/Pasted image 20261116203824.png",
-    "AI/CCAF/Gate.md",
-    "Motivatio/figuring out.md",
-    "AI/CCAF/Subagents.md",
+    "AI/CCAF/hooks.md",
     "AI/CCAF/Agentic loop.md",
     "AI/Foundation.md",
     "AI/CCAF",
     "AI/Work.md",
-    "AI/Untitled.md",
     "Business/Untitled.md",
     "Business",
     "embedded/to do.md",
